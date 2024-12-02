@@ -1,0 +1,23 @@
+ObjectId: SEC-CR-133323320
+ContentAutoName: Phishing_windows_credentials_powershell_scriptblock
+ExpertContext:
+    Created: 17.06.2023
+    Updated: 30.06.2023
+    Usecases:
+        - Детектирования фишинга пользовательских аутентификационных данных с помощью pewershell скрипта, который создает поддельное приглашение для входа в систему, чтобы пользователь мог ввести учетные данные.
+        - Детектирования успешного запуска скриптов Invoke-LoginPrompt.ps1 и Invoke-CredentialsPhish.ps1
+    References:
+        - https://www.blackhillsinfosec.com/how-to-phish-for-user-passwords-with-powershell/
+        - https://www.hackingarticles.in/credential-dumping-phishing-windows-credentials/
+    DataSources:
+        - Provider: Microsoft-Windows-PowerShell
+          EventID:
+              - 4104
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1056
+EventDescriptions:
+    - Criteria: correlation_name = "Phishing_windows_credentials_powershell_scriptblock"
+      LocalizationId: corrname_Phishing_windows_credentials_powershell_scriptblock

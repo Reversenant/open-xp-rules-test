@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2015-10-20T12:07:45.000000000Z"
+            },
+            "EventRecordID": "5952",
+            "Channel": "Application",
+            "Computer": "WIN-KUR7C5KGUG8",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2015-10-20 12:07:45.3505916\nsequence_number:1\naction_id:PWEX\nsucceeded:true\nis_column_permission:false\nsession_id:54\nserver_principal_id:267\ndatabase_principal_id:1\ntarget_server_principal_id:268\ntarget_database_principal_id:0\nobject_id:268\nuser_defined_event_id:0\nclass_type:SL\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:2551EE35-BBCD-4F5E-8C39-F954EFFA792F\nsession_server_principal_name:admin\nserver_principal_name:admin\nserver_principal_sid:989004c01749624d9c451a05ffc7f806\ndatabase_principal_name:dbo\ntarget_server_principal_name:logoff1\ntarget_server_principal_sid:4e3ca091a5c3bf44a4b553eec6cc4154\ntarget_database_principal_name:\nserver_instance_name:WIN-KUR7C5KGUG8\ndatabase_name:master\nschema_name:\nobject_name:logoff1\nstatement:ALTER LOGIN [logoff1] WITH DEFAULT_DATABASE=[testo], DEFAULT_LANGUAGE=[us_english], CHECK_EXPIRATION=OFF, CHECK_POLICY=ON\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

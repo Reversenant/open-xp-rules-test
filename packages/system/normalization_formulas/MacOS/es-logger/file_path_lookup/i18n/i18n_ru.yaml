@@ -1,0 +1,4 @@
+Description: 'Поиск файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_path_lookup'
+      EventDescription: 'Поиск файла "{object.name}" на узле {event_src.host}'

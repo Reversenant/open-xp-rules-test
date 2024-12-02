@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "mach_time": 23283138007636,
+  "event_type": 25,
+  "thread": {
+    "thread_id": 162227
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "rename": {
+      "destination_type": 0,
+      "destination": {
+        "existing_file": {
+          "path": "/private/var/db/timed/com.apple.timed.plist",
+          "stat": {
+            "st_blocks": 8,
+            "st_blksize": 4096,
+            "st_rdev": 0,
+            "st_dev": 16777220,
+            "st_uid": 266,
+            "st_gid": 266,
+            "st_ino": 1941583,
+            "st_birthtimespec": "2023-07-24T12:04:50.439553099Z",
+            "st_flags": 0,
+            "st_nlink": 1,
+            "st_mtimespec": "2023-07-24T12:04:50.439713260Z",
+            "st_ctimespec": "2023-07-24T12:04:50.440482389Z",
+            "st_size": 1688,
+            "st_gen": 0,
+            "st_mode": 33188,
+            "st_atimespec": "2023-07-24T12:04:50.439553099Z"
+          },
+          "path_truncated": false
+        }
+      },
+      "source": {
+        "path": "/private/var/db/timed/.dat.nosync0078.zHTTwX",
+        "stat": {
+          "st_blocks": 8,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 266,
+          "st_gid": 266,
+          "st_ino": 1941620,
+          "st_birthtimespec": "2023-07-24T12:06:01.225119006Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-07-24T12:06:01.225904828Z",
+          "st_ctimespec": "2023-07-24T12:06:01.225904828Z",
+          "st_size": 1688,
+          "st_gen": 0,
+          "st_mode": 33188,
+          "st_atimespec": "2023-07-24T12:06:01.225119006Z"
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "time": "2023-07-24T12:06:01.226228861Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.timed",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/libexec/timed",
+      "stat": {
+        "st_blocks": 360,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312443078,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 531904,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-20T14:04:18.009524Z",
+    "is_platform_binary": true,
+    "group_id": 120,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 392,
+      "ruid": 266,
+      "euid": 266,
+      "rgid": 266,
+      "auid": 4294967295,
+      "egid": 266,
+      "pid": 120
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 392,
+      "ruid": 266,
+      "euid": 266,
+      "rgid": 266,
+      "auid": 4294967295,
+      "egid": 266,
+      "pid": 120
+    },
+    "session_id": 120,
+    "original_ppid": 1,
+    "cdhash": "1F8106E63CCF0629522898159B36E09CC19E64DE",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

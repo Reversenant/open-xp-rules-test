@@ -1,0 +1,4 @@
+Description: 'Обнаружено использование Smbexec'
+EventDescriptions:
+    - LocalizationId: 'corrname_Smbexec_activity'
+      EventDescription: 'На хосте {event_src.host} обнаружено использование инструмента Smbexec'

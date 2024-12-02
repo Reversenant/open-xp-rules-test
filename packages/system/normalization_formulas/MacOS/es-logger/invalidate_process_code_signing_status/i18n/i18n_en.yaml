@@ -1,0 +1,4 @@
+Description: 'A code signature of a process was invalidated'
+EventDescriptions:
+    - LocalizationId: 'PT_EDR_es_invalidate_process_code_signing_status'
+      EventDescription: 'The code signature of process "{subject.process.name}" was invalidated on host {event_src.host}'

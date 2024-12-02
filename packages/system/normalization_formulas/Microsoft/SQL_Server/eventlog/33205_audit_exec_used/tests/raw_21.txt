@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-01-31T14:22:59.136613800Z"
+            },
+            "EventRecordID": "1897",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-01-31 14:22:58.6991210\nsequence_number:1\naction_id:EX \nsucceeded:true\nis_column_permission:false\nsession_id:57\nserver_principal_id:268\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:-223315899\nuser_defined_event_id:0\ntransaction_id:55544\nclass_type:X \npermission_bitmask:00000000000000000000000000000020\nsequence_group_id:02693384-9F50-4DD9-8464-694CF4EF1E01\nsession_server_principal_name:Analysis\nserver_principal_name:Analysis\nserver_principal_sid:5c9dc62711b2c84695fc5132e3a852db\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:sys\nobject_name:sp_OAMethod\nstatement:EXEC sp_oamethod @shell, 'run', null, 'ipconfig', '0','True'\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

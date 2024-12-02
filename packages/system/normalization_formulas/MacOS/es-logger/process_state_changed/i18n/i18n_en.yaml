@@ -1,0 +1,8 @@
+Description: 'A process status changed'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_state_changed_start'
+      EventDescription: 'Process {object.process.name} is running on host {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_state_changed_stop'
+      EventDescription: 'Process {object.process.name} is stopped on host {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_state_changed_terminate'
+      EventDescription: 'Process {object.process.name} is terminated on host {event_src.host}'

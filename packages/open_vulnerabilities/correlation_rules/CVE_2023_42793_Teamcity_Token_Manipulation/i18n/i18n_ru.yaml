@@ -1,0 +1,10 @@
+Description: 'Атакующие могут воспользоваться уязвимостью CVE_2023_42793 для создания в TeamCity Bearer-токена на любого пользователя, что позволит им получить доступ к управлению проектами, агентами и пользователями TeamCity'
+EventDescriptions:
+    - LocalizationId: 'corrname_CVE_2023_42793_Teamcity_Token_Manipulation'
+      EventDescription: 'Обнаружен нелегитимный запрос токена {object.name} с узла {src.host} для пользователя {object.account.name} на узле {event_src.host}'
+    - LocalizationId: 'corrname_CVE_2023_42793_Teamcity_Token_Manipulation_2'
+      EventDescription: 'Обнаружен нелегитимный запрос токена {object.name} с узла {src.host} для пользователя с ID {object.account.id} на узле {event_src.host}'
+    - LocalizationId: 'corrname_CVE_2023_42793_Teamcity_Token_Manipulation_3'
+      EventDescription: 'Пользователь с ID {subject.account.id} отправил нелегитимный запрос токена {object.name} с узла {src.host} для другого пользователя {object.account.name} на узле {event_src.host}'
+    - LocalizationId: 'corrname_CVE_2023_42793_Teamcity_Token_Manipulation_4'
+      EventDescription: 'Пользователь с ID {subject.account.id} отправил нелегитимный запрос  токена {object.name} с узла {src.host} для пользователя с ID {object.account.id} на узле {event_src.host}'

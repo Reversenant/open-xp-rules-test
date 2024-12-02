@@ -1,0 +1,4 @@
+Description: 'Атакующие могут изменять политику выполнения Powershell для запуска загруженных сценариев'
+EventDescriptions:
+    - LocalizationId: 'corrname_Change_powershell_policy_registry'
+      EventDescription: 'Политика выполнения Powershell изменена на {object.new_value}'

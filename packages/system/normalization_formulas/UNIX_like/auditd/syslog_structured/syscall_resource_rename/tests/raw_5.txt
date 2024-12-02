@@ -1,0 +1,24 @@
+{
+    "eventid": "33933983",
+    "timestampfractional": "983",
+    "timestamp": "1651611745",
+    "node": "10.10.52.30",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=6D7600666F726569676E2D313633393139373336392E353039362E77617600323031392D4465632F323031392D4465632D31312F"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/var/www/mp3/msk\" inode=5242881 dev=fe:00 mode=040775 ouid=0 ogid=10026 rdev=00:00 nametype=PARENT OUID=\"root\" OGID=\"unknown(10026)\"",
+            "item=1 name=\"2019-Dec/2019-Dec-11/\" nametype=UNKNOWN"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=82 success=no exit=-2 a0=7fff1255deff a1=7fff1255df1b a2=0 a3=642 items=2 ppid=74096 pid=10076 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=36734 comm=\"mv\" exe=\"/bin/mv\" key=\"pt_siem_www_modify\" ARCH=x86_64 SYSCALL=rename AUID=\"root\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "CWD": [
+            "cwd=\"/var/www/mp3/msk\""
+        ]
+    }
+}

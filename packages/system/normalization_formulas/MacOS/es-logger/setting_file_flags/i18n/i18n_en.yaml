@@ -1,0 +1,4 @@
+Description: 'A process set a file flag value'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_file_flags'
+      EventDescription: 'Process {subject.process.name} set "{object.value}" as the flag value for file "{object.name}" on host {event_src.host}'

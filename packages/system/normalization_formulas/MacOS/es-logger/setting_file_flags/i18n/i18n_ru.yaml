@@ -1,0 +1,4 @@
+Description: 'Процесс задал значение флага файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_file_flags'
+      EventDescription: 'Процесс {subject.process.name} задал значение "{object.value}" для флага файла "{object.name}" на узле {event_src.host}'

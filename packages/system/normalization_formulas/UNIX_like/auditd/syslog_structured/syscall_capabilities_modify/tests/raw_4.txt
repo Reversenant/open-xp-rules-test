@@ -1,0 +1,20 @@
+{
+    "eventid": "24316507",
+    "timestampfractional": "411",
+    "timestamp": "1629786235",
+    "node": "10.10.52.30",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=\"(netdata)\""
+        ],
+        "CAPSET": [
+            "pid=90561 cap_pi=0000003fffffffff cap_pp=0000003fffffffff cap_pe=0000003fffffffff"
+        ],
+        "EOE": [
+            ""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=126 success=yes exit=0 a0=556f8a4b32e4 a1=556f8a4b32ec a2=0 a3=1 items=0 ppid=1 pid=90561 auid=4294967295 uid=0 gid=117 euid=0 suid=0 fsuid=0 egid=117 sgid=117 fsgid=117 tty=(none) ses=4294967295 comm=\"(netdata)\" exe=\"/lib/systemd/systemd\" key=\"pt_siem_api_caps\" ARCH=x86_64 SYSCALL=capset AUID=\"unset\" UID=\"root\" GID=\"netdata\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"netdata\" SGID=\"netdata\" FSGID=\"netdata\""
+        ]
+    }
+}

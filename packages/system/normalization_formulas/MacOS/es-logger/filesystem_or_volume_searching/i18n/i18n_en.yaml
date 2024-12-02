@@ -1,0 +1,4 @@
+Description: 'Search for a mounted file system or storage volume'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_filesystem_or_volume_searching'
+      EventDescription: 'Process {subject.process.name} is searching for mounted file system or storage volume "{object.storage.name}" on host {event_src.host}'

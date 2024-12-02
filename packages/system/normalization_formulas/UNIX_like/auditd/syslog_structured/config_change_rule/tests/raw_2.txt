@@ -1,0 +1,11 @@
+{
+    "node": "2001:db8:1ab0:130:250:56ff:feaf:7e1a",
+    "timestamp": "1657540049",
+    "timestampfractional": "337",
+    "eventid": "7932",
+    "items": {
+        "CONFIG_CHANGE": [
+            "auid=4294967295 ses=4294967295 op=add_rule key=\"pt_siem_api_caps\" list=4 res=1 AUID=\"unset\""
+        ]
+    }
+}

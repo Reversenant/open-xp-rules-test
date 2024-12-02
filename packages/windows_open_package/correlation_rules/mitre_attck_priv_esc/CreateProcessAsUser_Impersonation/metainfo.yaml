@@ -1,0 +1,24 @@
+ObjectId: SEC-CR-630568812
+ContentAutoName: CreateProcessAsUser_Impersonation
+ExpertContext:
+    Created: 07.06.2023
+    Updated: 15.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут использовать функции LogonUser() и CreateProcessAsUser() из библиотеки Advapi32.dll для запуска дочерних процессов в контексте другого пользователя
+    References:
+        - https://attack.mitre.org/techniques/T1134/001/
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4624
+              - 4648
+ContentRelations:
+    Implements:
+        ATTACK:
+            privilege-escalation:
+                - T1134.001
+EventDescriptions:
+    - Criteria: correlation_name = "CreateProcessAsUser_Impersonation"
+      LocalizationId: corrname_CreateProcessAsUser_Impersonation

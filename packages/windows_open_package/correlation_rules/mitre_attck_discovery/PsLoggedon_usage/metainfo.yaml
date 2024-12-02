@@ -1,0 +1,31 @@
+ContentAutoName: PsLoggedon_usage
+ExpertContext:
+    Created: 04.07.2024
+    Updated: 04.07.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут попытаться получить список пользователей, что бы потом, например, сдампить их учетные данные
+    Falsepositives: []
+    References: []
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+              - 4657
+              - 5145
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+              - 13
+              - 18
+ObjectId: SEC-CR-153064782
+ContentRelations:
+    Implements:
+        ATTACK:
+            discovery:
+                - T1033
+EventDescriptions:
+    - Criteria: correlation_name = "PsLoggedon_usage"
+      LocalizationId: corrname_PsLoggedon_usage

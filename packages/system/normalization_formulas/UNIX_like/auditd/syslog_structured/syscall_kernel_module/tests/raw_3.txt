@@ -1,0 +1,17 @@
+{
+    "eventid": "33440",
+    "timestampfractional": "827",
+    "timestamp": "1653024600",
+    "node": "127.0.1.1",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=313 success=yes exit=0 a0=7 a1=55eff06153f0 a2=0 a3=7 items=0 ppid=6313 pid=6354 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=5 comm=\"modprobe\" exe=\"/usr/bin/kmod\" subj==unconfined key=\"pt_siem_api_kernel_mods\" ARCH=x86_64 SYSCALL=finit_module AUID=\"cm\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "KERN_MODULE": [
+            "name=\"zstd_compress\""
+        ],
+        "PROCTITLE": [
+            "proctitle=6D6F6470726F6265006274726673"
+        ]
+    }
+}

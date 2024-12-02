@@ -1,0 +1,8 @@
+Description: 'Обнаружена попытка изменить список DACL устройства SysmonDrv'
+EventDescriptions:
+    - LocalizationId: 'corrname_SysmonDrv_device_dacl_manipulation'
+      EventDescription: 'Процесс ''''{subject.process.name}" попытался изменить список DACL для устройства SysmonDrv на узле {event_src.host}'
+    - LocalizationId: 'corrname_SysmonDrv_device_dacl_manipulation_2'
+      EventDescription: 'Процесс ''''{subject.process.name}" изменил список DACL для устройства SysmonDrv на узле {event_src.host}'
+    - LocalizationId: 'corrname_SysmonDrv_device_dacl_manipulation_3'
+      EventDescription: 'Обнаружена проблема во взаимодействии службы Sysmon64 и драйвера SysmonDrv на узле {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'Обнаружена попытка изменить хозяина объекта SysmonDrv'
+EventDescriptions:
+    - LocalizationId: 'corrname_SysmonDrv_device_owner_manipulation'
+      EventDescription: 'Процесс "{subject.process.name}" изменил хозяина объекта SysmonDrv на узле {event_src.host}'

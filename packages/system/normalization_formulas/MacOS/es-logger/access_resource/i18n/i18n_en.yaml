@@ -1,0 +1,4 @@
+Description: 'File access right check'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_access_resource'
+      EventDescription: 'Checking access rights for file {object.path} on host {event_src.host}'

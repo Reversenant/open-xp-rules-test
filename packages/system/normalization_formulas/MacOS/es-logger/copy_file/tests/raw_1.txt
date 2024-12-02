@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "mach_time": 7043320951370,
+  "event_type": 110,
+  "thread": {
+    "thread_id": 63277
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "copyfile": {
+      "flags": 0,
+      "target_dir": {
+        "path": "/Volumes/Tools",
+        "stat": {
+          "st_blocks": 32,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 922746886,
+          "st_uid": 501,
+          "st_gid": 20,
+          "st_ino": 2,
+          "st_birthtimespec": "2023-04-10T14:49:32.000000000Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-07-25T09:52:34.000000000Z",
+          "st_ctimespec": "2023-07-25T09:52:34.000000000Z",
+          "st_size": 16384,
+          "st_gen": 0,
+          "st_mode": 16832,
+          "st_atimespec": "2023-07-25T09:52:34.000000000Z"
+        },
+        "path_truncated": false
+      },
+      "source": {
+        "path": "/Volumes/Tools/floss.exe",
+        "stat": {
+          "st_blocks": 57264,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 922746886,
+          "st_uid": 501,
+          "st_gid": 20,
+          "st_ino": 844424930143046,
+          "st_birthtimespec": "2023-01-04T06:39:30.000000000Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-05-17T07:53:38.000000000Z",
+          "st_ctimespec": "2023-05-17T07:53:43.000000000Z",
+          "st_size": 29317892,
+          "st_gen": 0,
+          "st_mode": 33216,
+          "st_atimespec": "2023-07-25T09:52:34.000000000Z"
+        },
+        "path_truncated": false
+      },
+      "target_file": null,
+      "target_name": "floss copy.exe",
+      "mode": 420
+    }
+  },
+  "time": "2023-07-25T09:52:34.394473498Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.DesktopServicesHelper",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/Resources/DesktopServicesHelper",
+      "stat": {
+        "st_blocks": 1136,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312256040,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 1279744,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-25T09:52:34.108735Z",
+    "is_platform_binary": true,
+    "group_id": 4333,
+    "audit_token": {
+      "asid": 100006,
+      "pidversion": 8261,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 4333
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100006,
+      "pidversion": 8261,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 501,
+      "egid": 0,
+      "pid": 4333
+    },
+    "session_id": 4333,
+    "original_ppid": 1,
+    "cdhash": "270D32BC0E5634259777ED1F1C71577978DAED95",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

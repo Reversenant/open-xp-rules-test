@@ -1,0 +1,4 @@
+Description: 'Обнаружение попытки загрузки DLL из сетевой папки в процесс LSASS'
+EventDescriptions:
+    - LocalizationId: 'corrname_ImageLoad_from_Network_Share_to_LSASS'
+      EventDescription: 'На узле {event_src.host} обнаружена попытка загрузки библиотеки {object.process.name} из сетевой папки {object.process.path} в процесс LSASS'

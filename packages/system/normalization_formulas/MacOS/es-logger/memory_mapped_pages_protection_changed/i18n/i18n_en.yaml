@@ -1,0 +1,4 @@
+Description: 'The protection of mapped memory pages was changed'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_memory_mapped_pages_protection_changed'
+      EventDescription: 'The protection of mapped memory pages was changed on host {event_src.host}'

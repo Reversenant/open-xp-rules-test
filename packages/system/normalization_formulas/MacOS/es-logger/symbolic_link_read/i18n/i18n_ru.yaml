@@ -1,0 +1,4 @@
+Description: 'Процесс прочитал символическую ссылку'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_symbolic_link_read'
+      EventDescription: 'Процесс {subject.process.name} прочитал символическую ссылку "{object.name}" на узле {event_src.host}'

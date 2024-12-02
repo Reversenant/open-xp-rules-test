@@ -1,0 +1,2 @@
+table_list default
+expect 1 {"correlation_name": "DCSync_prepare_Add_replicatation_rights_to_Account", "object.id": "{c6faf700-bfe4-452a-a766-424f84c29583}"}

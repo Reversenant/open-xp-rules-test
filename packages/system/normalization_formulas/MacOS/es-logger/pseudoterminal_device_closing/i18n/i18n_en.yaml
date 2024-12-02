@@ -1,0 +1,4 @@
+Description: 'A pseudoterminal device session was stopped'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_pseudoterminal_device_closing'
+      EventDescription: 'A session of pseudoterminal device version {object.version} of a user with ID {subject.account.id} was stopped on host {event_src.host}'

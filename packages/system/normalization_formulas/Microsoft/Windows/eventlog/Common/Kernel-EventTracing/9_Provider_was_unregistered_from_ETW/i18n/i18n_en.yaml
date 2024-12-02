@@ -1,0 +1,4 @@
+Description: 'Provider was unregistered from ETW'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_9'
+      EventDescription: 'Provider "{object.name}" was unregistered from Event Tracing for Windows'

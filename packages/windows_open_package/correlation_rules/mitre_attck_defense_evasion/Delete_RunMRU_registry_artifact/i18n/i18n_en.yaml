@@ -1,0 +1,4 @@
+Description: 'Indicator Removal has been detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_Delete_RunMRU_registry_artifact'
+      EventDescription: 'Deletion of the RunMRU artifact has been detected on host{event_src.host}'

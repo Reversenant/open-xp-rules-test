@@ -1,0 +1,34 @@
+ContentAutoName: Suspicious_Double_Extension_File_Execution
+ExpertContext:
+    Created: 16.07.2024
+    Updated: 23.07.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут злоупотреблять двойным расширением файлов, чтобы обмануть пользователей
+    Falsepositives: []
+    References:
+        - https://github.com/SigmaHQ/sigma/blob/568f1aef336e62a0c52bc28e6b635950ca900f97/rules/windows/process_creation/proc_creation_win_susp_double_extension.yml
+        - https://github.com/SigmaHQ/sigma/blob/568f1aef336e62a0c52bc28e6b635950ca900f97/rules/windows/process_creation/proc_creation_win_susp_double_extension_parent.yml
+        - https://t.me/ptescalator/24
+        - https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE%20ATT&CK%20Analytics.html
+        - https://github.com/elastic/detection-rules/blob/56e8e059b690af566b210c72dc76c72318800b74/rules/windows/defense_evasion_file_creation_mult_extension.toml
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 1
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 2688
+ObjectId: SEC-CR-104822810
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1036.007
+EventDescriptions:
+    - Criteria: correlation_name = "Suspicious_Double_Extension_File_Execution" and reason = "ChildDoubleExtension"
+      LocalizationId: corrname_Suspicious_Double_Extension_File_Execution
+    - Criteria: correlation_name = "Suspicious_Double_Extension_File_Execution" and reason = "ParentDoubleExtension"
+      LocalizationId: corrname_Suspicious_Double_Extension_File_Execution_2

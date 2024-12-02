@@ -1,0 +1,4 @@
+Description: 'User disconnected from a screensharing session'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_screensharing_detach'
+      EventDescription: 'User with IP address {src.ip} disconnected from a screensharing session on host {event_src.host}'

@@ -1,0 +1,55 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWR" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_reset_password
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWRS" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_reset_password_self
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWCS" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_password_self
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWC" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_password
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWU" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_unlock_account
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWMC" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_must_change_password
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "CCLG" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_login
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGEA" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_enable_login
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGDA" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_disable_login
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGNM" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_username
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWPL" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_pass_policy
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWEX" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_pass_expiration
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGDB" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_default_db
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWR" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_reset_password_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWRS" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_reset_password_self_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWCS" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_password_self_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWC" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_password_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWU" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_unlock_account_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWMC" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_must_change_password_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "CCLG" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_login_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGEA" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_enable_login_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGDA" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_disable_login_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGNM" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_username_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWPL" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_pass_policy_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "PWEX" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_pass_expiration_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation" and datafield4 = "LGDB" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation_change_default_db_fail
+ObjectId: PT-NF-5597
+ContentAutoName: PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation

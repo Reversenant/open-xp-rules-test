@@ -1,0 +1,13 @@
+EventDescriptions:
+    - Criteria: id = "Microsoft_Windows_eventlog_Common_EventTracing_8_Provider_was_registered_with_ETW"
+      LocalizationId: LOC_Microsoft_Title_eventlog_event_name_8
+ExpertContext:
+    Created: 02.05.2024
+    Updated: 02.05.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases: []
+    Falsepositives: []
+    References: []
+    Improvements: []
+ObjectId: SEC-NF-265194211

@@ -1,0 +1,26 @@
+{
+    "eventid": "3423061",
+    "timestampfractional": "206",
+    "timestamp": "1683378922",
+    "node": "10.10.52.40",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2F686F6D652F6D6B69736C6F762F616E7369626C655F322E31342F62696E2F707974686F6E002F686F6D652F6D6B69736C6F762F616E7369626C655F322E31342F62696E2F616E7369626C652D67616C61787900636F6C6C656374696F6E00696E7374616C6C00636F6D6D756E6974792E68617368695F7661756C74002D2D66"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/home/mkislov/.ansible/collections/ansible_collections/community/hashi_vault/tests/integration/targets/lookup_vault_read/tasks/\" inode=2032150 dev=fe:00 mode=040755 ouid=1004 ogid=1004 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"mkislov\" OGID=\"mkislov\"",
+            "item=1 name=\"/home/mkislov/.ansible/tmp/ansible-local-325088_ilb_jce/tmpef9u1wwv/\" inode=2032056 dev=fe:00 mode=040700 ouid=1004 ogid=1004 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"mkislov\" OGID=\"mkislov\"",
+            "item=2 name=\"/home/mkislov/.ansible/tmp/ansible-local-325088_ilb_jce/tmpef9u1wwv/tmpfyvq8aq_\" inode=2001966 dev=fe:00 mode=0100600 ouid=1004 ogid=1004 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"mkislov\" OGID=\"mkislov\"",
+            "item=3 name=\"/home/mkislov/.ansible/collections/ansible_collections/community/hashi_vault/tests/integration/targets/lookup_vault_read/tasks/lookup_vault_read_setup.yml\" inode=2001966 dev=fe:00 mode=0100600 ouid=1004 ogid=1004 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"mkislov\" OGID=\"mkislov\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=82 success=yes exit=0 a0=7fbf0faf3980 a1=7fbf0fb33a10 a2=0 a3=72e384 items=4 ppid=313439 pid=325088 auid=1004 uid=1004 gid=1004 euid=1004 suid=1004 fsuid=1004 egid=1004 sgid=1004 fsgid=1004 tty=pts12 ses=357 comm=\"ansible-galaxy\" exe=\"/usr/bin/python3.9\" subj=unconfined key=\"pt_siem_home_modify\" ARCH=x86_64 SYSCALL=rename AUID=\"mkislov\" UID=\"mkislov\" GID=\"mkislov\" EUID=\"mkislov\" SUID=\"mkislov\" FSUID=\"mkislov\" EGID=\"mkislov\" SGID=\"mkislov\" FSGID=\"mkislov\""
+        ],
+        "CWD": [
+            "cwd=\"/home/mkislov/ansible\""
+        ]
+    }
+}

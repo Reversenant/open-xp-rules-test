@@ -1,0 +1,11 @@
+{
+    "eventid": "9411",
+    "timestampfractional": "810",
+    "timestamp": "1657506845",
+    "node": "127.0.1.1",
+    "items": {
+        "DAEMON_START": [
+            "op=start ver=2.8.4 format=enriched kernel=4.19.0-18-amd64 auid=4294967295 pid=697 uid=0 ses=4294967295 subj=unconfined  res=success AUID=\"unset\" UID=\"root\""
+        ]
+    }
+}

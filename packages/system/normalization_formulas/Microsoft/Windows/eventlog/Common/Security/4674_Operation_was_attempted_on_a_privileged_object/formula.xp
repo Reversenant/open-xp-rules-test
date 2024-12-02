@@ -1,0 +1,89 @@
+EVENTLOG = 'EventID="4674"'
+
+COND = lower($Channel) == "security" and $Provider["Name"] == "Microsoft-Windows-Security-Auditing"
+
+subject = "account"
+action = "access"
+
+if $Data["ObjectType"] == "File" then
+    object = "file_object"
+
+    $file_object_fullpath = lower($Data["ObjectName"])
+    $file_object_fullpath_csv = csv($file_object_fullpath, "\\", "")
+    $file_object_name = $file_object_fullpath_csv[length($file_object_fullpath_csv) - 1]
+    $file_object_path = strip($file_object_fullpath, "", $file_object_name)
+    object.name = $file_object_name
+    object.path = $file_object_path
+    object.fullpath = $file_object_fullpath
+
+    category.generic = "File System Object"
+    category.high = "System Management"
+    category.low = "Manipulation"
+
+elif $Data["ObjectType"] == "Key" then
+    object = "reg_object"
+
+    $struct = lower($Data["ObjectName"])
+    object.fullpath = $struct
+    object.path = $struct
+
+    category.generic = "Registry Object"
+    category.high = "System Management"
+    category.low = "Manipulation"
+
+else
+    object = "resource"
+
+    if $Data["ObjectName"] != '-' then object.name = lower($Data["ObjectName"]) endif
+    if $Data["ObjectType"] != '-' then object.type = $Data["ObjectType"] endif
+endif
+
+status = switch $Keywords
+    case "0x8020000000000000" "success"
+    case "0x8010000000000000" "failure"
+endswitch
+
+subject.account.id = $Data["SubjectUserSid"]
+subject.account.name = lower($Data["SubjectUserName"])
+subject.account.domain = lower($Data["SubjectDomainName"])
+subject.account.session_id = maybe_number16($Data["SubjectLogonId"])
+
+$process_fullpath = lower($Data["ProcessName"])
+$process_fullpath_csv = csv($process_fullpath, "\\", "")
+$process_name = $process_fullpath_csv[length($process_fullpath_csv) - 1]
+subject.process.name = $process_name
+subject.process.path = strip($process_fullpath, "", $process_name)
+subject.process.fullpath = $process_fullpath
+
+object.group = $Data["ObjectServer"]
+object.property = "privilege list"
+object.value = $Data["PrivilegeList"]
+
+time = $TimeCreated["SystemTime"]
+msgid = $EventID
+importance = "info"
+
+event_src.vendor = "microsoft"
+event_src.title = "windows"
+event_src.subsys = $Channel
+
+if find_substr($Computer, '.') != null then
+    event_src.fqdn = lower($Computer)
+    event_src.hostname = lower(substr($Computer, 0, find_substr($Computer, '.')))
+else
+    event_src.hostname = lower($Computer)
+endif
+
+event_src.category = "Operating system"
+
+id = "PT_Microsoft_Windows_eventlog_4674_Operation_was_attempted_on_a_privileged_object"
+
+# -- DEPRECATED --
+# lines from here will be deleted in future releases
+
+subject.id = subject.account.id
+subject.name = subject.account.name
+subject.domain = subject.account.domain
+
+datafield1 = subject.account.session_id
+datafield2 = subject.process.fullpath

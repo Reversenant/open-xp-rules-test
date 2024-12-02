@@ -1,0 +1,74 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "SessionGuid",
+                    "text": "{3a941a29-02f7-11ef-912c-52540074b02b}"
+                },
+                {
+                    "Name": "LoggerMode",
+                    "text": "41943296"
+                },
+                {
+                    "Name": "SessionName",
+                    "text": "SYSMON TRACE"
+                },
+                {
+                    "Name": "LogFileName"
+                },
+                {
+                    "Name": "MinimumBuffers",
+                    "text": "16"
+                },
+                {
+                    "Name": "MaximumBuffers",
+                    "text": "38"
+                },
+                {
+                    "Name": "BufferSize",
+                    "text": "65536"
+                },
+                {
+                    "Name": "PeakBuffersCount",
+                    "text": "16"
+                },
+                {
+                    "Name": "CurrentBuffersCount",
+                    "text": "16"
+                },
+                {
+                    "Name": "FlushThreshold",
+                    "text": "0"
+                }
+            ]
+        },
+        "System": {
+            "Channel": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+            "Computer": "win10-work.stand2008.local",
+            "Correlation": "",
+            "EventID": "10",
+            "EventRecordID": "1942632",
+            "Execution": {
+                "ProcessID": "4684",
+                "ThreadID": "11084"
+            },
+            "Keywords": "0x4000000000000010",
+            "Level": "5",
+            "Opcode": "12",
+            "Provider": {
+                "Guid": "{b675ec37-bdb6-4648-bc92-f3fdc74d3ca2}",
+                "Name": "Microsoft-Windows-Kernel-EventTracing"
+            },
+            "Security": {
+                "UserID": "S-1-5-18"
+            },
+            "Task": "2",
+            "TimeCreated": {
+                "SystemTime": "2024-04-25T15:17:19.5634562Z"
+            },
+            "Version": "1"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

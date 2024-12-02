@@ -1,0 +1,4 @@
+Description: 'Фреймворк I/O Kit открыт для устройства'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_open_IOKit_device'
+      EventDescription: 'Фреймворк I/O Kit открыт для устройства {object.name} на узле {event_src.host}'

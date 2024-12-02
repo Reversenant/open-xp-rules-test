@@ -1,0 +1,4 @@
+Description: 'I/O Kit framework was opened for a device'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_open_IOKit_device'
+      EventDescription: 'I/O Kit framework for device {object.name} was opened on host {event_src.host}'

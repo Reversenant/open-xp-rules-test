@@ -1,0 +1,6 @@
+Description: 'Windows service modification detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_SharpNoPSExec'
+      EventDescription: 'Service executable path was modified by {subject.process.name} process at host {event_src.host}'
+    - LocalizationId: 'corrname_SharpNoPSExec_2'
+      EventDescription: '{subject.account.domain}\{subject.account.name} user was accessed to Service Control Manager from {src.host} host at host {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'A provider has been enabled to ETW session'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_14'
+      EventDescription: 'Provider {datafield3} has been enabled to ETW session "{object.name}"'

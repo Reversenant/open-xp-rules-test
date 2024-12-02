@@ -1,0 +1,4 @@
+Description: 'Процесс пытается присоединиться к другому процессу'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_attempt_to_attach_to_process'
+      EventDescription: 'Процесс {subject.process.name} пытается присоединиться к процессу {object.process.name} на узле {event_src.host}'

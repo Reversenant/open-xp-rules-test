@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "4",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2021-07-01T15:48:06.082317600Z"
+            },
+            "EventRecordID": "88144",
+            "Channel": "Application",
+            "Computer": "DESKTOP-I2RR0AI",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2021-07-01 15:48:05.4440462\nsequence_number:1\naction_id:LGIS\nsucceeded:true\nis_column_permission:false\nsession_id:51\nserver_principal_id:259\ndatabase_principal_id:0\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:0\nuser_defined_event_id:0\ntransaction_id:0\nclass_type:LX\nduration_milliseconds:0\nresponse_rows:0\naffected_rows:0\nclient_ip:::1\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:872913C8-A949-4AAB-9D09-05316A6F41AE\nsession_server_principal_name:DESKTOP-I2RR0AI\\Administrator\nserver_principal_name:DESKTOP-I2RR0AI\\Administrator\nserver_principal_sid:01050000000000051500000078244a977b23c6a272c5f55ff4010000\ndatabase_principal_name:\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-I2RR0AI\ndatabase_name:\nschema_name:\nobject_name:\nstatement:-- network protocol: TCP/IP\r\nset quoted_identifier on\r\nset arithabort off\r\nset numeric_roundabort off\r\nset ansi_warnings on\r\nset ansi_padding on\r\nset ansi_nulls on\r\nset concat_null_yields_null on\r\nset cursor_close_on_commit off\r\nset implicit_transactions off\r\nset language us_english\r\nset dateformat mdy\r\nset datefirst 7\r\nset transaction isolation level read committed\r\n\nadditional_information:<action_info xmlns=\"http://schemas.microsoft.com/sqlserver/2008/sqlaudit_data\"><pooled_connection>0</pooled_connection><client_options>0x28000020</client_options><client_options1>0x0001f438</client_options1><connect_options>0x00000000</connect_options><packet_data_size>4096</packet_data_size><address>::1</address><is_dac>1</is_dac></action_info>\nuser_defined_information:\napplication_name:Microsoft SQL Server Management Studio\n"
+        }
+    }
+}

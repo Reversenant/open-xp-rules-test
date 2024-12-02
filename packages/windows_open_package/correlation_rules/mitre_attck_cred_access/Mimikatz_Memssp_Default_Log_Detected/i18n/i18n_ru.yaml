@@ -1,0 +1,4 @@
+Description: 'Создание файла mimilsa.log указывает на применение модуля Mimikatz memssp, используемого для сохранения учетных данных пользователей в текстовом файле'
+EventDescriptions:
+    - LocalizationId: 'corrname_Mimikatz_Memssp_Default_Log_Detected'
+      EventDescription: 'Процесс {subject.process.name} создал файл {object.name}, что может свидетельствовать о применении модуля Mimikatz memssp'

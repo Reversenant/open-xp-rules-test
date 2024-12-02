@@ -1,0 +1,6 @@
+Description: 'A problem has been detected in Sysmon activity'
+EventDescriptions:
+    - LocalizationId: 'corrname_Sysmon_session_modified'
+      EventDescription: 'The configuration of session "{object.name}" has been modified on host {event_src.host}'
+    - LocalizationId: 'corrname_Sysmon_session_modified_2'
+      EventDescription: 'The configuration of session "Eventlog-Microsoft-Windows-Sysmon-Operational" has been modified on host {event_src.host}'

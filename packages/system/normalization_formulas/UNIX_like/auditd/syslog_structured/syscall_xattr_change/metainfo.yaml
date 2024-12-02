@@ -1,0 +1,26 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject != "account" and object.fullpath != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_path
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject != "account" and object.fullpath = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_nopath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "failure" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_failure
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject = "account" and object.fullpath != null and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_id_path
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject = "account" and object.fullpath = null and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_id_nopath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "failure" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_failure_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject = "account" and object.fullpath != null and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_name_path
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject = "account" and object.fullpath = null and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_name_nopath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_failure_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject = "account" and object.fullpath != null and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_name_path_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "success" and subject = "account" and object.fullpath = null and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_success_name_nopath_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_xattr_change" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_resource_state_xattr_failure_name_with_objname
+ObjectId: PT-NF-6041

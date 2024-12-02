@@ -1,0 +1,9 @@
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_start
+      EventDescription: Приложение {object.name} запущено на узле {event_src.host}
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_resume
+      EventDescription: Работа приложения {object.name} возобновлена на узле {event_src.host}
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_stop
+      EventDescription: Приложение {object.name} остановлено на узле {event_src.host}
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_suspend
+      EventDescription: Работа приложения {object.name} приостановлена на узле {event_src.host}

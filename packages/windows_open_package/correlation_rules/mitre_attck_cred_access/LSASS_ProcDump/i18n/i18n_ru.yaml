@@ -1,0 +1,4 @@
+Description: 'Детект на дамп памяти процесса lsass.exe.'
+EventDescriptions:
+    - LocalizationId: 'corrname_LSASS_ProcDump'
+      EventDescription: 'Зафиксировано создание дампа памяти процесса {object.process.name} на узле {event_src.host} процессом {subject.process.fullpath}. Дамп сохранен по пути {object.fullpath}.'

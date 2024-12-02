@@ -1,0 +1,4 @@
+Description: 'Процесс завершился'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_exiting'
+      EventDescription: 'Процесс {object.process.name} завершился на узле {event_src.host}'

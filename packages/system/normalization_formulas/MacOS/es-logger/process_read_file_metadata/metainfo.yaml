@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_read_file_metadata"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_read_file_metadata
+ObjectId: PT-NF-9288

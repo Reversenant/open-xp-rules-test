@@ -1,0 +1,269 @@
+JSON = ''
+COND = (
+    $eventid != null
+    and $node != null
+    and $timestamp != null
+    and (
+        (
+            find_substr($items["SYSCALL"][0], "arch=c000003e") != null
+            and (
+                find_substr($items["SYSCALL"][0], "syscall=105") != null     # setuid
+                or find_substr($items["SYSCALL"][0], "syscall=106") != null  # setgid
+                or find_substr($items["SYSCALL"][0], "syscall=113") != null  # setreuid
+                or find_substr($items["SYSCALL"][0], "syscall=114") != null  # setregid
+                or find_substr($items["SYSCALL"][0], "syscall=117") != null  # setresuid
+                or find_substr($items["SYSCALL"][0], "syscall=119") != null  # setresgid
+            )
+        )
+        or (
+            find_substr($items["SYSCALL"][0], "arch=40000003") != null
+            and (
+                find_substr($items["SYSCALL"][0], "syscall=23 ") != null     # setuid
+                or find_substr($items["SYSCALL"][0], "syscall=46") != null   # setgid
+                or find_substr($items["SYSCALL"][0], "syscall=70") != null   # setreuid
+                or find_substr($items["SYSCALL"][0], "syscall=71") != null   # setregid
+                or find_substr($items["SYSCALL"][0], "syscall=164") != null  # setresuid
+                or find_substr($items["SYSCALL"][0], "syscall=170") != null  # setresgid
+            )
+        )
+    )
+)
+
+$kv_syscall = keyvalue($items['SYSCALL'][0], ' ', '=')
+
+if $kv_syscall["auid"] != "4294967295" then
+    subject = "account"
+endif
+
+action = "elevate"
+object = "process"
+
+if $kv_syscall["success"] == "yes" then
+    status = "success"
+else
+    status = "failure"
+endif
+
+# Декодируем HEX, если требуется
+$auid_en = strip($kv_syscall["AUID"], '"', '"')
+if $auid_en == $kv_syscall["AUID"] then
+    $auid_en = hex_to_string($kv_syscall["AUID"])
+endif
+
+$auid_list = csv($auid_en, "@", "")
+
+# Декодируем HEX, если требуется
+$euid_en = strip($kv_syscall["EUID"], '"', '"')
+if $euid_en == $kv_syscall["EUID"] then
+    $euid_en = hex_to_string($kv_syscall["EUID"])
+endif
+
+$euid_list = csv($euid_en, "@", "")
+
+if $kv_syscall["auid"] != "4294967295" then
+    subject.account.name = $auid_list[0]
+    subject.account.domain = $auid_list[1]
+
+    subject.account.id = $kv_syscall["auid"]
+else
+    subject.account.name = $euid_list[0]
+    subject.account.domain = $euid_list[1]
+
+    subject.account.id = $kv_syscall["euid"]
+endif
+
+subject.account.privileges = $kv_syscall["euid"]
+subject.account.session_id = $kv_syscall["ses"]
+
+subject.process.id = $kv_syscall["pid"]
+subject.process.parent.id = $kv_syscall["ppid"]
+
+# SYSCALL::exe
+if not in_list(["<no_memory>", "<too_long>", "(null)"], $kv_syscall["exe"]) then
+    # Декодируем HEX, если требуется
+    $exe = strip($kv_syscall["exe"], '"', '"')
+    if $exe == $kv_syscall["exe"] then
+        $exe = hex_to_string($kv_syscall["exe"])
+    endif
+endif
+
+$process_path_and_name = csv($exe, "/", "")
+$process_name = $process_path_and_name[length($process_path_and_name) - 1]
+$process_path = strip($exe, "", $process_name)
+
+subject.process.fullpath = $exe
+subject.process.name = $process_name
+subject.process.path = $process_path
+
+# PROCTITLE
+if $items["PROCTITLE"] != null then
+    $kv_proctitle = keyvalue($items["PROCTITLE"][0], ' ', '=')
+
+    $process_proctitle = strip($kv_proctitle["proctitle"], '"', '"')
+    if $process_proctitle == "(null)" then
+        $process_proctitle = null
+    elif $process_proctitle == $kv_proctitle["proctitle"] then
+        $cmdline_raw = hex_to_string($kv_proctitle["proctitle"])
+
+        # stripping corrupted char
+        if $cmdline_raw == $kv_proctitle["proctitle"] then
+            $cmdline_raw = hex_to_string(substr($kv_proctitle["proctitle"], 0, 254))
+        endif
+        if $cmdline_raw == $kv_proctitle["proctitle"] then
+            $cmdline_raw = hex_to_string(substr($kv_proctitle["proctitle"], 0, 253))
+        endif
+        if $cmdline_raw == $kv_proctitle["proctitle"] then
+            $cmdline_raw = hex_to_string(substr($kv_proctitle["proctitle"], 0, 252))
+        endif
+
+        $process_proctitle = replace($cmdline_raw, " ", "\u0000")
+    endif
+endif
+
+subject.process.meta = $process_proctitle  # PROCTITLE
+
+# Декодируем HEX, если требуется
+$egid_en = strip($kv_syscall["EGID"], '"', '"')
+if $egid_en == $kv_syscall["EGID"] then
+    $egid_en = hex_to_string($kv_syscall["EGID"])
+endif
+
+object.account.group = coalesce($egid_en, $kv_syscall["egid"])
+
+object.account.name = $euid_list[0]
+object.account.domain = $euid_list[1]
+
+object.account.id = $kv_syscall["euid"]
+
+object.process.id = subject.process.id
+object.process.parent.id = subject.process.parent.id
+object.process.fullpath = subject.process.fullpath
+object.process.name = subject.process.name
+object.process.path = subject.process.path
+
+if in_list(["105", "23"], $kv_syscall["syscall"]) then
+    if $kv_syscall["euid"] == "0" then
+        object.property = "ruid | euid | suid"
+        object.value = $kv_syscall["euid"]
+        $new_value = string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a0"]))
+        object.new_value = replace($new_value, "x", "4294967295")
+    else
+        object.property = "euid"
+        object.value = $kv_syscall["euid"]
+        object.new_value = number16($kv_syscall["a0"])
+    endif
+elif in_list(["106", "46"], $kv_syscall["syscall"]) then
+    if $kv_syscall["egid"] == "0" then
+        object.property = "rgid | egid | sgid"
+        object.value = $kv_syscall["egid"]
+        $new_value = string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a0"]))
+        object.new_value = replace($new_value, "x", "4294967295")
+    else
+        object.property = "egid"
+        object.value = $kv_syscall["egid"]
+        object.new_value = number16($kv_syscall["a0"])
+    endif
+elif in_list(["113", "70"], $kv_syscall["syscall"]) then
+    object.property = "ruid | euid"
+    object.value = string($kv_syscall["uid"]) + " | " + string($kv_syscall["euid"])
+    
+    $new_value = string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a1"]))
+    object.new_value = replace($new_value, "x", "4294967295")
+elif in_list(["114", "71"], $kv_syscall["syscall"]) then
+    object.property = "rgid | egid"
+    object.value = string($kv_syscall["gid"]) + " | " + string($kv_syscall["egid"])
+    
+    $new_value = string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a1"]))
+    object.new_value = replace($new_value, "x", "4294967295")
+elif in_list(["117", "164"], $kv_syscall["syscall"]) then
+    object.property = "ruid | euid | suid"
+    object.value = string($kv_syscall["uid"]) + " | " + string($kv_syscall["euid"]) + " | " + string($kv_syscall["suid"])
+
+    $new_value = string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a1"])) + " | " + string(number16($kv_syscall["a2"]))
+    object.new_value = replace($new_value, "x", "4294967295")
+elif in_list(["119", "170"], $kv_syscall["syscall"]) then
+    object.property = "rgid | egid | sgid"
+    object.value = string($kv_syscall["gid"]) + " | " + string($kv_syscall["egid"]) + " | " + string($kv_syscall["sgid"])
+
+    $new_value = string(number16($kv_syscall["a0"])) + " | " + string(number16($kv_syscall["a1"])) + " | " + string(number16($kv_syscall["a2"]))
+    object.new_value = replace($new_value, "x", "4294967295")
+endif
+
+if $kv_syscall["tty"] != "(none)" then
+    $tty = $kv_syscall["tty"]
+
+    if (substr($tty, 0, 3) == "pts") and (substr($tty, 3, 1) != "/") then
+        logon_service = "pts/" + substr($tty, 3, length($tty) - 3)
+    else
+        logon_service = $tty
+    endif
+endif
+
+# Декодируем HEX, если требуется
+$comm = strip($kv_syscall["comm"], '"', '"')
+if $comm == $kv_syscall["comm"] then
+    $comm = hex_to_string($kv_syscall["comm"])
+endif
+
+datafield1 = $comm  # Executable Name
+
+chain_id = $eventid  # AuditD Event ID
+
+reason = switch $kv_syscall["exit"]
+    case "-1" "Operation not permitted"
+endswitch
+
+time = epoch_to_datetime(number($timestamp))
+
+msgid = switch $kv_syscall["syscall"]
+    case "105" "setuid"
+    case "23"  "setuid"
+    case "106" "setgid"
+    case "46"  "setgid"
+    case "113" "setreuid"
+    case "70"  "setreuid"
+    case "114" "setregid"
+    case "71"  "setregid"
+    case "117" "setresuid"
+    case "164" "setresuid"
+    case "119" "setresgid"
+    case "170" "setresgid"
+endswitch
+
+importance = "medium"
+
+event_src.title = "unix_like"
+event_src.subsys = "auditd"
+
+# Декодируем HEX, если требуется
+$key_raw = strip($kv_syscall["key"], '"', '"')
+if $key_raw == $kv_syscall["key"] then
+    $key_raw = hex_to_string($kv_syscall["key"])
+endif
+
+event_src.rule = if $key_raw != "(null)" then $key_raw else null endif
+
+if $node != "" then
+    if maybe_ipv4($node) != null or maybe_ipv6($node) != null then
+        if (in_subnet($node, "127.0.0.0/8") == False and $node != "::1") then
+            event_src.ip = $node
+            labels = "node_contains_ext_ip"
+        else
+            event_src.ip = recv_ipv4
+        endif
+    else
+        $first_dot = find_substr($node, ".")
+        if $first_dot != null then
+            event_src.fqdn = $node
+            event_src.hostname = substr($node, 0, $first_dot)
+        else
+            event_src.hostname = $node
+        endif
+    endif
+else
+    event_src.ip = recv_ipv4
+endif
+
+event_src.category = "Operating system"
+
+id = "PT_UNIX_like_auditd_syslog_structured_syscall_process_setids"

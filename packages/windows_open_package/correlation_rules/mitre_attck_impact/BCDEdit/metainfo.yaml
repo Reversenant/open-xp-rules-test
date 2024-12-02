@@ -1,0 +1,26 @@
+Updated: 26.12.2022
+ObjectId: LOC-CR-177868476
+ContentAutoName: BCDEdit
+ExpertContext:
+    Created: 20.06.2023
+    Updated: 01.07.2023
+    KnowledgeHolders:
+        - Arsenii Sukhanov
+    Usecases:
+        - bcdedit.exe можно использовать для отключения функций автоматического восстановления Windows путем изменения данных конфигурации загрузки (bcdedit.exe /set {default} bootstatuspolicy ignoreallfailures & bcdedit /set {default} recoveryenabled no)
+    References:
+        - https://learn.microsoft.com/ru-ru/windows-server/administration/windows-commands/bcdedit
+        - https://threatlocker.kb.help/preventing-bcdedit-from-being-weaponized/
+        - https://attack.mitre.org/techniques/T1490/
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ContentRelations:
+    Implements:
+        ATTACK:
+            impact:
+                - T1490
+EventDescriptions:
+    - Criteria: correlation_name = "BCDEdit"
+      LocalizationId: corrname_BCDEdit

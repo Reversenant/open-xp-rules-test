@@ -1,0 +1,4 @@
+Description: 'A user''s local group membership was enumerated'
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4798_A_users_local_group_membership_was_enumerated
+      EventDescription: 'The process {datafield4} started by the user {subject.name} enumerated the members of the security-enabled local group {object.name} on host {event_src.host}'

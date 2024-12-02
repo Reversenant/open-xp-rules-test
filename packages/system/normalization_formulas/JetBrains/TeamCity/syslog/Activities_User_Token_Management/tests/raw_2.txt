@@ -1,0 +1,1 @@
+Aug  1 00:00:00 teamcity teamcity-activities.log: [2021-07-07 04:38:51,858]   INFO - s.buildServer.ACTIVITIES.AUDIT - delete_token_for_user: Deleted token "REST" for user "'admin' {id=1}" by "'admin' {id=1}"

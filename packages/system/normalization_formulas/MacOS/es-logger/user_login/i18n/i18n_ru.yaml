@@ -1,0 +1,6 @@
+Description: 'Статус авторизации пользователя'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_login_success'
+      EventDescription: 'Пользователь {subject.account.name} вошел в систему на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_login_failure'
+      EventDescription: 'Пользователь {subject.account.name} не смог войти в систему на узле {event_src.host}. Причина: {reason}'

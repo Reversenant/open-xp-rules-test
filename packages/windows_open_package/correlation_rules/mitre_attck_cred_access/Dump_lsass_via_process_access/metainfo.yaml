@@ -1,0 +1,32 @@
+ObjectId: SEC-CR-128949563
+ContentAutoName: Dump_lsass_via_process_access
+ExpertContext:
+    Created: 09.06.2023
+    Updated: 12.06.2023
+    References:
+        - https://car.mitre.org/analytics/CAR-2019-04-004/
+        - https://www.splunk.com/en_us/blog/security/you-bet-your-lsass-hunting-lsass-access.html
+        - https://blog.ivanspiridonov.com/microsoft-windows-security-audit-event-accesses-ids/
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 10
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4663
+    KnowledgeHolders:
+        - Vadim Varganov (d3f0x0)
+    Falsepositives:
+        - AV and EDR activities
+    Improvements:
+        - Investigate access lists for 4663
+        - Add EventID 4656
+        - Add whitelist
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003.001
+EventDescriptions:
+    - Criteria: correlation_name = "Dump_lsass_via_process_access"
+      LocalizationId: corrname_Dump_lsass_via_process_access

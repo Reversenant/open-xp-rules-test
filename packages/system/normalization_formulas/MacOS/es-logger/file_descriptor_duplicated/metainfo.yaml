@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_descriptor_duplicated"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_descriptor_duplicated
+ObjectId: PT-NF-9256

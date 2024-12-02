@@ -1,0 +1,21 @@
+{
+    "eventid": "778043620",
+    "timestampfractional": "308",
+    "timestamp": "1654259464",
+    "node": "10.0.10.18",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=726D002D7266002F686F6D652F6769746C61622D72756E6E65722F6469736B2F6275696C6473002F686F6D652F6769746C61622D72756E6E65722F6469736B2F6361636865"
+        ],
+        "CWD": [
+            "cwd=\"/\""
+        ],
+        "PATH": [
+            "item=0 name=\"/\" inode=6038475 dev=08:20 mode=040777 ouid=0 ogid=0 rdev=00:00 nametype=PARENT OUID=\"root\" OGID=\"root\"",
+            "item=1 name=\"A4-12587\" inode=6038588 dev=08:20 mode=040777 ouid=0 ogid=0 rdev=00:00 nametype=DELETE OUID=\"root\" OGID=\"root\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=263 success=yes exit=0 a0=9 a1=119d018 a2=200 a3=1193708 items=2 ppid=1204 pid=999305 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"rm\" exe=\"/bin/rm\" key=\"pt_siem_home_access\" ARCH=x86_64 SYSCALL=unlinkat AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ]
+    }
+}

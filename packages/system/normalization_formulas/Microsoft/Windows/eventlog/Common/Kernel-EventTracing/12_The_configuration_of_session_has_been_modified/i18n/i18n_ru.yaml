@@ -1,0 +1,4 @@
+Description: 'Конфигурация ETW сессии изменена'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_12'
+      EventDescription: 'Конфигурация ETW сессии "{object.name}" изменена'

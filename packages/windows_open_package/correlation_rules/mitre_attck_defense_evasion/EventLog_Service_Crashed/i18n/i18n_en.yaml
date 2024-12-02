@@ -1,0 +1,4 @@
+Description: 'The Event Log service failed with an error'
+EventDescriptions:
+    - LocalizationId: 'corrname_EventLog_Service_Crashed'
+      EventDescription: 'The Event Log service failed with an error on {event_src.host}'

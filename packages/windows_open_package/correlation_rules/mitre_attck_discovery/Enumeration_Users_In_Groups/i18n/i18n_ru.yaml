@@ -1,0 +1,6 @@
+Description: 'Получена информация о локальных группах на узле'
+EventDescriptions:
+    - LocalizationId: 'corrname_Enumeration_Users_In_Groups'
+      EventDescription: 'Пользователь {subject.account.domain}/{subject.account.name} перечислил локальные группы для пользователя {object.account.domain}/{object.account.name} при помощи утилиты {subject.process.name} на узле {event_src.host}'
+    - LocalizationId: 'corrname_Enumeration_Users_In_Groups_2'
+      EventDescription: 'Пользователь {subject.account.domain}/{subject.account.name} перечислил пользователей локальной группы {object.name} при помощи утилиты {subject.process.name} на узле {event_src.host}'

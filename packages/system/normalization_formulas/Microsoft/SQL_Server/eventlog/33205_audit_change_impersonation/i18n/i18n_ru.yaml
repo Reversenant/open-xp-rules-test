@@ -1,0 +1,6 @@
+Description: 'Операция с контекстом пользователя в базе данных'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_change_impersonation'
+      EventDescription: 'Пользователь {subject.name} изменил контекст для пользователя {object.name} в экземпляре "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_change_impersonation_fail'
+      EventDescription: 'Пользователь {subject.name} не смог изменить контекст для пользователя {object.name} в экземпляре "{datafield2}"'

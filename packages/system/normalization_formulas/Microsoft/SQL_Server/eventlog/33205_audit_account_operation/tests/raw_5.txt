@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2015-09-22T08:11:30.000000000Z"
+            },
+            "EventRecordID": "258104",
+            "Channel": "Application",
+            "Computer": "WIN-RCMC6R0VHU4",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "event_time:2015-09-22 08:11:29.9269291\nsequence_number:1\naction_id:DR  \nsucceeded:true\nis_column_permission:false\nsession_id:53\nserver_principal_id:275\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:281\nuser_defined_event_id:0\nclass_type:SL\npermission_bitmask:00000000000000000000000000000000\nsession_server_principal_name:admin\nserver_principal_name:admin\nserver_principal_sid:307341b39b77b448b8bbb953d2f56a31\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:WIN-RCMC6R0VHU4\ndatabase_name:master\nschema_name:\nobject_name:login2\nstatement:DROP LOGIN login2;\r\n\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

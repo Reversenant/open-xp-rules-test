@@ -1,0 +1,90 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "SessionGuid",
+                    "text": "{b1379529-6020-4a46-9396-d953051bf663}"
+                },
+                {
+                    "Name": "LoggerMode",
+                    "text": "8388864"
+                },
+                {
+                    "Name": "SessionName",
+                    "text": "SysmonDnsEtwSession"
+                },
+                {
+                    "Name": "LogFileName"
+                },
+                {
+                    "Name": "MinimumBuffers",
+                    "text": "16"
+                },
+                {
+                    "Name": "MaximumBuffers",
+                    "text": "38"
+                },
+                {
+                    "Name": "BufferSize",
+                    "text": "65536"
+                },
+                {
+                    "Name": "PeakBuffersCount",
+                    "text": "16"
+                },
+                {
+                    "Name": "CurrentBuffersCount",
+                    "text": "16"
+                },
+                {
+                    "Name": "FlushThreshold",
+                    "text": "0"
+                },
+                {
+                    "Name": "EventsLost",
+                    "text": "0"
+                },
+                {
+                    "Name": "BuffersLost",
+                    "text": "0"
+                },
+                {
+                    "Name": "RealTimeBuffersLost",
+                    "text": "0"
+                },
+                {
+                    "Name": "LoggerId",
+                    "text": "32"
+                }
+            ]
+        },
+        "System": {
+            "Channel": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+            "Computer": "win10-work.stand2008.local",
+            "Correlation": "",
+            "EventID": "11",
+            "EventRecordID": "1942346",
+            "Execution": {
+                "ProcessID": "9092",
+                "ThreadID": "7904"
+            },
+            "Keywords": "0x4000000000000010",
+            "Level": "5",
+            "Opcode": "14",
+            "Provider": {
+                "Guid": "{b675ec37-bdb6-4648-bc92-f3fdc74d3ca2}",
+                "Name": "Microsoft-Windows-Kernel-EventTracing"
+            },
+            "Security": {
+                "UserID": "S-1-5-18"
+            },
+            "Task": "2",
+            "TimeCreated": {
+                "SystemTime": "2024-04-25T15:17:18.1513992Z"
+            },
+            "Version": "2"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

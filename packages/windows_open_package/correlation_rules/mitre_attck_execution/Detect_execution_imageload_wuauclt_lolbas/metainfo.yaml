@@ -1,0 +1,27 @@
+ObjectId: SEC-CR-192895047
+ContentAutoName: Detect_execution_imageload_wuauclt_lolbas
+ExpertContext:
+    Created: 07.06.2023
+    Updated: 23.06.2023
+    Usecases:
+        - Обнаруживает использование двоичного файла клиента Центра обновления Windows (wuauclt.exe) для прокси-исполнения кода
+        - Обнаружение загрузки произвольной DLL через клиент Центра обновления Windows
+    References:
+        - https://github.com/elastic/detection-rules/issues/365
+        - https://github.com/SigmaHQ/sigma/blob/2cb540f95ed2d02f7d8a2bf84d9bf4a5962f156d/rules/windows/process_creation/sysmon_proxy_execution_wuauclt.yml
+        - https://www.elastic.co/guide/en/security/current/imageload-via-windows-update-auto-update-client.html
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 7
+              - 1
+ContentRelations:
+    Implements:
+        ATTACK:
+            execution:
+                - T1218
+EventDescriptions:
+    - Criteria: correlation_name = "Detect_execution_imageload_wuauclt_lolbas" and object = "module"
+      LocalizationId: corrname_Detect_execution_imageload_wuauclt_lolbas
+    - Criteria: correlation_name = "Detect_execution_imageload_wuauclt_lolbas" and object = "process"
+      LocalizationId: corrname_Detect_execution_imageload_wuauclt_lolbas_2

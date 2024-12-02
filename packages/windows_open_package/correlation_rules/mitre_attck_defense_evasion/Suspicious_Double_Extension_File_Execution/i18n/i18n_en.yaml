@@ -1,0 +1,6 @@
+Description: 'Process Creation with Double Extensions has been detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_Suspicious_Double_Extension_File_Execution'
+      EventDescription: 'Process {object.process.name} start with double extensions has been detected on host {event_src.host}'
+    - LocalizationId: 'corrname_Suspicious_Double_Extension_File_Execution_2'
+      EventDescription: 'Child of process {object.process.parent.name} start with double extensions has been detected on host {event_src.host}'

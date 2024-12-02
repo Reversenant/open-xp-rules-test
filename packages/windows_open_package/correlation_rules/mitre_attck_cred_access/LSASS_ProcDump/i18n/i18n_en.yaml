@@ -1,0 +1,4 @@
+Description: 'lsass.exe process memory dump detection'
+EventDescriptions:
+    - LocalizationId: 'corrname_LSASS_ProcDump'
+      EventDescription: 'Memory dump of process {object.process.name} created on host {event_src.host} by process {subject.process.fullpath}. The dump is saved in {object.fullpath}.'

@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_memory_mapped_pages_protection_changed"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_memory_mapped_pages_protection_changed
+ObjectId: PT-NF-9292

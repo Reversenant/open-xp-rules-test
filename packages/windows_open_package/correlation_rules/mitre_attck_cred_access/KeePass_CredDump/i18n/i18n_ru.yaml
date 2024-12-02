@@ -1,0 +1,4 @@
+Description: 'Правило обнаруживает создание удаленного потока в процессе keepass.exe для последующего извлечения мастер-ключа из хранилища паролей'
+EventDescriptions:
+    - LocalizationId: 'corrname_KeePass_CredDump'
+      EventDescription: 'Обнаружено возможное извлечение мастер-пароля из хранилища паролей Keepass процессом {subject.process.name} на узле {event_src.host}'

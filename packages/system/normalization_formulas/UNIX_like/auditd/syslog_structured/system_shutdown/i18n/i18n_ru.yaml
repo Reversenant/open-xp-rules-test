@@ -1,0 +1,4 @@
+Description: 'Система отключена'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_system_shutdown'
+      EventDescription: 'Система отключена на узле {event_src.host}'

@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "4",
+            "Keywords": "0x90000000000000",
+            "TimeCreated": {
+                "SystemTime": "2021-07-02T12:03:02.013459200Z"
+            },
+            "EventRecordID": "142182",
+            "Channel": "Application",
+            "Computer": "DESKTOP-I2RR0AI",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2021-07-02 12:03:01.8494479\nsequence_number:1\naction_id:LGIF\nsucceeded:false\nis_column_permission:false\nsession_id:0\nserver_principal_id:0\ndatabase_principal_id:0\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:0\nuser_defined_event_id:0\ntransaction_id:0\nclass_type:LX\nduration_milliseconds:0\nresponse_rows:0\naffected_rows:0\nclient_ip:127.0.0.1\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:5479558D-E5CA-465B-A30C-5A58CBA36508\nsession_server_principal_name:\nserver_principal_name:DESKTOP-I2RR0AI\\WindowsMan\nserver_principal_sid:\ndatabase_principal_name:\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-I2RR0AI\ndatabase_name:\nschema_name:\nobject_name:\nstatement:Login failed for user 'DESKTOP-I2RR0AI\\WindowsMan'. Only administrators may connect at this time. [CLIENT: 127.0.0.1]\nadditional_information:<action_info xmlns=\"http://schemas.microsoft.com/sqlserver/2008/sqlaudit_data\"><pooled_connection>0</pooled_connection><error>0x00004813</error><state>1</state><address>127.0.0.1</address></action_info>\nuser_defined_information:\napplication_name:SQLCMD\n"
+        }
+    }
+}

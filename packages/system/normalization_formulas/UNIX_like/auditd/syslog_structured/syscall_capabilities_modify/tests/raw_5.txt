@@ -1,0 +1,17 @@
+{
+    "eventid": "46173974",
+    "timestampfractional": "723",
+    "timestamp": "1629786235",
+    "node": "10.10.52.190",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=126 success=yes exit=0 a0=c0001ce2d0 a1=c0001ce2d8 a2=0 a3=a items=0 ppid=105945 pid=105954 auid=4294967295 uid=10000 gid=10000 euid=10000 suid=10000 fsuid=10000 egid=10000 sgid=10000 fsgid=10000 tty=(none) ses=4294967295 comm=\"runc:[2:INIT]\" exe=\"/\" subj==unconfined key=\"pt_siem_api_caps\" ARCH=x86_64 SYSCALL=capset AUID=\"unset\" UID=\"unknown(10000)\" GID=\"admins\" EUID=\"unknown(10000)\" SUID=\"unknown(10000)\" FSUID=\"unknown(10000)\" EGID=\"admins\" SGID=\"admins\" FSGID=\"admins\""
+        ],
+        "CAPSET": [
+            "pid=105954 cap_pi=0000000000000000 cap_pp=0000000000000000 cap_pe=0000000000000000 cap_pa=0000000000000000"
+        ],
+        "PROCTITLE": [
+            "proctitle=72756E6300696E6974"
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+Description: 'Управление токенами пользователей'
+EventDescriptions:
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management_create'
+      EventDescription: 'Для пользователя {object.account.name} создан токен "{object.name}" на узле {event_src.host}'
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management_delete'
+      EventDescription: 'Токен "{object.name}" пользователя {object.account.name} удален на узле {event_src.host}'

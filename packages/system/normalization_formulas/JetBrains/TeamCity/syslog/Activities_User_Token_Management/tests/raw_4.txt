@@ -1,0 +1,1 @@
+<190>Sep 27 10:15:17 teamcity teamcity-activities.log: [2023-09-27 10:15:09,685]   INFO - s.buildServer.ACTIVITIES.AUDIT - delete_tokens_by_system: Deleted tokens of user "'alFamiliya' (Alexey Familiya) {id=506}" (test) by "'alFamiliya' (Alexey Familiya) {id=506}" with comment "Automatically deleted expired tokens"

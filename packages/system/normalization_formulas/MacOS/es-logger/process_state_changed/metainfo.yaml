@@ -1,0 +1,8 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_state_changed" and action = stop
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_state_changed_stop
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_state_changed" and action = start
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_state_changed_start
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_state_changed" and action = terminate
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_state_changed_terminate
+ObjectId: PT-NF-9335

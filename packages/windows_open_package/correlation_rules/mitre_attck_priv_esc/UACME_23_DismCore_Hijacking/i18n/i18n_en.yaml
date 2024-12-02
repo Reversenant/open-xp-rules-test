@@ -1,0 +1,4 @@
+Description: 'This rule is designed to detect an attempt to start any process bypassing UAC with dism.exe DLL Hijacking vulnerability exploited with UACME hacktool'
+EventDescriptions:
+    - LocalizationId: 'corrname_UACME_23_DismCore_Hijacking'
+      EventDescription: 'User {subject.account.name} has run {object.process.name} process created by {object.process.parent.name} with UAC bypass provided with UACME hacktool'

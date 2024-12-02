@@ -1,0 +1,4 @@
+Description: 'Файловая система повторно подключена'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_filesystem_remount'
+      EventDescription: 'Файловая система "{object.name}" повторно подключена на узле {event_src.host}'

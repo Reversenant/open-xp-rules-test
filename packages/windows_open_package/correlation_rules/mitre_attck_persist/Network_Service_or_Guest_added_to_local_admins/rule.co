@@ -1,0 +1,70 @@
+event add_to_admins:
+    key:
+        event_src.host
+    filter {
+    filter::NotFromCorrelator()
+    and event_src.title == "windows"
+    and msgid == "4732"
+    and (object.id == "S-1-5-32-544") 
+    and (match(object.account.id, "S-1-5-21-*-501") or object.account.id == "S-1-5-20")
+
+    }
+rule Network_Service_or_Guest_added_to_local_admins: add_to_admins
+
+
+    on add_to_admins {
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+        $subject.account.privileges = subject.account.privileges
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+
+        $object.name = object.name
+        $object.id = object.id
+        $object.account.id = object.account.id
+        
+
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.host = event_src.host
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        if $object.account.id == "S-1-5-20" then
+            $object.account.name = "NETWORK SERVICE"
+        else
+            $object.account.name = "Guest"
+        endif
+    
+    }
+
+
+emit {
+    $correlation_type = "incident"
+
+    $subject = "account"
+    $action = "login"
+    $object = "system"
+    $status = "success"
+
+    $importance = "high"
+
+    $category.generic = "Attack"
+    $category.high = "Persistence"
+    $category.low = "Valid Accounts"
+
+    $incident.severity = "high"
+    $incident.category = "Undefined"
+}

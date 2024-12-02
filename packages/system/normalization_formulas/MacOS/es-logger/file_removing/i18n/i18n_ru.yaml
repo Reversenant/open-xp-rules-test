@@ -1,0 +1,4 @@
+Description: 'Процесс удалил файл'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_removing'
+      EventDescription: 'Процесс {subject.process.name} удалил файл "{object.name}" на узле {event_src.host}'

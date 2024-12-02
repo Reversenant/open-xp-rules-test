@@ -1,0 +1,4 @@
+Description: 'Persistence via Application Shim has been detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_Persistence_Shim_AppFix'
+      EventDescription: 'Persistence via Application Shim has been detected at host {event_src.host}'

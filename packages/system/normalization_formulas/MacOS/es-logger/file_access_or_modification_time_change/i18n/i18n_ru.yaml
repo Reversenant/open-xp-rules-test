@@ -1,0 +1,4 @@
+Description: 'Процесс изменил атрибут времени последнего доступа или изменения файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_access_or_modification_time_change'
+      EventDescription: 'Процесс {subject.process.name} изменил атрибут времени последнего доступа или изменения файла "{object.name}" на "{object.new_value}" на узле {event_src.host}'

@@ -1,0 +1,142 @@
+EVENTLOG = 'EventID.text="33205"'
+
+COND = (
+        find_substr($Provider["Name"], "MSSQL$") != null
+        or $Provider["Name"] == 'MSSQLSERVER'
+       )
+       and (
+            find_substr($Data[0], "action_id:BA ") != null
+            or find_substr($Data[0], "action_id:BAL") != null
+            or find_substr($Data[0], "action_id:RS ") != null
+            or find_substr($Data[0], "action_id:TO ") != null
+            or find_substr($Data[0], "action_id:AL ") != null
+           )
+        and (
+            find_substr($Data[0], "class_type:DB") != null
+            or find_substr($Data[0], "class_type:MK") != null
+            or find_substr($Data[0], "class_type:CR") != null
+            )
+
+$kv = replace($Data[0], " ", "\r\n")
+$kv = keyvalue($kv, "\n", ":")
+
+subformula "get_cert_data"
+    TEXT = '{WORD} {WORD} {object.name=WORD} {WORD} {WORD} {"= \'"} {object.path=UNTIL("\'")} {REST}'
+endsubformula
+
+subformula "get_key_data"
+    TEXT = '{UNTIL("= \'")} {object.path=UNTIL("\'")} {REST}'
+endsubformula
+
+subformula "get_path_to_backup"
+    TEXT = '{UNTIL("N\'")} {object.path=UNTIL("\'")} {REST}'
+endsubformula
+
+subject = "account"
+
+if $kv['action_id'] == "BA" then
+    if $kv['class_type'] == "DB" then
+        action = "backup"
+        object = "database"
+        object.name = $kv['object_name']
+        submessage("TEXT", "get_path_to_backup", $kv['statement'])
+        importance = "low"
+
+    elif $kv['class_type'] == "MK" then
+        action = "backup"
+        object = "resource"
+        object.type = "master key"
+        submessage("TEXT", "get_key_data", $kv['statement'])
+        importance = "high"
+
+    elif $kv['class_type'] == "CR" then
+         action = "backup"
+         object = "resource"
+         object.type = "certificate"
+         submessage("TEXT", "get_cert_data", $kv['statement'])
+         importance = "high"
+    endif
+
+elif $kv['action_id'] == "BAL" then
+    action = "backup"
+    object = "database"
+    object.name = $kv['object_name']
+    object.property = "database log"
+    submessage("TEXT", "get_path_to_backup", $kv['statement'])
+    importance = "low"
+
+elif $kv['action_id'] == "RS" then
+    action = "restore"
+    object = "database"
+    object.name = $kv['object_name']
+    importance = "low"
+
+elif $kv['action_id'] == "TO" then
+    action = "modify"
+    object = "configuration"
+    object.name = $kv['object_name']
+    object.property = "target username"
+    object.value = $kv['target_server_principal_name']
+    importance = "medium"
+
+elif $kv['action_id'] == "AL" then
+    action = "modify"
+    object = "configuration"
+
+    $property_and_value = csv($kv['statement'], " ", "\'")
+    object.property = $property_and_value[length($property_and_value) - 2]
+    object.value = $property_and_value[length($property_and_value) - 1]
+
+    importance = "high"
+endif
+
+if $kv['succeeded'] == "true" then
+    status = "success"
+else
+    status = "failure"
+endif
+
+# разбираем домен и имя пользователя
+$csv = csv($kv['server_principal_name'], "\\", "'")
+if length($csv) == 2 then
+    subject.account.domain = lower($csv[0])
+    subject.account.name = lower($csv[1])
+else
+    subject.account.name = lower($csv[0])
+endif
+
+subject.account.id = $kv['server_principal_sid']
+
+object.query = $kv['statement']             
+
+datafield2 = $kv['server_instance_name']  # имя экземпляра
+datafield3 = $kv['database_name']         # имя используемой БД
+datafield4 = $kv['action_id']             # идентификатор действия
+datafield5 = $kv['class_type']            # тип класса сущности, для которой был проведен аудит
+
+time = $kv['event_time']
+msgid = $EventID['text']
+
+event_src.vendor = "microsoft"
+event_src.title = "sql_server"
+
+$first_dot = find_substr($Computer, '.')
+if $first_dot != null then
+    event_src.fqdn = lower($Computer)
+    event_src.hostname = lower(substr($Computer, 0, $first_dot))
+else
+    event_src.hostname = lower($Computer)
+endif
+event_src.subsys = $Channel
+event_src.category = "Database server"
+
+id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation"
+
+# -- DEPRECATED --
+# lines from here will be deleted in future releases
+
+subject.name = subject.account.name
+subject.domain = subject.account.domain
+subject.id = subject.account.id
+
+datafield1 = object.query  # текст выполняемого запроса без переносов строки

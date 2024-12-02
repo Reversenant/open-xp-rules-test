@@ -1,0 +1,50 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "SessionGuid",
+                    "text": "{d2112be4-cd15-5a9c-e38f-080a207e08d5}"
+                },
+                {
+                    "Name": "LoggerMode",
+                    "text": "2558525824"
+                },
+                {
+                    "Name": "SessionName",
+                    "text": "EventLog-System"
+                },
+                {
+                    "Name": "LogFileName"
+                }
+            ]
+        },
+        "System": {
+            "Channel": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+            "Computer": "win10-work.stand2008.local",
+            "Correlation": "",
+            "EventID": "17",
+            "EventRecordID": "3110861",
+            "Execution": {
+                "ProcessID": "1560",
+                "ThreadID": "1764"
+            },
+            "Keywords": "0x4000000000000010",
+            "Level": "5",
+            "Opcode": "20",
+            "Provider": {
+                "Guid": "{b675ec37-bdb6-4648-bc92-f3fdc74d3ca2}",
+                "Name": "Microsoft-Windows-Kernel-EventTracing"
+            },
+            "Security": {
+                "UserID": "S-1-5-19"
+            },
+            "Task": "2",
+            "TimeCreated": {
+                "SystemTime": "2024-05-02T15:59:20.6411157Z"
+            },
+            "Version": "0"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

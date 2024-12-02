@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "mach_time": 23139045811942,
+  "event_type": 53,
+  "thread": {
+    "thread_id": 165742
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "getattrlist": {
+      "attrlist": {
+        "bitmapcount": 5,
+        "fileattr": 0,
+        "dirattr": 0,
+        "forkattr": 0,
+        "volattr": 0,
+        "commonattr": 134217728
+      },
+      "target": {
+        "path": "/usr/libexec/AirPlayXPCHelper",
+        "stat": {
+          "st_blocks": 48,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 0,
+          "st_gid": 0,
+          "st_ino": 1152921500312437035,
+          "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+          "st_flags": 524320,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+          "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+          "st_size": 173936,
+          "st_gen": 0,
+          "st_mode": 33261,
+          "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "time": "2023-07-24T12:03:37.133502579Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.runningboardd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/libexec/runningboardd",
+      "stat": {
+        "st_blocks": 32,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312442960,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 170720,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-20T14:04:19.051388Z",
+    "is_platform_binary": true,
+    "group_id": 195,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 369,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 195
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 369,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 195
+    },
+    "session_id": 195,
+    "original_ppid": 1,
+    "cdhash": "09A000C17AB15DB74100C7A6C9AEEA56BF8E904F",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

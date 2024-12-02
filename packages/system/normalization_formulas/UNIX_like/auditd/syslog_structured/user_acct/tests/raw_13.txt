@@ -1,0 +1,11 @@
+{
+    "node": "127.0.1.1",
+    "timestamp": "1685091751",
+    "timestampfractional": "168",
+    "eventid": "946",
+    "items": {
+        "USER_ACCT": [
+            "pid=1326 uid=0 auid=1000 ses=1 msg='op=administrators of group jr set by root to jr,root acct=\"jr\" exe=\"/usr/bin/gpasswd\" hostname=ubuntu2004 addr=? terminal=pts/0 res=success' UID=\"root\" AUID=\"jr\""
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+Description: 'Detection of an attempt to load a DLL from a network share into the LSASS process'
+EventDescriptions:
+    - LocalizationId: 'corrname_ImageLoad_from_Network_Share_to_LSASS'
+      EventDescription: 'An attempt to load the library {object.process.name} from the network share {object.process.path} into the LSASS process was detected at host {event_src.host}'

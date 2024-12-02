@@ -1,0 +1,4 @@
+Description: 'A process executed another process'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_execution'
+      EventDescription: 'Process {subject.process.name} executed process {object.process.name} on host {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'A process set a mode for a file'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_file_mode'
+      EventDescription: 'Process {subject.process.name} set mode "{object.value}" for file "{object.name}" on host {event_src.host}'

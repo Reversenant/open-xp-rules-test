@@ -1,0 +1,4 @@
+Description: 'A process removed a file from autoload'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_btm_launch_item_remove'
+      EventDescription: 'Process {subject.process.name} removed file "{object.name}" from autoload on host {event_src.host}'

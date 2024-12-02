@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "mach_time": 23059556920087,
+  "event_type": 13,
+  "thread": {
+    "thread_id": 99452
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "create": {
+      "destination_type": 0,
+      "destination": {
+        "existing_file": {
+          "path": "/Users/user/Library/Application Support/Code/Cache/Cache_Data/index-dir/temp-index",
+          "stat": {
+            "st_blocks": 0,
+            "st_blksize": 4096,
+            "st_rdev": 0,
+            "st_dev": 16777220,
+            "st_uid": 501,
+            "st_gid": 20,
+            "st_ino": 1941464,
+            "st_birthtimespec": "2023-07-24T12:02:17.643760729Z",
+            "st_flags": 0,
+            "st_nlink": 1,
+            "st_mtimespec": "2023-07-24T12:02:17.643760729Z",
+            "st_ctimespec": "2023-07-24T12:02:17.643942865Z",
+            "st_size": 0,
+            "st_gen": 0,
+            "st_mode": 33152,
+            "st_atimespec": "2023-07-24T12:02:17.643760729Z"
+          },
+          "path_truncated": false
+        }
+      },
+      "acl": null
+    }
+  },
+  "time": "2023-07-24T12:02:17.644318183Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.microsoft.VSCode.helper",
+    "parent_audit_token": {
+      "asid": 100005,
+      "pidversion": 12316,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 5946
+    },
+    "codesigning_flags": 570503953,
+    "executable": {
+      "path": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper",
+      "stat": {
+        "st_blocks": 224,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 501,
+        "st_gid": 20,
+        "st_ino": 1736757,
+        "st_birthtimespec": "2023-07-12T17:42:17.000000000Z",
+        "st_flags": 0,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-07-12T17:42:17.000000000Z",
+        "st_ctimespec": "2023-07-18T07:19:26.072071735Z",
+        "st_size": 112608,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-07-24T09:21:51.878079561Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 5946,
+    "tty": null,
+    "start_time": "2023-07-24T09:12:16.922407Z",
+    "is_platform_binary": false,
+    "group_id": 5946,
+    "audit_token": {
+      "asid": 100005,
+      "pidversion": 12323,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 5950
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100005,
+      "pidversion": 12316,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 5946
+    },
+    "session_id": 1,
+    "original_ppid": 5946,
+    "cdhash": "DA388EFF7A18FC5E26E969DAC493534A885E7BEC",
+    "team_id": "UBF8T346G9"
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

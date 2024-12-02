@@ -1,0 +1,6 @@
+Description: 'A user connected to a DBMS on a server'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_connection_success'
+      EventDescription: 'The user {subject.name} connected to the DBMS on host {event_src.host}'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_connection_failure'
+      EventDescription: 'The user {subject.name} failed to connect to the DBMS on host {event_src.host}'

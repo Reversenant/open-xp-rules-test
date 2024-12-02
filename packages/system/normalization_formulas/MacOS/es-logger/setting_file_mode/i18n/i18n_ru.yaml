@@ -1,0 +1,4 @@
+Description: 'Процесс установил режим для файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_file_mode'
+      EventDescription: 'Процесс {subject.process.name} установил режим "{object.value}" для файла "{object.name}" на узле {event_src.host}'

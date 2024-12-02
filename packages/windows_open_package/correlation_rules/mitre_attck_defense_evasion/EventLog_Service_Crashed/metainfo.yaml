@@ -1,0 +1,25 @@
+ContentAutoName: EventLog_Service_Crashed
+ExpertContext:
+    Created: 29.06.2024
+    Updated: 29.06.2024
+    KnowledgeHolders:
+        - d3f0x0 (Vadim Varganov)
+    Usecases:
+        - attackers can crash the event log service to avoid detection
+    Falsepositives:
+        - Undefined
+    References: []
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ObjectId: SEC-CR-533254622
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1562.002
+EventDescriptions:
+    - Criteria: correlation_name = "EventLog_Service_Crashed"
+      LocalizationId: corrname_EventLog_Service_Crashed

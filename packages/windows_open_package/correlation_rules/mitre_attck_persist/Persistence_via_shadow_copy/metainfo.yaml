@@ -1,0 +1,36 @@
+ContentAutoName: Persistence_via_shadow_copy
+ExpertContext:
+    Created: 25.06.2024
+    Updated: 26.06.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут создавать теневые копии с целью сокрытия вредоносных файлов
+    Falsepositives: []
+    References: []
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+              - 4657
+              - 4697
+              - 5798
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+              - 13
+ObjectId: SEC-CR-208186465
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1053.005
+                - T1543.003
+EventDescriptions:
+    - Criteria: correlation_name = "Persistence_via_shadow_copy" and $reason = "ScheduleTask"
+      LocalizationId: corrname_Persistence_via_shadow_copy
+    - Criteria: correlation_name = "Persistence_via_shadow_copy" and $reason = "Service"
+      LocalizationId: corrname_Persistence_via_shadow_copy_2
+    - Criteria: correlation_name = "Persistence_via_shadow_copy" and $reason = "Process"
+      LocalizationId: corrname_Persistence_via_shadow_copy_3

@@ -1,0 +1,4 @@
+Description: 'The rule detects an attempt to access credentials stored in LSASS process memory via the PPLdump tool'
+EventDescriptions:
+    - LocalizationId: 'corrname_PPL_Bypass_via_PPLDump_Tool'
+      EventDescription: 'An attempt to dump the memory of the lsass process using the PPLdump utility was detected on the host {event_src.host}: {object.process.cmdline}'

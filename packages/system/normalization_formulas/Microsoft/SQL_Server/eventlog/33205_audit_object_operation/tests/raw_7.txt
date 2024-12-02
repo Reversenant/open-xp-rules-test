@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-02-05T13:45:52.063821400Z"
+            },
+            "EventRecordID": "4472",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-02-05 13:45:51.8294982\nsequence_number:1\naction_id:AL \nsucceeded:true\nis_column_permission:false\nsession_id:51\nserver_principal_id:269\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:0\nuser_defined_event_id:0\ntransaction_id:7995\nclass_type:A \npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:5D48D5CF-D87D-4FF8-A7AA-F2BC2A7FF945\nsession_server_principal_name:SIEMAgent\nserver_principal_name:SIEMAgent\nserver_principal_sid:51dd4b885506ac48827997ba5521b176\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:\nobject_name:ForChange\nstatement:ALTER SERVER AUDIT [ForChange]\r\nWITH (ON_FAILURE = SHUTDOWN)\r\n\r\n\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

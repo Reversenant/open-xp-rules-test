@@ -1,0 +1,81 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "Microsoft-Windows-Security-Auditing",
+                "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}"
+            },
+            "EventID": "4674",
+            "Version": "0",
+            "Level": "0",
+            "Task": "13056",
+            "Opcode": "0",
+            "Keywords": "0x8020000000000000",
+            "TimeCreated": {
+                "SystemTime": "2016-11-28T12:02:22.168591100Z"
+            },
+            "EventRecordID": "74076",
+            "Correlation": null,
+            "Execution": {
+                "ProcessID": "488",
+                "ThreadID": "496"
+            },
+            "Channel": "Security",
+            "Computer": "8p1x64-Soft.AD2012.ru",
+            "Security": null
+        },
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "SubjectUserSid",
+                    "text": "S-1-5-21-863499019-2066412432-665365160-500"
+                },
+                {
+                    "Name": "SubjectUserName",
+                    "text": "Administrator"
+                },
+                {
+                    "Name": "SubjectDomainName",
+                    "text": "8p1x64-Soft"
+                },
+                {
+                    "Name": "SubjectLogonId",
+                    "text": "0x93382"
+                },
+                {
+                    "Name": "ObjectServer",
+                    "text": "LSA"
+                },
+                {
+                    "Name": "ObjectType",
+                    "text": "-"
+                },
+                {
+                    "Name": "ObjectName",
+                    "text": "-"
+                },
+                {
+                    "Name": "HandleId",
+                    "text": "0x0"
+                },
+                {
+                    "Name": "AccessMask",
+                    "text": "16777216"
+                },
+                {
+                    "Name": "PrivilegeList",
+                    "text": "SeSecurityPrivilege"
+                },
+                {
+                    "Name": "ProcessId",
+                    "text": "0x1e8"
+                },
+                {
+                    "Name": "ProcessName",
+                    "text": "C:\\Windows\\System32\\lsass.exe"
+                }
+            ]
+        }
+    }
+}

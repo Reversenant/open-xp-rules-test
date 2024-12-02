@@ -1,0 +1,27 @@
+ContentAutoName: SysmonDrv_handle_hijacking
+ExpertContext:
+    Created: 29.05.2024
+    Updated: 05.06.2024
+    KnowledgeHolders:
+        - driverenik
+    Usecases:
+        - Атакующий может попытаться нарушить коммуникацию между службой режима пользователя Sysmon64 и драйвером SysmonDrv чтобы ослепить мониторинг путем подмены хендла на коммуникационное устройство \\Device\SysonDrv
+    Falsepositives: []
+    References:
+        - https://attack.mitre.org/techniques/T1562/
+        - https://xakep.ru/2024/02/09/sysmon-blinding/
+        - https://xakep.ru/2024/05/15/advanced-sysmon-attacks/
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 255
+ObjectId: SEC-CR-209871660
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1562
+EventDescriptions:
+    - Criteria: correlation_name = "SysmonDrv_handle_hijacking"
+      LocalizationId: corrname_SysmonDrv_handle_hijacking

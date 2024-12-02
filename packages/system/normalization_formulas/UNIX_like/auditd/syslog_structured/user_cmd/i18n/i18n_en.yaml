@@ -1,0 +1,11 @@
+Description: 'Attempt to execute a command as the super user'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_cmd_success_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} executed a command as the super user on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_cmd_failure_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} failed to execute a command as the super user on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_cmd_success_null'
+      EventDescription: 'The user with ID {subject.account.id} executed a command as the super user on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_cmd_failure_null'
+      EventDescription: 'The user with ID {subject.account.id} failed to execute a command as the super user on host {event_src.host}'

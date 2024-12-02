@@ -1,0 +1,3 @@
+# test comment
+table_list default
+expect 1 {"correlation_name":"Chrome_PasswordStore_Access"}

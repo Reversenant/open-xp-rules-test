@@ -1,0 +1,6 @@
+Description: 'A user attempted to join a screensharing session'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_screensharing_attach_success'
+      EventDescription: 'User {subject.account.name} from IP address {src.ip} joined a screensharing session on host {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_screensharing_attach_failure'
+      EventDescription: 'User {subject.account.name} from IP address {src.ip} failed to join a screensharing session on host {event_src.host}'

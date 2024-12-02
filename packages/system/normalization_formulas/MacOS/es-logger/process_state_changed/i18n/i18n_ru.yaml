@@ -1,0 +1,8 @@
+Description: 'Изменился статус процесса'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_state_changed_start'
+      EventDescription: 'Процесс {object.process.name} запущен на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_state_changed_stop'
+      EventDescription: 'Процесс {object.process.name} остановлен на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_state_changed_terminate'
+      EventDescription: 'Процесс {object.process.name} завершен на узле {event_src.host}'

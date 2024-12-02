@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-02-04T07:30:10.917639000Z"
+            },
+            "EventRecordID": "2743",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-02-04 07:30:10.8239151\nsequence_number:1\naction_id:EX \nsucceeded:true\nis_column_permission:false\nsession_id:58\nserver_principal_id:268\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:-630944181\nuser_defined_event_id:0\ntransaction_id:646716\nclass_type:X \npermission_bitmask:00000000000000000000000000000020\nsequence_group_id:A51B94CB-0344-4078-84C1-53DD47394070\nsession_server_principal_name:Analysis\nserver_principal_name:Analysis\nserver_principal_sid:5c9dc62711b2c84695fc5132e3a852db\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:sys\nobject_name:xp_dirtree\nstatement:EXEC master..xp_dirtree 'C:\\',1,1\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

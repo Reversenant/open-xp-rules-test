@@ -1,0 +1,6 @@
+Description: 'Permissions on an object was changed'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed_object_name_not_null'
+      EventDescription: 'The user {subject.name} changed permissions on the object "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed_object_name_null'
+      EventDescription: 'The user {subject.name} changed permissions on an object on host {event_src.host}'

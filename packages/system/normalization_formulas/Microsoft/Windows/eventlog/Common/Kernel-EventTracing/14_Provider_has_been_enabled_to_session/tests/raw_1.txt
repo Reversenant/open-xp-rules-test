@@ -1,0 +1,59 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "ProviderName",
+                    "text": "{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}"
+                },
+                {
+                    "Name": "SessionName",
+                    "text": "SysmonDnsEtwSession"
+                },
+                {
+                    "Name": "MatchAnyKeyword",
+                    "text": "18446744073709551615"
+                },
+                {
+                    "Name": "MatchAllKeyword",
+                    "text": "0"
+                },
+                {
+                    "Name": "EnableProperty",
+                    "text": "65"
+                },
+                {
+                    "Name": "Level",
+                    "text": "255"
+                }
+            ]
+        },
+        "System": {
+            "Channel": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+            "Computer": "win10-work.stand2008.local",
+            "Correlation": "",
+            "EventID": "14",
+            "EventRecordID": "2840602",
+            "Execution": {
+                "ProcessID": "11800",
+                "ThreadID": "11804"
+            },
+            "Keywords": "0x4000000000000420",
+            "Level": "5",
+            "Opcode": "18",
+            "Provider": {
+                "Guid": "{b675ec37-bdb6-4648-bc92-f3fdc74d3ca2}",
+                "Name": "Microsoft-Windows-Kernel-EventTracing"
+            },
+            "Security": {
+                "UserID": "S-1-5-21-3800063338-4262557262-2801230003-500"
+            },
+            "Task": "3",
+            "TimeCreated": {
+                "SystemTime": "2024-05-02T11:12:26.6378625Z"
+            },
+            "Version": "1"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

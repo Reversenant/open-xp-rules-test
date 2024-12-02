@@ -1,0 +1,6 @@
+Description: 'Volume Shadows Service (VSSVC.exe) state chanched'
+EventDescriptions:
+    - LocalizationId: 'corrname_VSSVC_service_state_changed'
+      EventDescription: 'Volume Shadows Service (VSSVC.exe) launched at host {event_src.host}'
+    - LocalizationId: 'corrname_VSSVC_service_state_changed_2'
+      EventDescription: 'Volume Shadows Service (VSSVC.exe) stopped at host {event_src.host}'

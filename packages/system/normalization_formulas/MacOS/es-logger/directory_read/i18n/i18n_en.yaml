@@ -1,0 +1,4 @@
+Description: 'A process read a directory'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_directory_read'
+      EventDescription: 'Process {subject.process.name} read directory "{object.name}" on host {event_src.host}'

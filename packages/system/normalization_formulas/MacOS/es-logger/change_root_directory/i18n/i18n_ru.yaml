@@ -1,0 +1,4 @@
+Description: 'Корневой каталог процесса изменен'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_change_root_directory'
+      EventDescription: 'Корневой каталог процесса "{subject.process.name}" изменен на "{object.new_value}" на узле {event_src.host}'

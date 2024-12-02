@@ -1,0 +1,4 @@
+Description: 'A memory dump file was generated'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_memory_to_file_mapping'
+      EventDescription: 'Memory dump file "{object.name}" was generated on host {event_src.host}'

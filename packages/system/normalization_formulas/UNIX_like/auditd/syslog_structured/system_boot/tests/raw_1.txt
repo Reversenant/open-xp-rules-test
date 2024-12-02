@@ -1,0 +1,11 @@
+{
+    "eventid": "79",
+    "timestampfractional": "733",
+    "timestamp": "1657641341",
+    "node": "10.0.176.199",
+    "items": {
+        "SYSTEM_BOOT": [
+            "pid=371 uid=0 auid=4294967295 ses=4294967295 subj==unconfined msg=' comm=\"systemd-update-utmp\" exe=\"/usr/lib/systemd/systemd-update-utmp\" hostname=? addr=? terminal=? res=success' UID=\"root\" AUID=\"unset\""
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "create" and status = "success" and object.type = "file_monitoring"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_create_success_file
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "create" and status = "success" and object.type = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_create_success
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "create" and status = "failure" and object.type = "file_monitoring"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_create_failure_file
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "create" and status = "failure" and object.type = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_create_failure
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "remove" and status = "success" and object.type = "file_monitoring"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_remove_success_file
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "remove" and status = "success" and object.type = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_remove_success
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "remove" and status = "failure" and object.type = "file_monitoring"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_remove_failure_file
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_config_change_rule" and action = "remove" and status = "failure" and object.type = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_config_change_rule_remove_failure
+ObjectId: PT-NF-8186

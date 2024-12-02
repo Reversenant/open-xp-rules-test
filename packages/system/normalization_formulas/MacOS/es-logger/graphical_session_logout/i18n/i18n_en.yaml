@@ -1,0 +1,4 @@
+Description: 'User''s screen was locked'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_graphical_session_logout'
+      EventDescription: 'The screen of user {subject.account.name} was locked on host {event_src.host}'

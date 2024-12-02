@@ -1,0 +1,4 @@
+Description: 'Dump the lsass.exe process using the capabilities of comsvcs.dll'
+EventDescriptions:
+    - LocalizationId: 'corrname_Memdump_comsvcs_minidump'
+      EventDescription: 'On the host {event_src.host}, the process {subject.process.name} dumped the lsass.exe process using comsvcs.dll'

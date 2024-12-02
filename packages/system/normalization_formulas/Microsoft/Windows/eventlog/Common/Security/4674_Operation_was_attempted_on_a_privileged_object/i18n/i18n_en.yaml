@@ -1,0 +1,6 @@
+Description: Operation was attempted on a privileged object
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4674_Operation_was_attempted_on_a_privileged_object_status_success
+      EventDescription: The user {subject.domain}\{subject.name} attempted to perform an operation on a privileged object successfully on host {event_src.host}
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4674_Operation_was_attempted_on_a_privileged_object_status_failure
+      EventDescription: The user {subject.domain}\{subject.name} attempted to perform an operation on a privileged object unsuccessfully on host {event_src.host}

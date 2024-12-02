@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-02-05T07:18:27.894450000Z"
+            },
+            "EventRecordID": "3929",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-02-05 07:18:27.2538083\nsequence_number:1\naction_id:SL \nsucceeded:true\nis_column_permission:true\nsession_id:60\nserver_principal_id:269\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:-370477980\nuser_defined_event_id:0\ntransaction_id:111462\nclass_type:U \npermission_bitmask:00000000000000000000000000000001\nsequence_group_id:5A2D19A6-5ABB-4F86-8A77-32273442CD9C\nsession_server_principal_name:SIEMAgent\nserver_principal_name:SIEMAgent\nserver_principal_sid:51dd4b885506ac48827997ba5521b176\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:sys\nobject_name:syspalnames\nstatement:SELECT name,type_desc,is_disabled, create_date\r\nFROM master.sys.server_principals\r\nWHERE IS_SRVROLEMEMBER ('sysadmin',name) = 1\r\nORDER BY name\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

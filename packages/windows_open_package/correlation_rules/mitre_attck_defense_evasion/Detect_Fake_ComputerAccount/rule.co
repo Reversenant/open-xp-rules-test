@@ -1,0 +1,62 @@
+event Fake_account_created:
+    key:
+        event_src.host, object.account.name
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "windows"
+        and msgid == "4720"
+        and match(object.account.name, "*$")
+    }
+
+rule Detect_Fake_ComputerAccount: Fake_account_created
+
+    on Fake_account_created {
+        
+        $subject.name = subject.name
+        $subject.domain = subject.domain
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+        $subject.account.session_id = subject.account.session_id
+
+        $object.name = object.name
+        $object.domain = object.domain
+        $object.account.session_id = object.account.session_id
+        $object.account.name = object.account.name
+        $object.account.domain = object.account.domain
+        $object.account.fullname = object.account.fullname
+        $object.account.id = object.account.id
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.host = event_src.host
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+    }
+
+emit {
+    $correlation_type = "incident"
+
+    $subject = "account"
+    $action = "create"
+    $object = "account"
+    $status = "success"
+
+    $importance = "low"
+
+    $category.generic = "Attack"
+    $category.high = "Defense Evasion"
+    $category.low = "Masquerading"
+
+    $incident.aggregation.key = join([$correlation_name, $object.account.name], "|")
+    $incident.severity = "low"
+    $incident.category = "Undefined"
+}

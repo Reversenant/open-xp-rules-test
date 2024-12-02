@@ -1,0 +1,4 @@
+Description: 'ETW сессия остановлена'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_11'
+      EventDescription: 'ETW сессия "{object.name}" остановлена'

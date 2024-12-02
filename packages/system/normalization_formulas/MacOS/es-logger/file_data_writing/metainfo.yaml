@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_data_writing"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_data_writing
+ObjectId: PT-NF-9330

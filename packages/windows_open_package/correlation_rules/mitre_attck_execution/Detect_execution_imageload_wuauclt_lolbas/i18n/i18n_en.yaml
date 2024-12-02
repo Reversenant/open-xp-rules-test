@@ -1,0 +1,6 @@
+Description: 'Loading an arbitrary DLL via Windows Update Client'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_execution_imageload_wuauclt_lolbas'
+      EventDescription: '{object.process.name} library was loaded from unusual directory {object.process.path} at host {event_src.host}'
+    - LocalizationId: 'corrname_Detect_execution_imageload_wuauclt_lolbas_2'
+      EventDescription: 'Successful loading of DLL library using wuauclt utility was detected at host {event_src.host}: {object.process.parent.cmdline}'

@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_execution"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_execution
+ObjectId: PT-NF-9257

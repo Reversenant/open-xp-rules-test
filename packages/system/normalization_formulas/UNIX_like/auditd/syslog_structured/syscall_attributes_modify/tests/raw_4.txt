@@ -1,0 +1,17 @@
+{
+    "node": "10.125.136.66",
+    "timestamp": "1664288944",
+    "timestampfractional": "829",
+    "eventid": "113812",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=93 success=yes exit=0 a0=5 a1=0 a2=2a a3=1b6 items=1 ppid=188647 pid=188662 auid=1001 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=208 comm=\"gpasswd\" exe=\"/usr/bin/gpasswd\" key=\"pt_siem_etc_modify\" ARCH=x86_64 SYSCALL=fchown AUID=\"admin\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "PATH": [
+            "item=0 name=(null) inode=787532 dev=fd:00 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"root\" OGID=\"shadow\""
+        ],
+        "PROCTITLE": [
+            "proctitle=67706173737764002D64007777772D64617461007375646F"
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+Description: 'Detection of running a PowerShell script that creates a fake login prompt to steal user-entered credentials.'
+EventDescriptions:
+    - LocalizationId: 'corrname_Phishing_windows_credentials_powershell_scriptblock'
+      EventDescription: 'Host {event_src.host} is running a malicious Powershell script that creates a fake login prompt to steal credentials'

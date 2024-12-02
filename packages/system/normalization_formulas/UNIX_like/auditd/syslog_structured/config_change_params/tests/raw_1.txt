@@ -1,0 +1,11 @@
+{
+    "node": "2001:db8:1ab0:130:250:56ff:feaf:7e1a",
+    "timestamp": "1657540049",
+    "timestampfractional": "333",
+    "eventid": "7931",
+    "items": {
+        "CONFIG_CHANGE": [
+            "op=set audit_backlog_limit=8192 old=8192 auid=4294967295 ses=4294967295 res=1 AUID=\"unset\""
+        ]
+    }
+}

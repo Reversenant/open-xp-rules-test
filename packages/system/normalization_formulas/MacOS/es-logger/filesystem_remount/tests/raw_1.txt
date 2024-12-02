@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "mach_time": 40273177777654,
+  "event_type": 23,
+  "thread": {
+    "thread_id": 287994
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "remount": {
+      "statfs": {
+        "f_fssubtype": 0,
+        "f_bavail": 0,
+        "f_fsid": [
+          905969669,
+          30
+        ],
+        "f_bfree": 0,
+        "f_blocks": 0,
+        "f_flags_ext": 0,
+        "f_files": 0,
+        "f_ffree": 0,
+        "f_fstypename": "vmhgfs",
+        "f_mntfromname": ".host:/VMware Shared Folders",
+        "f_type": 30,
+        "f_mntonname": "/Volumes/VMware Shared Folders",
+        "f_iosize": 1024,
+        "f_flags": 0,
+        "f_bsize": 1024,
+        "f_owner": 0
+      }
+    }
+  },
+  "time": "2023-07-25T07:36:36.517323593Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.umount",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 27244,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 13072
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/sbin/umount",
+      "stat": {
+        "st_blocks": 40,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312434886,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 135824,
+        "st_gen": 0,
+        "st_mode": 33133,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 13072,
+    "tty": null,
+    "start_time": "2023-07-25T07:36:36.497455Z",
+    "is_platform_binary": true,
+    "group_id": 12622,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 27248,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 13074
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 26178,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 12622
+    },
+    "session_id": 12622,
+    "original_ppid": 13072,
+    "cdhash": "884773FC941747F6D0ED13496521F90888749872",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

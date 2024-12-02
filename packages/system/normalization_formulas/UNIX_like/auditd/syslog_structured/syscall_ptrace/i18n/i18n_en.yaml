@@ -1,0 +1,10 @@
+Description: 'A process is traced'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_success_attach'
+      EventDescription: 'The process with ID {subject.process.id} started to trace the process with ID {object.process.id} through "ptrace" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_failure_attach'
+      EventDescription: 'The process with ID {subject.process.id} failed to start to trace the process with ID {object.process.id} through "ptrace" on host {event_src.host}. Reason: {reason}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_success_detach'
+      EventDescription: 'The process with ID {subject.process.id} finished to trace the process with ID {object.process.id} through "ptrace" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_failure_detach'
+      EventDescription: 'The process with ID {subject.process.id} failed to finish to trace the process with ID {object.process.id} through "ptrace" on host {event_src.host}. Reason: {reason}'

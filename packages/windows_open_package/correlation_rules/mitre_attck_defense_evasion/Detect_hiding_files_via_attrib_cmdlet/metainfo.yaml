@@ -1,0 +1,22 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-100869373
+ContentAutoName: Detect_hiding_files_via_attrib_cmdlet
+ExpertContext:
+    Created: 16.06.2023
+    Updated: 30.06.2023
+    Usecases:
+        - Детектирование использования скрытого атрибута, назначенного файлам или каталогам
+    References:
+        - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/attrib
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1564.001
+EventDescriptions:
+    - Criteria: correlation_name = "Detect_hiding_files_via_attrib_cmdlet"
+      LocalizationId: corrname_Detect_hiding_files_via_attrib_cmdlet

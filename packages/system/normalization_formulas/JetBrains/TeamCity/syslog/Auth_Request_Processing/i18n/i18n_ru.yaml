@@ -1,0 +1,4 @@
+Description: 'Обработка запроса'
+EventDescriptions:
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Auth_Request_Processing'
+      EventDescription: 'Обработка запроса {object.query} с узла {src.host}:{src.port} на узле {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'Обход UAC через dll hijack с использованием специального каталога *.local для процесса consent.exe'
+EventDescriptions:
+    - LocalizationId: 'corrname_UAC_Bypass_Via_Consent'
+      EventDescription: 'Процесс {subject.process.name} загрузил библиотеку {object.process.name} из нетипичного каталога {object.process.fullpath}, что указывает на попытку обойти механизм UAC'

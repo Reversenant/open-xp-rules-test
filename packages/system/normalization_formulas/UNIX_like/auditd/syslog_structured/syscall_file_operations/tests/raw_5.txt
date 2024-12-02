@@ -1,0 +1,20 @@
+{
+  "eventid": "861087",
+  "items": {
+    "CWD": [
+      "cwd=\"/root\""
+    ],
+    "PATH": [
+      "item=0 name=\"toor\" inode=420272 dev=08:01 mode=0100777 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\""
+    ],
+    "PROCTITLE": [
+      "proctitle=636861747472002D6100746F6F72"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7ffe7cd6f7bf a2=800 a3=0 items=1 ppid=3668 pid=48203 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts7 ses=11 comm=\"chattr\" exe=\"/usr/bin/chattr\" subj==unconfined key=(null) ARCH=x86_64 SYSCALL=openat AUID=\"root\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  },
+  "node": "192.168.137.192",
+  "timestamp": "1576830557",
+  "timestampfractional": "086"
+}

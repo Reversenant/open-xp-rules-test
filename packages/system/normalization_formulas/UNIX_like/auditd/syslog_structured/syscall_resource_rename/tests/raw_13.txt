@@ -1,0 +1,23 @@
+{
+    "eventid": "27852553",
+    "timestampfractional": "266",
+    "timestamp": "1684134049",
+    "node": "10.10.52.40",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=6D76002F746573742F66696C652E6C6F67002F746573745F312F"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/test/file.log\" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=316 success=no exit=-2 a0=ffffff9c a1=7ffc45839861 a2=ffffff9c a3=7ffc45839870 items=1 ppid=81455 pid=81592 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=9 comm=\"mv\" exe=\"/usr/bin/mv\" key=\"pt_siem_rename\""
+        ],
+        "CWD": [
+            "cwd=\"/root\""
+        ]
+    }
+}

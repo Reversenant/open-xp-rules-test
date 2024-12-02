@@ -1,0 +1,6 @@
+Description: 'Правило обнаруживает создание порт прокси'
+EventDescriptions:
+    - LocalizationId: 'corrname_Portproxy_netsh'
+      EventDescription: 'Пользователь {object.account.domain}\{object.account.name} создал порт-прокси {object.process.cmdline}'
+    - LocalizationId: 'corrname_Portproxy_netsh_2'
+      EventDescription: 'Процесс {subject.process.path}\{subject.process.name} создал порт прокси {object.name} -> {object.new_value}'

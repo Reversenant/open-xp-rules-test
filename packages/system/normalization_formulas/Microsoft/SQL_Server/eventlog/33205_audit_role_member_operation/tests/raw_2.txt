@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2015-09-21T15:10:21.000000000Z"
+            },
+            "EventRecordID": "257963",
+            "Channel": "Application",
+            "Computer": "WIN-RCMC6R0VHU4",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "event_time:2015-09-21 15:10:21.1722867\nsequence_number:1\naction_id:APRL\nsucceeded:true\nis_column_permission:false\nsession_id:53\nserver_principal_id:275\ndatabase_principal_id:1\ntarget_server_principal_id:267\ntarget_database_principal_id:0\nobject_id:5\nuser_defined_event_id:0\nclass_type:SG\npermission_bitmask:00000000000000000000000000000000\nsession_server_principal_name:admin\nserver_principal_name:admin\nserver_principal_sid:307341b39b77b448b8bbb953d2f56a31\ndatabase_principal_name:dbo\ntarget_server_principal_name:bobby\ntarget_server_principal_sid:907d4df79bf24042985794eb2d722a81\ntarget_database_principal_name:\nserver_instance_name:WIN-RCMC6R0VHU4\ndatabase_name:master\nschema_name:\nobject_name:serveradmin\nstatement:alter server role [serveradmin] add member [bobby]\nadditional_information:<tsql_stack><frame nest_level = '2' database_name = 'mssqlsystemresource' schema_name = 'sys' object_name = 'sp_addsrvrolemember'/></tsql_stack>\nuser_defined_information:\n"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+Updated: 26.12.2022
+ObjectId: PT-CR-1786
+ContentAutoName: XSLT_XML_Suspicious_Powershell_Execution
+ExpertContext:
+    Created: 05.07.2023
+    Updated: 18.07.2023
+    KnowledgeHolders:
+        - Georgy Khandozhko
+    References:
+        - https://bohops.com/2018/02/26/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence/
+        - https://gist.github.com/mgeeky/28db4b411a17ee29cf4705a01d84c08b
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1220
+EventDescriptions:
+    - Criteria: correlation_name = "XSLT_XML_Suspicious_Powershell_Execution"
+      LocalizationId: corrname_XSLT_XML_Suspicious_Powershell_Execution

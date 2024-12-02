@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_socket_connection"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_socket_connection
+ObjectId: PT-NF-9277

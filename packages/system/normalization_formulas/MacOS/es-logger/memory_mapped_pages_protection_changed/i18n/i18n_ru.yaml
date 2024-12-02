@@ -1,0 +1,4 @@
+Description: 'Изменена защита страниц, отображаемых в памяти'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_memory_mapped_pages_protection_changed'
+      EventDescription: 'Изменена защита страниц, отображаемых в памяти, на узле {event_src.host}'

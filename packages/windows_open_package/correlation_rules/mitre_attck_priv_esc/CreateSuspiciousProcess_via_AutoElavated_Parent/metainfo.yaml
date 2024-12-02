@@ -1,0 +1,28 @@
+ContentAutoName: CreateSuspiciousProcess_via_AutoElavated_Parent
+ExpertContext:
+    Created: 03.07.2024
+    Updated: 23.07.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут обходить UAC с помощью исполняемых файлов, в манифесте которых прописана опция autoElevate
+    Falsepositives: []
+    References:
+        - https://attack.mitre.org/techniques/T1548/002/
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ObjectId: SEC-CR-110814461
+ContentRelations:
+    Implements:
+        ATTACK:
+            privilege-escalation:
+                - T1548.002
+EventDescriptions:
+    - Criteria: correlation_name = "CreateSuspiciousProcess_via_AutoElavated_Parent"
+      LocalizationId: corrname_CreateSuspiciousProcess_via_AutoElavated_Parent

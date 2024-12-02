@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "mach_time": 40170769093032,
+  "event_type": 75,
+  "thread": {
+    "thread_id": 283648
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "settime": {}
+  },
+  "time": "2023-07-24T16:47:28.991971553Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.vmware.vmware-tools-daemon",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570490881,
+    "executable": {
+      "path": "/Library/Application Support/VMware Tools/vmware-tools-daemon",
+      "stat": {
+        "st_blocks": 184,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1460690,
+        "st_birthtimespec": "2022-08-02T11:45:33.000000000Z",
+        "st_flags": 0,
+        "st_nlink": 1,
+        "st_mtimespec": "2022-08-02T11:45:33.000000000Z",
+        "st_ctimespec": "2023-07-04T14:09:54.845194198Z",
+        "st_size": 91136,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-07-24T16:47:26.758173362Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T16:47:26.747377Z",
+    "is_platform_binary": false,
+    "group_id": 12622,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 26178,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 12622
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 26178,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 12622
+    },
+    "session_id": 12622,
+    "original_ppid": 1,
+    "cdhash": "9206F2D9BEE895411FB540732374AA041948850F",
+    "team_id": "EG7KH642X6"
+  },
+  "action_type": 1,
+  "global_seq_num": 26
+}

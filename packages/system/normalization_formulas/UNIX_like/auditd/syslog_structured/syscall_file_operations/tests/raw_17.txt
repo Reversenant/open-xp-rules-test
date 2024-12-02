@@ -1,0 +1,23 @@
+{
+    "eventid": "119639586",
+    "timestampfractional": "373",
+    "timestamp": "1654257909",
+    "node": "192.70.198.184",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=\"(mkdir)\""
+        ],
+        "CWD": [
+            "cwd=\"/\""
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"root\" inode=1048580 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL OUID=\"root\" OGID=\"root\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=257 success=yes exit=4 a0=3 a1=55b3b23fd0a1 a2=2a0000 a3=0 items=1 ppid=1 pid=29443 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"(mkdir)\" exe=\"/lib/systemd/systemd\" key=\"pt_siem_root_read\" ARCH=x86_64 SYSCALL=openat AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ]
+    }
+}

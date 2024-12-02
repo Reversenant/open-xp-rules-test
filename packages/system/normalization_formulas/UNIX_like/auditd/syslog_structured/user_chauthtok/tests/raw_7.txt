@@ -1,0 +1,11 @@
+{
+    "node": "127.0.1.1",
+    "timestamp": "1685352460",
+    "timestampfractional": "993",
+    "eventid": "6482",
+    "items": {
+        "USER_CHAUTHTOK": [
+            "pid=11008 uid=0 auid=1000 ses=1 msg='op=password of group jr changed by root acct=\"jr\" exe=\"/usr/bin/gpasswd\" hostname=ubuntu2004 addr=? terminal=pts/0 res=success' UID=\"root\" AUID=\"jr\""
+        ]
+    }
+}

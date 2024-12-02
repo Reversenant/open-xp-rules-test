@@ -1,0 +1,11 @@
+{
+    "eventid": "16411395",
+    "timestampfractional": "109",
+    "timestamp": "1685020680",
+    "node": "10.16.20.11",
+    "items": {
+        "DEL_USER": [
+            "pid=2182693 uid=0 auid=1000 ses=19121 subj=unconfined msg='op=deleting user from group id=1104 exe=\"/usr/sbin/userdel\" hostname=treat addr=? terminal=pts/0 res=success' UID=\"root\" AUID=\"ansible\" ID=\"resko\""
+        ]
+    }
+}

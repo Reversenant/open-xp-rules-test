@@ -1,0 +1,4 @@
+Description: 'A process enumerates the members of a security-enabled local group'
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4799_Process_enumerates_members_of_security_enabled
+      EventDescription: 'The process {datafield4} started by the user {subject.name} enumerated the members of the security-enabled local group {object.name} on host {event_src.host}'

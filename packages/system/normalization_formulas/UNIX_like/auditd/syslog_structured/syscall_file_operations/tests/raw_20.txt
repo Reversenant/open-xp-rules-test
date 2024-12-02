@@ -1,0 +1,25 @@
+{
+    "eventid": "846827727",
+    "timestampfractional": "334",
+    "timestamp": "1646992234",
+    "node": "10.0.176.231",
+    "items":
+    {
+        "PROCTITLE":
+        [
+            "proctitle=\"-bash\""
+        ],
+        "CWD":
+        [
+            "cwd=\"/home/asolovyev\""
+        ],
+        "PATH":
+        [
+            "item=0 name=\"/home/asolovyev/.bash_history\" inode=399298 dev=fd:04 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\""
+        ],
+        "SYSCALL":
+        [
+            "arch=c000003e syscall=257 success=no exit=-13 a0=ffffff9c a1=5584a63301e0 a2=401 a3=0 items=1 ppid=5902 pid=5939 auid=1001 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=89022110 comm=\"bash\" exe=\"/bin/bash\" key=\"pt_siem_home_access\" ARCH=x86_64 SYSCALL=openat AUID=\"asolovyev\" UID=\"asolovyev\" GID=\"asolovyev\" EUID=\"asolovyev\" SUID=\"asolovyev\" FSUID=\"asolovyev\" EGID=\"asolovyev\" SGID=\"asolovyev\" FSGID=\"asolovyev\""
+        ]
+    }
+}

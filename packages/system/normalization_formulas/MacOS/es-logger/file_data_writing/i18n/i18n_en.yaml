@@ -1,0 +1,4 @@
+Description: 'A process wrote data to a file'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_data_writing'
+      EventDescription: 'Process {subject.process.name} wrote data to file "{object.name}" on host {event_src.host}'

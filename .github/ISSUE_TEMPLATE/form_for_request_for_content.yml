@@ -1,0 +1,50 @@
+name: Запрос на создание контента
+description: Вы можете создать запрос на помощь в создании контента для репозитория
+title: "[ЗАПРОС НА КОНТЕНТ] <Опишите кратко суть запрашиваемого контента>"
+labels: [request for content]
+body:
+- type: markdown
+  attributes:
+    value: |
+      **Спасибо, что нашли время, чтобы описать свой запрос!**
+- type: checkboxes
+  attributes:
+    label: Существует ли уже issue или обсуждение с похожим запросом? 
+    description: Пожалуйста, убедитесь, что Ваш запрос ещё не был реализован или описан в разделе issues.
+    options:
+    - label: Подтверждаю, запрашиваемого контента нет в репозитории и никто на описал этого в issues
+      required: true
+- type: dropdown
+  attributes:
+    label: Тип контента
+    description: К какому типу контента относится запрос?
+    multiple: true
+    options:
+      - Корреляция
+      - Нормализация
+      - Табличный список
+      - Обогащение
+      - Макрос
+      - Агрегация
+      - Другое
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Какую задачу должен решать создаваемый контент?
+    description: Опишите, какую задачу будет решать запрашиваемый контент.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Как, на Ваш взгляд, эта задача может быть решена на языке XP?
+    description: Опишите своё видение реализации решения средствами языка XP.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Дополнительные сведения и сслыки
+    description: |
+      Тут можно дать комментарии для лучшего понимания контекста. Приложить скриншоты, схемы или ссылки.
+  validations:
+    required: false

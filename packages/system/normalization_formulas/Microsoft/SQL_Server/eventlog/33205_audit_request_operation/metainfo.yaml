@@ -1,0 +1,27 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "audit configuration" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_audit
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "encryption configuration" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_encryption
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "credentials" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_credentials
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "pattern search" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_pattern
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "own permissions" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_own_permissions
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "backup location" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_backups
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "audit configuration" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_audit_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "encryption configuration" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_encryption_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "credentials" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_credentials_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "pattern search" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_pattern_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "own permissions" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_own_permissions_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation" and object.property = "backup location" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation_backups_fail
+ObjectId: PT-NF-5603
+ContentAutoName: PT_Microsoft_SQL_Server_eventlog_33205_audit_request_operation

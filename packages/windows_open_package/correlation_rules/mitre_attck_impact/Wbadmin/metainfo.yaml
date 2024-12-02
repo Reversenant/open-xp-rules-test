@@ -1,0 +1,28 @@
+Updated: 26.12.2022
+ObjectId: LOC-CR-187998937
+ContentAutoName: Wbadmin
+ExpertContext:
+    Created: 20.06.2023
+    Updated: 01.07.2023
+    KnowledgeHolders:
+        - Arsenii Sukhanov
+    Improvements:
+        - More logs and use case
+    Usecases:
+        - wbadmin.exe может использоваться для удаления каталога резервных копий Windows (wbadmin.exe delete catalog -quiet)
+    References:
+        - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wbadmin
+        - https://research.splunk.com/endpoint/71efbf52-4dbb-4c00-a520-306aa546cbb7/
+        - https://attack.mitre.org/techniques/T1490/
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ContentRelations:
+    Implements:
+        ATTACK:
+            impact:
+                - https://attack.mitre.org/techniques/T1486/
+EventDescriptions:
+    - Criteria: correlation_name = "Wbadmin"
+      LocalizationId: corrname_Wbadmin

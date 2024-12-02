@@ -1,0 +1,81 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "Microsoft-Windows-Security-Auditing",
+                "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+            },
+            "EventID": "4674",
+            "Version": "0",
+            "Level": "0",
+            "Task": "13056",
+            "Opcode": "0",
+            "Keywords": "0x8020000000000000",
+            "TimeCreated": {
+                "SystemTime": "2022-06-24T09:04:29.7928064Z"
+            },
+            "EventRecordID": "708766237",
+            "Correlation": null,
+            "Execution": {
+                "ProcessID": "4",
+                "ThreadID": "26808"
+            },
+            "Channel": "Security",
+            "Computer": "oo.py.ru",
+            "Security": null
+        },
+        "EventData": {
+            "Data": [
+                {
+                    "text": "S-1-5-21-1023000730-727829927-3985050192-39007",
+                    "Name": "SubjectUserSid"
+                },
+                {
+                    "text": "oo",
+                    "Name": "SubjectUserName"
+                },
+                {
+                    "text": "PY",
+                    "Name": "SubjectDomainName"
+                },
+                {
+                    "text": "0x200d9b5f",
+                    "Name": "SubjectLogonId"
+                },
+                {
+                    "text": "Security",
+                    "Name": "ObjectServer"
+                },
+                {
+                    "text": "File",
+                    "Name": "ObjectType"
+                },
+                {
+                    "text": "C:\\0Apps\\Dev\\VSCode",
+                    "Name": "ObjectName"
+                },
+                {
+                    "text": "0xe20",
+                    "Name": "HandleId"
+                },
+                {
+                    "text": "%%1538\r\n\t\t\t\t%%1539\r\n\t\t\t\t%%1540\r\n\t\t\t\t%%1542\r\n\t\t\t\t",
+                    "Name": "AccessMask"
+                },
+                {
+                    "text": "SeSecurityPrivilege\r\n\t\t\tSeTakeOwnershipPrivilege",
+                    "Name": "PrivilegeList"
+                },
+                {
+                    "text": "0x5348",
+                    "Name": "ProcessId"
+                },
+                {
+                    "text": "C:\\0Apps\\Sys\\FAR2\\Far.exe",
+                    "Name": "ProcessName"
+                }
+            ]
+        }
+    }
+}

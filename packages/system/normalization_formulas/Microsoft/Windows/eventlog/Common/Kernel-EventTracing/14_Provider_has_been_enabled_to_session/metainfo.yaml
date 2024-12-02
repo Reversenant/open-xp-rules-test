@@ -1,0 +1,13 @@
+EventDescriptions:
+    - Criteria: id = "Microsoft_Windows_eventlog_Common_EventTracing_14_Provider_has_been_enabled_to_session"
+      LocalizationId: LOC_Microsoft_Title_eventlog_event_name_14
+ExpertContext:
+    Created: 25.04.2024
+    Updated: 13.05.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases: []
+    Falsepositives: []
+    References: []
+    Improvements: []
+ObjectId: LOC-NF-213259606

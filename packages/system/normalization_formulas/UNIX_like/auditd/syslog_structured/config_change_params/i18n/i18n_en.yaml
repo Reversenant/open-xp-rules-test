@@ -1,0 +1,6 @@
+Description: 'Attempt to set a value for an audit subsystem parameter'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_config_change_params_success'
+      EventDescription: 'Value {object.new_value} is set for parameter {object.property} of the audit subsystem on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_config_change_params_failure'
+      EventDescription: 'Failed to set a value for parameter {object.property} of the audit subsystem on host {event_src.host}'

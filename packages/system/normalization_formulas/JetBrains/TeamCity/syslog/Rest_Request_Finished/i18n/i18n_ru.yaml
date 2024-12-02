@@ -1,0 +1,4 @@
+Description: 'Обработка запроса завершена'
+EventDescriptions:
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Rest_Request_Finished'
+      EventDescription: 'Обработка REST-запроса {object.query} с узла {src.host}:{src.port} завершена на узле {event_src.host}'

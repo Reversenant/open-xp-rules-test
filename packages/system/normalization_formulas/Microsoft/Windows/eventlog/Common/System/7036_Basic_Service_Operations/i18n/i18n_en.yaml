@@ -1,0 +1,10 @@
+Description: Windows service entered some state
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_start
+      EventDescription: The application "{object.name}" is started on host {event_src.host}
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_resume
+      EventDescription: The application "{object.name}" is resumed on host {event_src.host}
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_stop
+      EventDescription: The application "{object.name}" is stopped on host {event_src.host}
+    - LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_suspend
+      EventDescription: The application "{object.name}" is suspended on host {event_src.host}

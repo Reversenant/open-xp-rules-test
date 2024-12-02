@@ -1,0 +1,28 @@
+ContentAutoName: Local_admin_password_changed
+ExpertContext:
+    Created: 07.07.2024
+    Updated: 08.07.2024
+    KnowledgeHolders:
+        - d3f0x0 (Vadim Varganov)
+    Usecases:
+        - Change password
+    Falsepositives:
+        - Administrative action
+    References:
+        - https://gist.github.com/BertMueller18/7027fcaef6728c8bd8bf37e593b78d0b#file-windows-8-10-password-reset
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+ObjectId: SEC-CR-161268809
+EventDescriptions:
+    - Criteria: correlation_name = "Local_admin_password_changed"
+      LocalizationId: corrname_Local_admin_password_changed
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1098
+            privilege-escalation:
+                - T1098

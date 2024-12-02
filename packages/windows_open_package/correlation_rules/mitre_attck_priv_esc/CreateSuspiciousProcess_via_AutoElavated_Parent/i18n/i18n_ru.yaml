@@ -1,0 +1,4 @@
+Description: 'Обнаружен обход UAC через запуск родительского процесса с опцией autoElevate'
+EventDescriptions:
+    - LocalizationId: 'corrname_CreateSuspiciousProcess_via_AutoElavated_Parent'
+      EventDescription: 'Обнаружен обход UAC для создания процесса {object.process.name} через запуск родительского процесса с опцией autoElevate на узле {event_src.host}'

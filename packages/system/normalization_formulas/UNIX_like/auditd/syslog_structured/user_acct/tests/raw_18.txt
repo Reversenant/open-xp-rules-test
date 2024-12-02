@@ -1,0 +1,11 @@
+{
+    "node": "127.0.1.1",
+    "timestamp": "1685347627",
+    "timestampfractional": "552",
+    "eventid": "1250",
+    "items": {
+        "USER_ACCT": [
+            "pid=1340 uid=0 auid=1000 ses=1 msg='pam_tally2 uid=all reset=0 exe=\"/usr/sbin/pam_tally2\" hostname=? addr=? terminal=/dev/pts/0 res=success' UID=\"root\" AUID=\"jr\" UID=\"root\""
+        ]
+    }
+}

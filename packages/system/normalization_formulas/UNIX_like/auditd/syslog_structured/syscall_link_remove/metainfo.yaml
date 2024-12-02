@@ -1,0 +1,26 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "failure" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_failure
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "failure" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_failure_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_failure_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_failure_name_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject != "account" and object.fullpath != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_fullpath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject = "account" and subject.account.name = null and object.fullpath != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_id_fullpath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject = "account" and subject.account.name != null and object.fullpath != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_name_fullpath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject = "account" and subject.account.name != null and object.fullpath != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_name_fullpath_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject != "account" and object.fullpath = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_nofullpath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject = "account" and subject.account.name = null and object.fullpath = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_id_nofullpath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject = "account" and subject.account.name != null and object.fullpath = null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_name_nofullpath
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_link_remove" and status = "success" and subject = "account" and subject.account.name != null and object.fullpath = null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_remove_link_success_name_nofullpath_with_objname
+ObjectId: PT-NF-6035

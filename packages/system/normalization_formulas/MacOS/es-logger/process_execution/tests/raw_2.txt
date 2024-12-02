@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "mach_time": 23684525474078,
+  "event_type": 9,
+  "thread": {
+    "thread_id": 170158
+  },
+  "version": 7,
+  "seq_num": 12,
+  "event": {
+    "exec": {
+      "script": null,
+      "last_fd": 2,
+      "target": {
+        "signing_id": "com.apple.sudo",
+        "parent_audit_token": {
+          "asid": 100005,
+          "pidversion": 17710,
+          "ruid": 501,
+          "euid": 501,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 8009
+        },
+        "codesigning_flags": 570522385,
+        "executable": {
+          "path": "/usr/bin/sudo",
+          "stat": {
+            "st_blocks": 1152,
+            "st_blksize": 4096,
+            "st_rdev": 0,
+            "st_dev": 16777220,
+            "st_uid": 0,
+            "st_gid": 0,
+            "st_ino": 1152921500312436195,
+            "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_flags": 524320,
+            "st_nlink": 1,
+            "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_size": 1246528,
+            "st_gen": 0,
+            "st_mode": 35145,
+            "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+          },
+          "path_truncated": false
+        },
+        "ppid": 8009,
+        "tty": {
+          "path": "/dev/ttys006",
+          "stat": {
+            "st_blocks": 0,
+            "st_blksize": 131072,
+            "st_rdev": 268435462,
+            "st_dev": 1740322812,
+            "st_uid": 501,
+            "st_gid": 4,
+            "st_ino": 1193,
+            "st_birthtimespec": "1970-01-01T00:00:00.000000000Z",
+            "st_flags": 0,
+            "st_nlink": 1,
+            "st_mtimespec": "2023-07-24T12:12:42.494659000Z",
+            "st_ctimespec": "2023-07-24T12:12:42.494659000Z",
+            "st_size": 0,
+            "st_gen": 0,
+            "st_mode": 8592,
+            "st_atimespec": "2023-07-24T12:12:42.477101000Z"
+          },
+          "path_truncated": false
+        },
+        "start_time": "2023-07-24T12:12:42.614963Z",
+        "is_platform_binary": true,
+        "group_id": 8006,
+        "audit_token": {
+          "asid": 100005,
+          "pidversion": 17714,
+          "ruid": 501,
+          "euid": 0,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 8012
+        },
+        "is_es_client": false,
+        "responsible_audit_token": {
+          "asid": 100005,
+          "pidversion": 3863,
+          "ruid": 501,
+          "euid": 501,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 1708
+        },
+        "session_id": 5451,
+        "original_ppid": 8009,
+        "cdhash": "F32D25C4DD678BEEC84461728282202284C968E0",
+        "team_id": null
+      },
+      "image_cpusubtype": 3,
+      "image_cputype": 16777223,
+      "fds": [
+        {
+          "fd": 0,
+          "fdtype": 1
+        },
+        {
+          "fd": 1,
+          "fdtype": 1
+        },
+        {
+          "fd": 2,
+          "fdtype": 1
+        }
+      ],
+      "env": [
+        "TERM_SESSION_ID=w1t0p0:380BC4C2-9962-4E73-A3D2-3877F960CE29",
+        "SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.TUGVXsuupR/Listeners",
+        "LC_TERMINAL_VERSION=3.4.19",
+        "COLORFGBG=7;0",
+        "ITERM_PROFILE=Default",
+        "XPC_FLAGS=0x0",
+        "PWD=/Users/user/Desktop/es_results2",
+        "SHELL=/bin/zsh",
+        "__CFBundleIdentifier=com.googlecode.iterm2",
+        "LC_CTYPE=UTF-8",
+        "TERM_PROGRAM_VERSION=3.4.19",
+        "TERM_PROGRAM=iTerm.app",
+        "PATH=/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin",
+        "LC_TERMINAL=iTerm2",
+        "COLORTERM=truecolor",
+        "COMMAND_MODE=unix2003",
+        "TERM=xterm-256color",
+        "HOME=/Users/user",
+        "TMPDIR=/var/folders/q6/gy9srrjs4l9blh1y1nvzl1_c0000gn/T/",
+        "USER=user",
+        "XPC_SERVICE_NAME=0",
+        "LOGNAME=user",
+        "ITERM_SESSION_ID=w1t0p0:380BC4C2-9962-4E73-A3D2-3877F960CE29",
+        "__CF_USER_TEXT_ENCODING=0x0:7:49",
+        "SHLVL=1",
+        "OLDPWD=/Users/user/Desktop",
+        "P9K_TTY=old",
+        "_P9K_TTY=/dev/ttys006",
+        "ZSH=/Users/user/.oh-my-zsh",
+        "PAGER=less",
+        "LESS=-R",
+        "LSCOLORS=Gxfxcxdxbxegedabagacad",
+        "LS_COLORS=di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43",
+        "P9K_SSH=0",
+        "_P9K_SSH_TTY=/dev/ttys006",
+        "_=/usr/bin/xargs"
+      ],
+      "args": [
+        "sudo",
+        "kill",
+        "-9",
+        "7987",
+        "8007",
+        "7986"
+      ],
+      "cwd": {
+        "path": "/Users/user/Desktop/es_results2",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 501,
+          "st_gid": 20,
+          "st_ino": 1941351,
+          "st_birthtimespec": "2023-07-24T12:00:32.739060057Z",
+          "st_flags": 0,
+          "st_nlink": 3,
+          "st_mtimespec": "2023-07-24T12:12:22.826762241Z",
+          "st_ctimespec": "2023-07-24T12:12:22.826762241Z",
+          "st_size": 96,
+          "st_gen": 0,
+          "st_mode": 16877,
+          "st_atimespec": "2023-07-24T12:12:22.899763507Z"
+        },
+        "path_truncated": false
+      },
+      "dyld_exec_path": "/usr/bin/sudo"
+    }
+  },
+  "time": "2023-07-24T12:12:42.615172740Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.xargs",
+    "parent_audit_token": {
+      "asid": 100005,
+      "pidversion": 17710,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 8009
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/bin/xargs",
+      "stat": {
+        "st_blocks": 48,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312436429,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 168768,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 8009,
+    "tty": {
+      "path": "/dev/ttys006",
+      "stat": {
+        "st_blocks": 0,
+        "st_blksize": 131072,
+        "st_rdev": 268435462,
+        "st_dev": 1740322812,
+        "st_uid": 501,
+        "st_gid": 4,
+        "st_ino": 1193,
+        "st_birthtimespec": "1970-01-01T00:00:00.000000000Z",
+        "st_flags": 0,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-07-24T12:12:42.494659000Z",
+        "st_ctimespec": "2023-07-24T12:12:42.494659000Z",
+        "st_size": 0,
+        "st_gen": 0,
+        "st_mode": 8592,
+        "st_atimespec": "2023-07-24T12:12:42.477101000Z"
+      },
+      "path_truncated": false
+    },
+    "start_time": "2023-07-24T12:12:42.614963Z",
+    "is_platform_binary": true,
+    "group_id": 8006,
+    "audit_token": {
+      "asid": 100005,
+      "pidversion": 17713,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 8012
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100005,
+      "pidversion": 3863,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 1708
+    },
+    "session_id": 5451,
+    "original_ppid": 8009,
+    "cdhash": "35E2582A2D60BAB3AB12D871ABE69FF8AE1FD96D",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 2311
+}

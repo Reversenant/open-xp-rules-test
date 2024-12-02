@@ -1,0 +1,1 @@
+expect 1 {"correlation_name":"MacOS_Schedule_CronJob_from_Tmp_Dir","object.process.cmdline":"crontab /tmp/some-job"}

@@ -1,0 +1,4 @@
+Description: 'Adversaries may attempt to access credential material stored in the process memory of the LSASS'
+EventDescriptions:
+    - LocalizationId: 'corrname_Dump_lsass_via_process_access'
+      EventDescription: 'The {subject.process.fullpath} process has accessed the LSASS process'

@@ -1,0 +1,6 @@
+Description: 'Object capabilities are changed'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_capabilities_modify_success'
+      EventDescription: 'The process "{subject.process.fullpath}" changed capabilities of the process with ID {object.process.id} on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_capabilities_modify_failure'
+      EventDescription: 'The process "{subject.process.fullpath}" failed to change capabilities of the process with ID {object.process.id} on host {event_src.host}. Reason: {reason}'

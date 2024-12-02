@@ -1,0 +1,1 @@
+expect 1 {"correlation_name":"Sysmon_provider_disabled_from_Sysmon_session"}

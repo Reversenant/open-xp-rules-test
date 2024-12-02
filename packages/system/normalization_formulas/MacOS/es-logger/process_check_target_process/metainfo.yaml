@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_check_target_process"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_check_target_process
+ObjectId: PT-NF-9281

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "mach_time": 33490589131464,
+  "event_type": 78,
+  "thread": {
+    "thread_id": 239062
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "uipc_connect": {
+      "protocol": 0,
+      "type": 2,
+      "file": {
+        "path": "/private/var/run/syslog",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 0,
+          "st_gid": 1,
+          "st_ino": 1905426,
+          "st_birthtimespec": "2023-07-20T14:04:17.321663965Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-07-20T14:04:17.321663965Z",
+          "st_ctimespec": "2023-07-20T14:04:17.321718723Z",
+          "st_size": 0,
+          "st_gen": 0,
+          "st_mode": 49590,
+          "st_atimespec": "2023-07-20T14:04:17.321663965Z"
+        },
+        "path_truncated": false
+      },
+      "domain": 1
+    }
+  },
+  "time": "2023-07-24T14:56:08.772047528Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.Safari",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522369,
+    "executable": {
+      "path": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/MacOS/Safari",
+      "stat": {
+        "st_blocks": 56,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777221,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 67871,
+        "st_birthtimespec": "2023-07-11T04:23:24.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-07-11T04:23:24.000000000Z",
+        "st_ctimespec": "2023-07-11T04:23:24.000000000Z",
+        "st_size": 178928,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-07-11T04:23:24.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T14:56:08.620657Z",
+    "is_platform_binary": true,
+    "group_id": 11541,
+    "audit_token": {
+      "asid": 100005,
+      "pidversion": 23737,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 11541
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100005,
+      "pidversion": 23737,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 11541
+    },
+    "session_id": 1,
+    "original_ppid": 1,
+    "cdhash": "7D4A1772EDDC8AF8267F219805A9C44005DF201E",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

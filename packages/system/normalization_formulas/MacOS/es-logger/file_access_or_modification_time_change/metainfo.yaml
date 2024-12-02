@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_access_or_modification_time_change"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_access_or_modification_time_change
+ObjectId: PT-NF-9331

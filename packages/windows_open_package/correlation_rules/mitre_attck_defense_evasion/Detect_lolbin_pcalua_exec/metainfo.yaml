@@ -1,0 +1,24 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-450661205
+ContentAutoName: Detect_lolbin_pcalua_exec
+ExpertContext:
+    Created: 18.06.2023
+    Updated: 30.06.2023
+    Usecases:
+        - Прокси-выполнение двоичного файла через использование Помощника по совместимости программ
+    Falsepositives:
+        - Легитимный запуск целевой DLL|cpl... в приложении
+    References:
+        - https://lolbas-project.github.io/lolbas/Binaries/Pcalua/
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1202
+EventDescriptions:
+    - Criteria: correlation_name = "Detect_lolbin_pcalua_exec"
+      LocalizationId: corrname_Detect_lolbin_pcalua_exec

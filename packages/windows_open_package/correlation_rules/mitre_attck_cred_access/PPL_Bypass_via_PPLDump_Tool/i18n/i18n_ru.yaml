@@ -1,0 +1,4 @@
+Description: 'Правило обнаруживает попытку получить доступ к учетным данным, хранящимся в памяти процесса LSASS через инструмент PPLdump'
+EventDescriptions:
+    - LocalizationId: 'corrname_PPL_Bypass_via_PPLDump_Tool'
+      EventDescription: 'На узле {event_src.host} обнаружена попытка снять дамп памяти процесса lsass при помощи утилиты PPLdump: {object.process.cmdline}'

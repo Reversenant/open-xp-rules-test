@@ -1,0 +1,52 @@
+EVENTLOG = 'EventID="6"'
+
+COND = $Provider["Name"] == "Microsoft-Windows-RPC"
+
+action = "call"
+object = "interface"
+status = "success"
+
+msgid = $EventID
+
+time = $TimeCreated["SystemTime"]
+
+importance = "info"
+
+object.type = "rpc"
+object.name = lower($Data["InterfaceUuid"])
+object.id = strip($Data["InterfaceUuid"], '{', '}')
+object.query = lower($Data["ProcNum"])
+
+src.ip = lower($Data["NetworkAddress"])
+
+dst.port = lower($Data["Endpoint"])
+
+if lower($Data["Protocol"]) == "1" then
+    protocol = "TCP"
+    protocol.layer7 = "RPC"
+elif lower($Data["Protocol"]) == "2" then
+    protocol.layer7 = "NPs"
+elif lower($Data["Protocol"]) == "3" then
+    protocol = "TCP"
+    protocol.layer7 = "LRPC"
+endif
+
+datafield1 = $Data["Options"]               # Options
+datafield2 = $Data["AuthenticationLevel"]   # AuthenticationLevel
+datafield3 = $Data["AuthenticationService"] # AuthenticationService
+datafield4 = $Data["ImpersonationLevel"]    # ImpersonationLevel
+
+event_src.vendor = "microsoft"
+event_src.title = "windows"
+event_src.subsys = "rpc"
+event_src.id = strip($Provider["Guid"], '{', '}')
+$first_dot = find_substr($Computer, '.')
+if $first_dot != null then
+    event_src.fqdn = lower($Computer)
+    event_src.hostname = lower(substr($Computer, 0, $first_dot))
+else
+    event_src.hostname = lower($Computer)
+endif
+event_src.category = "Operating system"
+
+id = "Microsoft_Windows_eventlog_Common_RPC_6_Server_RPC_call_started"

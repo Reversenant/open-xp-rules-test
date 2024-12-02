@@ -1,0 +1,29 @@
+ContentAutoName: SharpNoPSExec
+ExpertContext:
+    Created: 01.08.2023
+    Updated: 01.08.2023
+    KnowledgeHolders:
+        - driverenok
+    References:
+        - https://attack.mitre.org/techniques/T1569/002/
+        - https://github.com/juliourena/SharpNoPSExec
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4657
+    Usecases:
+        - Атакующие могут модифицировать путь к исполняемому файлу существующей службы Windows для запуска ВПО (например с помощью SharpNoPSExec)
+ObjectId: SEC-CR-249739163
+ContentRelations:
+    Implements:
+        ATTACK:
+            execution:
+                - T1569.002
+EventDescriptions:
+    - Criteria: correlation_name = "SharpNoPSExec" and subject = "process" and status = "success"
+      LocalizationId: corrname_SharpNoPSExec
+    - Criteria: correlation_name = "SharpNoPSExec" and subject  = "account" and status = "ongoing"
+      LocalizationId: corrname_SharpNoPSExec_2

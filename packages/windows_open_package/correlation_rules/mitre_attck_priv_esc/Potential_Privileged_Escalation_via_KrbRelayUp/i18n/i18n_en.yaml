@@ -1,0 +1,4 @@
+Description: 'Detection of a suspicious local login that looks like a local privilege escalation attack via Kerberos delegation'
+EventDescriptions:
+    - LocalizationId: 'corrname_Potential_Privileged_Escalation_via_KrbRelayUp'
+      EventDescription: 'Suspicion of privilege escalation through Kerberos delegation. Administrative account {subject.account.domain}\{subject.account.name} was successfully logged in at host {event_src.host} from loopback address'

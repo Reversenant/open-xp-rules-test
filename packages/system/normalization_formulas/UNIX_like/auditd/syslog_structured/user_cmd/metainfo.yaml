@@ -1,0 +1,12 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_cmd" and status = "success" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_cmd_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_cmd" and status = "failure" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_cmd_failure_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_cmd" and status = "success" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_cmd_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_cmd" and status = "failure" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_cmd_failure_null
+
+ObjectId: PT-NF-5545

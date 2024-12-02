@@ -1,0 +1,4 @@
+Description: 'Process vshadow.exe launched with the -exec option'
+EventDescriptions:
+    - LocalizationId: 'corrname_Start_process_as_vshadow_child'
+      EventDescription: '{object.process.name} started by process {object.process.parent.name} for user {subject.account.domain}\{subject.account.name} at host {event_src.host}'

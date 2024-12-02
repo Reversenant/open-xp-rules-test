@@ -1,0 +1,4 @@
+Description: 'Вызвана процедура RPC сервера'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_1'
+      EventDescription: 'Вызвана процедура {object.query} RPC сервера {object.name} на узле {event_src.host}'

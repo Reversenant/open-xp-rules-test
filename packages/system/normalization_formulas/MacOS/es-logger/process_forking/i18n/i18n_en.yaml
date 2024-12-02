@@ -1,0 +1,4 @@
+Description: 'A process created another process'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_forking'
+      EventDescription: 'Process {subject.process.name} created process {object.process.name} on host {event_src.host}'

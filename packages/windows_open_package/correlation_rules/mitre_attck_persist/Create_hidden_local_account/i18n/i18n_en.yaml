@@ -1,0 +1,4 @@
+Description: 'Attackers can create accounts ending in "$" to hide them and bypass detection rules that exclude such accounts'
+EventDescriptions:
+    - LocalizationId: 'corrname_Create_hidden_local_account'
+      EventDescription: 'An account ending in "$" has been created on {event_src.host} {object.path}'

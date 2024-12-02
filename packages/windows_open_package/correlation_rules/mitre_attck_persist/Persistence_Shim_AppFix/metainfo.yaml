@@ -1,0 +1,32 @@
+ContentAutoName: Persistence_Shim_AppFix
+ExpertContext:
+    Created: 08.07.2024
+    Updated: 08.07.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут закрепляться в системе путем злоупотребления механизма Application Shim
+    Falsepositives: []
+    References:
+        - https://attack.mitre.org/techniques/T1546/011/
+        - https://blog.f-secure.com/hunting-for-application-shim-databases/
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+              - 4657
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+              - 12
+              - 13
+ObjectId: SEC-CR-191008330
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1546.011
+EventDescriptions:
+    - Criteria: correlation_name = "Persistence_Shim_AppFix"
+      LocalizationId: corrname_Persistence_Shim_AppFix

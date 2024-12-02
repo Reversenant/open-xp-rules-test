@@ -1,0 +1,2 @@
+#тест подписанного файла
+expect not {"correlation_name":"MacOS_Plist_Unsigned_Execution"}

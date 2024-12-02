@@ -1,0 +1,14 @@
+{
+  "eventid": "308",
+  "items": {
+    "PROCTITLE": [
+      ""
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=101 success=yes exit=0 a0=11 a1=1 a2=0 a3=0 items=0 ppid=2934 pid=3036 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm=\"strace\" exe=\"/usr/bin/strace\" subj=unconfined key=\"pt_siem_api_ptrace\" ARCH=x86_64 SYSCALL=ptrace AUID=\"jr\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  },
+  "node": "127.0.0.1",
+  "timestamp": "1652949169",
+  "timestampfractional": "499"
+}

@@ -1,0 +1,6 @@
+Description: 'Process authentication status'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_authentication_success'
+      EventDescription: 'Authentication passed to access node {object.fullpath} on host {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_authentication_failure'
+      EventDescription: 'Authentication failed to access node {object.fullpath} on host {event_src.host}'

@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "4",
+            "Keywords": "0x90000000000000",
+            "TimeCreated": {
+                "SystemTime": "2021-07-01T17:29:24.484121400Z"
+            },
+            "EventRecordID": "93744",
+            "Channel": "Application",
+            "Computer": "DESKTOP-I2RR0AI",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2021-07-01 17:29:24.0200550\nsequence_number:1\naction_id:LGIF\nsucceeded:false\nis_column_permission:false\nsession_id:0\nserver_principal_id:0\ndatabase_principal_id:0\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:0\nuser_defined_event_id:0\ntransaction_id:0\nclass_type:LX\nduration_milliseconds:0\nresponse_rows:0\naffected_rows:0\nclient_ip:Unknown\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:94C64E7F-D751-4173-A8FB-C47FBB750D1D\nsession_server_principal_name:\nserver_principal_name:\nserver_principal_sid:\ndatabase_principal_name:\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-I2RR0AI\ndatabase_name:\nschema_name:\nobject_name:\nstatement:Could not connect because the maximum number of '1' dedicated administrator connections already exists. Before a new connection can be made, the existing dedicated administrator connection must be dropped, either by logging off or ending the process. [CLIENT: 127.0.0.1]\nadditional_information:<action_info xmlns=\"http://schemas.microsoft.com/sqlserver/2008/sqlaudit_data\"><pooled_connection>0</pooled_connection><error>0x00004592</error><state>2</state><address>127.0.0.1</address></action_info>\nuser_defined_information:\napplication_name:\n"
+        }
+    }
+}

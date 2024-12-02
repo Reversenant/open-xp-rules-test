@@ -1,0 +1,44 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "account" and status = "success" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_account_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "account" and status = "failure" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_account_failure_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "success" and object.property = "password" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_password_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "failure" and object.property = "password" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_password_failure_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "success" and object.property = "access" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_access_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "failure" and object.property = "access" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_access_failure_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and object.property = "updated_user" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_updated_user_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and object.property = "removed_user" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_removed_user_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and object.property = "added_user" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_added_user_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "account" and status = "success" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_account_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "account" and status = "failure" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_account_failure_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "success" and object.property = "password" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_password_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "failure" and object.property = "password" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_password_failure_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "success" and object.property = "access" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_access_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and status = "failure" and object.property = "access" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_access_failure_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and (object.property = "updated_user" or object.property = "changed_admin") and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_updated_user_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and object.property = "removed_user" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_removed_user_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_mgmt" and object = "user_group" and object.property = "added_user" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_mgmt_group_added_user_null
+
+ObjectId: PT-NF-6111

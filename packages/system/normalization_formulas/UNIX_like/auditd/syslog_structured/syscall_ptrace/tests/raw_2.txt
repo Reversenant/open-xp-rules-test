@@ -1,0 +1,20 @@
+{
+  "eventid": "9548",
+  "items": {
+    "EOE": [
+      ""
+    ],
+    "OBJ_PID": [
+      "opid=4573 oauid=1000 ouid=0 oses=61 ocomm=\"strace\""
+    ],
+    "PROCTITLE": [
+      "proctitle=737472616365002F7573722F62696E2F6469726E616D65"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=101 success=yes exit=0 a0=4206 a1=11dd a2=0 a3=0 items=0 ppid=4336 pid=4572 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=61 comm=\"strace\" exe=\"/usr/bin/strace\" key=\"pt_siem_api_ptrace\""
+    ]
+  },
+  "node": "pewpew-pc",
+  "timestamp": "1558212995",
+  "timestampfractional": "673"
+}

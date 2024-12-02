@@ -1,0 +1,4 @@
+Description: 'Провайдер добавлен в ETW сессию'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_14'
+      EventDescription: 'Провайдер {datafield3} добавлен в ETW сессию "{object.name}"'

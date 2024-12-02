@@ -1,0 +1,4 @@
+Description: 'A process is trying to create a thread in another process'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_attempt_thread_creation'
+      EventDescription: 'Process {subject.process.name} is trying to create a thread in process {object.name} on host {event_src.host}'

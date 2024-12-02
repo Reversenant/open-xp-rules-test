@@ -1,0 +1,4 @@
+Description: 'Suspicious Messanger child process has been detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_Suspicious_Messanger_Child_Process'
+      EventDescription: 'Suspicious child process {object.process.name} has been created by {object.process.parent.name} at host {event_src.host}'

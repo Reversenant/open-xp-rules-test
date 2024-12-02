@@ -1,0 +1,6 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4674_Operation_was_attempted_on_a_privileged_object" and status = "success"
+      LocalizationId: PT_Microsoft_Windows_eventlog_4674_Operation_was_attempted_on_a_privileged_object_status_success
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4674_Operation_was_attempted_on_a_privileged_object" and status = "failure"
+      LocalizationId: PT_Microsoft_Windows_eventlog_4674_Operation_was_attempted_on_a_privileged_object_status_failure
+ObjectId: PT-NF-1839

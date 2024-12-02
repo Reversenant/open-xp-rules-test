@@ -1,0 +1,27 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-105581934
+ContentAutoName: Chrome_firefox_opera_cred_read
+ExpertContext:
+    Created: 04.06.2023
+    Updated: 04.06.2023
+    KnowledgeHolders:
+        - Kirill Polegaev (plgvkr)
+    Usecases:
+        - Adversaries may acquire credentials from web browsers by reading files specific to the target browser.
+    Falsepositives:
+        - Administrative actions
+    Improvements:
+        - Identifying false positives and adding rules to bypass them
+        - Adding rules for other browsers
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4663
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1555.003
+EventDescriptions:
+    - Criteria: correlation_name = "Chrome_firefox_opera_cred_read"
+      LocalizationId: corrname_Chrome_firefox_opera_cred_read

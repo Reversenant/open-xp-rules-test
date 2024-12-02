@@ -1,0 +1,4 @@
+Description: 'A kernel extension was unloaded'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_kernel_extension_unloading'
+      EventDescription: 'Kernel extension "{object.name}" was unloaded on host {event_src.host}'

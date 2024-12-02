@@ -1,0 +1,6 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_user_login" and status = "success"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_user_login_success
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_user_login" and status = "failure"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_user_login_failure
+ObjectId: PT-NF-9305

@@ -1,0 +1,4 @@
+Description: 'Обмен данными между двумя файлами'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_data_exchange_between_two_files'
+      EventDescription: 'Обмен данными между файлом "{object.name}" и файлом "{object.value}" на узле {event_src.host}'

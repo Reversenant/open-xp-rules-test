@@ -1,0 +1,4 @@
+Description: 'Для файла создана жесткая ссылка'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_hard_link_created'
+      EventDescription: 'Для файла "{object.name}" создана жесткая ссылка "{object.value}" на узле {event_src.host}'

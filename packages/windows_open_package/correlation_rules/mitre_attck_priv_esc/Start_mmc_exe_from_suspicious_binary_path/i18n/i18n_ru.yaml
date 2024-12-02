@@ -1,0 +1,4 @@
+Description: 'Запуск оснастки mmc.exe из подозрительной директории'
+EventDescriptions:
+    - LocalizationId: 'corrname_Start_mmc_exe_from_suspicious_binary_path'
+      EventDescription: 'Обнаружен запуск оснастки mmc.exe из подозрительной директории на узле {event_src.host}'

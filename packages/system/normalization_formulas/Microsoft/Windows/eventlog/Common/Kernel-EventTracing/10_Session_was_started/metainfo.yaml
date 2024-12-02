@@ -1,0 +1,13 @@
+EventDescriptions:
+    - Criteria: id = "Microsoft_Windows_eventlog_Common_EventTracing_10_Session_was_started"
+      LocalizationId: LOC_Microsoft_Title_eventlog_event_name_10
+ExpertContext:
+    Created: 02.05.2024
+    Updated: 02.05.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases: []
+    Falsepositives: []
+    References: []
+    Improvements: []
+ObjectId: SEC-NF-89665156

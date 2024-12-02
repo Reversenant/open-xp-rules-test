@@ -1,0 +1,6 @@
+Description: 'An attempt to log in using OpenSSH'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_openssh_login_success'
+      EventDescription: 'User {subject.account.name} from IP address {src.ip} logged in using OpenSSH on host {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_openssh_login_failure'
+      EventDescription: 'User {subject.account.name} from IP address {src.ip} failed to log in using OpenSSH on host {event_src.host}'

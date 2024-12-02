@@ -1,0 +1,6 @@
+Description: 'Статус проверки подлинности для процесса'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_authentication_success'
+      EventDescription: 'Пройдена проверка подлинности для доступа к ресурсу {object.fullpath} на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_authentication_failure'
+      EventDescription: 'Не пройдена проверка подлинности для доступа к ресурсу {object.fullpath} на узле {event_src.host}'

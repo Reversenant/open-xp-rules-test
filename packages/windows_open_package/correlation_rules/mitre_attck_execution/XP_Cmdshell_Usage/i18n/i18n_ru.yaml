@@ -1,0 +1,4 @@
+Description: 'Правило обнаруживает исполнение команд через модуль "xp_cmdshell"'
+EventDescriptions:
+    - LocalizationId: 'corrname_XP_Cmdshell_Usage'
+      EventDescription: 'Пользователь {subject.account.name} исполнил команду {datafield8} через xp_cmdshell на узле {event_src.host}'

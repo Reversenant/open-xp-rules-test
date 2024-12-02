@@ -1,0 +1,10 @@
+ObjectId: SEC-CR-125559457
+ContentAutoName: Enumeration_Users_In_Groups
+ExpertContext:
+    Created: 12.06.2023
+    Updated: 25.06.2023
+EventDescriptions:
+    - Criteria: correlation_name = "Enumeration_Users_In_Groups" and object.account.name != null
+      LocalizationId: corrname_Enumeration_Users_In_Groups
+    - Criteria: correlation_name = "Enumeration_Users_In_Groups" and object.account.name == null
+      LocalizationId: corrname_Enumeration_Users_In_Groups_2

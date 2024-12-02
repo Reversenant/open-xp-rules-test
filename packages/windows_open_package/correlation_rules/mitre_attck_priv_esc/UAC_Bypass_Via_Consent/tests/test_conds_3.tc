@@ -1,0 +1,1 @@
+expect 1 {"_rule": "UAC_Bypass_Via_Consent", "correlation_name": "UAC_Bypass_Via_Consent", "object.process.fullpath": "c:\\windows\\system32\\consent.exe.local\\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.4377_none_de744a4e53489aa3\\comctl32.dll", "subject.process.fullpath": "c:\\windows\\system32\\consent.exe"}

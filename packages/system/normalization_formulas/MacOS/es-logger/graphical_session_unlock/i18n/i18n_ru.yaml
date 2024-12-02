@@ -1,0 +1,4 @@
+Description: 'Пользователь разблокировал экран'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_graphical_session_unlock'
+      EventDescription: 'Пользователь {subject.account.name} разблокировал экран на узле {event_src.host}'

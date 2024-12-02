@@ -1,0 +1,18 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "success" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_success
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "failure" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_failure
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "success" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_success_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "failure" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_failure_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "success" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_success_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_failure_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "success" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_success_name_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_time_change" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_modify_configuration_state_time_failure_name_with_objname
+ObjectId: PT-NF-6040

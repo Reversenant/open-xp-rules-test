@@ -1,0 +1,4 @@
+Description: 'A task name port for a process was retrieved'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_task_name_port_retrieval'
+      EventDescription: 'The task name port for process {object.name} was retrieved on host {event_src.host}'

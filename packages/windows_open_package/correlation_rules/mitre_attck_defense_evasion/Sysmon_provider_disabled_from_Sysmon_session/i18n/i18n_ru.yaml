@@ -1,0 +1,6 @@
+Description: 'Обнаружена проблема в работе Sysmon'
+EventDescriptions:
+    - LocalizationId: 'corrname_Sysmon_provider_disabled_from_Sysmon_session'
+      EventDescription: 'Провайдер "{datafield2}" отлючен от ETW сессии "{object.name}" на узле {event_src.host}'
+    - LocalizationId: 'corrname_Sysmon_provider_disabled_from_Sysmon_session_2'
+      EventDescription: 'Провайдер отлючен от ETW сессии "Eventlog-Microsoft-Windows-Sysmon-Operational" на узле {event_src.host}'

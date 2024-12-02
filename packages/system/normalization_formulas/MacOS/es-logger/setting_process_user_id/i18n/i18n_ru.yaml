@@ -1,0 +1,4 @@
+Description: 'Процесс меняет свой идентификатор пользователя'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_process_user_id'
+      EventDescription: 'Процесс {subject.process.name} меняет свой идентификатор пользователя на узле {event_src.host}. Новое значение: "{object.value}"'

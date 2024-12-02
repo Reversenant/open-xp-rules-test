@@ -1,0 +1,2 @@
+table_list default
+expect 1 {"correlation_name": "Local_Groups_Enumeration_Discovery"}

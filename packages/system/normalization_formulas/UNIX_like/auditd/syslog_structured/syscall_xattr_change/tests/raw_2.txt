@@ -1,0 +1,17 @@
+{
+  "eventid": "10152",
+  "items": {
+    "PATH": [
+      "item=0 name=(null) inode=38408 dev=00:15 mode=0100640 ouid=0 ogid=101 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"systemd-journal\""
+    ],
+    "PROCTITLE": [
+      "proctitle=\"(journald)\""
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=190 success=no exit=-95 a0=32 a1=7f744598aaf1 a2=7ffe59153b30 a3=8 items=1 ppid=1 pid=1846 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"systemd-journal\" exe=\"/usr/lib/systemd/systemd-journald\" subj==unconfined key=\"pt_siem_api_xattr\" ARCH=x86_64 SYSCALL=fsetxattr AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  },
+  "node": "192.168.137.192",
+  "timestamp": "1575898241",
+  "timestampfractional": "221"
+}

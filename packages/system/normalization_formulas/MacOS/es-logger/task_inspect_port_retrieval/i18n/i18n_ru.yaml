@@ -1,0 +1,4 @@
+Description: 'Получен порт проверки задачи для процесса'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_task_inspect_port_retrieval'
+      EventDescription: 'Получен порт проверки задачи для процесса {object.name} на узле {event_src.host}'

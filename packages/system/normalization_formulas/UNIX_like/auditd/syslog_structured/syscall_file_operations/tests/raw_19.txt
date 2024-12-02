@@ -1,0 +1,20 @@
+{
+    "node": "10.125.136.66",
+    "timestamp": "1664183248",
+    "timestampfractional": "171",
+    "eventid": "55133",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=257 success=no exit=-13 a0=ffffff9c a1=56434190cf70 a2=241 a3=180 items=1 ppid=132233 pid=132234 auid=4294967295 uid=33 gid=33 euid=33 suid=33 fsuid=33 egid=33 sgid=33 fsgid=33 tty=(none) ses=4294967295 comm=\"bash\" exe=\"/usr/bin/bash\" key=\"pt_siem_home_access\" ARCH=x86_64 SYSCALL=openat AUID=\"unset\" UID=\"www-data\" GID=\"www-data\" EUID=\"www-data\" SUID=\"www-data\" FSUID=\"www-data\" EGID=\"www-data\" SGID=\"www-data\" FSGID=\"www-data\""
+        ],
+        "CWD": [
+            "cwd=\"/var/www/html\""
+        ],
+        "PATH": [
+            "item=0 name=\"/var/www/\" inode=663026 dev=fd:00 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"root\" OGID=\"root\""
+        ],
+        "PROCTITLE": [
+            "proctitle=62617368002D630062617368202D69203E26202F6465762F7463702F31302E3135382E332E342F3830383020303E2631"
+        ]
+    }
+}

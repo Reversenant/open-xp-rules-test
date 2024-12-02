@@ -1,0 +1,4 @@
+Description: 'Обновлен Security Descriptor ETW сессии'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_17'
+      EventDescription: 'Обновлен Security Descriptor ETW сессии "{object.name}"'

@@ -1,0 +1,4 @@
+Description: 'Злоумышленники могут скрывать файлы и каталоги, чтобы обойти механизмы обнаружения или скрыть следы своей активности от пользователя.'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_hiding_files_via_attrib_cmdlet'
+      EventDescription: 'На узле {event_src.host} обнаружена попытка скрыть от пользователя папку или файл. Была выполнена команда: {object.process.cmdline}'

@@ -1,0 +1,6 @@
+Description: 'Обнаружена попытка изменить конфигурацию Sysmon'
+EventDescriptions:
+    - LocalizationId: 'corrname_Create_fake_SysmonDrv_symlink'
+      EventDescription: 'Процесс "{subject.process.name}" создал зависимость для службы Sysmon64 на хосте на узле {event_src.host}'
+    - LocalizationId: 'corrname_Create_fake_SysmonDrv_symlink_2'
+      EventDescription: 'Обнаружена проблема во взаимодействии службы Sysmon64 и драйвера SysmonDrv на узле {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'Было произведено перечисление членов локальной группы пользователей'
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4798_A_users_local_group_membership_was_enumerated
+      EventDescription: 'Процесс {datafield4}, запущенный пользователем {subject.name}, перечислил членов локальной группы безопасности {object.name} на узле {event_src.host}'

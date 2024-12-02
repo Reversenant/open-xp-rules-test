@@ -1,0 +1,6 @@
+Description: 'User token management'
+EventDescriptions:
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management_create'
+      EventDescription: 'The token "{object.name}" is created for the user {object.account.name} on host {event_src.host}'
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management_delete'
+      EventDescription: 'The token "{object.name}" of the user {object.account.name} is removed on host {event_src.host}'

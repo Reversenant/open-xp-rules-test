@@ -1,0 +1,23 @@
+ObjectId: SEC-CR-195011447
+ContentAutoName: Subrule_ParentPid_Spoofing
+ExpertContext:
+    Created: 05.06.2023
+    Updated: 05.06.2023
+    KnowledgeHolders:
+        - Kirill Kiryanov
+    Usecases:
+        - Атакующие могут использовать технику Parent PID Spoofing для сокрытия своих действий
+    References:
+        - https://attack.mitre.org/techniques/T1134/004/
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 10
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1134.004
+EventDescriptions:
+    - Criteria: correlation_name = "Subrule_ParentPid_Spoofing"
+      LocalizationId: corrname_Subrule_ParentPid_Spoofing

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Помощь сообщества Security Experts Community
+    url: https://github.com/orgs/Security-Experts-Community/discussions
+    about: В случае возникновения вопросов, задайте их тут.

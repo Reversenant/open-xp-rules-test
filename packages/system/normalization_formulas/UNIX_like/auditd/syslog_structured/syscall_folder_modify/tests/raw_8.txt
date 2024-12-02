@@ -1,0 +1,24 @@
+{
+    "eventid": "4915221",
+    "timestampfractional": "065",
+    "timestamp": "1683976653",
+    "node": "10.10.56.89",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2F6F70742F61746C61737369616E2F636F6E666C75656E63652F6A72652F2F62696E2F6A617661002D446A6176612E7574696C2E6C6F6767696E672E636F6E6669672E66696C653D2F6F70742F61746C61737369616E2F636F6E666C75656E63652F636F6E662F6C6F6767696E672E70726F70657274696573002D446A617661"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/home/\" inode=655413 dev=08:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT OUID=\"root\" OGID=\"root\"",
+            "item=1 name=\"/home/confluence\" nametype=CREATE"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=83 success=no exit=-13 a0=7f1ff0248b40 a1=1ff a2=0 a3=d9e items=2 ppid=1 pid=54768 auid=4294967295 uid=1007 gid=1008 euid=1007 suid=1007 fsuid=1007 egid=1008 sgid=1008 fsgid=1008 tty=(none) ses=4294967295 comm=\"synchrony-inter\" exe=\"/opt/atlassian/confluence/jre/bin/java\" key=\"pt_siem_home_modify\" ARCH=x86_64 SYSCALL=mkdir AUID=\"unset\" UID=\"confluence\" GID=\"confluence\" EUID=\"confluence\" SUID=\"confluence\" FSUID=\"confluence\" EGID=\"confluence\" SGID=\"confluence\" FSGID=\"confluence\""
+        ],
+        "CWD": [
+            "cwd=\"/opt/atlassian/confluence/bin\""
+        ]
+    }
+}

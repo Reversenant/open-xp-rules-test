@@ -1,0 +1,3 @@
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4689_A_process_has_exited
+      EventDescription: 'Пользователь {subject.name} завершил процесс "{object.name}" на узле {event_src.host}'

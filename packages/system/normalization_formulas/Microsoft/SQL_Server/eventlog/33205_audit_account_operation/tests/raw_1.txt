@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2015-09-28T13:43:37.000000000Z"
+            },
+            "EventRecordID": "260412",
+            "Channel": "Application",
+            "Computer": "WIN-RCMC6R0VHU4",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "event_time:2015-09-28 13:43:37.3990941\nsequence_number:1\naction_id:DR  \nsucceeded:true\nis_column_permission:false\nsession_id:61\nserver_principal_id:259\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:8\nuser_defined_event_id:0\nclass_type:RL\npermission_bitmask:00000000000000000000000000000000\nsession_server_principal_name:WIN-RCMC6R0VHU4\\Administrator\nserver_principal_name:WIN-RCMC6R0VHU4\\Administrator\nserver_principal_sid:0105000000000005150000008a4fcea4ba7cbb5df710c2f2f4010000\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:WIN-RCMC6R0VHU4\ndatabase_name:secret\nschema_name:\nobject_name:test role\nstatement:DROP ROLE [test role]\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

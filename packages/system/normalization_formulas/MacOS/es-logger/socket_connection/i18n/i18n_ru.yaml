@@ -1,0 +1,4 @@
+Description: 'Процесс подключился к сокету'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_socket_connection'
+      EventDescription: 'Процесс {subject.process.name} подключился к сокету "{object.name}" с типом "{object.type}" на узле {event_src.host}'

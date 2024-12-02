@@ -1,0 +1,21 @@
+ContentAutoName: Delete_RunMRU_registry_artifact
+ExpertContext:
+    Created: 27.06.2024
+    Updated: 27.06.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут удалять артефакты чтобы препятствовать расследованию инцидентов
+        - RunMRU раздел реестра Windows, который хранит списик процессов, запущенных с использованием Win+R
+    Falsepositives: []
+    References: []
+    Improvements: []
+ObjectId: SEC-CR-453602570
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1070
+EventDescriptions:
+    - Criteria: correlation_name = "Delete_RunMRU_registry_artifact"
+      LocalizationId: corrname_Delete_RunMRU_registry_artifact

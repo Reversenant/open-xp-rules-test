@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_open_IOKit_device"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_open_IOKit_device
+ObjectId: PT-NF-9327

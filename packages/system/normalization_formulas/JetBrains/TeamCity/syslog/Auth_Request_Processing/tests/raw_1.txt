@@ -1,0 +1,1 @@
+<190>Sep 27 17:19:17 teamcity teamcity-auth.log: [2023-09-27 17:19:17,734]  DEBUG [t, no auth; http-nio-80-exec-2] - Processing request with authorization header protocol: 'Bearer': GET '/app/rest/builds', from client 10.125.3.2:58751, no user-agent, no auth

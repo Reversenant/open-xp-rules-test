@@ -1,0 +1,7 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_dbcc_execute" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_dbcc_execute
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_dbcc_execute" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_dbcc_execute_fail
+ObjectId: PT-NF-5599
+ContentAutoName: PT_Microsoft_SQL_Server_eventlog_33205_audit_dbcc_execute

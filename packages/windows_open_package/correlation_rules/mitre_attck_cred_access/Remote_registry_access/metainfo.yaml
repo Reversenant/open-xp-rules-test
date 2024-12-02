@@ -1,0 +1,25 @@
+ObjectId: SEC-CR-131630298
+ContentAutoName: Remote_registry_access
+ExpertContext:
+    Created: 13.06.2023
+    Updated: 13.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут получать доступ к реестру удаленно с помощью SMB-шары IPC$ (например для получения доступа к учетным данным, хранящимся в SAM)
+    References:
+        - https://attack.mitre.org/techniques/T1003/002/
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4624
+              - 4672
+              - 5145
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003.002
+EventDescriptions:
+    - Criteria: correlation_name = "Remote_registry_access"
+      LocalizationId: corrname_Remote_registry_access

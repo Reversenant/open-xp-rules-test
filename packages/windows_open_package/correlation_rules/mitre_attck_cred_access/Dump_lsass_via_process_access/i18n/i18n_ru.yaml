@@ -1,0 +1,4 @@
+Description: 'Атакующие могут попытаться получить доступ к учетным материалам, хранящимся в памяти процесса LSASS'
+EventDescriptions:
+    - LocalizationId: 'corrname_Dump_lsass_via_process_access'
+      EventDescription: 'Процесс {subject.process.fullpath} получил доступ к процессу LSASS'

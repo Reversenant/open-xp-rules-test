@@ -1,0 +1,6 @@
+Description: 'Процесс переименовал или скопировал файл'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_renamed_rename'
+      EventDescription: 'Процесс {subject.process.name} переименовал файл "{object.name}" на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_renamed_copy'
+      EventDescription: 'Процесс {subject.process.name} скопировал файл "{object.name}" на узле {event_src.host}'

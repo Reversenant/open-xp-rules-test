@@ -1,0 +1,55 @@
+EVENTLOG = 'EventID="4799"'
+COND = lower($Channel)=="security" and $Provider["Name"]=="Microsoft-Windows-Security-Auditing"
+
+subject = "account"
+action = "view"
+object = "user_group"
+status = "success"
+
+subject.account.id = $Data["SubjectUserSid"]
+subject.account.name = lower($Data["SubjectUserName"])
+subject.account.domain = lower($Data["SubjectDomainName"])
+subject.account.session_id = maybe_number16($Data["SubjectLogonId"])
+
+subject.process.id = maybe_number16($Data["CallerProcessId"])
+$name_tmp = csv($Data["CallerProcessName"], "\\", "'")
+subject.process.name = $name_tmp[length($name_tmp) - 1]
+subject.process.path = strip($Data["CallerProcessName"], "", subject.process.name)
+subject.process.fullpath = $Data["CallerProcessName"]
+
+object.type = "local security-enabled"
+object.name = $Data["TargetUserName"]
+object.id = $Data["TargetSid"]
+
+msgid = $EventID
+time = $TimeCreated["SystemTime"]
+importance = "info"
+
+category.generic = "Group"
+category.high = "Users And Rights Management"
+category.low = "Manipulation"
+
+event_src.subsys = $Channel
+if find_substr($Computer, '.') != null then
+    event_src.fqdn = lower($Computer)
+    event_src.hostname = lower(substr($Computer, 0, find_substr($Computer, '.')))
+else
+    event_src.hostname = lower($Computer)
+endif
+event_src.vendor = "microsoft"
+event_src.title = "windows"
+event_src.category = "Operating system"
+
+id = "PT_Microsoft_Windows_eventlog_4799_Process_enumerates_members_of_security_enabled"
+
+# -- DEPRECATED --
+# lines from here will be deleted in future releases
+
+subject.id = subject.account.id
+subject.name = subject.account.name
+subject.domain = subject.account.domain
+
+datafield1 = subject.account.session_id    # ID сессии
+datafield2 = subject.process.id            # ID перечисляющего процесса
+datafield3 = subject.process.fullpath
+datafield4 = subject.process.name

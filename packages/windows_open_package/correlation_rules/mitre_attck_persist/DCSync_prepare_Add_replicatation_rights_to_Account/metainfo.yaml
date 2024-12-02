@@ -1,0 +1,24 @@
+ObjectId: SEC-CR-384735839
+ContentAutoName: DCSync_prepare_Add_replicatation_rights_to_Account
+ExpertContext:
+    Created: 08.06.2023
+    Updated: 11.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Перед проведением атаки DCSync атакующие могут добавять учетным записям права доступа на репликацию объектов AD
+    References:
+        - https://www.alteredsecurity.com/post/a-primer-on-dcsync-attack-and-detection
+        - https://attack.mitre.org/techniques/T1098/
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 5136
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1098
+EventDescriptions:
+    - Criteria: correlation_name = "DCSync_prepare_Add_replicatation_rights_to_Account"
+      LocalizationId: corrname_DCSync_prepare_Add_replicatation_rights_to_Account

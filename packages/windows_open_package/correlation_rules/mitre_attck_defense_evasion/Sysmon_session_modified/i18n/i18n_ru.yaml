@@ -1,0 +1,6 @@
+Description: 'Обнаружена проблема в работе Sysmon'
+EventDescriptions:
+    - LocalizationId: 'corrname_Sysmon_session_modified'
+      EventDescription: 'Изменена конфигурация ETW сессии "{object.name}" на узле {event_src.host}'
+    - LocalizationId: 'corrname_Sysmon_session_modified_2'
+      EventDescription: 'Изменена конфигурация ETW сессии "Eventlog-Microsoft-Windows-Sysmon-Operational" на узле {event_src.host}'

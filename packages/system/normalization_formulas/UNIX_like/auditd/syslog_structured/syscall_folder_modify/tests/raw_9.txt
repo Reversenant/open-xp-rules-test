@@ -1,0 +1,27 @@
+{
+    "eventid": "16256",
+    "timestampfractional": "352",
+    "timestamp": "1683917168",
+    "node": "10.10.128.13",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2F7573722F6C6F63616C2F62696E2F7061636B657200706C7567696E007061636B65722D6275696C6465722D71656D75"
+        ],
+        "CWD": [
+            "cwd=\"/home/gitlab-runner/builds/3yNj9zKj/0/oavdeev/packer/builds/windows/win2022_yc\""
+        ],
+        "EOE": [
+            ""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=258 success=yes exit=0 a0=ffffffffffffff9c a1=c000074b00 a2=1ed a3=7fbf2ecd0538 items=5 ppid=3045 pid=3071 auid=4294967295 uid=1066 gid=1066 euid=1066 suid=1066 fsuid=1066 egid=1066 sgid=1066 fsgid=1066 tty=(none) ses=4294967295 comm=\"packer\" exe=\"/usr/local/bin/packer\" subj=unconfined key=\"pt_siem_home_modify\" ARCH=x86_64 SYSCALL=mkdirat AUID=\"unset\" UID=\"gitlab-runner\" GID=\"gitlab-runner\" EUID=\"gitlab-runner\" SUID=\"gitlab-runner\" FSUID=\"gitlab-runner\" EGID=\"gitlab-runner\" SGID=\"gitlab-runner\" FSGID=\"gitlab-runner\""
+        ],
+        "PATH": [
+            "item=0 name=\"../../../../disk/\" inode=2622024 dev=fe:02 mode=040755 ouid=1066 ogid=1066 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"gitlab-runner\" OGID=\"gitlab-runner\"",
+            "item=1 name=(null) inode=2622024 dev=fe:02 mode=040755 ouid=1066 ogid=1066 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"gitlab-runner\" OGID=\"gitlab-runner\"",
+            "item=2 name=(null) nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0",
+            "item=3 name=(null) inode=2622024 dev=fe:02 mode=040755 ouid=1066 ogid=1066 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"gitlab-runner\" OGID=\"gitlab-runner\"",
+            "item=4 name=(null) inode=2622025 dev=fe:02 mode=040755 ouid=1066 ogid=1066 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"gitlab-runner\" OGID=\"gitlab-runner\""
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+Description: 'Сеанс псевдотерминального устройства назначен пользователю'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_grant_pseudoterminal_device_to_user'
+      EventDescription: 'Сеанс псевдотерминального устройства версии {object.version} назначен пользователю с ID {subject.account.id} на узле {event_src.host}'

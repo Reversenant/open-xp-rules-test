@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_socket_binding_to_path"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_socket_binding_to_path
+ObjectId: PT-NF-9301

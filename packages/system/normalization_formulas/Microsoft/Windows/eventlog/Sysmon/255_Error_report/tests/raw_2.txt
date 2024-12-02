@@ -1,0 +1,47 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "UtcTime",
+                    "text": "2024-04-21 18:52:29.285"
+                },
+                {
+                    "Name": "ID",
+                    "text": "DriverCommunication"
+                },
+                {
+                    "Name": "Description",
+                    "text": "Failed to retrieve events - Last error: Параметр задан неверно."
+                }
+            ]
+        },
+        "System": {
+            "Channel": "Microsoft-Windows-Sysmon/Operational",
+            "Computer": "win10-work.stand2008.local",
+            "Correlation": "",
+            "EventID": "255",
+            "EventRecordID": "79728097",
+            "Execution": {
+                "ProcessID": "7800",
+                "ThreadID": "3524"
+            },
+            "Keywords": "0x8000000000000000",
+            "Level": "2",
+            "Opcode": "0",
+            "Provider": {
+                "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                "Name": "Microsoft-Windows-Sysmon"
+            },
+            "Security": {
+                "UserID": "S-1-5-18"
+            },
+            "Task": "255",
+            "TimeCreated": {
+                "SystemTime": "2024-04-21T18:52:29.2862207Z"
+            },
+            "Version": "3"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

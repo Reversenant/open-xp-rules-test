@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "mach_time": 23673540548819,
+  "event_type": 101,
+  "thread": {
+    "thread_id": 170121
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "get_task_read": {
+      "target": {
+        "signing_id": "com.apple.zgrep",
+        "parent_audit_token": {
+          "asid": 100005,
+          "pidversion": 11119,
+          "ruid": 501,
+          "euid": 501,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 5452
+        },
+        "codesigning_flags": 570522385,
+        "executable": {
+          "path": "/usr/bin/grep",
+          "stat": {
+            "st_blocks": 72,
+            "st_blksize": 4096,
+            "st_rdev": 0,
+            "st_dev": 16777220,
+            "st_uid": 0,
+            "st_gid": 0,
+            "st_ino": 1152921500312435272,
+            "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_flags": 524320,
+            "st_nlink": 5,
+            "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_size": 186512,
+            "st_gen": 0,
+            "st_mode": 33261,
+            "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+          },
+          "path_truncated": false
+        },
+        "ppid": 5452,
+        "tty": {
+          "path": "/dev/ttys006",
+          "stat": {
+            "st_blocks": 0,
+            "st_blksize": 131072,
+            "st_rdev": 268435462,
+            "st_dev": 1740322812,
+            "st_uid": 501,
+            "st_gid": 4,
+            "st_ino": 1193,
+            "st_birthtimespec": "1970-01-01T00:00:00.000000000Z",
+            "st_flags": 0,
+            "st_nlink": 1,
+            "st_mtimespec": "2023-07-24T12:12:31.615325000Z",
+            "st_ctimespec": "2023-07-24T12:12:31.615325000Z",
+            "st_size": 0,
+            "st_gen": 0,
+            "st_mode": 8592,
+            "st_atimespec": "2023-07-24T12:12:31.613559000Z"
+          },
+          "path_truncated": false
+        },
+        "start_time": "2023-07-24T12:12:31.616784Z",
+        "is_platform_binary": true,
+        "group_id": 8000,
+        "audit_token": {
+          "asid": 100005,
+          "pidversion": 17698,
+          "ruid": 501,
+          "euid": 501,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 8001
+        },
+        "is_es_client": false,
+        "responsible_audit_token": {
+          "asid": 100005,
+          "pidversion": 3863,
+          "ruid": 501,
+          "euid": 501,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 1708
+        },
+        "session_id": 5451,
+        "original_ppid": 5452,
+        "cdhash": "F73AD5AC38A0C9B2282B88C34063C1B0929178FB",
+        "team_id": null
+      },
+      "type": 0
+    }
+  },
+  "time": "2023-07-24T12:12:31.630207016Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.ps",
+    "parent_audit_token": {
+      "asid": 100005,
+      "pidversion": 11119,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 5452
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/bin/ps",
+      "stat": {
+        "st_blocks": 88,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312434752,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 203584,
+        "st_gen": 0,
+        "st_mode": 35309,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 5452,
+    "tty": {
+      "path": "/dev/ttys006",
+      "stat": {
+        "st_blocks": 0,
+        "st_blksize": 131072,
+        "st_rdev": 268435462,
+        "st_dev": 1740322812,
+        "st_uid": 501,
+        "st_gid": 4,
+        "st_ino": 1193,
+        "st_birthtimespec": "1970-01-01T00:00:00.000000000Z",
+        "st_flags": 0,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-07-24T12:12:31.615325000Z",
+        "st_ctimespec": "2023-07-24T12:12:31.615325000Z",
+        "st_size": 0,
+        "st_gen": 0,
+        "st_mode": 8592,
+        "st_atimespec": "2023-07-24T12:12:31.613559000Z"
+      },
+      "path_truncated": false
+    },
+    "start_time": "2023-07-24T12:12:31.615027Z",
+    "is_platform_binary": true,
+    "group_id": 8000,
+    "audit_token": {
+      "asid": 100005,
+      "pidversion": 17697,
+      "ruid": 501,
+      "euid": 0,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 8000
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100005,
+      "pidversion": 3863,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 1708
+    },
+    "session_id": 5451,
+    "original_ppid": 5452,
+    "cdhash": "EDA08B99A386EC1BC85A3F0F3BECCD08C83F0864",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 873
+}

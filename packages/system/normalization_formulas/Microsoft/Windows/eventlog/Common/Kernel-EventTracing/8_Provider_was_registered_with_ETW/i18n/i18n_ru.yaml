@@ -1,0 +1,4 @@
+Description: 'Провайдер зарегистрирован в ETW'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_8'
+      EventDescription: 'Провайдер "{object.name}" зарегистрирован в Event Tracing for Windows'

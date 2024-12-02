@@ -1,0 +1,6 @@
+Description: 'A problem has been detected in Sysmon activity'
+EventDescriptions:
+    - LocalizationId: 'corrname_Sysmon_provider_disabled_from_Sysmon_session'
+      EventDescription: 'Provider "{datafield2}" is no longer enabled to session "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'corrname_Sysmon_provider_disabled_from_Sysmon_session_2'
+      EventDescription: 'Provider is no longer enabled to session "Eventlog-Microsoft-Windows-Sysmon-Operational" on host {event_src.host}'

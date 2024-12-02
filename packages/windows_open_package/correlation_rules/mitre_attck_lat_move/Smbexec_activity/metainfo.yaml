@@ -1,0 +1,41 @@
+ContentAutoName: Smbexec_activity
+ExpertContext:
+    Created: 26.07.2023
+    Updated: 31.07.2023
+    KnowledgeHolders:
+        - driverenok
+    References:
+        - https://attack.mitre.org/techniques/T1021/002/
+        - https://attack.mitre.org/techniques/T1569/002/
+        - https://rift.stacktitan.com/smbexec/
+        - https://community.netwitness.com/t5/netwitness-community-blog/detecting-lateral-movement-in-rsa-netwitness-smbexec/ba-p/520798
+        - https://habr.com/ru/companies/pt/articles/460517/
+        - https://habr.com/ru/companies/varonis/articles/514918/
+        - https://github.com/driverenok/siem-content/tree/main/evtx_attack_samples/lateral_movement/remote_services/smb_windows_admin_shares/smbexec
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+              - 11
+              - 1
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4657
+              - 4663
+              - 7045
+              - 4697
+              - 4688
+              - 5145
+    Usecases:
+        - Атакующие могут использовать инструменты удаленного администрирования для выполнения горизонтального перемещения по сети жертвы
+ObjectId: SEC-CR-186456257
+ContentRelations:
+    Implements:
+        ATTACK:
+            lateral-movement:
+                - T1021.002
+            execution:
+                - T1569.002
+EventDescriptions:
+    - Criteria: correlation_name = "Smbexec_activity"
+      LocalizationId: corrname_Smbexec_activity

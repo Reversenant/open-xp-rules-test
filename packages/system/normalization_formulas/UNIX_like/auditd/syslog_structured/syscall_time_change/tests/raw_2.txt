@@ -1,0 +1,17 @@
+{
+    "eventid": "12926077",
+    "timestampfractional": "940",
+    "timestamp": "1653135723",
+    "node": "10.10.10.10",
+    "items": {
+        "EOE": [
+            ""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=159 success=yes exit=0 a0=7f207094dac0 a1=989680 a2=e5bf3 a3=38081fad7692c2 items=0 ppid=1 pid=30084 auid=4294967295 uid=110 gid=114 euid=110 suid=110 fsuid=110 egid=114 sgid=114 fsgid=114 tty=(none) ses=4294967295 comm=\"PLUGIN[timex]\" exe=\"/usr/sbin/netdata\" key=\"pt_siem_api_time\" ARCH=x86_64 SYSCALL=adjtimex AUID=\"unset\" UID=\"netdata\" GID=\"netdata\" EUID=\"netdata\" SUID=\"netdata\" FSUID=\"netdata\" EGID=\"netdata\" SGID=\"netdata\" FSGID=\"netdata\""
+        ],
+        "PROCTITLE": [
+            "proctitle=2F7573722F7362696E2F6E657464617461002D50002F7661722F72756E2F6E6574646174612F6E6574646174612E706964002D44"
+        ]
+    }
+}

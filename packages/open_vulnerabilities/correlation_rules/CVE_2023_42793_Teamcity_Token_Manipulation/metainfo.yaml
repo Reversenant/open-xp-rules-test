@@ -1,0 +1,35 @@
+ContentAutoName: CVE_2023_42793_Teamcity_Token_Manipulation
+ExpertContext:
+    Created: 27.09.2023
+    Updated: 03.10.2023
+    KnowledgeHolders:
+        - Sergey Scherbakov
+    Usecases:
+        - Атакующие могут воспользоваться уязвимостью CVE_2023_42793, чтобы создать в TeamCity токен для любого пользователя и использовать для обращения к API TeamCity
+        - Например, полученный токен привилегированного пользователя позволит злоумышленникам получить доступ к управлению проектами, агентами и пользователями TeamCity
+        - Для обнаружения активности нужно включить сбор teamcity-rest.log лога
+        - Обнаруживает запрос токена с именем RPC2. Может быть получен как авторизованным, так и не авторизованным пользователем. При этом в журнале не будет события создания токена
+    References:
+        - https://nvd.nist.gov/vuln/detail/CVE-2023-42793
+        - https://github.com/H454NSec/CVE-2023-42793
+        - https://exploit-notes.hdks.org/exploit/web/teamcity-pentesting/
+ObjectId: SEC-CR-723173698
+ContentRelations:
+    Implements:
+        ATTACK:
+            initial-access:
+                - T1195.001
+                - T1195.002
+            privilege-escalation:
+                - T1134.003
+            defense-evasion:
+                - T1134.003
+EventDescriptions:
+    - Criteria: correlation_name = "CVE_2023_42793_Teamcity_Token_Manipulation" and object.account.name != null and subject.account.id = null
+      LocalizationId: corrname_CVE_2023_42793_Teamcity_Token_Manipulation
+    - Criteria: correlation_name = "CVE_2023_42793_Teamcity_Token_Manipulation" and object.account.id != null and subject.account.id = null
+      LocalizationId: corrname_CVE_2023_42793_Teamcity_Token_Manipulation_2
+    - Criteria: correlation_name = "CVE_2023_42793_Teamcity_Token_Manipulation" and object.account.name != null and subject.account.id != null
+      LocalizationId: corrname_CVE_2023_42793_Teamcity_Token_Manipulation_3
+    - Criteria: correlation_name = "CVE_2023_42793_Teamcity_Token_Manipulation" and object.account.id != null and subject.account.id != null
+      LocalizationId: corrname_CVE_2023_42793_Teamcity_Token_Manipulation_4

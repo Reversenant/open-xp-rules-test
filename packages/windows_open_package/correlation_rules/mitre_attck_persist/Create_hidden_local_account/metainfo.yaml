@@ -1,0 +1,31 @@
+ObjectId: SEC-CR-176508511
+ContentAutoName: Create_hidden_local_account
+ExpertContext:
+    Created: 08.06.2023
+    Updated: 09.06.2023
+    References:
+        - https://www.elastic.co/guide/en/security/current/creation-of-a-hidden-local-user-account.html
+    KnowledgeHolders:
+        - Vadim Varganov (d3f0x0)
+    Usecases:
+        - Attackers create accounts to hide and bypass detection
+    Falsepositives:
+        - Undefined
+    Improvements:
+        - Add suborner https://github.com/r4wd3r/Suborner
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+              - 12
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4657
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1136
+EventDescriptions:
+    - Criteria: correlation_name = "Create_hidden_local_account"
+      LocalizationId: corrname_Create_hidden_local_account

@@ -1,0 +1,4 @@
+Description: 'Обнаружение «бокового движения» через сервис mshta, осуществляющий сетевые подключения'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_MSHTA_LethalHTA'
+      EventDescription: 'На узле {event_src.host} обнаружен запуск процессов {object.process.parent.cmdline} и дочернего {object.process.name} и последующий за ним сетевое подключение  на адрес {dst.host}:{dst.port}'

@@ -1,0 +1,4 @@
+Description: 'Процесс скопировал файл'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_copy_file'
+      EventDescription: 'Процесс {subject.process.name} скопировал файл "{object.name}" на узле {event_src.host}'

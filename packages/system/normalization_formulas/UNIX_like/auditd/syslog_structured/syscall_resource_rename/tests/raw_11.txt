@@ -1,0 +1,26 @@
+{
+    "eventid": "27852553",
+    "timestampfractional": "266",
+    "timestamp": "1684134049",
+    "node": "10.10.52.40",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=6D76007673636F64652D7365727665722D6C696E75782D7836342F62696E007673636F64652D7365727665722D6C696E75782D7836342F657874656E73696F6E73007673636F64652D7365727665722D6C696E75782D7836342F4C4943454E5345007673636F64652D7365727665722D6C696E75782D7836342F6E6F64650076"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"./\" inode=1253581 dev=fe:00 mode=040755 ouid=1010 ogid=1010 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"rbolgov\" OGID=\"rbolgov\"",
+            "item=1 name=\"vscode-server-linux-x64/\" inode=1253582 dev=fe:00 mode=040755 ouid=1010 ogid=1010 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"rbolgov\" OGID=\"rbolgov\"",
+            "item=2 name=\"vscode-server-linux-x64/bin\" inode=1255059 dev=fe:00 mode=040755 ouid=1010 ogid=1010 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"rbolgov\" OGID=\"rbolgov\"",
+            "item=3 name=\"./bin\" inode=1255059 dev=fe:00 mode=040755 ouid=1010 ogid=1010 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"rbolgov\" OGID=\"rbolgov\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=316 success=yes exit=0 a0=ffffff9c a1=7ffe7eb63c74 a2=ffffff9c a3=56520a544830 items=4 ppid=3434180 pid=3434244 auid=1010 uid=1010 gid=1010 euid=1010 suid=1010 fsuid=1010 egid=1010 sgid=1010 fsgid=1010 tty=(none) ses=2989 comm=\"mv\" exe=\"/usr/bin/mv\" subj=unconfined key=\"pt_siem_home_modify\" ARCH=x86_64 SYSCALL=renameat2 AUID=\"rbolgov\" UID=\"rbolgov\" GID=\"rbolgov\" EUID=\"rbolgov\" SUID=\"rbolgov\" FSUID=\"rbolgov\" EGID=\"rbolgov\" SGID=\"rbolgov\" FSGID=\"rbolgov\""
+        ],
+        "CWD": [
+            "cwd=\"/home/rbolgov/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435\""
+        ]
+    }
+}

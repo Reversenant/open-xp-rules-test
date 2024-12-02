@@ -1,0 +1,4 @@
+Description: 'A process connected to a socket'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_socket_connection'
+      EventDescription: 'Process {subject.process.name} connected to socket "{object.name}" with type "{object.type}" on host {event_src.host}'

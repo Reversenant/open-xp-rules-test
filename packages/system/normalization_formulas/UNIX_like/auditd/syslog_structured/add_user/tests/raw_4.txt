@@ -1,0 +1,11 @@
+{
+    "eventid": "61323059",
+    "timestampfractional": "855",
+    "timestamp": "1685091833",
+    "node": "10.20.177.128",
+    "items": {
+        "ADD_USER": [
+            "pid=16726 uid=0 auid=4294967295 ses=4294967295 subj==docker-default (enforce) msg='op=adding home directory id=999 exe=\"/usr/sbin/useradd\" hostname=? addr=? terminal=? res=success' UID=\"root\" AUID=\"unset\" ID=\"systemd-coredump\""
+        ]
+    }
+}

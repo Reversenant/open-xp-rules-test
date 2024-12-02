@@ -1,0 +1,4 @@
+Description: 'Creating a BCDEdit process'
+EventDescriptions:
+    - LocalizationId: 'corrname_BCDEdit'
+      EventDescription: 'User {subject.account.name} started the process {object.process.cmdline}'

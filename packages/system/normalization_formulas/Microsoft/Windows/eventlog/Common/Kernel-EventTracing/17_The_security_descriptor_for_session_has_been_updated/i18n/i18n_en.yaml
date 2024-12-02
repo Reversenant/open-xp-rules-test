@@ -1,0 +1,4 @@
+Description: 'The security descriptor for ETW session has been updated'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_17'
+      EventDescription: 'The security descriptor for ETW session "{object.name}" has been updated'

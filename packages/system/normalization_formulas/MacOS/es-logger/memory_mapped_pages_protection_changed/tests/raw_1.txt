@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "mach_time": 23665111826645,
+  "event_type": 21,
+  "thread": {
+    "thread_id": 104920
+  },
+  "version": 7,
+  "seq_num": 1,
+  "event": {
+    "mprotect": {
+      "address": 24889401016320,
+      "protection": 3,
+      "size": 262144
+    }
+  },
+  "time": "2023-07-24T12:12:23.201453686Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.github.Electron.helper",
+    "parent_audit_token": {
+      "asid": 100005,
+      "pidversion": 13192,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 6248
+    },
+    "codesigning_flags": 570491649,
+    "executable": {
+      "path": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)",
+      "stat": {
+        "st_blocks": 224,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 501,
+        "st_gid": 20,
+        "st_ino": 1736718,
+        "st_birthtimespec": "2023-07-12T17:42:16.000000000Z",
+        "st_flags": 0,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-07-12T17:42:16.000000000Z",
+        "st_ctimespec": "2023-07-18T07:19:26.069498375Z",
+        "st_size": 112672,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-07-24T09:22:19.564950865Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 6248,
+    "tty": null,
+    "start_time": "2023-07-24T09:22:00.542124Z",
+    "is_platform_binary": false,
+    "group_id": 5946,
+    "audit_token": {
+      "asid": 100005,
+      "pidversion": 13249,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 6270
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100005,
+      "pidversion": 12316,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 5946
+    },
+    "session_id": 1,
+    "original_ppid": 6248,
+    "cdhash": "C62A1E45726AD1393A6386FE42D662269BB427F8",
+    "team_id": "UBF8T346G9"
+  },
+  "action_type": 1,
+  "global_seq_num": 138
+}

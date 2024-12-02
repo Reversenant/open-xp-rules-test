@@ -1,0 +1,4 @@
+Description: 'Процесс меняет свой идентификатор группы'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_process_group_id'
+      EventDescription: 'Процесс {subject.process.name} меняет свой идентификатор группы на узле {event_src.host}. Новое значение: "{object.group}"'

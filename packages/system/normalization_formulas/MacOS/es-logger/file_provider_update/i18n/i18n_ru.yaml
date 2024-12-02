@@ -1,0 +1,4 @@
+Description: 'Обновлен файл'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_provider_update'
+      EventDescription: 'Обновлен файл "{object.name}" на узле {event_src.host}. Новое значение: "{object.new_value}"'

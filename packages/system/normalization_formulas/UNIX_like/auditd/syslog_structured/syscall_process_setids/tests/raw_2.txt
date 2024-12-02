@@ -1,0 +1,14 @@
+{
+  "node": "192.168.137.151",
+  "timestamp": "1581704308",
+  "timestampfractional": "180",
+  "eventid": "361080",
+  "items": {
+    "PROCTITLE": [
+      "proctitle=2F7573722F6C69622F706F73746669782F62696E2F2F6D6173746572002D77"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=105 success=yes exit=0 a0=0 a1=7ffe3cc74e2c a2=ffffffffffffffff a3=0 items=0 ppid=1 pid=1876 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"master\" exe=\"/usr/lib/postfix/bin/master\" key=(null) ARCH=x86_64 SYSCALL=setuid AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  }
+}

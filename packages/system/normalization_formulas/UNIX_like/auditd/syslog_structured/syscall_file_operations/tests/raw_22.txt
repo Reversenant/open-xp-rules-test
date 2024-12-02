@@ -1,0 +1,50 @@
+{
+    "eventid": "335485693",
+    "timestampfractional": "748",
+    "timestamp": "1683907201",
+    "node": "10.24.4.254",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=\"(sh)\""
+        ],
+        "CWD": [
+            "cwd=\"/proc\""
+        ],
+        "MAC_IPSEC_EVENT": [
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304649",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304647",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304648",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304651",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304650",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304652",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304653",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304654",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304655",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304656",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304657",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304658",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304659",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304660",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304661",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304662",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304663",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304664",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304665",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304666",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304667",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304668",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304669",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304670",
+            "op=SA-replayed-pkt src=195.133.251.202 dst=10.24.4.254 spi=3344791795(0xc75d78f3) seqno=304672"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/sys/devices/system/cpu/cpu3/cpufreq/stats/time_in_state\" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=257 success=no exit=-2 a0=ffffff9c a1=55eeafd2dc20 a2=0 a3=0 items=1 ppid=1 pid=4102158 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"atop\" exe=\"/usr/bin/atop\" subj=unconfined key=(null) ARCH=x86_64 SYSCALL=openat AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ]
+    }
+}

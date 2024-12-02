@@ -1,0 +1,50 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject != "account" and object.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject != "account" and object.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_noobjname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "failure" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_failure
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject = "account" and object.name != null and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_objname_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject = "account" and object.name = null and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_noobjname_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "failure" and subject = "account" and subject.account.name = null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_failure_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject = "account" and object.name != null and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_objname_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject = "account" and object.name = null and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_noobjname_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_failure_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject = "account" and object.name != null and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_objname_name_with_obj_acc_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "success" and subject = "account" and object.name = null and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_success_noobjname_name_with_obj_acc_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_access_mode" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chmod_failure_name_with_obj_acc_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject != "account" and object.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject != "account" and object.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_noobjname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "failure" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_failure
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject = "account" and object.name != null and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_objname_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject = "account" and object.name = null and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_noobjname_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "failure" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_failure_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject = "account" and object.name != null and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_objname_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject = "account" and object.name = null and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_noobjname_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_failure_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject = "account" and object.name != null and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_objname_name_with_obj_acc_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "success" and subject = "account" and object.name = null and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_success_noobjname_name_with_obj_acc_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify" and object.property = "file_owner_uid | file_owner_gid" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_attributes_modify_chown_failure_name_with_obj_acc_name
+ObjectId: PT-NF-6030

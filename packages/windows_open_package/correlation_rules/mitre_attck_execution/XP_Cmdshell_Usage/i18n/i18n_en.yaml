@@ -1,0 +1,4 @@
+Description: 'The rule detects the execution of commands through the module "xp_cmdshell"'
+EventDescriptions:
+    - LocalizationId: 'corrname_XP_Cmdshell_Usage'
+      EventDescription: 'User {subject.account.name} executed command {datafield8} via xp_cmdshell on host {event_src.host}'

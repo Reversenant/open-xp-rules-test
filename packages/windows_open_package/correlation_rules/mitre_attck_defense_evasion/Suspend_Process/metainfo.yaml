@@ -1,0 +1,27 @@
+ObjectId: SEC-CR-162042829
+ContentAutoName: Suspend_prpcess
+ExpertContext:
+    Created: 09.06.2023
+    Updated: 12.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут приостанавливать выполнение процесса (PROCESS_SUSPEND_RESUME) с целью внедрения в него вредоносного кода (техники Process Hollowing, Process Herpaderping)
+    References:
+        - https://www.systemconf.com/2020/07/31/dll-injection-and-process-hollowing-detection-in-pest-code-analysis/
+        - https://attack.mitre.org/techniques/T1055
+        - https://www.securitylab.ru/analytics/535253.php
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 10
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1055
+            privilege-escalation:
+                - T1055
+EventDescriptions:
+    - Criteria: correlation_name = "Suspend_Process"
+      LocalizationId: corrname_Suspend_prpcess

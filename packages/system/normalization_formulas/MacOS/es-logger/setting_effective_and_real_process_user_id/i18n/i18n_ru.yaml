@@ -1,0 +1,4 @@
+Description: 'Процесс меняет свой реальный и эффективный идентификаторы пользователя'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_effective_and_real_process_user_id'
+      EventDescription: 'Процесс {subject.process.name} меняет свой реальный и эффективный идентификаторы пользователя на узле {event_src.host}'

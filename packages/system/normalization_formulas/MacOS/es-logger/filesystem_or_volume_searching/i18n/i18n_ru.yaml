@@ -1,0 +1,4 @@
+Description: 'Поиск пдключенной файловой системы или тома хранения'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_filesystem_or_volume_searching'
+      EventDescription: 'Процесс {subject.process.name} ищет подключенную файловую систему или том хранения "{object.storage.name}" на узле {event_src.host}'

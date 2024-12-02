@@ -1,0 +1,6 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_authentication" and status = "success"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_authentication_success
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_authentication" and status = "failure"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_authentication_failure
+ObjectId: PT-NF-9258

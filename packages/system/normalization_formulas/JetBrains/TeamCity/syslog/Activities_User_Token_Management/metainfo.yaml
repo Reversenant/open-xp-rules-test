@@ -1,0 +1,38 @@
+EventDescriptions:
+    - Criteria: id = "PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management" and action = "create"
+      LocalizationId: PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management_create
+    - Criteria: id = "PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management" and action = "remove"
+      LocalizationId: PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management_delete
+ObjectId: PT-NF-6698
+
+
+########
+# raws: 1
+# Context_Exception: No exceptions
+# Level1: Access Management
+# Context: Работа с физическими и цифровыми сертификатами, токенами и ключами доступа, включая ключи шифрования и ЭЦП
+# Level2_Group: Аккаунты, лицензии и шифрование
+# Level2: Virtual Key
+# Level3: Manipulation
+# Level3_Action: create
+# Action_Status: success
+# Interaction_Schema: Explicit Subject
+# Subject: account
+# Network_Layout: event_src
+########
+
+########
+# raws: 2
+# Context_Exception: No exceptions
+# Level1: Access Management
+# Context: Работа с физическими и цифровыми сертификатами, токенами и ключами доступа, включая ключи шифрования и ЭЦП
+# Level2_Group: Аккаунты, лицензии и шифрование
+# Level2: Virtual Key
+# Level3: Manipulation
+# Level3_Action: remove
+# Action_Status: success
+# Interaction_Schema: Explicit Subject
+# Subject: account
+# Network_Layout: event_src
+########
+ContentAutoName: PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management

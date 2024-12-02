@@ -1,0 +1,4 @@
+Description: 'Провайдер удален из ETW'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_9'
+      EventDescription: 'Провайдер "{object.name}" удален из Event Tracing for Windows'

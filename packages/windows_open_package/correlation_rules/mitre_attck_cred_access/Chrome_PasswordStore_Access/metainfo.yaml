@@ -1,0 +1,31 @@
+ContentAutoName: Chrome_PasswordStore_Access
+ExpertContext:
+    Created: 26.06.2024
+    Updated: 08.07.2024
+    KnowledgeHolders:
+        - Sagatjkeee
+    Usecases:
+        - Атакующие могут осуществить попытку несанкционированного доступа к хранилищу паролей браузера Google Chrome
+    Falsepositives:
+        - Легитимный доступ пользователя к хранилищу паролей. Возможно частое срабатывание, поэтому важность - info.
+    References:
+        - https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/windows-logon-scenarios#BKMK_InteractiveLogon
+        - https://community.splunk.com/t5/All-Apps-and-Add-ons/EventCode-4625-LogonType-2-by-Google-Chrome/m-p/414012
+        - https://support.google.com/chrome/thread/7328710/chrome-requesting-and-failing-windows-account-logon-windows-10-64bit?hl=en
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4624
+              - 4625
+ObjectId: SEC-CR-575668016
+EventDescriptions:
+    - Criteria: correlation_name = "Chrome_PasswordStore_Access" and status = "success"
+      LocalizationId: corrname_Chrome_PasswordStore_Access
+    - Criteria: correlation_name = "Chrome_PasswordStore_Access" and status = "failure"
+      LocalizationId: corrname_Chrome_PasswordStore_Access_2
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1555.003

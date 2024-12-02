@@ -1,0 +1,26 @@
+ObjectId: SEC-CR-156832011
+ContentAutoName: KeePass_CredDump
+ExpertContext:
+    Created: 05.06.2023
+    Updated: 05.06.2023
+    KnowledgeHolders:
+        - Kirill Kiryanov
+    Usecases:
+        - Атакующие могут вытащить мастер ключ из памяти процесса keepass.exe, при условии, что был введен мастер ключ
+    References:
+        - https://github.com/denandz/KeeFarce
+        - https://github.com/HoLLy-HaCKeR/KeePassHax
+        - https://github.com/GhostPack/KeeThief
+        - https://github.com/AlessandroZ/LaZagne/tree/master/Windows/lazagne/softwares/memory
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 8
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1555.005
+EventDescriptions:
+    - Criteria: correlation_name = "KeePass_CredDump"
+      LocalizationId: corrname_KeePass_CredDump

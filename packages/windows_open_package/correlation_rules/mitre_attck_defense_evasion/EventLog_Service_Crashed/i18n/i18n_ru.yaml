@@ -1,0 +1,4 @@
+Description: 'Служба Event Log завершилась с ошибкой'
+EventDescriptions:
+    - LocalizationId: 'corrname_EventLog_Service_Crashed'
+      EventDescription: 'Служба EventLog завершилась с ошибкой на {event_src.host}'

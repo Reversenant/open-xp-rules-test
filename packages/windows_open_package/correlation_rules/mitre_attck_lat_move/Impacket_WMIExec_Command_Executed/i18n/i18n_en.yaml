@@ -1,0 +1,4 @@
+Description: 'This rule detects a usage wmiexec to execute code on host remotely'
+EventDescriptions:
+    - LocalizationId: 'corrname_Impacket_WMIExec_Command_Executed'
+      EventDescription: 'User {subject.account.name} has executed command {datafield1} on host {event_src.host} via wmiexec module from Impacket project'

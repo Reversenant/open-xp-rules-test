@@ -1,0 +1,4 @@
+Description: 'Process opened with PROCESS_SUSPEND_RESUME access'
+EventDescriptions:
+    - LocalizationId: 'corrname_Suspend_prpcess'
+      EventDescription: 'Process {subject.process.name} got access to the process {object.process.name} with access right PROCESS_SUSPEND_RESUME'

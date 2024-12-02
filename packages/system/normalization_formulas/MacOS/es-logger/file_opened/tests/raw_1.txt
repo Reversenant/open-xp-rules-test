@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "mach_time": 23223767020899,
+  "event_type": 10,
+  "thread": {
+    "thread_id": 166554
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "open": {
+      "fflag": 17825793,
+      "file": {
+        "path": "/Users/user/Desktop/es_results",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 501,
+          "st_gid": 20,
+          "st_ino": 1917436,
+          "st_birthtimespec": "2023-07-24T07:56:33.842972052Z",
+          "st_flags": 0,
+          "st_nlink": 26,
+          "st_mtimespec": "2023-07-24T12:05:01.843352212Z",
+          "st_ctimespec": "2023-07-24T12:05:01.843352212Z",
+          "st_size": 832,
+          "st_gen": 0,
+          "st_mode": 16877,
+          "st_atimespec": "2023-07-24T12:01:56.306660746Z"
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "time": "2023-07-24T12:05:01.855023437Z",
+  "action": {
+    "result": {
+      "result": {
+        "flags": 4294967295
+      },
+      "result_type": 1
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.finder",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522369,
+    "executable": {
+      "path": "/System/Library/CoreServices/Finder.app/Contents/MacOS/Finder",
+      "stat": {
+        "st_blocks": 20920,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312082960,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 22434128,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-20T14:05:30.252513Z",
+    "is_platform_binary": true,
+    "group_id": 385,
+    "audit_token": {
+      "asid": 100005,
+      "pidversion": 883,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 385
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100005,
+      "pidversion": 883,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 385
+    },
+    "session_id": 1,
+    "original_ppid": 1,
+    "cdhash": "388AD9EC55521C0054C87735CDAA6DFE33DCC599",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

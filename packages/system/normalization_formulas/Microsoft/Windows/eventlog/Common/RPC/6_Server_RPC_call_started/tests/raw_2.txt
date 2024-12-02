@@ -1,0 +1,72 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "InterfaceUuid",
+                    "text": "{12345678-1234-abcd-ef00-01234567cffb}"
+                },
+                {
+                    "Name": "ProcNum",
+                    "text": "15"
+                },
+                {
+                    "Name": "Protocol",
+                    "text": "1"
+                },
+                {
+                    "Name": "NetworkAddress",
+                    "text": "NULL"
+                },
+                {
+                    "Name": "Endpoint",
+                    "text": "49668"
+                },
+                {
+                    "Name": "Options",
+                    "text": "NULL"
+                },
+                {
+                    "Name": "AuthenticationLevel",
+                    "text": "1"
+                },
+                {
+                    "Name": "AuthenticationService",
+                    "text": "0"
+                },
+                {
+                    "Name": "ImpersonationLevel",
+                    "text": "0"
+                }
+            ]
+        },
+        "System": {
+            "Channel": "",
+            "Computer": "LAPTOP-JU4M3I0E",
+            "Correlation": "",
+            "EventID": "6",
+            "EventRecordID": "2033",
+            "Execution": {
+                "KernelTime": "61",
+                "ProcessID": "584",
+                "ProcessorID": "1",
+                "ThreadID": "3076",
+                "UserTime": "180"
+            },
+            "Keywords": "0x4000000000000000",
+            "Level": "4",
+            "Opcode": "1",
+            "Provider": {
+                "Guid": "{6ad52b32-d609-4be9-ae07-ce8dae937e39}",
+                "Name": "Microsoft-Windows-RPC"
+            },
+            "Security": "",
+            "Task": "2",
+            "TimeCreated": {
+                "SystemTime": "2020-09-18T14:02:46.6558241Z"
+            },
+            "Version": "1"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

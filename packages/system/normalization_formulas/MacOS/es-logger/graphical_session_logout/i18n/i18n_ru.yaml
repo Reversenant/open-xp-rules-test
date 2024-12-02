@@ -1,0 +1,4 @@
+Description: 'Экран пользователя заблокирован'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_graphical_session_logout'
+      EventDescription: 'Экран пользователя {subject.account.name} заблокирован на узле {event_src.host}'

@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-03-06T07:53:49.457653800Z"
+            },
+            "EventRecordID": "252459",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-03-06 07:53:48.9415402\nsequence_number:1\naction_id:BA \nsucceeded:true\nis_column_permission:false\nsession_id:60\nserver_principal_id:259\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:260\nuser_defined_event_id:0\ntransaction_id:333559\nclass_type:CR\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:39B49AFE-9CB2-4F8A-84D3-B2EF538FB209\nsession_server_principal_name:DESKTOP-GB13G7P\\Administrator\nserver_principal_name:DESKTOP-GB13G7P\\Administrator\nserver_principal_sid:0105000000000005150000001df2aabab1fc830d139cadf1ea030000\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:\nobject_name:Certic\nstatement:BACKUP CERTIFICATE Certic\r\nTO FILE = 'C:\\Certic.cer'\r\nWITH PRIVATE KEY( FILE = 'C:\\Certic.key',\r\nENCRYPTION BY PASSWORD = '******',\r\nDECRYPTION BY PASSWORD = '******' );\r\n\r\n\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

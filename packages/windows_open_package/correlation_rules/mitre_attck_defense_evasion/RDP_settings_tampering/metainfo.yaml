@@ -1,0 +1,26 @@
+ObjectId: SEC-CR-496129294
+ContentAutoName: RDP_settings_tampering
+ExpertContext:
+    Created: 09.06.2023
+    Updated: 12.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут изменять параметры настройки службы удаленного доступа (RDP)
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4657
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+    References:
+        - https://attack.mitre.org/techniques/T1112/
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1112
+EventDescriptions:
+    - Criteria: correlation_name = "RDP_settings_tampering"
+      LocalizationId: corrname_RDP_settings_tampering

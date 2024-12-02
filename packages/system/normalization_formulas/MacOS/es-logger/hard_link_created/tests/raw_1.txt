@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "mach_time": 33505990778479,
+  "event_type": 19,
+  "thread": {
+    "thread_id": 239128
+  },
+  "version": 7,
+  "seq_num": 19,
+  "event": {
+    "link": {
+      "target_dir": {
+        "path": "/Users/user/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Records/3FBA4ABED068FD267A319533D52D88DB6B1EA740/Resource",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 501,
+          "st_gid": 20,
+          "st_ino": 1677049,
+          "st_birthtimespec": "2023-07-14T08:49:29.913353065Z",
+          "st_flags": 0,
+          "st_nlink": 171,
+          "st_mtimespec": "2023-07-24T14:56:24.173019844Z",
+          "st_ctimespec": "2023-07-24T14:56:24.173019844Z",
+          "st_size": 5472,
+          "st_gen": 0,
+          "st_mode": 16832,
+          "st_atimespec": "2023-07-24T14:56:09.441846381Z"
+        },
+        "path_truncated": false
+      },
+      "target_filename": "9400A314AE5DDF54636F3F3C8349FF8C8B213100-blob",
+      "source": {
+        "path": "/Users/user/Library/Containers/com.apple.Safari/Data/Library/Caches/com.apple.Safari/WebKitCache/Version 16/Blobs/79B943F56DDB672199601E7CBC06459B6923794F",
+        "stat": {
+          "st_blocks": 104,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 501,
+          "st_gid": 20,
+          "st_ino": 1952638,
+          "st_birthtimespec": "2023-07-24T14:56:24.173407718Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-07-24T14:56:24.173633544Z",
+          "st_ctimespec": "2023-07-24T14:56:24.173633544Z",
+          "st_size": 52036,
+          "st_gen": 0,
+          "st_mode": 33152,
+          "st_atimespec": "2023-07-24T14:56:24.173484785Z"
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "time": "2023-07-24T14:56:24.173805661Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.WebKit.Networking",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522369,
+    "executable": {
+      "path": "/System/Volumes/Preboot/Cryptexes/Incoming/OS/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking",
+      "stat": {
+        "st_blocks": 24,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777221,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 71534,
+        "st_birthtimespec": "2023-07-11T07:01:43.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-07-11T07:01:43.000000000Z",
+        "st_ctimespec": "2023-07-11T07:01:43.000000000Z",
+        "st_size": 168944,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-07-11T07:01:43.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T14:56:08.777675Z",
+    "is_platform_binary": true,
+    "group_id": 11543,
+    "audit_token": {
+      "asid": 100005,
+      "pidversion": 23745,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 11543
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100005,
+      "pidversion": 23737,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 11541
+    },
+    "session_id": 11543,
+    "original_ppid": 1,
+    "cdhash": "A79DF6340FBD8B5831ACB371BFCA601EE04021D8",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 24
+}

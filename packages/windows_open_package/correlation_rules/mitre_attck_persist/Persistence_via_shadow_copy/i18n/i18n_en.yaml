@@ -1,0 +1,8 @@
+Description: 'A shadow copy persistence has been detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_Persistence_via_shadow_copy'
+      EventDescription: 'The creation of a scheduler task using the shadow copy binary has has detected on host {event_src.host}'
+    - LocalizationId: 'corrname_Persistence_via_shadow_copy_2'
+      EventDescription: 'The creation of a Windows service using the shadow copy binary has has detected on host {event_src.host}'
+    - LocalizationId: 'corrname_Persistence_via_shadow_copy_3'
+      EventDescription: 'Process creation from shadow copy was detected on host {event_src.host}'

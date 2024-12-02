@@ -1,0 +1,4 @@
+Description: 'Детектирование создания "фейковой" учетной записи пользователя, имитирущей учетную запись компьютера.'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_Fake_ComputerAccount'
+      EventDescription: 'На узле {event_src.host} пользователь {subject.account.domain}/{subject.account.name} создал учетную запись пользователя {object.account.domain}/{object.account.name}, имя которой имитируюет учетную запись компьютера'

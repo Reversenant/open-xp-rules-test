@@ -1,0 +1,4 @@
+Description: 'A process added a file to autoload'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_btm_launch_item_add'
+      EventDescription: 'Process {subject.process.name} added file "{object.name}" to autoload on host {event_src.host}'

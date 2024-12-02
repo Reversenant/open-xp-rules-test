@@ -1,0 +1,6 @@
+Description: 'Operation on a user context in a database'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_change_impersonation'
+      EventDescription: 'The user {subject.name} changed a context for the user {object.name} in the instance "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_change_impersonation_fail'
+      EventDescription: 'The user {subject.name} failed to change a context for the user {object.name} in the instance "{datafield2}"'

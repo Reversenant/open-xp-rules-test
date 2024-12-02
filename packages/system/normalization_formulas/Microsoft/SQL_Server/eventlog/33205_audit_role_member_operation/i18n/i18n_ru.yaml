@@ -1,0 +1,10 @@
+Description: 'Назначение роли пользователю'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_grant'
+      EventDescription: 'Пользователь {subject.name} назначил роль "{object.name}" пользователю {object.value} в экземпляре "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_revoke'
+      EventDescription: 'Пользователь {subject.name} отозвал роль "{object.name}" у пользователя {object.value} в экземпляре "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_grant_fail'
+      EventDescription: 'Пользователь {subject.name} не смог назначить роль "{object.name}" пользователю {object.value} в экземпляре "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_revoke_fail'
+      EventDescription: 'Пользователь {subject.name} не смог отозвать роль "{object.name}" у пользователя {object.value} в экземпляре "{datafield2}"'

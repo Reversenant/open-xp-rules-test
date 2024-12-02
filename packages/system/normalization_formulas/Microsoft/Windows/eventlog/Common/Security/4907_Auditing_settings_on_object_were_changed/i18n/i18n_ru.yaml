@@ -1,0 +1,4 @@
+Description: 'Пользователь изменил настройки аудита для объекта'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_Common_Security_4907_Auditing_settings_on_object_were_changed'
+      EventDescription: 'Пользователь {subject.name} изменил настройки аудита для объекта "{object.name}" на узле {event_src.host}'

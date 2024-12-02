@@ -1,0 +1,10 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations" and action = "start" and object.state != "resumed"
+      LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_start
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations" and action = "start" and object.state = "resumed"
+      LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_resume
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations" and action = "stop" and object.state != "suspended"
+      LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_stop
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations" and action = "stop" and object.state = "suspended"
+      LocalizationId: PT_Microsoft_Windows_eventlog_7036_Basic_Service_Operations_suspend
+ObjectId: PT-NF-2025

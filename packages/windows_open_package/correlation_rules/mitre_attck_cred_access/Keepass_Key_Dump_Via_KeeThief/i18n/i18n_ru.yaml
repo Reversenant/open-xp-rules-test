@@ -1,0 +1,4 @@
+Description: 'Правило обнаруживает попытки извлечения мастер-ключа KeePass из памяти процесса посредством скрипта KeeThief'
+EventDescriptions:
+    - LocalizationId: 'corrname_Keepass_Key_Dump_Via_KeeThief'
+      EventDescription: 'На узле {event_src.host} был выполнен командлет Powershell, обращающийся к методу GetKeePassMasterKeys, что может свидетельствовать о попытке извлечения мастер-ключа KeePass из памяти процесса {object.process.name}'

@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_hard_link_created"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_hard_link_created
+ObjectId: PT-NF-9322

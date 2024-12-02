@@ -1,0 +1,28 @@
+ContentAutoName: Start_mmc_exe_from_suspicious_binary_path
+ExpertContext:
+    Created: 02.07.2024
+    Updated: 02.07.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Ататкующие могут изменять переменную %SYSTEMROOT% чтобы обходить UAC и запускать фейковый процесс mmc.exe
+    Falsepositives: []
+    References:
+        - https://bytecode77.com/performance-monitor-privilege-escalation
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ObjectId: SEC-CR-61536543
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1036.005
+EventDescriptions:
+    - Criteria: correlation_name = "Start_mmc_exe_from_suspicious_binary_path"
+      LocalizationId: corrname_Start_mmc_exe_from_suspicious_binary_path

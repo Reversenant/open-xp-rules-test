@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "mach_time": 23666590944705,
+  "event_type": 15,
+  "thread": {
+    "thread_id": 169811
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "exit": {
+      "stat": 256
+    }
+  },
+  "time": "2023-07-24T12:12:24.680577301Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.BlueTool",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/sbin/BlueTool",
+      "stat": {
+        "st_blocks": 472,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312443165,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 675488,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T12:11:53.659523Z",
+    "is_platform_binary": true,
+    "group_id": 7954,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 17641,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 7954
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 17641,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 7954
+    },
+    "session_id": 7954,
+    "original_ppid": 1,
+    "cdhash": "1E1360E867D1B69B5B9EB2B52E49B0DB41D2C6D5",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 285
+}

@@ -1,0 +1,4 @@
+Description: 'Creating a wbadmin process'
+EventDescriptions:
+    - LocalizationId: 'corrname_Wbadmin'
+      EventDescription: 'User {subject.account.name} started the process {object.process.cmdline}'

@@ -1,0 +1,4 @@
+Description: 'Rule detects Registry values modification done by adversaries to establish persistence on the host. The key in the attack is modifying GFlags and/or direct modifying IFEO and silent process exit Registry values in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit\'
+EventDescriptions:
+    - LocalizationId: 'corrname_Silent_Process_Exit_Monitor_and_Image_Hijack'
+      EventDescription: 'Detected persistence technique of launching {object.new_value} after silent process exit {datafield1} on the host {event_src.host}'

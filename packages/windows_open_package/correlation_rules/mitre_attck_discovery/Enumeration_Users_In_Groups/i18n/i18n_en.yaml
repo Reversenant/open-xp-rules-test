@@ -1,0 +1,6 @@
+Description: 'Local groups have been enumerated at host'
+EventDescriptions:
+    - LocalizationId: 'corrname_Enumeration_Users_In_Groups'
+      EventDescription: 'User {subject.account.domain}/{subject.account.name} enumerated groups for the user {object.account.domain}/{object.account.name} with {subject.process.name} utility at host {event_src.host}'
+    - LocalizationId: 'corrname_Enumeration_Users_In_Groups_2'
+      EventDescription: 'User {subject.account.domain}/{subject.account.name} enumerated members of local group {object.name} with {subject.process.name} utility at host {event_src.host}'

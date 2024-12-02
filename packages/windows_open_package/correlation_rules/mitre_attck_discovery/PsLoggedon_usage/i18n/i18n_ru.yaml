@@ -1,0 +1,4 @@
+Description: 'Обнаружено использование инструмента PsLoggedon из состава Sysinternals'
+EventDescriptions:
+    - LocalizationId: 'corrname_PsLoggedon_usage'
+      EventDescription: 'Обнаружено использование инструмента PsLoggedon из состава Sysinternals на узле {event_src.host}'

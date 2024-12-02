@@ -1,0 +1,21 @@
+{
+  "subject": "account",
+  "action": "connect",
+  "object": "database",
+  "status": "failure",
+  "datafield2": "DESKTOP-I2RR0AI",
+  "datafield4": "LGIF",
+  "datafield5": "LX",
+  "datafield9": "<action_info xmlns=\"http://schemas.microsoft.com/sqlserver/2008/sqlaudit_data\"><pooled_connection>0</pooled_connection><error>0x00004592</error><state>2</state><address>127.0.0.1</address></action_info>",
+  "dst.hostname": "desktop-i2rr0ai",
+  "event_src.category": "Database server",
+  "event_src.hostname": "desktop-i2rr0ai",
+  "event_src.subsys": "Application",
+  "event_src.title": "sql_server",
+  "event_src.vendor": "microsoft",
+  "id": "PT_Microsoft_SQL_Server_eventlog_33205_connection",
+  "importance": "high",
+  "msgid": "33205",
+  "reason": "Could not connect because the maximum number of '1' dedicated administrator connections already exists. Before a new connection can be made, the existing dedicated administrator connection must be dropped, either by logging off or ending the process. [CLIENT: 127.0.0.1]",
+  "time": "2021-07-01T17:29:24Z"
+}

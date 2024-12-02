@@ -1,0 +1,4 @@
+Description: 'Процесс прочитал метаданные файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_read_file_metadata'
+      EventDescription: 'Процесс {subject.process.name} прочитал метаданные файла "{object.name}" на узле {event_src.host}'

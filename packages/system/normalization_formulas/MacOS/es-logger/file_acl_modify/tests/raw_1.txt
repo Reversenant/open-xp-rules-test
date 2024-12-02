@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "mach_time": 40205422727991,
+  "event_type": 82,
+  "thread": {
+    "thread_id": 285720
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "setacl": {
+      "target": {
+        "path": "/private/var/db/reportmemoryexception",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 269,
+          "st_gid": 269,
+          "st_ino": 1448057,
+          "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+          "st_flags": 0,
+          "st_nlink": 3,
+          "st_mtimespec": "2023-07-04T11:40:47.610739907Z",
+          "st_ctimespec": "2023-07-24T16:29:52.837631442Z",
+          "st_size": 96,
+          "st_gen": 0,
+          "st_mode": 16872,
+          "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+        },
+        "path_truncated": false
+      },
+      "set_or_clear": 0,
+      "acl": {
+        "set": "!#acl 1\ngroup:ABCDEFAB-CDEF-ABCD-EFAB-CDEF000000F2:_nsurlsessiond:242:allow:execute\n"
+      }
+    }
+  },
+  "time": "2023-07-25T07:35:28.761845567Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.ReportMemoryException",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/libexec/ReportMemoryException",
+      "stat": {
+        "st_blocks": 152,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312437238,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 275840,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-25T07:35:28.732897Z",
+    "is_platform_binary": true,
+    "group_id": 12911,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 26842,
+      "ruid": 269,
+      "euid": 269,
+      "rgid": 269,
+      "auid": 4294967295,
+      "egid": 269,
+      "pid": 12911
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 26842,
+      "ruid": 269,
+      "euid": 269,
+      "rgid": 269,
+      "auid": 4294967295,
+      "egid": 269,
+      "pid": 12911
+    },
+    "session_id": 12911,
+    "original_ppid": 1,
+    "cdhash": "4BDD766F52845766B7CFA8D035CB5B061A3B8FAE",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 39
+}

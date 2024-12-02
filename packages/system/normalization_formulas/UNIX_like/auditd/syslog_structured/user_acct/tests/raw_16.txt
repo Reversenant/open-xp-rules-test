@@ -1,0 +1,11 @@
+{
+    "node": "127.0.1.1",
+    "timestamp": "1685347627",
+    "timestampfractional": "552",
+    "eventid": "1250",
+    "items": {
+        "USER_ACCT": [
+            "pid=2051 uid=0 auid=1000 ses=1 msg='op=members of group nginx set by root to jr,syslog acct=\"nginx\" exe=\"/usr/bin/gpasswd\" hostname=ubuntu2004 addr=? terminal=pts/0 res=success' UID=\"root\" AUID=\"jr\""
+        ]
+    }
+}

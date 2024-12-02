@@ -1,0 +1,27 @@
+ObjectId: LOC-CR-671278490
+ContentAutoName: Network_Service_or_Guest_added_to_local_admins
+ExpertContext:
+    Created: 20.08.2023
+    Updated: 26.06.2024
+    KnowledgeHolders:
+        - Sagatjkeee
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4732
+    References:
+        - https://learn.microsoft.com/en-us/windows/security/identity-protection/access-control/local-accounts
+        - https://learn.microsoft.com/en-us/windows/win32/services/networkservice-account
+        - https://attack.mitre.org/techniques/T1078/001/
+    Usecases:
+        - Злоумышленники могут закрепиться в системе путём добавление уз Guets и Network service в группу локальных администраторов.
+EventDescriptions:
+    - Criteria: correlation_name = "Network_Service_or_Guest_added_to_local_admins"
+      LocalizationId: corrname_Network_Service_or_Guest_added_to_local_admins
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1098
+            privilege-escalation:
+                - T1098

@@ -1,0 +1,23 @@
+{
+  "eventid": "28501",
+  "items": {
+    "CWD": [
+      "cwd=\"/home/odmin\""
+    ],
+    "EOE": [
+      ""
+    ],
+    "PATH": [
+      "item=0 name=\"/var/log/faillog\" inode=262922 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL"
+    ],
+    "PROCTITLE": [
+      "proctitle=7461696C002D6E003130002F7661722F6C6F672F6661696C6C6F67"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=2 success=yes exit=3 a0=7ffffbd328ac a1=0 a2=0 a3=69f items=1 ppid=1790 pid=2439 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=178 comm=\"tail\" exe=\"/usr/bin/tail\" key=\"pt_siem_var_log_user_read\""
+    ]
+  },
+  "node": "debian-test",
+  "timestamp": "1556556293",
+  "timestampfractional": "596"
+}

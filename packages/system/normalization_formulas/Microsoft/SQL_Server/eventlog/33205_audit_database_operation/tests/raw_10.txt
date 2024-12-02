@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0x90000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-03-06T08:02:15.207577000Z"
+            },
+            "EventRecordID": "252520",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-03-06 08:02:15.0981387\nsequence_number:1\naction_id:BA \nsucceeded:false\nis_column_permission:false\nsession_id:52\nserver_principal_id:273\ndatabase_principal_id:2\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:0\nuser_defined_event_id:0\ntransaction_id:334595\nclass_type:MK\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:E84CAEF1-6B9E-4BBB-A15D-96CF64509742\nsession_server_principal_name:HackerLooser\nserver_principal_name:HackerLooser\nserver_principal_sid:19681a2750a1c34585ebc9f68dcda43c\ndatabase_principal_name:guest\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:\nobject_name:##MS_DatabaseMasterKey##\nstatement:BACKUP MASTER KEY TO FILE = 'C:\\DbMasterKey1.key'\r\nENCRYPTION BY PASSWORD = '******'\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

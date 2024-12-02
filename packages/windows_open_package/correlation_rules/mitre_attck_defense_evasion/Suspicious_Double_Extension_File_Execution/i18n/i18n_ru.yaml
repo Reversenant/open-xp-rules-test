@@ -1,0 +1,6 @@
+Description: 'Обнаружено создание процесса с двойным расширением'
+EventDescriptions:
+    - LocalizationId: 'corrname_Suspicious_Double_Extension_File_Execution'
+      EventDescription: 'Обнаружено создание процесса {object.process.name} с двойным расширением на узле {event_src.host}'
+    - LocalizationId: 'corrname_Suspicious_Double_Extension_File_Execution_2'
+      EventDescription: 'Обнаружено создание дочернего процесса от {object.process.parent.name} с двойным расширением на узле {event_src.host}'

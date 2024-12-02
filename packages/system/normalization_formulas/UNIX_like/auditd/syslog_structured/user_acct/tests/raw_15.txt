@@ -1,0 +1,11 @@
+{
+    "node": "127.0.1.1",
+    "timestamp": "1685347450",
+    "timestampfractional": "209",
+    "eventid": "1186",
+    "items": {
+        "USER_ACCT": [
+            "pid=1954 uid=0 auid=1000 ses=1 msg='op=user jr removed by root from group nginx acct=\"nginx\" exe=\"/usr/bin/gpasswd\" hostname=ubuntu2004 addr=? terminal=pts/0 res=success' UID=\"root\" AUID=\"jr\""
+        ]
+    }
+}

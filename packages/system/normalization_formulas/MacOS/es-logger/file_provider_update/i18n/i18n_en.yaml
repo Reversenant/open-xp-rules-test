@@ -1,0 +1,4 @@
+Description: 'A file was updated'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_provider_update'
+      EventDescription: 'File "{object.name}" was updated on host {event_src.host}. The new value is "{object.new_value}".'

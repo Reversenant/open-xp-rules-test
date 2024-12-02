@@ -1,0 +1,4 @@
+Description: 'Подпись кода процесса признана недействительной'
+EventDescriptions:
+    - LocalizationId: 'PT_EDR_es_invalidate_process_code_signing_status'
+      EventDescription: 'Подпись кода процесса "{subject.process.name}" признана недействительной на узле {event_src.host}'

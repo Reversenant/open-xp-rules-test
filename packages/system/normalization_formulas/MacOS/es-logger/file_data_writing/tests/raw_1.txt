@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "mach_time": 23409175539434,
+  "event_type": 33,
+  "thread": {
+    "thread_id": 167242
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "write": {
+      "target": {
+        "path": "/dev/null",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 131072,
+          "st_rdev": 50331650,
+          "st_dev": 1740322812,
+          "st_uid": 0,
+          "st_gid": 0,
+          "st_ino": 314,
+          "st_birthtimespec": "1970-01-01T00:00:00.000000000Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-07-24T12:08:06.640092000Z",
+          "st_ctimespec": "2023-07-24T12:08:06.640092000Z",
+          "st_size": 0,
+          "st_gen": 0,
+          "st_mode": 8630,
+          "st_atimespec": "2023-07-20T14:14:15.915143000Z"
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "time": "2023-07-24T12:08:07.264224130Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.airport.airportd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/libexec/airportd",
+      "stat": {
+        "st_blocks": 2752,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312437283,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 3436224,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-20T14:04:21.055133Z",
+    "is_platform_binary": true,
+    "group_id": 267,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 561,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 267
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 561,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 267
+    },
+    "session_id": 267,
+    "original_ppid": 1,
+    "cdhash": "ACBC376B6DD9E3DD98491B40B8329EEB5E521DF7",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

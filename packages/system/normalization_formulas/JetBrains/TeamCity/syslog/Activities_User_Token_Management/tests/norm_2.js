@@ -1,0 +1,21 @@
+{
+  "subject": "account",
+  "action": "remove",
+  "object": "resource",
+  "status": "success",
+  "event_src.category": "Other",
+  "event_src.hostname": "teamcity",
+  "event_src.title": "teamcity",
+  "event_src.vendor": "jetbrains",
+  "id": "PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management",
+  "importance": "medium",
+  "msgid": "delete_token_for_user",
+  "numfield3": 1625632731858,
+  "object.account.id": "1",
+  "object.account.name": "admin",
+  "object.name": "REST",
+  "object.type": "user_token",
+  "subject.account.id": "1",
+  "subject.account.name": "admin",
+  "time": "2021-07-07T04:38:51.858Z"
+}

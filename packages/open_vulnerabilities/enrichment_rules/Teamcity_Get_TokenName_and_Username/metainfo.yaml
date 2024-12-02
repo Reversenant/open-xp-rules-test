@@ -1,0 +1,11 @@
+KnowledgeHolders: []
+Improvements: []
+ContentAutoName: Teamcity_Get_TokenName_and_Username
+ExpertContext:
+    Created: 02.10.2023
+    Updated: 02.10.2023
+    KnowledgeHolders:
+        - Sergey Scherbakov
+    Usecases:
+        - Раскладывает по полям имя/id УЗ и имя токена из запроса на токен к REST API TeamCity
+ObjectId: SEC-ER-892365548

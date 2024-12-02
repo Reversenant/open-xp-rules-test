@@ -1,0 +1,6 @@
+Description: 'Загрузка произвольной DLL через клиент Центра обновления Windows'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_execution_imageload_wuauclt_lolbas'
+      EventDescription: 'На узле {event_src.host} обнаружена загрузка библиотеки {object.process.name} из необычного каталога {object.process.path}'
+    - LocalizationId: 'corrname_Detect_execution_imageload_wuauclt_lolbas_2'
+      EventDescription: 'На узле {event_src.host} обнаружена успешная загрузка DLL-библиотеки при помощи утилиты wuauclt: {object.process.parent.cmdline}'

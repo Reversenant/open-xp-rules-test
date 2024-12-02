@@ -1,0 +1,31 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BA" and object = "database" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BAL" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup_log
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "RS" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_restore
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "TO" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_take_ownership
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "AL" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_alter_database
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BA" and object.type = "certificate" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup_cert
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BA" and object.type = "master key" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup_master_key
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BA" and object = "database" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BAL" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup_log_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "RS" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_restore_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "TO" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_take_ownership_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "AL" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_alter_database_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BA" and object.type = "certificate" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup_cert_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation" and datafield4 = "BA" and object.type = "master key" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation_backup_master_key_fail
+ObjectId: PT-NF-5605
+ContentAutoName: PT_Microsoft_SQL_Server_eventlog_33205_audit_database_operation

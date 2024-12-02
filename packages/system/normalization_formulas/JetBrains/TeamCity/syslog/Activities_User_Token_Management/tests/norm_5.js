@@ -1,0 +1,22 @@
+{
+  "subject": "account",
+  "action": "create",
+  "object": "resource",
+  "status": "success",
+  "event_src.category": "Other",
+  "event_src.hostname": "teamcity",
+  "event_src.title": "teamcity",
+  "event_src.vendor": "jetbrains",
+  "id": "PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management",
+  "importance": "medium",
+  "msgid": "create_token_for_user",
+  "numfield3": 1695926138078,
+  "object.account.id": "2267",
+  "object.id": "9700db96-88e9-49ea-b4b0-35035abe0764",
+  "object.name": "RPC2",
+  "object.property": "expiration_time",
+  "object.type": "user_token",
+  "object.value": "292278994-08-17 10:12:55.807",
+  "subject.account.id": "2267",
+  "time": "2023-09-28T18:35:38.078Z"
+}

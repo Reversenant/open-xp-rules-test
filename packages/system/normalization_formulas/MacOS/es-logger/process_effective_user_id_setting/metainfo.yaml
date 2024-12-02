@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_effective_user_id_setting"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_effective_user_id_setting
+ObjectId: PT-NF-9326

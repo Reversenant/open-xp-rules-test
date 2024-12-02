@@ -1,0 +1,15 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used" and action = "execute" and object.type != "sent query text" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used_command
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used" and action = "execute" and object.type = "sent query text" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used_command_email
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used" and action = "modify" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used_change_parameter
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used" and action = "execute" and object.type != "sent query text" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used_command_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used" and action = "execute" and object.type = "sent query text" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used_command_email_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used" and action = "modify" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used_change_parameter_fail
+ObjectId: PT-NF-5606
+ContentAutoName: PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used

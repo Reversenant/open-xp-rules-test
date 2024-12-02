@@ -1,0 +1,30 @@
+ObjectId: SEC-CR-469916719
+ContentAutoName: Change_powershell_policy_registry
+ExpertContext:
+    Created: 10.06.2023
+    Updated: 11.06.2023
+    KnowledgeHolders:
+        - Vadim Varganov (d3f0x0)
+    Improvements:
+        - Add detection via ps blocks and commandline
+    References:
+        - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4657
+    Falsepositives:
+        - Administrator script
+    Usecases:
+        - Attackers can change the Powershell execution policy to run loaded scripts
+EventDescriptions:
+    - Criteria: correlation_name = "Change_powershell_policy_registry"
+      LocalizationId: corrname_Change_powershell_policy_registry
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1112

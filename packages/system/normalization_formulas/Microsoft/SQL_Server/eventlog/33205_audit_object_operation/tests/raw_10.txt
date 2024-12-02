@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0x90000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-03-05T10:05:25.640177500Z"
+            },
+            "EventRecordID": "220663",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-03-05 10:05:24.8435487\nsequence_number:1\naction_id:AL \nsucceeded:false\nis_column_permission:false\nsession_id:55\nserver_principal_id:273\ndatabase_principal_id:2\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:0\nuser_defined_event_id:0\ntransaction_id:71655\nclass_type:SA\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:8C0593EA-C8A0-40F6-8A85-558C5FEEBFFA\nsession_server_principal_name:HackerLooser\nserver_principal_name:HackerLooser\nserver_principal_sid:19681a2750a1c34585ebc9f68dcda43c\ndatabase_principal_name:guest\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:\nobject_name:spec01\nstatement:ALTER SERVER AUDIT SPECIFICATION [Spec01]\r\nDROP (BROKER_LOGIN_GROUP)\r\n\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

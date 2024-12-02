@@ -1,0 +1,17 @@
+{
+    "eventid": "13118311",
+    "timestampfractional": "674",
+    "timestamp": "1652953273",
+    "node": "10.0.177.123",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=\"/home/src/build/CMakeFiles/CMakeTmp/cmTC_0f331\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=101 success=yes exit=0 a0=10 a1=58d a2=0 a3=0 items=0 ppid=6953 pid=6954 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=4294967295 comm=\"cmTC_0f331\" exe=\"/home/src/build/CMakeFiles/CMakeTmp/cmTC_0f331\" key=\"pt_siem_api_ptrace\" ARCH=x86_64 SYSCALL=ptrace AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "OBJ_PID": [
+            "opid=6953 oauid=-1 ouid=0 oses=-1 ocomm=\"cmTC_0f331\" OAUID=\"unset\" OUID=\"root\""
+        ]
+    }
+}

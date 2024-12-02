@@ -1,0 +1,17 @@
+{
+    "eventid": "1594",
+    "timestampfractional": "663",
+    "timestamp": "1653052749",
+    "node": "10.0.176.130",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=313 success=yes exit=0 a0=3 a1=562de328726b a2=0 a3=3 items=0 ppid=40 pid=2603 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"modprobe\" exe=\"/bin/kmod\" key=(null) ARCH=x86_64 SYSCALL=finit_module AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "NETFILTER_CFG": [
+            "table=nat family=2 entries=0"
+        ],
+        "PROCTITLE": [
+            "proctitle=2F7362696E2F6D6F6470726F6265002D71002D2D0069707461626C655F6E6174"
+        ]
+    }
+}

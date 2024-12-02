@@ -1,0 +1,4 @@
+Description: 'A process received information about another process'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_check_target_process'
+      EventDescription: 'Process {subject.process.name} received information about process {object.process.name} on host {event_src.host}'

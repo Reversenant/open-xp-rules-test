@@ -1,0 +1,4 @@
+Description: 'A process read file metadata'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_read_file_metadata'
+      EventDescription: 'Process {subject.process.name} read metadata of file "{object.name}" on host {event_src.host}'

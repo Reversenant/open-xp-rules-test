@@ -1,0 +1,4 @@
+Description: 'Reading saved credentials from browser files'
+EventDescriptions:
+    - LocalizationId: 'corrname_Chrome_firefox_opera_cred_read'
+      EventDescription: 'User {subject.account.domain}\{subject.account.name} read stored credentials from browser file: "{object.fullpath}" on host {event_src.host}'

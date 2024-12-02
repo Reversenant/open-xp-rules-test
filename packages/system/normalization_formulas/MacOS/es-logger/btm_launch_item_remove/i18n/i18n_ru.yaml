@@ -1,0 +1,4 @@
+Description: 'Процесс убрал файл из автозагрузки'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_btm_launch_item_remove'
+      EventDescription: 'Процесс {subject.process.name} убрал файл "{object.name}" из автозагрузки на узле {event_src.host}'

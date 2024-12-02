@@ -1,0 +1,6 @@
+Description: 'Состояние службы теневого копирования (VSSVC.exe) изменено'
+EventDescriptions:
+    - LocalizationId: 'corrname_VSSVC_service_state_changed'
+      EventDescription: 'Служба теневого копирования (VSSVC.exe) запущена на узле на узле {event_src.host}'
+    - LocalizationId: 'corrname_VSSVC_service_state_changed_2'
+      EventDescription: 'Служба теневого копирования (VSSVC.exe) остановлена на узле на узле {event_src.host}'

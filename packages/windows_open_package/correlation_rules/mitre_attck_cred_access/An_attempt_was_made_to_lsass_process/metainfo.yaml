@@ -1,0 +1,31 @@
+ObjectId: SEC-CR-31343766
+ContentAutoName: An_attempt_was_made_to_lsass_process
+ExpertContext:
+    Created: 12.06.2023
+    Updated: 31.07.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут пытаться получить доступ к учетным данным, хранящимся в памяти процесса lsass
+    References:
+        - https://attack.mitre.org/techniques/T1003/001/
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4656
+              - 4663
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 10
+    Improvements:
+        - Расширить список легитимных процессов, взаимодействующих с lsass
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003.001
+EventDescriptions:
+    - Criteria: correlation_name = "An_attempt_was_made_to_lsass_process" and status = "success" and subject.account.domain != null
+      LocalizationId: corrname_An_attempt_was_made_to_lsass_process
+    - Criteria: correlation_name = "An_attempt_was_made_to_lsass_process" and status = "success" and subject.account.domain == null
+      LocalizationId: corrname_An_attempt_was_made_to_lsass_process_3

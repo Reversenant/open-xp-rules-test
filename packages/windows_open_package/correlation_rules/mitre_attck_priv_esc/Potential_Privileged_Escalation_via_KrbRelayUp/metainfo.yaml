@@ -1,0 +1,28 @@
+ObjectId: SEC-CR-191110408
+ContentAutoName: Potential_Privileged_Escalation_via_KrbRelayUp
+ExpertContext:
+    Created: 14.06.2023
+    Updated: 25.06.2023
+    KnowledgeHolders:
+        - Kirka (@Sagatjkeee)
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4624
+    References:
+        - https://github.com/elastic/detection-rules/blob/fb6ee2c69864ffdfe347bf3b050cb931f53067a6/rules/windows/privilege_escalation_krbrelayup_suspicious_logon.toml
+        - https://www.thehacker.recipes/ad/movement/kerberos/delegations/s4u2self-abuse
+        - https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/credential-access/steal-or-forge-kerberos-tickets/s4u2self
+        - github.com/Dec0ne/KrbRelayUp
+    Usecases:
+        - Атакующие могут выполнять локальное повышение привилегий через инструмент KrbRelayUp
+EventDescriptions:
+    - Criteria: correlation_name = "Potential_Privileged_Escalation_via_KrbRelayUp"
+      LocalizationId: corrname_Potential_Privileged_Escalation_via_KrbRelayUp
+ContentRelations:
+    Implements:
+        ATTACK:
+            privilege-escalation:
+                - T1078.001
+            credential-access:
+                - T1558

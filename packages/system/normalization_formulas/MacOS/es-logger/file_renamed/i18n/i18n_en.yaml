@@ -1,0 +1,6 @@
+Description: 'A process renamed or copied a file'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_renamed_rename'
+      EventDescription: 'Process {subject.process.name} renamed file "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_renamed_copy'
+      EventDescription: 'Process {subject.process.name} copied file "{object.name}" on host {event_src.host}'

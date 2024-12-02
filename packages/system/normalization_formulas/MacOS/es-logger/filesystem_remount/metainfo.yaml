@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_filesystem_remount"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_filesystem_remount
+ObjectId: PT-NF-9294

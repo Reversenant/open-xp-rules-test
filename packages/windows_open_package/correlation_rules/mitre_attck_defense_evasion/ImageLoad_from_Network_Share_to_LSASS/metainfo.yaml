@@ -1,0 +1,20 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-120990365
+ContentAutoName: ImageLoad_from_Network_Share_to_LSASS
+ExpertContext:
+    Created: 12.06.2023
+    Updated: 25.06.2023
+    Usecases:
+        - Детектирование попытки удаленной инъекции DLL в процесс LSASS
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 7
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1556
+EventDescriptions:
+    - Criteria: correlation_name = "ImageLoad_from_Network_Share_to_LSASS"
+      LocalizationId: corrname_ImageLoad_from_Network_Share_to_LSASS

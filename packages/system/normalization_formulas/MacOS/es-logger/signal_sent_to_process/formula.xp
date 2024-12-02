@@ -1,0 +1,66 @@
+JSON = ''
+
+COND = $event["signal"] != null
+
+subject = "process"
+action = "info"
+object = "process"
+status = "success"
+
+subject.account.id = $process["audit_token"]["ruid"]
+subject.account.session_id = $process["session_id"]
+
+subject.process.id = $process["audit_token"]["pid"]
+subject.process.parent.id = $process["ppid"] 
+subject.process.fullpath = $process["executable"]["path"]
+$temp_name = csv(subject.process.fullpath, "/", "'")
+subject.process.name = $temp_name[length($temp_name) - 1]
+subject.process.path = strip(subject.process.fullpath, "", subject.process.name)
+
+object.account.id = subject.account.id
+object.account.session_id = subject.account.session_id
+
+object.process.id = subject.process.id
+object.process.parent.id = subject.process.parent.id
+object.process.fullpath = subject.process.fullpath
+object.process.name = subject.process.name
+object.process.path = subject.process.path
+subject.process.hash = "UNKNOWN:" + $process["cdhash"]
+
+object.fullpath = $event["signal"]["target"]["executable"]["path"]
+$temp_name = csv(object.fullpath, "/", "'")
+object.name = $temp_name[length($temp_name) - 1]
+object.path = strip(object.fullpath, "", object.name)
+object.property = "signal number sent to the target process"
+object.value = $event["signal"]["sig"]
+
+datafield1 = $process["audit_token"]["euid"]         # effective user ID
+datafield2 = $process["audit_token"]["rgid"]         # real group ID
+datafield3 = $process["audit_token"]["auid"]         # audit user ID
+datafield4 = $process["audit_token"]["egid"]         # effective group ID
+datafield5 = $process["is_platform_binary"]          # является ли исполняемый файл предустановленным Apple в ОС
+datafield6 = $process["is_es_client"]                # имеет ли данный процесс разрешение на работу с EndpointSecurity API
+datafield7 = $process["signing_id"]                  # идентификатор подписи кода исполняемого файла
+datafield8 = $process["codesigning_flags"]           # флаги подписи кода исполняемого файла
+datafield9 = $process["tty"]                         # tty ассоциированный с процессом
+datafield10 = $event["signal"]["target"]["session_id"]          # target session id  
+datafield11 = $process["team_id"]                    # идентификатор разработчика исполняемого файла
+datafield12 = $event["signal"]["target"]["group_id"]            # target group id
+datafield13 = $event["signal"]["target"]["ppid"]                # target ppid
+datafield14 = $event["signal"]["target"]["audit_token"]["pid"]  # target pid
+datafield15 = $event["signal"]["target"]["is_es_client"]        # имеет ли целевой процесс разрешение на работу с EndpointSecurity API
+datafield16 = $event["signal"]["target"]["is_platform_binary"]  # является ли целевой файл предустановленным Apple в ОС
+
+category.high = "Availability Management"
+category.generic = "Process"
+category.low = "Application"
+
+msgid = $event_type
+time = $time
+importance = "info"
+
+event_src.category = "Host security"
+event_src.vendor = "positive_technologies"
+event_src.title = "edr"
+
+id = "PT_Positive_Technologies_XDR_es_logger_signal_sent_to_process"

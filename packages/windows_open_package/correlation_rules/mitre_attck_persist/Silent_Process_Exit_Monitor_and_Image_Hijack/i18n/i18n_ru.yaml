@@ -1,0 +1,4 @@
+Description: 'Правило детектирует модификацию ключей реестра для закрепления на хосте злоумышленника. Ключевым моментом в атаке является модификация GFlags или напрямую по пути HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit\'
+EventDescriptions:
+    - LocalizationId: 'corrname_Silent_Process_Exit_Monitor_and_Image_Hijack'
+      EventDescription: 'Обнаружена техника закрепления с запуском {object.new_value} при завершении процесса {datafield1} на узле {event_src.host}'

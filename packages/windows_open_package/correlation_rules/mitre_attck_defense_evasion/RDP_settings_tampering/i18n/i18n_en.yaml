@@ -1,0 +1,4 @@
+Description: 'RDP settings was changed'
+EventDescriptions:
+    - LocalizationId: 'corrname_RDP_settings_tampering'
+      EventDescription: 'Process {subject.process.name } changed Remote Access Service settings'

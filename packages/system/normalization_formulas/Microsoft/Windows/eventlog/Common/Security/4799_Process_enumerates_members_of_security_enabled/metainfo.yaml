@@ -1,0 +1,18 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4799_Process_enumerates_members_of_security_enabled"
+      LocalizationId: PT_Microsoft_Windows_eventlog_4799_Process_enumerates_members_of_security_enabled
+ObjectId: PT-NF-1924
+
+########
+# raws: 1
+# Interaction_Schema: TODO
+# Level1: Users And Rights Management
+# Level2: Group
+# Level3: Manipulation
+# Level3_Action: list
+# Action_Status: success
+# Subject: TODO
+# Network_Layout: TODO
+########
+
+ContentAutoName: PT_Microsoft_Windows_eventlog_4799_Process_enumerates_members_of_security_enabled

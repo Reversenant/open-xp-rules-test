@@ -1,0 +1,1 @@
+expect 1 {"_rule":"MacOS_Modify_loginwindow_plist","datafield7":"com.apple.cfprefsd","object.name":"com.apple.loginwindow.plist.I2xSVXu"}

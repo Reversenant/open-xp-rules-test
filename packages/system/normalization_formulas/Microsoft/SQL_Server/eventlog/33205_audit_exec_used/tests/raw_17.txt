@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-02-04T12:29:34.761456300Z"
+            },
+            "EventRecordID": "3241",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-02-04 12:29:33.7770646\nsequence_number:1\naction_id:EX \nsucceeded:true\nis_column_permission:false\nsession_id:59\nserver_principal_id:269\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:1343343850\nuser_defined_event_id:0\ntransaction_id:0\nclass_type:P \npermission_bitmask:00000000000000000000000000000020\nsequence_group_id:CD7EFE5B-0BD7-4742-9257-159F57DCE474\nsession_server_principal_name:SIEMAgent\nserver_principal_name:SIEMAgent\nserver_principal_sid:51dd4b885506ac48827997ba5521b176\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:msdb\nschema_name:dbo\nobject_name:sp_send_dbmail\nstatement:EXEC msdb.dbo.sp_send_dbmail\r\n\t-- Созданный нами профиль администратора почтовых рассылок\r\n\t\t@profile_name = 'MySite Admin Mailer',\r\n\t-- Адрес получателя\r\n\t\t@recipients = 'friend@mysite.ru',\r\n\t-- Текст письма\r\n\t\t@body = N'Испытание системы SQL Server Database Mail',\r\n\t-- Тема\r\n\t\t@subject = N'Тестовое сообщение',\r\n\t-- Для примера добавим к письму результаты произвольного SQL-запроса\r\n\t\t@query = 'SELECT TOP 10 name FROM sys.objects'\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

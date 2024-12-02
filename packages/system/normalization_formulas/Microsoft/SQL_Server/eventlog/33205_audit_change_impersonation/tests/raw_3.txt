@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQL$SQL2012"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2015-10-02T10:09:23.000000000Z"
+            },
+            "EventRecordID": "2320",
+            "Channel": "Application",
+            "Computer": "WIN-KUR7C5KGUG8",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "event_time:2015-10-02 10:09:22.8349919\nsequence_number:1\naction_id:IMP \nsucceeded:true\nis_column_permission:false\nsession_id:52\nserver_principal_id:1\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:24965\nuser_defined_event_id:0\nclass_type:SL\npermission_bitmask:00000000000000000000000000000001\nsession_server_principal_name:sa\nserver_principal_name:sa\nserver_principal_sid:01\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:WIN-KUR7C5KGUG8\\SQL2012\ndatabase_name:master\nschema_name:\nobject_name:login1\nstatement:EXECUTE AS LOGIN = 'login1';\r\n--Verify the execution context is now login1.\r\n\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

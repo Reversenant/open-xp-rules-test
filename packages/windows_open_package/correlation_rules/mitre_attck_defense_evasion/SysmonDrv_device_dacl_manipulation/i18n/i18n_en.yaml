@@ -1,0 +1,8 @@
+Description: 'An attempt was detected to modify the DACL of SysmonDrv device'
+EventDescriptions:
+    - LocalizationId: 'corrname_SysmonDrv_device_dacl_manipulation'
+      EventDescription: 'The process "{subject.process.name}" tried to modify the DACL of SysmonDrv device on host {event_src.host}'
+    - LocalizationId: 'corrname_SysmonDrv_device_dacl_manipulation_2'
+      EventDescription: 'The process "{subject.process.name}" modified the DACL of SysmonDrv device on host {event_src.host}'
+    - LocalizationId: 'corrname_SysmonDrv_device_dacl_manipulation_3'
+      EventDescription: 'A problem was found in the interaction between the Sysmon64 service and the SysmonDrv driver on host {event_src.host}'

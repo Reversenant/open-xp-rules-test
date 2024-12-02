@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "mach_time": 40124876474929,
+  "event_type": 84,
+  "thread": {
+    "thread_id": 281689
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "pty_close": {
+      "dev": 251658242
+    }
+  },
+  "time": "2023-07-24T16:46:43.099063417Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.sshd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/sbin/sshd",
+      "stat": {
+        "st_blocks": 1584,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312443532,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 1691152,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T16:45:27.560777Z",
+    "is_platform_binary": true,
+    "group_id": 12375,
+    "audit_token": {
+      "asid": 12375,
+      "pidversion": 25745,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 501,
+      "egid": 0,
+      "pid": 12375
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 12375,
+      "pidversion": 25745,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 501,
+      "egid": 0,
+      "pid": 12375
+    },
+    "session_id": 12375,
+    "original_ppid": 1,
+    "cdhash": "7F5C5E50AD1A8C11F4ACFD6331376B9307DC9302",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 5
+}

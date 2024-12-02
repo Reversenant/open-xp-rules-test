@@ -1,0 +1,4 @@
+Description: 'Чтение сохраненных учетных данных из файлов браузера'
+EventDescriptions:
+    - LocalizationId: 'corrname_Chrome_firefox_opera_cred_read'
+      EventDescription: 'Пользователь {subject.account.domain}\{subject.account.name} считал сохраненные учетные данные из файла браузера: "{object.fullpath}" на хосте {event_src.host}'

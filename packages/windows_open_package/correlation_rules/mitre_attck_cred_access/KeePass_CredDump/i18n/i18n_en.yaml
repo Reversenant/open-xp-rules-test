@@ -1,0 +1,4 @@
+Description: 'The rule detects the creation of a remote thread in the keepass.exe process for subsequent retrieval of the master key from the password store'
+EventDescriptions:
+    - LocalizationId: 'corrname_KeePass_CredDump'
+      EventDescription: 'Possible retrieval of master password from Keepass password vault by {subject.process.name} process on host {event_src.host} detected'

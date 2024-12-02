@@ -1,0 +1,4 @@
+Description: 'Обнаружено изменение параметров настройки службы удаленного доступа (RDP)'
+EventDescriptions:
+    - LocalizationId: 'corrname_RDP_settings_tampering'
+      EventDescription: 'Процесс {subject.process.name} изменил параметры настройки службы удаленного доступа (RDP)'

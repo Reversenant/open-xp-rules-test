@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2015-09-23T07:45:56.000000000Z"
+            },
+            "EventRecordID": "258840",
+            "Channel": "Application",
+            "Computer": "WIN-RCMC6R0VHU4",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "event_time:2015-09-23 07:45:55.5958960\nsequence_number:1\naction_id:G   \nsucceeded:true\nis_column_permission:false\nsession_id:57\nserver_principal_id:275\ndatabase_principal_id:1\ntarget_server_principal_id:267\ntarget_database_principal_id:5\nobject_id:256\nuser_defined_event_id:0\nclass_type:CR\npermission_bitmask:00000000000000000000000000000001\nsession_server_principal_name:admin\nserver_principal_name:admin\nserver_principal_sid:307341b39b77b448b8bbb953d2f56a31\ndatabase_principal_name:dbo\ntarget_server_principal_name:bobby\ntarget_server_principal_sid:907d4df79bf24042985794eb2d722a81\ntarget_database_principal_name:bobby\nserver_instance_name:WIN-RCMC6R0VHU4\ndatabase_name:AdventureWorks2012\nschema_name:\nobject_name:Shipping05\nstatement:grant VIEW DEFINITION on CERTIFICATE::Shipping05\r\nto bobby\r\n\r\n\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

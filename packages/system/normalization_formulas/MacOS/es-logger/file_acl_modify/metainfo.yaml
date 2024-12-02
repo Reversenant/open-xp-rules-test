@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_acl_modify"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_acl_modify
+ObjectId: PT-NF-9309

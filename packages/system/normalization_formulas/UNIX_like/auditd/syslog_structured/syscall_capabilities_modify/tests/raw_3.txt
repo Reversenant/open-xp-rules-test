@@ -1,0 +1,20 @@
+{
+    "eventid": "7480568",
+    "timestampfractional": "582",
+    "timestamp": "1629786241",
+    "node": "10.10.52.134",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2F7573722F7362696E2F43524F4E002D66"
+        ],
+        "CAPSET": [
+            "pid=38536 cap_pi=0000003fffffffff cap_pp=0000003fffffffff cap_pe=0000003fffffffff"
+        ],
+        "EOE": [
+            ""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=126 success=yes exit=0 a0=555c75fe76e4 a1=555c75fe76ec a2=7f881b170b58 a3=0 items=0 ppid=611 pid=38536 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"cron\" exe=\"/usr/sbin/cron\" key=\"pt_siem_api_caps\" ARCH=x86_64 SYSCALL=capset AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ]
+    }
+}

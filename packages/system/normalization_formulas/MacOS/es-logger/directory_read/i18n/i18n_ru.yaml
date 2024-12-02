@@ -1,0 +1,4 @@
+Description: 'Процесс прочитал каталог'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_directory_read'
+      EventDescription: 'Процесс {subject.process.name} прочитал каталог "{object.name}" на узле {event_src.host}'

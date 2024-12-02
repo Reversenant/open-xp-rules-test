@@ -1,0 +1,11 @@
+{
+    "eventid": "61235388",
+    "timestampfractional": "451",
+    "timestamp": "1683339553",
+    "node": "10.20.177.128",
+    "items": {
+        "GRP_MGMT": [
+            "pid=46328 uid=0 auid=4294967295 ses=4294967295 subj==docker-default (enforce) msg='op=add-shadow-group id=90 exe=\"/usr/sbin/groupadd\" hostname=? addr=? terminal=? res=success' UID=\"root\" AUID=\"unset\" ID=\"unknown(90)\""
+        ]
+    }
+}

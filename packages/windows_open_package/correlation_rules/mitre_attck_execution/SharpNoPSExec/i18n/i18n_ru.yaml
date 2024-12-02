@@ -1,0 +1,6 @@
+Description: 'Обнаружена модификация службы Windows'
+EventDescriptions:
+    - LocalizationId: 'corrname_SharpNoPSExec'
+      EventDescription: 'Процесс {subject.process.name} модифицировал путь к исполняемому файлу службы на хосте {event_src.host}'
+    - LocalizationId: 'corrname_SharpNoPSExec_2'
+      EventDescription: 'Пользователь {subject.account.domain}\{subject.account.name} с хоста {src.host} получил доступ к Диспетчеру управления службами на хосте {event_src.host}'

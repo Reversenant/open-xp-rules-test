@@ -1,0 +1,4 @@
+Description: 'A process sent a signal to another process'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_signal_sent_to_process'
+      EventDescription: 'A process sent a signal to process {object.process.name} on host {event_src.host}'

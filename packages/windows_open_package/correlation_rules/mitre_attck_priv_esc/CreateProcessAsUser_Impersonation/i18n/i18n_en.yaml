@@ -1,0 +1,4 @@
+Description: 'Detect Privilege Escalation using Token Impersonation'
+EventDescriptions:
+    - LocalizationId: 'corrname_CreateProcessAsUser_Impersonation'
+      EventDescription: 'Process {subject.process.name }, launched by {subject.account.domain}\{subject.account.name } user, successfully loggon by {object.account.domain}\{object.account.name} user'

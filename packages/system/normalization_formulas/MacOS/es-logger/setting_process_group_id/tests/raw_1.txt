@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "mach_time": 33137764162555,
+  "event_type": 104,
+  "thread": {
+    "thread_id": 235398
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "setgid": {
+      "gid": 20
+    }
+  },
+  "time": "2023-07-24T14:50:15.948980476Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.xpc.proxy",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/libexec/xpcproxy",
+      "stat": {
+        "st_blocks": 96,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312443151,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 229408,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T14:50:15.944230Z",
+    "is_platform_binary": true,
+    "group_id": 11290,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 23321,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 11290
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 23321,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 11290
+    },
+    "session_id": 11290,
+    "original_ppid": 1,
+    "cdhash": "3CA16C0D5EC85D743A1A9C840E388D08A1615235",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 2
+}

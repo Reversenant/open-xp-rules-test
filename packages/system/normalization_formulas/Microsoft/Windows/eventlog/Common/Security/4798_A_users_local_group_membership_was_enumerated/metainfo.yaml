@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4798_A_users_local_group_membership_was_enumerated"
+      LocalizationId: PT_Microsoft_Windows_eventlog_4798_A_users_local_group_membership_was_enumerated
+ObjectId: PT-NF-6128

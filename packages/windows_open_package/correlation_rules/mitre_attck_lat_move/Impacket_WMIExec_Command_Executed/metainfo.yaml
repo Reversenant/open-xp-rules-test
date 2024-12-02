@@ -1,0 +1,25 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-173716752
+ContentAutoName: Impacket_WMIExec_Command_Executed
+ExpertContext:
+    Created: 14.06.2023
+    Updated: 25.06.2023
+    KnowledgeHolders:
+        - Georgy Khandozhko (https://github.com/khgvad)
+    References:
+        - https://riccardoancarani.github.io/2020-05-10-hunting-for-impacket/#wmiexecpy
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+EventDescriptions:
+    - Criteria: correlation_name = "Impacket_WMIExec_Command_Executed"
+      LocalizationId: corrname_Impacket_WMIExec_Command_Executed
+ContentRelations:
+    Implements:
+        ATTACK:
+            lateral-movement:
+                - T1021

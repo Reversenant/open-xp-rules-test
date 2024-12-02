@@ -1,0 +1,4 @@
+Description: 'Действие с файловым дескриптором'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_descriptor_manipulation'
+      EventDescription: 'Действие с файловым дескриптором файла "{object.name}" на узле {event_src.host}'

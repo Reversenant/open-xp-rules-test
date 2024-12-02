@@ -1,0 +1,27 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "create" and status = "ongoing" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_create_ongoing_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "modify" and status = "success" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_modify_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "modify" and status = "failure" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_modify_failure_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "remove" and status = "ongoing" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_remove_ongoing_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "remove" and status = "success" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_remove_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "remove" and status = "failure" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_remove_failure_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "create" and status = "ongoing" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_create_ongoing_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "modify" and status = "success" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_modify_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "modify" and status = "failure" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_modify_failure_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "remove" and status = "ongoing" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_remove_ongoing_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "remove" and status = "success" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_remove_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_grp_mgmt" and action = "remove" and status = "failure" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_grp_mgmt_remove_failure_notnull
+ObjectId: PT-NF-6107

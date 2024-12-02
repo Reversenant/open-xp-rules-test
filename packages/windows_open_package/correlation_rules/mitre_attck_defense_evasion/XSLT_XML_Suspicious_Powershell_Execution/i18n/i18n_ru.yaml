@@ -1,0 +1,4 @@
+Description: 'Подозрительное XSL преобразование с использованием Powershell'
+EventDescriptions:
+    - LocalizationId: 'corrname_XSLT_XML_Suspicious_Powershell_Execution'
+      EventDescription: 'На узле {event_src.host} выполнена подозрительная команда Powershell, которая может свидетельствовать о попытке обойти средства защиты с помощью XSL преобразований'

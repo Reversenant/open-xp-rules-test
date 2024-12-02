@@ -1,0 +1,4 @@
+Description: 'A process copied a file'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_provider_materialization'
+      EventDescription: 'Process {subject.process.name} copied file "{object.name}" on host {event_src.host}'

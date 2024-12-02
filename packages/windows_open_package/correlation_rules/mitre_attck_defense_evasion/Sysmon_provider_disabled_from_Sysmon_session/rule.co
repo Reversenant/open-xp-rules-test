@@ -1,0 +1,125 @@
+ event SysmonSession_DisableProvider:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        lower(event_src.title) == "microsoft-windows-kernel-eventtracing" and
+        msgid == "15" and
+        in_list(["sysmondnsetwsession", "eventlog-microsoft-windows-sysmon-operational"], lower(object.name))
+    }
+ 
+ event SysmonEtwSession_CmParamsModified:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and ((
+            event_src.title == "windows" and
+            msgid == "4657"
+        ) or (
+            event_src.title == "sysmon" and
+            msgid == "13" )
+        ) and
+        in_list(["create", "modify"], lower(action)) == True and
+        regex(object.path, ".*wmi\\\\autologger\\\\eventlog-microsoft-windows-sysmon-operational.*", 0) != null and
+        lower(object.name) == "enabled" and
+        object.new_value == "0"
+    }
+
+
+rule Sysmon_provider_disabled_from_Sysmon_session: SysmonSession_DisableProvider or SysmonEtwSession_CmParamsModified
+
+    on SysmonSession_DisableProvider {
+        # object
+        $object = object
+        $object.name = object.name
+        $object.type = object.type
+
+        # action
+        $action = action
+
+        # status
+        $status = status
+
+        # other
+        
+        $datafield1 = datafield1
+        $datafield2 = datafield2
+        $datafield3 = datafield3
+        $datafield4 = datafield4
+        
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = event_src.category
+    }
+
+    on SysmonEtwSession_CmParamsModified {
+        # subject
+        $subject = "process"
+
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+
+    
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        
+        # action
+        $action = action
+
+        # object
+        $object = object
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.value = object.value
+        $object.new_value = object.new_value
+
+        # status
+        $status = status
+       
+        # event_src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = event_src.category
+    }
+
+emit {
+    $correlation_name = "Sysmon_provider_disabled_from_Sysmon_session"
+    $correlation_type = "incident"
+
+    $importance = "medium"
+
+    $category.generic = "Attack"
+    $category.high = "Defense Evasion"
+    $category.low = "Impair Defenses"
+
+    if $datafield3 != null then
+        $incident.aggregation.key = join([$correlation_name, lower($event_src.host), lower($datafield3)], "|")
+    else
+        $incident.aggregation.key = join([$correlation_name, lower($event_src.host), lower($subject.process.name)], "|")
+    endif
+
+    $incident.aggregation.timeout = 2h
+
+    $incident.severity = $importance
+
+    $incident.category = "ProtectionMalfunction"
+    $incident.type = "Malfunction"
+}

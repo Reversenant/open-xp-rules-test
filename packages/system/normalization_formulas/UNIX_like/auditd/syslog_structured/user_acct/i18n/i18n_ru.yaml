@@ -1,0 +1,80 @@
+Description: 'Управление пользователями и группами'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_login_ongoing'
+      EventDescription: 'Учетная запись пользователя {subject.account.name} прошла проверку на актуальность при входе пользователя в систему на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_login_failure'
+      EventDescription: 'Не удалось проверить учетную запись пользователя {subject.account.name} на актуальность при входе пользователя в систему на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_ongoing_su'
+      EventDescription: 'Учетная запись пользователя {object.account.name} прошла проверку на актуальность при повышении привилегий на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_failure_su'
+      EventDescription: 'Не удалось проверить учетную запись пользователя {object.account.name} на актуальность при повышении привилегий на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_ongoing_sudo'
+      EventDescription: 'Учетная запись пользователя {subject.account.name} прошла проверку на актуальность при повышении привилегий на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_failure_sudo'
+      EventDescription: 'Не удалось проверить учетную запись пользователя {subject.account.name} на актуальность при повышении привилегий на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_one_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} сбросил счетчик неудачных попыток входа для пользователя {object.account.name} на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_all_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} сбросил счетчик неудачных попыток входа для всех пользователей на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_group_admins_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} назначил пользователей «{object.new_value}» администраторами группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_group_admins_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} не смог назначить пользователей «{object.new_value}» администраторами группы «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_members_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} сделал пользователей «{object.new_value}» членами группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_members_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} не смог сделать пользователей «{object.new_value}» членами группы «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_added_user_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} добавил пользователя {object.new_value} в группу «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_added_user_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} не смог добавить пользователя {object.new_value} в группу «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_removed_user_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} удалил пользователя {object.value} из группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_removed_user_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} не смог удалить пользователя {object.value} из группы «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} изменил атрибуты группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} не смог изменить атрибуты группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_ongoing_notnull'
+      EventDescription: 'Пользователь {subject.account.name} с ID {subject.account.id} изменяет атрибуты группы «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_one_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} сбросил счетчик неудачных попыток входа для пользователя {object.account.name} на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_all_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} сбросил счетчик неудачных попыток входа для всех пользователей на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_group_admins_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} назначил пользователей «{object.new_value}» администраторами группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_group_admins_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} не смог назначить пользователей «{object.new_value}» администраторами группы «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_members_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} сделал пользователей «{object.new_value}» членами группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_members_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} не смог сделать пользователей «{object.new_value}» членами группы «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_added_user_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} добавил пользователя {object.new_value} в группу «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_added_user_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} не смог добавить пользователя {object.new_value} в группу «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_removed_user_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} удалил пользователя {object.value} из группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_removed_user_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} не смог удалить пользователя {object.value} из группы «{object.name}» на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} изменил атрибуты группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} не смог изменить атрибуты группы «{object.name}» на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_ongoing_null'
+      EventDescription: 'Пользователь с ID {subject.account.id} изменяет атрибуты группы «{object.name}» на узле {event_src.host}'

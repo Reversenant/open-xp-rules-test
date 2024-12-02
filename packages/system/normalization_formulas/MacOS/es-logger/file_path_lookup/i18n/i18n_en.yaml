@@ -1,0 +1,4 @@
+Description: 'File search'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_path_lookup'
+      EventDescription: 'A search for file "{object.name}" is performed on host {event_src.host}'

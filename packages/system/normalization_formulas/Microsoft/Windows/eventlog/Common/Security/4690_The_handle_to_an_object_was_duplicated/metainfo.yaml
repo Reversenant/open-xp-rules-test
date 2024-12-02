@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4690_The_handle_to_an_object_was_duplicated"
+      LocalizationId: PT_Microsoft_Windows_eventlog_4690_The_handle_to_an_object_was_duplicated
+ObjectId: PT-NF-1843

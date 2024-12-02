@@ -1,0 +1,26 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-485903980
+ContentAutoName: Detect_MSHTA_LethalHTA
+ExpertContext:
+    Created: 10.06.2023
+    Updated: 12.06.2023
+    Usecases:
+        - Lateral Movement - LethalHTA via DCOM
+        - Mshta Making Network Connections
+    References:
+        - "Example from elastic: https://github.com/elastic/detection-rules/issues/458"
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+              - 3
+    Improvements:
+        - clarify the correct TTP
+ContentRelations:
+    Implements:
+        ATTACK:
+            lateral-movement:
+                - T1021.003
+EventDescriptions:
+    - Criteria: correlation_name = "Detect_MSHTA_LethalHTA"
+      LocalizationId: corrname_Detect_MSHTA_LethalHTA

@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_process_attempt_to_attach_to_process"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_process_attempt_to_attach_to_process
+ObjectId: PT-NF-9297

@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "mach_time": 40216295674785,
+  "event_type": 70,
+  "thread": {
+    "thread_id": 138458
+  },
+  "version": 7,
+  "seq_num": 5,
+  "event": {
+    "deleteextattr": {
+      "target": {
+        "path": "/private/var/folders/zz/zyxvpxvq6csfxvn_n00000y800007k/T/com.apple.nsurlsessiond/CFNetworkDownload_UJ87hB.tmp",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 242,
+          "st_gid": 242,
+          "st_ino": 1957858,
+          "st_birthtimespec": "2023-07-25T07:35:38.737698954Z",
+          "st_flags": 0,
+          "st_nlink": 5,
+          "st_mtimespec": "2023-07-25T07:35:39.634347421Z",
+          "st_ctimespec": "2023-07-25T07:35:39.634347421Z",
+          "st_size": 160,
+          "st_gen": 0,
+          "st_mode": 16877,
+          "st_atimespec": "2023-07-25T07:35:38.737698954Z"
+        },
+        "path_truncated": false
+      },
+      "extattr": "com.apple.streamingzip.incomplete_extraction"
+    }
+  },
+  "time": "2023-07-25T07:35:39.634861191Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.StreamingUnzipService",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/System/Library/PrivateFrameworks/StreamingZip.framework/Versions/A/XPCServices/com.apple.StreamingUnzipService.xpc/Contents/MacOS/com.apple.StreamingUnzipService",
+      "stat": {
+        "st_blocks": 320,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312353169,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 433152,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T10:52:07.000829Z",
+    "is_platform_binary": true,
+    "group_id": 7073,
+    "audit_token": {
+      "asid": 100067,
+      "pidversion": 15526,
+      "ruid": 242,
+      "euid": 242,
+      "rgid": 242,
+      "auid": 4294967295,
+      "egid": 242,
+      "pid": 7073
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 473,
+      "ruid": 242,
+      "euid": 242,
+      "rgid": 242,
+      "auid": 4294967295,
+      "egid": 242,
+      "pid": 238
+    },
+    "session_id": 7073,
+    "original_ppid": 1,
+    "cdhash": "EE85FCA4D6448C7368525E7519238451E7563D37",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 43
+}

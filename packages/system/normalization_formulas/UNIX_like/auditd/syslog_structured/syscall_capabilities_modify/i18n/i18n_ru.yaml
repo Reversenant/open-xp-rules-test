@@ -1,0 +1,6 @@
+Description: 'Изменены привилегии объекта'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_capabilities_modify_success'
+      EventDescription: 'Процесс {subject.process.fullpath} изменил привилегии процесса с ID {object.process.id} на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_capabilities_modify_failure'
+      EventDescription: 'Процесс {subject.process.fullpath} не смог изменить привилегии процесса с ID {object.process.id} на узле {event_src.host}. Причина: {reason}'

@@ -1,0 +1,4 @@
+Description: 'Detect proxy execution of binary via Windows utility pcalua.exe (Program Compatibility Assistant).'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_lolbin_pcalua_exec'
+      EventDescription: 'Indirect execution of commands using the standard Windows pcalua.exe utility has been detected on the {event_src.host} host. Command executed: {object.process.cmdline}'

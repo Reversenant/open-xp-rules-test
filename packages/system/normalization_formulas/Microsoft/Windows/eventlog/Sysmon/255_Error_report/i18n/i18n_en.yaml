@@ -1,0 +1,4 @@
+Description: 'A Sysmon error has been detected'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_1'
+      EventDescription: 'A Sysmon error has been detected on host {event_src.host}'

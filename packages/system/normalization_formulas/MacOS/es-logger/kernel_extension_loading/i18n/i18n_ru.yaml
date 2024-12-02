@@ -1,0 +1,4 @@
+Description: 'Загружено расширение ядра'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_kernel_extension_loading'
+      EventDescription: 'Расширение ядра "{object.name}" загружено на узле {event_src.host}'

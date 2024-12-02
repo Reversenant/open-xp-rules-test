@@ -1,0 +1,6 @@
+Description: 'An attempt to change Sysmon service configuration was detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_Create_fake_SysmonDrv_symlink'
+      EventDescription: 'The process "{subject.process.name }" created dependency for the Sysmon64 service on host {event_src.host} node'
+    - LocalizationId: 'corrname_Create_fake_SysmonDrv_symlink_2'
+      EventDescription: 'A problem was found in the interaction between the Sysmon64 service and the SysmonDrv driver on host {event_src.host}'

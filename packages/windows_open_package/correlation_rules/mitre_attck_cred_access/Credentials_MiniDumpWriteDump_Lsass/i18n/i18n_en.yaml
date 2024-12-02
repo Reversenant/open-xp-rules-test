@@ -1,0 +1,4 @@
+Description: 'An attempt was detected to run a Powershell script to dump the memory of the lsass process using MiniDumpWriteDump. Attackers can use this tool to gain access to credentials.'
+EventDescriptions:
+    - LocalizationId: 'corrname_Credentials_MiniDumpWriteDump_Lsass_Ps'
+      EventDescription: 'On the host {event_src.host} an attempt was detected to run a Powershell script {object.name} to dump the memory of the lsass process using MiniDumpWriteDump. Attackers can use this tool to gain access to credentials.'

@@ -1,0 +1,4 @@
+Description: 'Процесс создал файл'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_create_file'
+      EventDescription: 'Процесс {subject.process.name} создал файл "{object.name}" на узле {event_src.host}'

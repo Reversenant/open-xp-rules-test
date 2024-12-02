@@ -1,0 +1,4 @@
+Description: 'Процесс создал другой процесс'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_forking'
+      EventDescription: 'Процесс {subject.process.name} создал процесс {object.process.name} на узле {event_src.host}'

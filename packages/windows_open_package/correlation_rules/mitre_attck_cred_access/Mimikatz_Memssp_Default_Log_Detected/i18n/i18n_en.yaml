@@ -1,0 +1,4 @@
+Description: 'mimilsa.log file creation may indicate the usage of Mimikatz memssp module in order to collect user authentication data in cleartext'
+EventDescriptions:
+    - LocalizationId: 'corrname_Mimikatz_Memssp_Default_Log_Detected'
+      EventDescription: '{object.name} file has been created by {subject.process.name}. This may indicate the usage of Mimikatz memssp module'

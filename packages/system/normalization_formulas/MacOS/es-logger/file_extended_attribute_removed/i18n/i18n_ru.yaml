@@ -1,0 +1,4 @@
+Description: 'Процесс удалил расширенные атрибуты файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_extended_attribute_removed'
+      EventDescription: 'Процесс {subject.process.name} удалил расширенные атрибуты файла "{object.name}" на узле {event_src.host}'

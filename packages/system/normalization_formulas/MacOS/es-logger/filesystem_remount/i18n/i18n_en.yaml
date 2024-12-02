@@ -1,0 +1,4 @@
+Description: 'A file system was remounted'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_filesystem_remount'
+      EventDescription: 'File system "{object.name}" was remounted on host {event_src.host}'

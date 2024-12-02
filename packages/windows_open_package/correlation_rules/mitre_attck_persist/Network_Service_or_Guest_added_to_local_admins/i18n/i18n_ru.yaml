@@ -1,0 +1,4 @@
+Description: 'Обнаружение добавления уз Guets или NETWORK SERVICE в группу локальных администраторов'
+EventDescriptions:
+    - LocalizationId: 'corrname_Network_Service_or_Guest_added_to_local_admins'
+      EventDescription: 'На хосте  {event_src.hostname} пользователем {subject.account.domain}\\{subject.account.name} в группу локальных администраторов была добавлена уз {object.account.name}'

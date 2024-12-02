@@ -1,0 +1,1 @@
+expect 1 {"_rule": "UAC_Bypass_Via_Consent", "subject.process.cmdline": "consent.exe 896 272 00000280644BC500"}

@@ -1,0 +1,4 @@
+Description: 'Процесс закрыл файл'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_close_file'
+      EventDescription: 'Процесс {subject.process.name} закрыл файл "{object.name}" на узле {event_src.host}'

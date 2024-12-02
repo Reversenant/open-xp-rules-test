@@ -1,0 +1,20 @@
+{
+    "action": "modify",
+    "datafield1": "41943296",
+    "event_src.category": "Operating system",
+    "event_src.fqdn": "win10-work.stand2008.local",
+    "event_src.hostname": "win10-work",
+    "event_src.id": "b675ec37-bdb6-4648-bc92-f3fdc74d3ca2",
+    "event_src.subsys": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+    "event_src.title": "Microsoft-Windows-Kernel-EventTracing",
+    "event_src.vendor": "microsoft",
+    "id": "Microsoft_Windows_eventlog_Common_EventTracing_12_The_configuration_of_session_has_been_modified",
+    "importance": "info",
+    "msgid": "12",
+    "object": "logging",
+    "object.id": "ddd7f2a4-084b-11ef-912e-52540074b02b",
+    "object.name": "sysmon trace",
+    "object.type": "session",
+    "status": "success",
+    "time": "2024-05-02T13:24:55.328Z"
+}

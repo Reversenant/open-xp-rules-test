@@ -1,0 +1,20 @@
+{
+    "eventid": "642",
+    "timestampfractional": "659",
+    "timestamp": "1629726933",
+    "node": "10.19.20.11",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2F7573722F7362696E2F6E747064002D70002F7661722F72756E2F6E7470642E706964002D67002D75003130373A313131"
+        ],
+        "EOE": [
+            ""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=126 success=yes exit=0 a0=5641dbb2e1d4 a1=5641dbb2e1dc a2=5641db792f54 a3=1 items=0 ppid=1 pid=936 auid=4294967295 uid=107 gid=111 euid=107 suid=107 fsuid=107 egid=111 sgid=111 fsgid=111 tty=(none) ses=4294967295 comm=\"ntpd\" exe=\"/usr/sbin/ntpd\" key=\"pt_siem_api_caps\" ARCH=x86_64 SYSCALL=capset AUID=\"unset\" UID=\"ntp\" GID=\"ntp\" EUID=\"ntp\" SUID=\"ntp\" FSUID=\"ntp\" EGID=\"ntp\" SGID=\"ntp\" FSGID=\"ntp\""
+        ],
+        "CAPSET": [
+            "pid=936 cap_pi=0000000002000400 cap_pp=0000000002000400 cap_pe=0000000002000400"
+        ]
+    }
+}

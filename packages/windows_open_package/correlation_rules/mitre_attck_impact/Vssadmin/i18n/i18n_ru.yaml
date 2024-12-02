@@ -1,0 +1,4 @@
+Description: 'Создание процесса vssadmin'
+EventDescriptions:
+    - LocalizationId: 'corrname_Vssadmin'
+      EventDescription: 'Пользователь {subject.account.name} запустил процесс {object.process.cmdline}'

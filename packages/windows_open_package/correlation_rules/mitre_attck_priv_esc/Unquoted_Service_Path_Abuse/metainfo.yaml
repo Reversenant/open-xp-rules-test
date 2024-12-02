@@ -1,0 +1,29 @@
+ObjectId: SEC-CR-178721525
+ContentAutoName: Unquoted_Service_Path_Abuse
+ExpertContext:
+    Created: 07.06.2023
+    Updated: 08.06.2023
+    KnowledgeHolders:
+        - Konstantin Grischenko
+    References:
+        - https://www.ired.team/offensive-security/privilege-escalation/unquoted-service-paths
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+    Usecases:
+        - "Hijack Execution Flow: Path Interception by Unquoted Path"
+    Improvements:
+        - Добавить отслеживание события создания файла, который далее будет использован для запуска вместо оригинального исполняемого файла уязвимого сервиса. Может потребовать дополнительных настроек аудита и приводить к огромному числу логируемых событий.
+ContentRelations:
+    Implements:
+        ATTACK:
+            privilege-escalation:
+                - T1574.009
+            defense-evasion:
+                - T1574.009
+            persistence:
+                - T1574.009
+EventDescriptions:
+    - Criteria: correlation_name = "Unquoted_Service_Path_Abuse"
+      LocalizationId: corrname_Unquoted_Service_Path_Abuse

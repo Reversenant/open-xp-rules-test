@@ -1,0 +1,4 @@
+Description: 'Процесс изменил список прав доступа к файлу'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_acl_modify'
+      EventDescription: 'Процесс {subject.process.name} изменил список прав доступа к файлу "{object.name}" на узле {event_src.host}. Новое значение: "{object.new_value}"'

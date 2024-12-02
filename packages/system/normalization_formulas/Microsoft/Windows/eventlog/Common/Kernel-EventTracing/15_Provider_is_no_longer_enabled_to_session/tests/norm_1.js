@@ -1,0 +1,22 @@
+{
+    "action": "modify",
+    "datafield1": "provider",
+    "datafield2": "{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}",
+    "datafield3": "1c95126e-7eea-49a9-a3fe-a378b03ddb4d",
+    "datafield4": "disabled",
+    "event_src.category": "Operating system",
+    "event_src.fqdn": "win10-work.stand2008.local",
+    "event_src.hostname": "win10-work",
+    "event_src.id": "b675ec37-bdb6-4648-bc92-f3fdc74d3ca2",
+    "event_src.subsys": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+    "event_src.title": "Microsoft-Windows-Kernel-EventTracing",
+    "event_src.vendor": "microsoft",
+    "id": "Microsoft_Windows_eventlog_Common_EventTracing_15_Provider_is_no_longer_enabled_to_session",
+    "importance": "info",
+    "msgid": "15",
+    "object": "logging",
+    "object.name": "sysmondnsetwsession",
+    "object.type": "session",
+    "status": "success",
+    "time": "2024-05-02T11:12:15.278Z"
+}

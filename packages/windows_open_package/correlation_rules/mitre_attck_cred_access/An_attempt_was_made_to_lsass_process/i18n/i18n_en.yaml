@@ -1,0 +1,6 @@
+Description: 'An attempt to gain access to lsass process was detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_An_attempt_was_made_to_lsass_process'
+      EventDescription: 'Process {subject.process.name}, launched on behalf of the user {subject.account.domain}\{subject.account.name}, got access to lsass process at host {event_src.host}'
+    - LocalizationId: 'corrname_An_attempt_was_made_to_lsass_process_3'
+      EventDescription: 'Process {subject.process.name} got access to lsass process at host {event_src.host}'

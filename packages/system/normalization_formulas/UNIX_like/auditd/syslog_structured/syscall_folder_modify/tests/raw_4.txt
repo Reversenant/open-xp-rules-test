@@ -1,0 +1,24 @@
+{
+    "eventid": "776156656",
+    "timestampfractional": "636",
+    "timestamp": "1652775929",
+    "node": "192.70.198.184",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=7068702D66706D3A206D61737465722070726F6365737320282F6574632F7068702F372E342F66706D2F7068702D66706D2E636F6E6629"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/var/www/www.site.ru/bitrix/cache/element404885/\" inode=3948461 dev=fe:00 mode=040755 ouid=33 ogid=33 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"www-data\" OGID=\"www-data\"",
+            "item=1 name=\"/var/www/www.site.ru/bitrix/cache/element404885/6b\" inode=3957059 dev=fe:00 mode=040755 ouid=33 ogid=33 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"www-data\" OGID=\"www-data\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=83 success=yes exit=0 a0=7fffc2f31810 a1=1ed a2=8 a3=39 items=2 ppid=2456682 pid=2699054 auid=4294967295 uid=33 gid=33 euid=33 suid=33 fsuid=33 egid=33 sgid=33 fsgid=33 tty=(none) ses=4294967295 comm=\"php-fpm7.4\" exe=\"/usr/sbin/php-fpm7.4\" subj==unconfined key=\"pt_siem_www_modify\" ARCH=x86_64 SYSCALL=mkdir AUID=\"unset\" UID=\"www-data\" GID=\"www-data\" EUID=\"www-data\" SUID=\"www-data\" FSUID=\"www-data\" EGID=\"www-data\" SGID=\"www-data\" FSGID=\"www-data\""
+        ],
+        "CWD": [
+            "cwd=\"/var/www/www.site.ru/news\""
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+ContentAutoName: Kerberos_pwd_spraying
+ExpertContext:
+    Created: 01.06.2023
+    Updated: 08.06.2023
+    Usecases:
+        - Обнаруживает несколько неудачных попыток входа в систему с несколькими действительными учетными записями домена из одной исходной системы с использованием протокола Kerberos.
+    References:
+        - https://github.com/SigmaHQ/sigma/blob/master/unsupported/windows/win_security_susp_failed_logons_single_source_kerberos.yml
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4771
+    Falsepositives:
+        - Vulnerability scanners, misconfigured systems, remote administration tools, VPN terminators, multiuser systems like Citrix server farms
+    Improvements:
+        - Add events a lot of failure 4668 before correlation rule kerberos_pwd_spraying_4771 and add events success event 4688
+ObjectId: SEC-CR-155929458
+EventDescriptions:
+    - Criteria: correlation_name = "Kerberos_pwd_spraying"
+      LocalizationId: corrname_kerberos_pwd_spraying
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential_access:
+                - T1110.003

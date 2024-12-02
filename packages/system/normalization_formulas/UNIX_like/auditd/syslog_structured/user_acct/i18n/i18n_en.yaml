@@ -1,0 +1,80 @@
+Description: 'User and user group management'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_login_ongoing'
+      EventDescription: 'The account of user "{subject.account.name}" was verified for validity when the user was logging in to the system on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_login_failure'
+      EventDescription: 'Failed to verify the account of user "{subject.account.name}" for validity when the user was logging in to the system on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_ongoing_su'
+      EventDescription: 'The account of user "{object.account.name}" was verified for validity when the user was escalating privileges on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_failure_su'
+      EventDescription: 'Failed to verify the account of user "{object.account.name}" for validity when the user was escalating privileges on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_ongoing_sudo'
+      EventDescription: 'The account of user "{subject.account.name}" was verified for validity when the user was escalating privileges on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_failure_sudo'
+      EventDescription: 'Failed to verify the account of user "{subject.account.name}" for validity when the user was escalating privileges on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_one_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} reset the counter of failed login attempts for user "{object.account.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_all_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} reset the counter of failed login attempts for all users on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_group_admins_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} assigned users "{object.new_value}" as administrators of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_group_admins_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} failed to assign users "{object.new_value}" as administrators of user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_members_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} made users "{object.new_value}" members of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_members_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} failed to make users "{object.new_value}" members of user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_added_user_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} added user "{object.new_value}" to user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_added_user_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} failed to add user "{object.new_value}" to user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_removed_user_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} removed user "{object.value}" from user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_removed_user_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} failed to remove user "{object.value}" from user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} changed attributes of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} failed to change attributes of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_ongoing_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} is changing attributes of user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_one_null'
+      EventDescription: 'The user with ID {subject.account.id} reset the counter of failed login attempts for user "{object.account.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_all_null'
+      EventDescription: 'The user with ID {subject.account.id} reset the counter of failed login attempts for all users on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_group_admins_null'
+      EventDescription: 'The user with ID {subject.account.id} assigned users "{object.new_value}" as administrators of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_group_admins_null'
+      EventDescription: 'The user with ID {subject.account.id} failed to assign users "{object.new_value}" as administrators of user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_members_null'
+      EventDescription: 'The user with ID {subject.account.id} made users "{object.new_value}" members of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_members_null'
+      EventDescription: 'The user with ID {subject.account.id} failed to make users "{object.new_value}" members of user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_added_user_null'
+      EventDescription: 'The user with ID {subject.account.id} added user "{object.new_value}" to user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_added_user_null'
+      EventDescription: 'The user with ID {subject.account.id} failed to add user "{object.new_value}" to user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_removed_user_null'
+      EventDescription: 'The user with ID {subject.account.id} removed user "{object.value}" from user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_removed_user_null'
+      EventDescription: 'The user with ID {subject.account.id} failed to remove user "{object.value}" from user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_null'
+      EventDescription: 'The user with ID {subject.account.id} changed attributes of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_null'
+      EventDescription: 'The user with ID {subject.account.id} failed to change attributes of user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_user_acct_modify_ongoing_null'
+      EventDescription: 'The user with ID {subject.account.id} is changing attributes of user group "{object.name}" on host {event_src.host}'

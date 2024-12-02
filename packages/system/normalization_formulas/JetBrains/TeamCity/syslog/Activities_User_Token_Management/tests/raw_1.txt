@@ -1,0 +1,1 @@
+Aug  1 00:00:00 teamcity teamcity-activities.log: [2021-07-05 11:44:56,539]   INFO - s.buildServer.ACTIVITIES.AUDIT - create_token_for_user: Created user-scoped token for user "'admin' {id=1}", token: "Token {name='REST' identifier='b5085f00-f111-11c3-9088-d1cd11b1fe11' expirationTime='292278994-08-17 07:12:55.807' restricted='false' }" by "'admin' {id=1}"

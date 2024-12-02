@@ -1,0 +1,1 @@
+expect 1 {"correlation_name": "An_attempt_was_made_to_lsass_process"}

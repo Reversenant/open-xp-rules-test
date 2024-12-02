@@ -1,0 +1,151 @@
+EVENTLOG = 'EventID.text="33205"'
+
+COND = (
+        find_substr($Provider["Name"], "MSSQL$") != null
+        or $Provider["Name"] == 'MSSQLSERVER'
+       )
+       and (
+            find_substr($Data[0], "action_id:PWR") != null
+            or find_substr($Data[0], "action_id:PWRS") != null
+            or find_substr($Data[0], "action_id:PWCS") != null
+            or find_substr($Data[0], "action_id:PWC") != null
+            or find_substr($Data[0], "action_id:PWU") != null
+            or find_substr($Data[0], "action_id:PWMC") != null
+            or find_substr($Data[0], "action_id:CCLG") != null
+            or find_substr($Data[0], "action_id:LGEA") != null
+            or find_substr($Data[0], "action_id:LGDA") != null
+            or find_substr($Data[0], "action_id:LGNM") != null
+            or find_substr($Data[0], "action_id:PWPL") != null
+            or find_substr($Data[0], "action_id:PWEX") != null
+            or find_substr($Data[0], "action_id:LGDB") != null
+           )
+       and find_substr($Data[0], "class_type:SL") != null
+
+$kv = replace($Data[0], " ", "\r\n")
+$kv = keyvalue($kv, "\n", ":")
+
+subject = "account"
+
+if $kv['action_id'] == "PWR" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "password for another user"
+
+elif $kv['action_id'] == "PWRS" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "password for current user"
+
+elif $kv['action_id'] == "PWCS" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "password for current user"
+
+elif $kv['action_id'] == "PWC" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "password for another user"
+
+elif $kv['action_id'] == "PWU" then
+    action = "unlock"
+    object.property = "changed value"
+    object.value = "lock status"
+
+elif $kv['action_id'] == "PWMC" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "need to change password"
+
+elif $kv['action_id'] == "CCLG" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "user login"
+
+elif $kv['action_id'] == "LGEA" then
+    action = "enable"
+    object.property = "changed value"
+    object.value = "user login"
+
+elif $kv['action_id'] == "LGDA" then
+    action = "disable"
+    object.property = "changed value"
+    object.value = "user login"
+
+elif $kv['action_id'] == "LGNM" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "username"
+
+elif $kv['action_id'] == "PWPL" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "password policy"
+
+elif $kv['action_id'] == "PWEX" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "password expiration"
+
+elif $kv['action_id'] == "LGDB" then
+    action = "modify"
+    object.property = "changed value"
+    object.value = "default database"
+endif
+
+object = "account"
+
+if $kv['succeeded'] == "true" then
+    status = "success"
+else
+    status = "failure"
+endif
+
+# разбираем домен и имя пользователя
+$csv = csv($kv['server_principal_name'], "\\", "'")
+if length($csv) == 2 then
+    subject.account.domain = lower($csv[0])
+    subject.account.name = lower($csv[1])
+else
+    subject.account.name = lower($csv[0])
+endif
+
+subject.account.id = $kv['server_principal_sid']
+
+object.account.name = lower($kv['object_name'])
+
+object.query = $kv['statement']
+
+datafield2 = $kv['server_instance_name']  # имя экземпляра
+datafield3 = $kv['database_name']  # имя используемой БД
+datafield4 = $kv['action_id']  # идентификатор действия
+datafield5 = $kv['class_type']  # Тип класса сущности, для которой был проведен аудит
+
+time = $kv['event_time']
+msgid = $EventID['text']
+importance = "medium"
+
+event_src.vendor = "microsoft"
+event_src.title = "sql_server"
+
+$first_dot = find_substr($Computer, '.')
+if $first_dot != null then
+    event_src.fqdn = lower($Computer)
+    event_src.hostname = lower(substr($Computer, 0, $first_dot))
+else
+    event_src.hostname = lower($Computer)
+endif
+event_src.subsys = $Channel
+event_src.category = "Database server"
+
+id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_credentials_operation"
+
+# -- DEPRECATED --
+# lines from here will be deleted in future releases
+
+subject.name = subject.account.name
+subject.domain = subject.account.domain
+subject.id = subject.account.id
+
+object.name = object.account.name
+
+datafield1 = object.query  # текст выполняемого запроса без переносов строки

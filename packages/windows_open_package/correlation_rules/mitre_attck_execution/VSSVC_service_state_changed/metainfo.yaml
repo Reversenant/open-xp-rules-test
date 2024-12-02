@@ -1,0 +1,39 @@
+ObjectId: SEC-CR-109592014
+ContentAutoName: VSSVC_service_state_changed
+ExpertContext:
+    Created: 05.06.2023
+    Updated: 15.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Falsepositives:
+        - При настройке теневых копий системными администраторами
+    References:
+        - https://attack.mitre.org/techniques/T1569/002/
+        - https://bohops.com/2018/02/10/vshadow-abusing-the-volume-shadow-service-for-evasion-persistence-and-active-directory-database-extraction/
+    Improvements:
+        - "Добавить в event 8224 (Provider: VSS, Application). В настоящее время отсутствует нормализация"
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+              - 5
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+              - 4689
+    Usecases:
+        - Атакующе могут злоупотреблять службой теневого копирования (VSS) с целью получения учетных данных (OS Credential Dumping), либо препятствия восстановлению данных (Inhibit System Recovery )
+ContentRelations:
+    Implements:
+        ATTACK:
+            execution:
+                - T1569.002
+            impact:
+                - T1490
+            credential-access:
+                - T1003
+EventDescriptions:
+    - Criteria: correlation_name = "VSSVC_service_state_changed" and action = "start"
+      LocalizationId: corrname_VSSVC_service_state_changed
+    - Criteria: correlation_name = "VSSVC_service_state_changed" and action = "stop"
+      LocalizationId: corrname_VSSVC_service_state_changed_2

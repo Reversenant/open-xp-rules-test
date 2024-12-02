@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "mach_time": 194846365805,
+  "event_type": 125,
+  "thread": {
+    "thread_id": 5635
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "btm_launch_item_remove": {
+      "instigator": {
+        "signing_id": "com.apple.LoginItems-Settings.extension",
+        "parent_audit_token": {
+          "asid": 100000,
+          "pidversion": 1,
+          "ruid": 0,
+          "euid": 0,
+          "rgid": 0,
+          "auid": 4294967295,
+          "egid": 0,
+          "pid": 1
+        },
+        "codesigning_flags": 570522385,
+        "executable": {
+          "path": "/System/Library/ExtensionKit/Extensions/LoginItems.appex/Contents/MacOS/LoginItems",
+          "stat": {
+            "st_blocks": 304,
+            "st_blksize": 4096,
+            "st_rdev": 0,
+            "st_dev": 16777220,
+            "st_uid": 0,
+            "st_gid": 0,
+            "st_ino": 1152921500312107344,
+            "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_flags": 524320,
+            "st_nlink": 1,
+            "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_size": 442992,
+            "st_gen": 0,
+            "st_mode": 33261,
+            "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+          },
+          "path_truncated": false
+        },
+        "ppid": 1,
+        "tty": null,
+        "start_time": "2023-07-25T07:57:50.439021Z",
+        "is_platform_binary": true,
+        "group_id": 746,
+        "audit_token": {
+          "asid": 100006,
+          "pidversion": 1746,
+          "ruid": 501,
+          "euid": 501,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 746
+        },
+        "is_es_client": false,
+        "responsible_audit_token": {
+          "asid": 100006,
+          "pidversion": 1746,
+          "ruid": 501,
+          "euid": 501,
+          "rgid": 20,
+          "auid": 501,
+          "egid": 20,
+          "pid": 746
+        },
+        "session_id": 746,
+        "original_ppid": 1,
+        "cdhash": "F8CFDFF15019D09FB3F81C7671AB8603C026DE18",
+        "team_id": 1
+      },
+      "app": null,
+      "item": {
+        "legacy": false,
+        "managed": false,
+        "item_url": "file:///System/Applications/App%20Store.app/",
+        "item_type": 1,
+        "uid": 501,
+        "app_url": null
+      }
+    }
+  },
+  "time": "2023-07-25T07:58:25.871403066Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.backgroundtaskmanagementd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/Resources/backgroundtaskmanagementd",
+      "stat": {
+        "st_blocks": 432,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312238332,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 594432,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-25T07:55:17.802849Z",
+    "is_platform_binary": true,
+    "group_id": 279,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 613,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 279
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 613,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 279
+    },
+    "session_id": 279,
+    "original_ppid": 1,
+    "cdhash": "0D816E397530D5FDF31299AA6893DEE710C9F101",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 7
+}

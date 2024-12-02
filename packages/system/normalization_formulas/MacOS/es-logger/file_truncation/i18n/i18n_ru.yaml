@@ -1,0 +1,6 @@
+Description: 'Статус усечения файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_truncation_true'
+      EventDescription: 'Процесс {subject.process.name} обрезал файл "{object.name}" на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_truncation_false'
+      EventDescription: 'Процесс {subject.process.name} не обрезал файл "{object.name}" на узле {event_src.host}'

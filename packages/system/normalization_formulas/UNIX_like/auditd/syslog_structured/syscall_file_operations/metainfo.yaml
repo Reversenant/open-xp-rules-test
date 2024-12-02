@@ -1,0 +1,34 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "success" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_success
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "failure" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_failure
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "success" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_success
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "failure" and subject != "account"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_failure
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "success" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_success_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "failure" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_failure_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "success" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_success_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "failure" and subject = "account" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_failure_id
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "success" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_success_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_failure_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "success" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_success_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_failure_name
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "success" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_success_name_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "access" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_access_resource_failure_name_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "success" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_success_name_with_objname
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_syscall_file_operations" and action = "create" and status = "failure" and subject = "account" and subject.account.name != null and object.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_syscall_create_file_failure_name_with_objname
+ObjectId: PT-NF-6032

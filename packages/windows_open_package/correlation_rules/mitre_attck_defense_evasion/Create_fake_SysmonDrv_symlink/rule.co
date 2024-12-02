@@ -1,0 +1,128 @@
+event MalwareService_Created:
+    key:
+        event_src.host, subject.account.session_id
+    filter {
+        filter::NotFromCorrelator() and
+        event_src.title == "windows" and
+        in_list(["4697", "7045"], msgid)
+    }
+
+event SysmonDepend_Created:
+    key:
+        event_src.host, subject.account.session_id
+    filter {
+        filter::NotFromCorrelator() and ((
+            event_src.title == "windows" and
+            msgid == "4657"
+        ) or (
+            event_src.title == "sysmon" and
+            msgid == "13" )
+        ) and
+        in_list(["create", "modify"], lower(action)) == True and
+        regex(object.path, "sysmon64", 0) != null and
+        lower(object.name) == "dependonservice"
+    }
+
+ event SysmonDrv_WriteError:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        event_src.title == "sysmon" and
+        msgid == "255" and
+        lower(object.name) == "getconfigurationoptions" and
+        regex(lower(reason), "failed.*configuration.*error.94.*(запис|write)", 0) != null
+    }
+
+rule Create_fake_SysmonDrv_symlink: (MalwareService_Created* -> SysmonDepend_Created within 20s) or (SysmonDrv_WriteError+ -> SysmonDrv_WriteError)
+
+    on MalwareService_Created {
+        # subject
+        $subject.process.id = object.process.id
+        $subject.process.parent.id = object.process.parent.id
+    }
+
+    on SysmonDepend_Created {
+        # subject
+        $subject = "process"
+
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+
+    
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        
+        # action
+        $action = action
+
+        # object
+        $object = object
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.value = object.value
+        $object.new_value = object.new_value
+
+        # status
+        $status = status
+       
+        # event_src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = event_src.category
+    }
+
+    on SysmonDrv_WriteError {
+        # object
+        $object = object
+        $object.name = object.name
+
+        # action
+        $action = action
+
+        # status
+        $status = status
+
+        $reason = reason
+
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = "Host security"
+    }
+
+emit {
+    $correlation_type = "incident"
+    $correlation_name = "Create_fake_SysmonDrv_symlink"
+
+    $importance = "high"
+
+    $category.generic = "Attack"
+    $category.high = "Defense Evasion"
+    $category.low = "Impair Defenses"
+
+    $incident.aggregation.key = join([$correlation_name, lower($event_src.host), lower($subject.account.id)], "|")
+    $incident.aggregation.timeout = 2h
+
+    $incident.severity = $importance
+    
+    $incident.category = "ProtectionMalfunction"
+    $incident.type = "Malfunction"
+}

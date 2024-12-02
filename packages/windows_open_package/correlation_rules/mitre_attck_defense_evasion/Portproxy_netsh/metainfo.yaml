@@ -1,0 +1,34 @@
+ObjectId: SEC-CR-913584083
+ContentAutoName: Portforward_netsh
+ExpertContext:
+    Created: 03.06.2023
+    Updated: 08.06.2023
+    References:
+        - https://woshub.com/port-forwarding-in-windows/
+    KnowledgeHolders:
+        - Vadim Varganov (d3f0x0)
+    Falsepositives:
+        - Administrative action
+    Improvements:
+        - Add powershell block
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+              - 13
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+              - 4657
+    Usecases:
+        - Evasion firewall
+ContentRelations:
+    Implements:
+        ATTACK:
+            command-and-control:
+                - T1090
+EventDescriptions:
+    - Criteria: correlation_name = "Portproxy_netsh" and object = "process"
+      LocalizationId: corrname_Portproxy_netsh
+    - Criteria: correlation_name = "Portproxy_netsh" and object = "reg_object"
+      LocalizationId: corrname_Portproxy_netsh_2

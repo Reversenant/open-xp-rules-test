@@ -1,0 +1,4 @@
+Description: 'Detect "Lateral Movement" via service mshta making network connections'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_MSHTA_LethalHTA'
+      EventDescription: 'On host {event_src.host}, processes {object.process.parent.cmdline} and child {object.process.name} were running, followed by a network connection to address {dst.host}:{dst.port}'

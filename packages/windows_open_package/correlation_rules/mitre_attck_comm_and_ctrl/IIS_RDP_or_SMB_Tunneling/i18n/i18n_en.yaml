@@ -1,0 +1,6 @@
+Description: 'The rule detects the proxying of RDP or SMB traffic through an ASPX shell'
+EventDescriptions:
+    - LocalizationId: 'corrname_IIS_RDP_or_SMB_Tunneling'
+      EventDescription: 'RDP traffic proxying using the ASPX shell was detected at host {event_src.host}'
+    - LocalizationId: 'corrname_IIS_RDP_or_SMB_Tunneling_2'
+      EventDescription: 'SMB traffic proxying using the ASPX shell was detected at host {event_src.host}'

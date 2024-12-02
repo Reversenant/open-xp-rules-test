@@ -1,0 +1,4 @@
+Description: 'A user changed audit settings for an object'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_Common_Security_4907_Auditing_settings_on_object_were_changed'
+      EventDescription: 'The user {subject.name} changed audit settings for the object "{object.name}" on host {event_src.host}'

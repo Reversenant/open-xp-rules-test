@@ -1,0 +1,4 @@
+Description: 'A pseudoterminal device session was granted to a user'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_grant_pseudoterminal_device_to_user'
+      EventDescription: 'A session of pseudoterminal device version {object.version} was granted to a user with ID {subject.account.id} on host {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'Duplicate file descriptor'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_descriptor_duplicated'
+      EventDescription: 'Duplicate file descriptor of file "{object.name}" on host {event_src.host}'

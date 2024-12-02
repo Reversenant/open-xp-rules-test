@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "mach_time": 40126981190241,
+  "event_type": 57,
+  "thread": {
+    "thread_id": 282462
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "chroot": {
+      "target": {
+        "path": "/private/var/empty",
+        "stat": {
+          "st_blocks": 0,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 0,
+          "st_gid": 3,
+          "st_ino": 1447940,
+          "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+          "st_flags": 0,
+          "st_nlink": 2,
+          "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+          "st_ctimespec": "2023-07-04T11:40:03.275786125Z",
+          "st_size": 64,
+          "st_gen": 0,
+          "st_mode": 16877,
+          "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "time": "2023-07-24T16:46:45.203791907Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.sshd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 25971,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 12527
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/sbin/sshd",
+      "stat": {
+        "st_blocks": 1584,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312443532,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 1691152,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 12527,
+    "tty": null,
+    "start_time": "2023-07-24T16:46:45.195514Z",
+    "is_platform_binary": true,
+    "group_id": 12527,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 25972,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 12528
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 25971,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 12527
+    },
+    "session_id": 12527,
+    "original_ppid": 12527,
+    "cdhash": "7F5C5E50AD1A8C11F4ACFD6331376B9307DC9302",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 7
+}

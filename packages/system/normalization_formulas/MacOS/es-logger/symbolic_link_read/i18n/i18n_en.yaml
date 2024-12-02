@@ -1,0 +1,4 @@
+Description: 'A process read a symbolic link'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_symbolic_link_read'
+      EventDescription: 'Process {subject.process.name} read symbolic link "{object.name}" on host {event_src.host}'

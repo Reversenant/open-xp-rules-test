@@ -1,0 +1,4 @@
+Description: 'Проверка прав доступа к файлу'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_access_resource'
+      EventDescription: 'Проверка прав доступа к файлу {object.path} на узле {event_src.host}'

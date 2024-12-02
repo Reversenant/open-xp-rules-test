@@ -1,0 +1,50 @@
+name: Дублирование в контенте
+description: Сообщить о дублировании логики или заполнения в контенте
+title: "[ДУБЛИКАТ] <Опишите кратко суть проблемы>"
+labels: [duplicate]
+body:
+- type: markdown
+  attributes:
+    value: |
+      **Спасибо, что нашли время сообщить о проблеме в репозитории!**
+- type: checkboxes
+  attributes:
+    label: Существует ли уже issue или обсуждение этого дубликата? 
+    description: Пожалуйста, убедитесь, что выявленый недостаток ещё не был описан в разделе issues.
+    options:
+    - label: Подтверждаю, что выявленный недостаток ещё не был описан
+      required: true
+- type: dropdown
+  attributes:
+    label: Тип контента
+    description: В каком типе контента обнаружена проблема?
+    multiple: false
+    options:
+      - Корреляция
+      - Нормализация
+      - Табличный список
+      - Обогащение
+      - Макрос
+      - Агрегация
+      - Другое
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Описание дубликата
+    description: Опишите где и что дублируется.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Предложение
+    description: Опишите как, на Ваш взгляд, лучше всего исправить дублирование.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Дополнительные сведения и сслыки
+    description: |
+      Тут можно дать комментарии для лучшего понимания контекста. Приложить скриншоты или ссылки.
+  validations:
+    required: false

@@ -1,0 +1,26 @@
+ObjectId: SEC-CR-823326244
+ContentAutoName: Use_persist_Start_process_via_WinlogonShell
+ExpertContext:
+    Created: 02.06.2023
+    Updated: 06.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут закрепиться в системе путем модификации оболочки (Shell)
+    References:
+        - https://attack.mitre.org/techniques/T1547/004/
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4657
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+EventDescriptions:
+    - Criteria: correlation_name = "Use_persist_Start_process_via_WinlogonShell"
+      LocalizationId: corrname_Use_persist_Start_process_via_WinlogonShell
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1547.004

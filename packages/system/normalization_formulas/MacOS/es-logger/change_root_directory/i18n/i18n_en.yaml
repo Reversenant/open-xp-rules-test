@@ -1,0 +1,4 @@
+Description: 'The root directory of a process was changed'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_change_root_directory'
+      EventDescription: 'The root directory of process "{subject.process.name}" was changed to "{object.new_value}" on host {event_src.host}'

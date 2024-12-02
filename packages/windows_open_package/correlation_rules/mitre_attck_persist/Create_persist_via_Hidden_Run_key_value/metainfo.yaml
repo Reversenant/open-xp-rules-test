@@ -1,0 +1,30 @@
+ObjectId: SEC-CR-157328435
+ContentAutoName: Create_persist_via_Hidden_Run_key_value
+ExpertContext:
+    Created: 12.06.2023
+    Updated: 25.06.2023
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут делать скрытые значения ключей автозагрузки Run
+    References:
+        - https://attack.mitre.org/techniques/T1547/001/
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4657
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1547
+            defense-evasion:
+                - T1112
+EventDescriptions:
+    - Criteria: correlation_name = "Create_persist_via_Hidden_Run_key_value" and subject.account.name != null
+      LocalizationId: corrname_Create_persist_via_Hidden_Run_key_value
+    - Criteria: correlation_name = "Create_persist_via_Hidden_Run_key_value" and subject.process.name != null
+      LocalizationId: corrname_Create_persist_via_Hidden_Run_key_value_2

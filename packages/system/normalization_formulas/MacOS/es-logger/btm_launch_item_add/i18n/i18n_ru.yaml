@@ -1,0 +1,4 @@
+Description: 'Процесс добавил файл в автозагрузку'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_btm_launch_item_add'
+      EventDescription: 'Процесс {subject.process.name} добавил файл "{object.name}" в автозагрузку на узле {event_src.host}'

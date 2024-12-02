@@ -1,0 +1,50 @@
+name: Улучшение контента
+description: Предложить улучшение контента в репозитории
+title: "[УЛУЧШЕНИЕ] <Опишите кратко суть предлагаемого улучшения>"
+labels: [improvement]
+body:
+- type: markdown
+  attributes:
+    value: |
+      **Спасибо, что нашли время, чтобы предложить улучшение!**
+- type: checkboxes
+  attributes:
+    label: Существует ли уже issue или обсуждение с похожим предложением? 
+    description: Пожалуйста, убедитесь, что Ваша идея ещё не была описан в разделе issues.
+    options:
+    - label: Подтверждаю, что предлагаемые улучшения ещё не были описаны
+      required: true
+- type: dropdown
+  attributes:
+    label: Тип контента
+    description: К какому типу контента относится предложение?
+    multiple: true
+    options:
+      - Корреляция
+      - Нормализация
+      - Табличный список
+      - Обогащение
+      - Макрос
+      - Агрегация
+      - Другое
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Что хотелось бы улучшить?
+    description: Опишите, что и как хотелось бы улучшить.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Почему Ваше предложение лучше, чем существующее решение?
+    description: Опишите почему, Ваше предложение лучше, чем то, как это реализовано в репозитории сейчас.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Дополнительные сведения и сслыки
+    description: |
+      Тут можно дать комментарии для лучшего понимания контекста. Приложить скриншоты или ссылки.
+  validations:
+    required: false

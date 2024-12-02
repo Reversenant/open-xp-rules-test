@@ -1,0 +1,20 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-127877797
+ContentAutoName: UACME_23_DismCore_Hijacking
+ExpertContext:
+    Created: 13.06.2023
+    Updated: 13.06.2023
+    KnowledgeHolders:
+        - Georgy Khandozhko
+    References:
+        - https://github.com/hfiref0x/UACME/tree/v3.2.x
+        - https://cqureacademy.com/cqure-labs/cqlabs-how-uac-bypass-methods-really-work-by-adrian-denkiewicz
+        - https://steemit.com/utopian-io/@ah101/uac-bypassing-utility
+EventDescriptions:
+    - Criteria: correlation_name = "UACME_23_DismCore_Hijacking"
+      LocalizationId: corrname_UACME_23_DismCore_Hijacking
+ContentRelations:
+    Implements:
+        ATTACK:
+            privilege-escalation:
+                - T1548

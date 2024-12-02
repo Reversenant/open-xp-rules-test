@@ -1,0 +1,4 @@
+Description: 'This rule is going to detect KeePass master key dumping attempts'
+EventDescriptions:
+    - LocalizationId: 'corrname_Keepass_Key_Dump_Via_KeeThief'
+      EventDescription: 'Powershell comandlet with GetKeePassMasterKeys method handling has been executed on {event_src.host}. Potential attempt to dump KeePass master key from memory of {object.process.name}'

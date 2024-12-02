@@ -1,0 +1,4 @@
+Description: 'Data exchange between two files'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_data_exchange_between_two_files'
+      EventDescription: 'Data exchange between file "{object.name}" and file "{object.value}" on host {event_src.host}'

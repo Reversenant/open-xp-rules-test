@@ -1,0 +1,6 @@
+Description: 'Попытка авторизации с использованием OpenSSH'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_openssh_login_success'
+      EventDescription: 'Пользователь {subject.account.name} с IP-адреса {src.ip} авторизовался с использованием OpenSSH на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_openssh_login_failure'
+      EventDescription: 'Пользователь {subject.account.name} с IP-адреса {src.ip} не смог авторизоваться с использованием OpenSSH на узле {event_src.host}'

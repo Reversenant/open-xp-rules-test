@@ -1,0 +1,4 @@
+Description: 'Сеанс псевдотерминального устройства остановлен'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_pseudoterminal_device_closing'
+      EventDescription: 'Сеанс псевдотерминального устройства версии {object.version} пользователя с ID {subject.account.id} остановлен на узле {event_src.host}'

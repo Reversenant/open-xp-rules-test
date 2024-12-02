@@ -1,0 +1,4 @@
+Description: 'PsLoggedon tool from Sysinternals suite has been detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_PsLoggedon_usage'
+      EventDescription: 'PsLoggedon tool from Sysinternals suite has been detected at host {event_src.host}'

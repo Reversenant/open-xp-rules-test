@@ -1,0 +1,10 @@
+Description: 'Отслежен процесс'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_success_attach'
+      EventDescription: 'Процесс с ID {subject.process.id} начал отслеживать процесс с ID {object.process.id} с использованием "ptrace" на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_failure_attach'
+      EventDescription: 'Процесс с ID {subject.process.id} не смог начать отслеживать процесс с ID {object.process.id} с использованием "ptrace" на узле {event_src.host}. Причина: {reason}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_success_detach'
+      EventDescription: 'Процесс с ID {subject.process.id} закончил отслеживать процесс с ID {object.process.id} с использованием "ptrace" на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_syscall_access_process_failure_detach'
+      EventDescription: 'Процесс с ID {subject.process.id} не смог закончить отслеживать процесс с ID {object.process.id} с использованием "ptrace" на узле {event_src.host}. Причина: {reason}'

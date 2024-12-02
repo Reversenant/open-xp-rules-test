@@ -1,0 +1,128 @@
+event Create_process_rundll:
+    key: 
+        event_src.host, object.process.id
+    filter {
+        filter::NotFromCorrelator()
+
+        # Регулярка для comsvcs, comsvcs.dll, minidump, minidumpw, #24, #+24, #-4294967272
+        and filter::ProcessStart_Windows_commandline("rundll32.exe", "(comsvcs)(\.dll)?\W+(minidumpw?|#\+?24|#\-4294967272)")
+    }
+
+event Create_file:
+    key:
+        event_src.host, subject.process.id
+    filter {
+        filter::NotFromCorrelator()
+        and filter::FileCreate_Windows()
+    }
+
+event Access_to_process:
+    key:
+        event_src.host, subject.process.id
+    filter {
+        filter::NotFromCorrelator()
+
+        and 
+        (
+            # Sysmon
+            (
+                msgid == "10" 
+                and event_src.title == "sysmon"
+                and in_list(["0x1010", "0x1fffff", "0x1410", "0x143a", "0x1438", "0x001fffff"], object.value)
+            )
+            or
+
+            # Windows security
+            (
+                event_src.title == "windows" 
+                and msgid == "4663"
+                and regex(subject.account.privileges, ".*(%%4484).*", 0) == True
+            )    
+        )
+        
+        and object.process.name == "lsass.exe"    
+    }
+
+rule Memdump_comsvcs_minidump: ((Create_process_rundll -> Access_to_process) and Create_file?) timer 1m
+
+on Create_process_rundll {
+    $event_src.ip = event_src.ip
+    $event_src.hostname = event_src.hostname
+    $event_src.host = event_src.host
+
+    $subject.account.name = subject.account.name
+    $subject.account.fullname = subject.account.fullname
+    $subject.account.domain = subject.account.domain
+    $subject.account.session_id = subject.account.session_id
+    $subject.account.id = subject.account.id
+    $subject.account.privileges = subject.account.privileges
+
+    $subject.process.id = subject.process.id
+    $subject.process.name = subject.process.name
+    $subject.process.path = subject.process.path
+    $subject.process.fullpath = subject.process.fullpath
+    $subject.process.hash = subject.process.hash
+    $subject.process.version = subject.process.version
+    $subject.process.cmdline = subject.process.cmdline
+    $subject.process.guid = subject.process.guid
+    $subject.process.meta = subject.process.meta
+    $subject.process.original_name = subject.process.original_name
+    $subject.process.cwd = subject.process.cwd
+    $subject.process.chain = subject.process.chain
+    
+    $subject.process.parent.id = subject.process.parent.id
+    $subject.process.parent.name = subject.process.parent.name
+    $subject.process.parent.path = subject.process.parent.path
+    $subject.process.parent.fullpath = subject.process.parent.fullpath
+    $subject.process.parent.cmdline = subject.process.parent.cmdline
+    
+    $datafield18 = datafield18 # chain with PID for subject
+    $datafield19 = datafield19 # chain with PID for object
+}
+
+on Create_file {
+    $object.name = object.name 
+    $object.path = object.path 
+    $object.fullpath = object.fullpath # Путь к созданному файлу
+}
+
+on Access_to_process {
+
+    $object.process.id = object.process.id
+    $object.process.name = object.process.name
+    $object.process.path = object.process.path
+    $object.process.fullpath = object.process.fullpath
+    $object.process.hash = object.process.hash
+    $object.process.hash.md5 = object.process.hash.md5
+    $object.process.hash.sha1 = object.process.hash.sha1
+    $object.process.hash.sha256 = object.process.hash.sha256
+    $object.process.version = object.process.version
+    $object.process.cmdline = object.process.cmdline
+    $object.process.guid = object.process.guid
+    $object.process.meta = object.process.meta
+    $object.process.original_name = object.process.original_name
+    $object.process.cwd = object.process.cwd
+    $object.process.chain = object.process.chain
+
+}
+
+emit {
+    $correlation_type = "incident"
+    $importance = "high"
+
+    $subject = "process"
+    $action = "access"
+    $object = "process"
+    $status = "success"
+
+    $importance = "high"
+
+    $category.generic = "Attack"
+    $category.high = "Credential Access"
+    $category.low = "LSASS Memory"
+
+    $incident.aggregation.key = join([$correlation_name, $event_src.host, $subject.process.name], "|")
+    $incident.severity = $importance
+    $incident.category = "Undefined"
+    $incident.aggregation.timeout = 2h
+}

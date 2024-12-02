@@ -1,0 +1,20 @@
+{
+    "eventid": "1546889070",
+    "timestampfractional": "581",
+    "timestamp": "1653401639",
+    "node": "10.0.177.107",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=646F636B65722D756E746172002F002F7661722F6C69622F646F636B65722F6F7665726C6179322F326266636139633331616130333339386462363436363939383034333631326330343736306132366463333464326163643564646663633831636561323661382F64696666"
+        ],
+        "PATH": [
+            "item=0 name=\"/usr/bin/newuidmap\" inode=3970416 dev=08:10 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL OUID=\"root\" OGID=\"root\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=189 success=yes exit=0 a0=c000a86020 a1=c000a86040 a2=c000b1b928 a3=14 items=1 ppid=1542 pid=1757446 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"exe\" exe=\"/usr/bin/dockerd\" key=\"pt_siem_api_xattr\" ARCH=x86_64 SYSCALL=lsetxattr AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "CWD": [
+            "cwd=\"/\""
+        ]
+    }
+}

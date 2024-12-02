@@ -1,0 +1,21 @@
+{
+    "action": "stop",
+    "datafield1": "8388864",
+    "event_src.category": "Operating system",
+    "event_src.fqdn": "win10-work.stand2008.local",
+    "event_src.hostname": "win10-work",
+    "event_src.id": "b675ec37-bdb6-4648-bc92-f3fdc74d3ca2",
+    "event_src.subsys": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+    "event_src.title": "Microsoft-Windows-Kernel-EventTracing",
+    "event_src.vendor": "microsoft",
+    "id": "Microsoft_Windows_eventlog_Common_EventTracing_11_Session_was_stopped",
+    "importance": "info",
+    "msgid": "11",
+    "object": "logging",
+    "object.id": "b1379529-6020-4a46-9396-d953051bf663",
+    "object.name": "sysmondnsetwsession",
+    "object.state": "stopped",
+    "object.type": "session",
+    "status": "success",
+    "time": "2024-04-25T15:17:18.151Z"
+}

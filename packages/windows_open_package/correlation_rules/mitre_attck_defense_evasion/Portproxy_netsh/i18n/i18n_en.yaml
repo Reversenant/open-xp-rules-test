@@ -1,0 +1,6 @@
+Description: 'The rule detects the creation of a proxy port'
+EventDescriptions:
+    - LocalizationId: 'corrname_Portproxy_netsh'
+      EventDescription: 'User {object.account.domain}\{object.account.name} created proxy port {object.process.cmdline}'
+    - LocalizationId: 'corrname_Portproxy_netsh_2'
+      EventDescription: 'Process {subject.process.path}\{subject.process.name } created a proxy port {object.name } -> {object.new_value}'

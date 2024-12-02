@@ -1,0 +1,4 @@
+Description: 'Дамп процесса lsass.exe используя возможности comsvcs.dll'
+EventDescriptions:
+    - LocalizationId: 'corrname_Memdump_comsvcs_minidump'
+      EventDescription: 'На хосте {event_src.host} процесс {subject.process.name} создал дамп процесса lsass.exe, используя comsvcs.dll'

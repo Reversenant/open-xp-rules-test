@@ -1,0 +1,47 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "UtcTime",
+                    "text": "2024-05-21 10:12:29.737"
+                },
+                {
+                    "Name": "ID",
+                    "text": "GetConfigurationOptions"
+                },
+                {
+                    "Name": "Description",
+                    "text": "Failed to open service configuration with error 94 - Last error: Носитель защищен от записи."
+                }
+            ]
+        },
+        "System": {
+            "Channel": "Microsoft-Windows-Sysmon/Operational",
+            "Computer": "win10-work.stand2008.local",
+            "Correlation": "",
+            "EventID": "255",
+            "EventRecordID": "80069852",
+            "Execution": {
+                "ProcessID": "14096",
+                "ThreadID": "12832"
+            },
+            "Keywords": "0x8000000000000000",
+            "Level": "2",
+            "Opcode": "0",
+            "Provider": {
+                "Guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                "Name": "Microsoft-Windows-Sysmon"
+            },
+            "Security": {
+                "UserID": "S-1-5-18"
+            },
+            "Task": "255",
+            "TimeCreated": {
+                "SystemTime": "2024-05-21T10:12:29.7407391Z"
+            },
+            "Version": "3"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

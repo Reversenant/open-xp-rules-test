@@ -1,0 +1,169 @@
+ event SysmonSession_GenericParamsModified:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        lower(event_src.title) == "microsoft-windows-kernel-eventtracing" and
+        msgid == "12" and
+        lower(object.name) == "sysmon trace"
+    }
+
+event SysmonSession_MatchParamsModified:
+     key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        lower(event_src.title) == "microsoft-windows-kernel-eventtracing" and
+        msgid == "14" and
+        ($datafield5 != "18446744073709551615" or $datafield6 != "0")
+    }
+
+ event SysmonSession_CmMatchParamsModified:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and ((
+            event_src.title == "windows" and
+            msgid == "4657"
+        ) or (
+            event_src.title == "sysmon" and
+            msgid == "13" )
+        ) and
+        in_list(["create", "modify"], lower(action)) == True and
+        regex(object.path, ".*wmi\\\\autologger\\\\eventlog-microsoft-windows-sysmon-operational.*", 0) != null and (
+            lower(object.name) == "matchallkeyword" or
+            lower(object.name) == "matchanykeyword"
+        )
+    }
+
+rule Sysmon_session_modified: SysmonSession_GenericParamsModified or SysmonSession_MatchParamsModified or SysmonSession_CmMatchParamsModified
+
+    on SysmonSession_GenericParamsModified {
+        # object
+        $object = object
+        $object.id = object.id
+        $object.name = object.name
+        $object.type = object.type
+
+        # action
+        $action = action
+
+        # status
+        $status = status
+
+        # other
+        $datafield1 = datafield1
+        
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = event_src.category
+    }
+
+    on SysmonSession_MatchParamsModified {
+        # object
+        $object = object
+        $object.id = object.id
+        $object.name = object.name
+        $object.type = object.type
+
+        # action
+        $action = action
+
+        # status
+        $status = status
+
+        # other
+        $datafield1 = datafield1    # Etw object
+        $datafield2 = datafield2    # object GUID
+        $datafield3 = datafield3    # object GUID
+        $datafield4 = datafield4    # object stat (enable or disable)
+        $datafield5 = datafield5    # MatchAnyKeyword
+        $datafield6 = datafield6    # MatchAllKeyword
+        $datafield7 = datafield7    # EnableProperty
+        $datafield8 = datafield8    # Level
+
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = event_src.category
+    }
+
+    on SysmonSession_CmMatchParamsModified {
+        # subject
+        $subject = subject
+
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+
+    
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        
+        # action
+        $action = action
+
+        # object
+        $object = object
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.value = object.value
+        $object.new_value = object.new_value
+
+        # status
+        $status = status
+       
+        # event_src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = event_src.category
+    }
+
+emit {
+    $correlation_name = "Sysmon_session_modified"
+    $correlation_type = "incident"
+
+    $importance = "medium"
+
+    $category.generic = "Attack"
+    $category.high = "Defense Evasion"
+    $category.low = "Impair Defenses"
+
+    if $object.id != null then
+        $incident.aggregation.key = join([$correlation_name, lower($event_src.host), lower($object.id)], "|")
+    elif $datafield3 != null then
+        $incident.aggregation.key = join([$correlation_name, lower($event_src.host), lower($datafield3)], "|")
+    else
+        $incident.aggregation.key = join([$correlation_name, lower($event_src.host), lower($object.name)], "|")
+    endif
+
+    $incident.aggregation.timeout = 2h
+
+    $incident.severity = $importance
+
+    $incident.category = "ProtectionMalfunction"
+    $incident.type = "Malfunction"
+}

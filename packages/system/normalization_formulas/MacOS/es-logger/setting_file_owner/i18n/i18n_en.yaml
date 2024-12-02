@@ -1,0 +1,4 @@
+Description: 'A process set an owner for a file'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_file_owner'
+      EventDescription: 'Process {subject.process.name} set an owner for file "{object.name}" on host {event_src.host}'

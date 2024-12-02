@@ -1,0 +1,28 @@
+ContentAutoName: CVE_2023_38831_WinRar
+ExpertContext:
+    Created: 03.10.2023
+    Updated: 03.10.2023
+    KnowledgeHolders:
+        - Danil Lobachev
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 11
+              - 1
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+    References:
+        - https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/
+        - https://github.com/b1tg/CVE-2023-38831-winrar-exploit
+    Usecases:
+        - WinRAR до версии 6.23 позволяет злоумышленникам выполнять произвольный код, когда пользователь пытается просмотреть безопасный файл в ZIP-архиве.
+ObjectId: SEC-CR-204012915
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1036.006
+EventDescriptions:
+    - Criteria: correlation_name = "CVE_2023_38831_WinRar"
+      LocalizationId: corrname_CVE_2023_38831_WinRar

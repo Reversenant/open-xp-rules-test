@@ -1,0 +1,12 @@
+{
+    "body": "{\"Event\":{\"xmlns\":\"http://schemas.microsoft.com/win/2004/08/events/event\",\"System\":{\"Provider\":{\"Name\":\"MSSQLSERVER\"},\"EventID\":{\"text\":\"33205\",\"Qualifiers\":\"16384\"},\"Level\":\"0\",\"Task\":\"5\",\"Keywords\":\"0x90000000000000\",\"TimeCreated\":{\"SystemTime\":\"2020-03-05T15:32:42.269775800Z\"},\"EventRecordID\":\"230451\",\"Channel\":\"Application\",\"Computer\":\"DESKTOP-GB13G7P\",\"Security\":null},\"EventData\":{\"Data\":\"audit_schema_version:1\\nevent_time:2020-03-05 15:32:42.0197545\\nsequence_number:1\\naction_id:SL  \\nsucceeded:false\\nis_column_permission:true\\nsession_id:52\\nserver_principal_id:273\\ndatabase_principal_id:2\\ntarget_server_principal_id:0\\ntarget_database_principal_id:0\\nobject_id:-217\\nuser_defined_event_id:0\\ntransaction_id:79385\\nclass_type:V \\npermission_bitmask:00000000000000000000000000000001\\nsequence_group_id:07C8439F-032E-47D6-9274-D0CD12DDA781\\nsession_server_principal_name:HackerLooser\\nserver_principal_name:HackerLooser\\nserver_principal_sid:19681a2750a1c34585ebc9f68dcda43c\\ndatabase_principal_name:guest\\ntarget_server_principal_name:\\ntarget_server_principal_sid:\\ntarget_database_principal_name:\\nserver_instance_name:DESKTOP-GB13G7P\\ndatabase_name:master\\nschema_name:sys\\nobject_name:server_principals\\nstatement:SELECT name,type_desc,is_disabled, create_date FROM master.sys.server_principals WHERE IS_SRVROLEMEMBER ('sysadmin',name) = 1 ORDER BY name\\nadditional_information:\\nuser_defined_information:\\n\"}}}",
+    "input_id": "00000000-0000-0000-0000-000000000000",
+    "mime": "application/x-pt-eventlog",
+    "normalized": false,
+    "recv_ipv4": "10.26.34.58",
+    "recv_time": "2020-03-09T14:21:22",
+    "tag": "some_tag",
+    "task_id": "00000000-0000-0000-0000-000000000000",
+    "type": "raw",
+    "uuid": "00000000-0000-0000-0000-000000000024"
+}

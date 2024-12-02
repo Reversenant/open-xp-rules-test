@@ -1,0 +1,11 @@
+{
+    "eventid": "30487508",
+    "timestampfractional": "259",
+    "timestamp": "1685092614",
+    "node": "127.0.1.1",
+    "items": {
+        "ADD_USER": [
+            "pid=29288 uid=0 auid=4294967295 ses=4294967295 subj==docker-default (enforce) msg='op=adding user to shadow group acct=\"chrome\" exe=\"/usr/sbin/useradd\" hostname=? addr=? terminal=? res=success' UID=\"root\" AUID=\"unset\""
+        ]
+    }
+}

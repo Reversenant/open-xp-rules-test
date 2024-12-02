@@ -1,0 +1,4 @@
+Description: 'Обнаружена попытка удаленного подключения к реестру'
+EventDescriptions:
+    - LocalizationId: 'corrname_Remote_registry_access'
+      EventDescription: 'Пользователь {subject.account.domain}\{subject.account.name} с привилегиями {subject.privileges} удаленно подключился к реестру на хосте {event_src.host}'

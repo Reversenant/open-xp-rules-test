@@ -1,0 +1,18 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-420314424
+ContentAutoName: Mimikatz_Memssp_Default_Log_Detected
+ExpertContext:
+    Created: 05.06.2023
+    Updated: 06.06.2023
+    KnowledgeHolders:
+        - Georgy Khandozhko
+    References:
+        - https://www.elastic.co/guide/en/security/current/mimikatz-memssp-log-file-detected.html
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003
+EventDescriptions:
+    - Criteria: correlation_name = "Mimikatz_Memssp_Default_Log_Detected"
+      LocalizationId: corrname_Mimikatz_Memssp_Default_Log_Detected

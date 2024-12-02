@@ -1,0 +1,4 @@
+Description: 'Выявление запуска сценария PowerShell, который создает поддельное приглашение для входа в систему с целью кражи введённых пользователем учётных данных.'
+EventDescriptions:
+    - LocalizationId: 'corrname_Phishing_windows_credentials_powershell_scriptblock'
+      EventDescription: 'На узле {event_src.host} запущен вредоносный сценарий Powershell, который создает поддельное приглашение для входа в систему c целью кражи учетных данных'

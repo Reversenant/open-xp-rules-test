@@ -1,0 +1,20 @@
+{
+    "action": "create",
+    "event_src.category": "Operating system",
+    "event_src.fqdn": "win10-work.stand2008.local",
+    "event_src.hostname": "win10-work",
+    "event_src.id": "b675ec37-bdb6-4648-bc92-f3fdc74d3ca2",
+    "event_src.subsys": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+    "event_src.title": "Microsoft-Windows-Kernel-EventTracing",
+    "event_src.vendor": "microsoft",
+    "id": "Microsoft_Windows_eventlog_Common_EventTracing_8_Provider_was_registered_with_ETW",
+    "importance": "info",
+    "msgid": "8",
+    "object": "logging",
+    "object.id": "6bd96334-dc49-441a-b9c4-41425ba628d8",
+    "object.name": "{6bd96334-dc49-441a-b9c4-41425ba628d8}",
+    "object.state": "registered",
+    "object.type": "provider",
+    "status": "success",
+    "time": "2024-05-02T15:28:41.956Z"
+}

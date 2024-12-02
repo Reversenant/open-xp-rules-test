@@ -1,0 +1,80 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "Microsoft-Windows-Security-Auditing",
+                "Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}"
+            },
+            "EventID": "4907",
+            "Version": "0",
+            "Level": "0",
+            "Task": "13568",
+            "Opcode": "0",
+            "Keywords": "0x8020000000000000",
+            "TimeCreated": {
+                "SystemTime": "2015-12-01T13:35:57.351491300Z"
+            },
+            "EventRecordID": "18903",
+            "Correlation": null,
+            "Execution": {
+                "ProcessID": "504",
+                "ThreadID": "520"
+            },
+            "Channel": "Security",
+            "Computer": "2008R2SP1-AV.AD2008R2.ru",
+            "Security": null
+        },
+        "EventData": {
+            "Data": [
+                {
+                    "text": "S-1-5-18",
+                    "Name": "SubjectUserSid"
+                },
+                {
+                    "text": "2008R2SP1-AV$",
+                    "Name": "SubjectUserName"
+                },
+                {
+                    "text": "AD2008R2",
+                    "Name": "SubjectDomainName"
+                },
+                {
+                    "text": "0x3e7",
+                    "Name": "SubjectLogonId"
+                },
+                {
+                    "text": "Security",
+                    "Name": "ObjectServer"
+                },
+                {
+                    "text": "File",
+                    "Name": "ObjectType"
+                },
+                {
+                    "text": "C:\\Windows\\System32\\spp\\tokens\\ppdlic\\Telnet-Server-ppdlic.xrm-ms",
+                    "Name": "ObjectName"
+                },
+                {
+                    "text": "0x410",
+                    "Name": "HandleId"
+                },
+                {
+                    "Name": "OldSd"
+                },
+                {
+                    "text": "S:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)",
+                    "Name": "NewSd"
+                },
+                {
+                    "text": "0x1150",
+                    "Name": "ProcessId"
+                },
+                {
+                    "text": "C:\\Windows\\servicing\\TrustedInstaller.exe",
+                    "Name": "ProcessName"
+                }
+            ]
+        }
+    }
+}

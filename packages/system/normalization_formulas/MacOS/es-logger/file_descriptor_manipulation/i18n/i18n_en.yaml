@@ -1,0 +1,4 @@
+Description: 'File descriptor manipulation'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_descriptor_manipulation'
+      EventDescription: 'Manipulation with the file descriptor of file "{object.name}" on host {event_src.host}'

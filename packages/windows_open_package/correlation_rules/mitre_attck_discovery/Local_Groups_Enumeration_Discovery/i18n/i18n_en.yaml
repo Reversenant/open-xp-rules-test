@@ -1,0 +1,4 @@
+Description: 'Enumeration of local group users'
+EventDescriptions:
+    - LocalizationId: 'corrname_Local_Groups_Enumeration_Discovery'
+      EventDescription: 'User {subject.account.domain}\{subject.account.name} enumed users in local group {object.name} on host {event_src.host}'

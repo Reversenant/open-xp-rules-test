@@ -1,0 +1,1 @@
+<190>Sep 27 20:12:08 teamcity teamcity-rest.log: [2023-09-27 20:10:52,620]  DEBUG [p-nio-80-exec-7] - er.rest.APIController/rest-api - REST API  request processing finished in 3ms, status code: 200, request: GET '/app/rest/users', from client 10.125.3.2:57267, no user-agent, authenticated as user with id=-42

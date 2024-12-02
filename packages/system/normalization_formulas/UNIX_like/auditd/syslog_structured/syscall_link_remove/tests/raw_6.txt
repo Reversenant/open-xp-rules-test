@@ -1,0 +1,24 @@
+{
+    "eventid": "11876009",
+    "timestampfractional": "025",
+    "timestamp": "1652775937",
+    "node": "10.19.20.35",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=736561662D736572766572002D46002F686F6D652F73656166696C652F636F6E66002D63002F686F6D652F73656166696C652F63636E6574002D64002F686F6D652F73656166696C652F73656166696C652D64617461002D6C002F686F6D652F73656166696C652F6C6F67732F73656166696C652E6C6F67002D50002F686F6D"
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/home/seafile/seafile-data/tmpfiles/\" inode=10485761 dev=fe:00 mode=040755 ouid=1006 ogid=1007 rdev=00:00 nametype=PARENT OUID=\"seafile\" OGID=\"seafile\"",
+            "item=1 name=\"/home/seafile/seafile-data/tmpfiles/10061452502680260917e41e9f49aac7ed5e942f-5PKJM1\" inode=10554108 dev=fe:00 mode=0100600 ouid=1006 ogid=1007 rdev=00:00 nametype=DELETE OUID=\"seafile\" OGID=\"seafile\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=87 success=yes exit=0 a0=7f29f007bab0 a1=7f29f0295400 a2=0 a3=4040 items=2 ppid=13093 pid=13710 auid=4294967295 uid=1006 gid=1007 euid=1006 suid=1006 fsuid=1006 egid=1007 sgid=1007 fsgid=1007 tty=(none) ses=4294967295 comm=\"seaf-server\" exe=\"/home/seafile/seafile-pro-server-7.0.19/seafile/bin/seaf-server\" key=\"pt_siem_home_modify\" ARCH=x86_64 SYSCALL=unlink AUID=\"unset\" UID=\"seafile\" GID=\"seafile\" EUID=\"seafile\" SUID=\"seafile\" FSUID=\"seafile\" EGID=\"seafile\" SGID=\"seafile\" FSGID=\"seafile\""
+        ],
+        "CWD": [
+            "cwd=\"/\""
+        ]
+    }
+}

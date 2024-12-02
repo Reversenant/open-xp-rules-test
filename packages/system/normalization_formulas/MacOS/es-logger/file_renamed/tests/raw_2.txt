@@ -1,0 +1,162 @@
+{
+  "thread": {
+    "thread_id": 40731
+  },
+  "version": 7,
+  "time": "2023-10-11T06:03:43.277211395Z",
+  "schema_version": 1,
+  "event": {
+    "rename": {
+      "destination_type": 1,
+      "destination": {
+        "new_path": {
+          "dir": {
+            "path_truncated": false,
+            "path": "/Users/vsamal/Work",
+            "stat": {
+              "st_birthtimespec": "2023-08-17T18:29:50.548842053Z",
+              "st_nlink": 45,
+              "st_blocks": 0,
+              "st_blksize": 4096,
+              "st_size": 1440,
+              "st_mtimespec": "2023-10-11T06:03:35.086962006Z",
+              "st_gid": 20,
+              "st_rdev": 0,
+              "st_mode": 16877,
+              "st_gen": 0,
+              "st_uid": 502,
+              "st_ino": 1522412,
+              "st_dev": 16777234,
+              "st_atimespec": "2023-10-11T06:03:35.135543246Z",
+              "st_ctimespec": "2023-10-11T06:03:35.086962006Z",
+              "st_flags": 0
+            }
+          },
+          "filename": "3.txt"
+        }
+      },
+      "source": {
+        "path": "/Users/vsamal/Work/1.txt",
+        "stat": {
+          "st_ino": 5180414,
+          "st_rdev": 0,
+          "st_dev": 16777234,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-10-11T06:03:22.341111491Z",
+          "st_mode": 33188,
+          "st_birthtimespec": "2023-10-11T06:03:22.341111491Z",
+          "st_ctimespec": "2023-10-11T06:03:22.341280241Z",
+          "st_atimespec": "2023-10-11T06:03:22.341111491Z",
+          "st_size": 0,
+          "st_blksize": 4096,
+          "st_blocks": 0,
+          "st_gen": 0,
+          "st_gid": 20,
+          "st_uid": 502,
+          "st_flags": 0
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "seq_num": 13,
+  "process": {
+    "tty": {
+      "stat": {
+        "st_mtimespec": "2023-10-11T06:03:43.271692000Z",
+        "st_uid": 502,
+        "st_blksize": 65536,
+        "st_gen": 0,
+        "st_nlink": 1,
+        "st_dev": -1469372981,
+        "st_birthtimespec": "1970-01-01T00:00:00.000000000Z",
+        "st_size": 0,
+        "st_mode": 8592,
+        "st_ino": 709,
+        "st_rdev": 268435459,
+        "st_flags": 0,
+        "st_gid": 4,
+        "st_ctimespec": "2023-10-11T06:03:43.271692000Z",
+        "st_atimespec": "2023-10-11T06:03:43.256855000Z",
+        "st_blocks": 0
+      },
+      "path_truncated": false,
+      "path": "/dev/ttys003"
+    },
+    "original_ppid": 2235,
+    "session_id": 2235,
+    "codesigning_flags": 570506001,
+    "is_platform_binary": true,
+    "ppid": 2235,
+    "group_id": 2825,
+    "responsible_audit_token": {
+      "egid": 20,
+      "ruid": 502,
+      "rgid": 20,
+      "pidversion": 6137,
+      "auid": 502,
+      "pid": 2825,
+      "euid": 502,
+      "asid": 100004
+    },
+    "parent_audit_token": {
+      "rgid": 20,
+      "ruid": 502,
+      "pid": 2235,
+      "asid": 100004,
+      "euid": 502,
+      "egid": 20,
+      "auid": 502,
+      "pidversion": 5217
+    },
+    "signing_id": "com.apple.mv",
+    "executable": {
+      "stat": {
+        "st_size": 135552,
+        "st_ctimespec": "2023-09-16T13:28:30.000000000Z",
+        "st_blocks": 40,
+        "st_mtimespec": "2023-09-16T13:28:30.000000000Z",
+        "st_birthtimespec": "2023-09-16T13:28:30.000000000Z",
+        "st_mode": 33261,
+        "st_atimespec": "2023-09-16T13:28:30.000000000Z",
+        "st_flags": 524320,
+        "st_gen": 0,
+        "st_rdev": 0,
+        "st_uid": 0,
+        "st_blksize": 4096,
+        "st_nlink": 1,
+        "st_ino": 1152921500312501235,
+        "st_dev": 16777234,
+        "st_gid": 0
+      },
+      "path": "/bin/mv",
+      "path_truncated": false
+    },
+    "team_id": null,
+    "is_es_client": false,
+    "audit_token": {
+      "egid": 20,
+      "asid": 100004,
+      "pidversion": 6137,
+      "rgid": 20,
+      "euid": 502,
+      "auid": 502,
+      "ruid": 502,
+      "pid": 2825
+    },
+    "start_time": "2023-10-11T06:03:43.269828Z",
+    "cdhash": "82B47E579083855C2F0AE366D8FE337D2DA7122D"
+  },
+  "action_type": 1,
+  "action": {
+    "result": {
+      "result_type": 0,
+      "result": {
+        "auth": 0
+      }
+    }
+  },
+  "event_type": 25,
+  "global_seq_num": 13,
+  "mach_time": 65918198720
+}

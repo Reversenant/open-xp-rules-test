@@ -1,0 +1,17 @@
+{
+  "eventid": "26930",
+  "items": {
+    "EOE": [
+      ""
+    ],
+    "PROCTITLE": [
+      "proctitle=64617465002D730032392061707220323031392031393A31303A3330"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=227 success=yes exit=0 a0=0 a1=7ffff5ebd040 a2=0 a3=57d items=0 ppid=2096 pid=2195 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=180 comm=\"date\" exe=\"/bin/date\" key=\"pt_siem_api_time\""
+    ]
+  },
+  "node": "debian-test",
+  "timestamp": "1556554225",
+  "timestampfractional": "264"
+}

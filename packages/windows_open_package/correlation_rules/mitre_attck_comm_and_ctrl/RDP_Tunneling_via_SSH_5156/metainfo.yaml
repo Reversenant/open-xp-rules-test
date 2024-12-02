@@ -1,0 +1,24 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-382727157
+ContentAutoName: RDP_Tunneling_via_SSH_5156
+ExpertContext:
+    Created: 13.06.2023
+    Updated: 14.06.2023
+    KnowledgeHolders:
+        - Kirka (@Sagatjkeee)
+    Falsepositives:
+        - Programs that connect locally to the RDP port
+    References:
+        - https://www.netspi.com/blog/technical/technical-vulnerability-management/how-to-access-rdp-over-a-reverse-ssh-tunnel/
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 5156
+EventDescriptions:
+    - Criteria: correlation_name = "RDP_Tunneling_via_SSH_5156"
+      LocalizationId: corrname_RDP_Tunneling_via_SSH_5156
+ContentRelations:
+    Implements:
+        ATTACK:
+            command-and-control:
+                - T1572

@@ -1,0 +1,4 @@
+Description: 'Обнаружена техника имперсонации токена'
+EventDescriptions:
+    - LocalizationId: 'corrname_CreateProcessAsUser_Impersonation'
+      EventDescription: 'Процесс {subject.process.name}, запущенный от имени пользователя {subject.account.domain}\{subject.account.name}, выполнил успешный вход в систему от имени пользователя {object.account.domain}\{object.account.name}'

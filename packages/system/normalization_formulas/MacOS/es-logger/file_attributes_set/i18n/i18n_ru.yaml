@@ -1,0 +1,4 @@
+Description: 'Процесс изменил атрибуты файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_attributes_set'
+      EventDescription: 'Процесс {subject.process.name} изменил атрибуты файла "{object.name}" на узле {event_src.host}'

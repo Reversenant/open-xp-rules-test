@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "mach_time": 40202968297534,
+  "event_type": 83,
+  "thread": {
+    "thread_id": 284963
+  },
+  "version": 7,
+  "seq_num": 2,
+  "event": {
+    "pty_grant": {
+      "dev": 251658240
+    }
+  },
+  "time": "2023-07-25T07:35:26.307399678Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "iTermServer",
+    "parent_audit_token": {
+      "asid": 100089,
+      "pidversion": 26348,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 12720
+    },
+    "codesigning_flags": 570503953,
+    "executable": {
+      "path": "/Users/user/Library/Application Support/iTerm2/iTermServer-3.4.19",
+      "stat": {
+        "st_blocks": 432,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 501,
+        "st_gid": 20,
+        "st_ino": 1144867,
+        "st_birthtimespec": "2023-01-02T19:14:29.000000000Z",
+        "st_flags": 0,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-01-02T19:14:29.000000000Z",
+        "st_ctimespec": "2023-06-28T11:29:19.155700054Z",
+        "st_size": 217648,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-07-25T07:35:26.299503786Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 12720,
+    "tty": null,
+    "start_time": "2023-07-25T07:35:26.289116Z",
+    "is_platform_binary": false,
+    "group_id": 12720,
+    "audit_token": {
+      "asid": 100089,
+      "pidversion": 26559,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 12794
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100089,
+      "pidversion": 26348,
+      "ruid": 501,
+      "euid": 501,
+      "rgid": 20,
+      "auid": 501,
+      "egid": 20,
+      "pid": 12720
+    },
+    "session_id": 1,
+    "original_ppid": 12720,
+    "cdhash": "5D8546B70A69B0B3FCA414875FFB79A8B435ACA8",
+    "team_id": "H7V7XYVQ7D"
+  },
+  "action_type": 1,
+  "global_seq_num": 37
+}

@@ -1,0 +1,4 @@
+Description: 'Access rights modification of  AD object was detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_DCSync_prepare_Add_replicatation_rights_to_Account'
+      EventDescription: 'User {subject.account.domain}\{subject.account.name} added replication access rights to the AD object {object.id}'

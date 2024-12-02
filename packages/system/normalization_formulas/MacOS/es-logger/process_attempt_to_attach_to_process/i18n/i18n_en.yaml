@@ -1,0 +1,4 @@
+Description: 'A process is attempting to attach to another process'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_attempt_to_attach_to_process'
+      EventDescription: 'Process {subject.process.name} is attempting to attach to process {object.process.name} on host {event_src.host}'

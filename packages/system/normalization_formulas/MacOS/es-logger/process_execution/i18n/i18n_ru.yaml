@@ -1,0 +1,4 @@
+Description: 'Процесс выполнил другой процесс'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_execution'
+      EventDescription: 'Процесс {subject.process.name} выполнил процесс {object.process.name} на узле {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'Suspicious network connection detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_ReverseShell_created_via_PEInjection'
+      EventDescription: 'Process {object.process.parent.name} got access to {object.process.name} process, which generated a network connection to host {dst.ip}'

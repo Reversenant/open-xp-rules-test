@@ -1,0 +1,4 @@
+Description: 'A process changed the last access or modification time attribute of a file'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_access_or_modification_time_change'
+      EventDescription: 'Process {subject.process.name} changed the last access or modification time attribute of file "{object.name}" to "{object.new_value}" on host {event_src.host}'

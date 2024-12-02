@@ -1,0 +1,4 @@
+Description: 'Перечисление пользователей локальной группы'
+EventDescriptions:
+    - LocalizationId: 'corrname_Local_Groups_Enumeration_Discovery'
+      EventDescription: 'Пользователь {subject.account.domain}\{subject.account.name} считал пользователей в локальной группе {object.name} на хосте {event_src.host}'

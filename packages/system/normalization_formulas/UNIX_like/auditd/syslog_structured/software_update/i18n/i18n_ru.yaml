@@ -1,0 +1,15 @@
+Description: 'Управление пакетами'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_install_success'
+      EventDescription: 'Пакет {object.name} установлен на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_update_success'
+      EventDescription: 'Пакет {object.name} обновлен на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_uninstall_success'
+      EventDescription: 'Пакет {object.name} удален на узле {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_install_failure'
+      EventDescription: 'Не удалось установить пакет {object.name} на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_update_failure'
+      EventDescription: 'Не удалось обновить пакет {object.name} на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_uninstall_failure'
+      EventDescription: 'Не удалось удалить пакет {object.name} на узле {event_src.host}'

@@ -1,0 +1,11 @@
+{
+    "eventid": "102878092",
+    "timestampfractional": "555",
+    "timestamp": "1683734424",
+    "node": "10.20.177.125",
+    "items": {
+        "SOFTWARE_UPDATE": [
+            "pid=33701 uid=0 auid=4294967295 ses=4294967295 subj==docker-default (enforce) msg='sw=\"ed-1.9-4.el7.x86_64\" sw_type=rpm key_enforce=0 gpg_res=1 root_dir=\"/\" comm=\"yum\" exe=\"/usr/bin/python2.7\" hostname=? addr=? terminal=? res=success' UID=\"root\" AUID=\"unset\""
+        ]
+    }
+}

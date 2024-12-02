@@ -1,0 +1,28 @@
+ContentAutoName: Suspicious_Messanger_Child_Process
+ExpertContext:
+    Created: 17.07.2024
+    Updated: 29.07.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующие могут использовать мессенджеры для доставки вредоносных файлов
+    Falsepositives: []
+    References:
+        - https://t.me/ptescalator/24
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4688
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+ObjectId: SEC-CR-214497872
+ContentRelations:
+    Implements:
+        ATTACK:
+            execution:
+                - T1204.002
+EventDescriptions:
+    - Criteria: correlation_name = "Suspicious_Messanger_Child_Process"
+      LocalizationId: corrname_Suspicious_Messanger_Child_Process

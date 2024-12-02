@@ -1,0 +1,21 @@
+{
+    "eventid": "11366917",
+    "timestampfractional": "009",
+    "timestamp": "1683406802",
+    "node": "10.24.1.31",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=726D002D7266002F7661722F7777772F7777772E73656375726974796C61622E72752F6269747269782F63616368652F637373002F7661722F7777772F7777772E73656375726974796C61622E72752F6269747269782F63616368652F6A73"
+        ],
+        "EOE": [
+            ""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=263 success=yes exit=0 a0=7 a1=55f01d682d38 a2=0 a3=0 items=2 ppid=833215 pid=833221 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=10176 comm=\"rm\" exe=\"/usr/bin/rm\" subj=unconfined key=\"pt_siem_www_modify\" ARCH=x86_64 SYSCALL=unlinkat AUID=\"root\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "PATH": [
+            "item=1 name=\"page_a12f69f44af78884ff914ab579514929_v1.js.gz\" inode=274834 dev=fd:00 mode=0100644 ouid=33 ogid=33 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"www-data\" OGID=\"www-data\"",
+            "item=0 name=\"/root\" inode=274832 dev=fd:00 mode=040755 ouid=33 ogid=33 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"www-data\" OGID=\"www-data\""
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "eventid": "33823044",
+    "timestampfractional": "546",
+    "timestamp": "1654261979",
+    "node": "10.0.223.21",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=726D002D66002D72002F686F6D652F6465766F70732F2E616E7369626C652F746D702F616E7369626C652D746D702D313635343236313936352E35333432322D313030332D3137363933333530333034303338342F"
+        ],
+        "CWD": [
+            "cwd=\"/home/devops\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=103d0c0 a2=200 a3=690 items=3 ppid=25486 pid=25487 auid=1005 uid=1005 gid=1005 euid=1005 suid=1005 fsuid=1005 egid=1005 sgid=1005 fsgid=1005 tty=(none) ses=33509 comm=\"rm\" exe=\"/bin/rm\" key=\"pt_siem_home_access\" ARCH=x86_64 SYSCALL=unlinkat AUID=\"devops\" UID=\"devops\" GID=\"devops\" EUID=\"devops\" SUID=\"devops\" FSUID=\"devops\" EGID=\"devops\" SGID=\"devops\" FSGID=\"devops\""
+        ],
+        "PATH": [
+            "item=0 name=\"/home/devops/.ansible/tmp/\" inode=514339 dev=fc:00 mode=040700 ouid=1005 ogid=1005 rdev=00:00 nametype=PARENT OUID=\"devops\" OGID=\"devops\"",
+            "item=1 name=(null) inode=514339 dev=fc:00 mode=040700 ouid=1005 ogid=1005 rdev=00:00 nametype=PARENT OUID=\"devops\" OGID=\"devops\"",
+            "item=2 name=(null) inode=1823937 dev=fc:00 mode=040700 ouid=1005 ogid=1005 rdev=00:00 nametype=DELETE OUID=\"devops\" OGID=\"devops\""
+        ]
+    }
+}

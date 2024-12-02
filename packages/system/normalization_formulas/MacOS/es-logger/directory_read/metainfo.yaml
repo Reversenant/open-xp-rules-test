@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_directory_read"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_directory_read
+ObjectId: PT-NF-9286

@@ -1,0 +1,6 @@
+Description: 'Обнаружена попытка локального входа от имени процесса chrome.exe'
+EventDescriptions:
+    - LocalizationId: 'corrname_Chrome_PasswordStore_Access'
+      EventDescription: 'На узле {event_src.host} пользователь {subject.account.domain}\{subject.account.name} совершил успешную попытку доступа к хранилищу паролей браузера Chrome.'
+    - LocalizationId: 'corrname_Chrome_PasswordStore_Access_2'
+      EventDescription: 'На узле {event_src.host} пользователь {subject.account.domain}\{subject.account.name} совершил неуспешную попытку доступа к хранилищу паролей браузера Chrome.'

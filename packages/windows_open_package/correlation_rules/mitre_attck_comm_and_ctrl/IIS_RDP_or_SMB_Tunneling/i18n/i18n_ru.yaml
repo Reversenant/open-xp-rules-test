@@ -1,0 +1,6 @@
+Description: 'Правило выявляет проксирование RDP или SMB-трафика через ASPX-шелл'
+EventDescriptions:
+    - LocalizationId: 'corrname_IIS_RDP_or_SMB_Tunneling'
+      EventDescription: 'На узле {event_src.host} обнаружено проксирование RDP-трафика при помощи ASPX-шелла.'
+    - LocalizationId: 'corrname_IIS_RDP_or_SMB_Tunneling_2'
+      EventDescription: 'На узле {event_src.host} обнаружено проксирование SMB-трафика при помощи ASPX-шелла.'

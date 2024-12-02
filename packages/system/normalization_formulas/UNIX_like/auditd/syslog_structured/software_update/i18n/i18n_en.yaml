@@ -1,0 +1,15 @@
+Description: 'Package management'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_install_success'
+      EventDescription: 'Package {object.name} is installed on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_update_success'
+      EventDescription: 'Package {object.name} is updated on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_uninstall_success'
+      EventDescription: 'Package {object.name} is removed on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_install_failure'
+      EventDescription: 'Failed to install package {object.name} on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_update_failure'
+      EventDescription: 'Failed to update package {object.name} on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_software_update_uninstall_failure'
+      EventDescription: 'Failed to remove package {object.name} on host {event_src.host}'

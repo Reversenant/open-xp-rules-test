@@ -1,0 +1,4 @@
+Description: 'Процесс привязал сокет к файлу'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_socket_binding_to_path'
+      EventDescription: 'Процесс {subject.process.name} привязал сокет к файлу "{object.name}" на узле {event_src.host}'

@@ -1,0 +1,17 @@
+{
+  "node": "192.168.137.192",
+  "timestamp": "1581679947",
+  "timestampfractional": "732",
+  "eventid": "2924",
+  "items": {
+    "CAPSET": [
+      "pid=1349 cap_pi=00000000000040c0 cap_pp=00000000000040c0 cap_pe=00000000000040c0 cap_pa=0000000000000000"
+    ],
+    "PROCTITLE": [
+      "proctitle=2F7573722F62696E2F676E6F6D652D6B657972696E672D6461656D6F6E002D2D7374617274002D2D636F6D706F6E656E74733D737368"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=126 success=yes exit=0 a0=7fcd59f3fa54 a1=7fcd59f3fa5c a2=7fcd59f403e0 a3=fffffffffffffc27 items=0 ppid=1308 pid=1349 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4 comm=\"gnome-keyring-d\" exe=\"/usr/bin/gnome-keyring-daemon\" subj==unconfined key=(null) ARCH=x86_64 SYSCALL=capset AUID=\"root\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  }
+}

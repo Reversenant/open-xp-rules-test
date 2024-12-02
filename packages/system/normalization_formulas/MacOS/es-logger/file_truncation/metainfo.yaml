@@ -1,0 +1,6 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_truncation" and object.value = "false"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_truncation_false
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_truncation" and object.value = "true"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_truncation_true
+ObjectId: PT-NF-9324

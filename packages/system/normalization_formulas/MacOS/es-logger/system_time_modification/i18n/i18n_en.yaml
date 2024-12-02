@@ -1,0 +1,4 @@
+Description: 'System time was changed'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_system_time_modification'
+      EventDescription: 'System time was changed on host {event_src.host}'

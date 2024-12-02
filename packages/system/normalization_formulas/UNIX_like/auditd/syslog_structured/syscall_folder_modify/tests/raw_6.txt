@@ -1,0 +1,21 @@
+{
+    "eventid": "31333343",
+    "timestampfractional": "200",
+    "timestamp": "1663154257",
+    "node": "10.20.176.188",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2F7573722F62696E2F6769742D6C66730070756C6C"
+        ],
+        "CWD": [
+            "cwd=\"/home/gitlab-runner/disk/builds/s9ZwbBxz/0/X/chains/autodeploy\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=258 success=yes exit=0 a0=ffffffffffffff9c a1=c0000906c0 a2=1ff a3=0 items=2 ppid=33540 pid=33543 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"git-lfs\" exe=\"/usr/bin/git-lfs\" key=\"pt_siem_home_access\" ARCH=x86_64 SYSCALL=mkdirat AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "PATH": [
+            "item=0 name=\"/home/gitlab-runner/disk/builds/s9ZwbBxz/0/X/chains/.git/modules/autodeploy/\" inode=1468589 dev=fc:00 mode=040777 ouid=0 ogid=0 rdev=00:00 nametype=PARENT OUID=\"root\" OGID=\"root\"",
+            "item=1 name=\"/home/gitlab-runner/disk/builds/s9ZwbBxz/0/X/chains/.git/modules/autodeploy/lfs\" inode=1468616 dev=fc:00 mode=040777 ouid=0 ogid=0 rdev=00:00 nametype=CREATE OUID=\"root\" OGID=\"root\""
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+Description: 'Start mmc.exe console from suspicious directory'
+EventDescriptions:
+    - LocalizationId: 'corrname_Start_mmc_exe_from_suspicious_binary_path'
+      EventDescription: 'Start mmc.exe console from suspicious directory has been detected at host {event_src.host}'

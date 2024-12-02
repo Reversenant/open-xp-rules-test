@@ -1,0 +1,4 @@
+Description: 'Процесс указал владельца для файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_file_owner'
+      EventDescription: 'Процесс {subject.process.name} указал владельца для файла "{object.name}" на узле {event_src.host}'

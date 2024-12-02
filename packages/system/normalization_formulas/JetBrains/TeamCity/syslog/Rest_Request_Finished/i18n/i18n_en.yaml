@@ -1,0 +1,4 @@
+Description: 'Request processing is finished'
+EventDescriptions:
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Rest_Request_Finished'
+      EventDescription: 'Processing REST request {object.query} from host {src.host}:{src.port} is finished on host {event_src.host}'

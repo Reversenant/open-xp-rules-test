@@ -1,0 +1,21 @@
+{
+    "eventid": "277862167",
+    "timestampfractional": "008",
+    "timestamp": "1683647220",
+    "node": "10.20.176.158",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=746172002D2D7573652D636F6D70726573732D70726F6772616D3D7069677A002D63767066002E2E2F7465616D636974795F6F75747075745F7061636B6167652F70746D732E64622E61762E657365742E312E302E302E33353738362E7461722E677A0052656C656173654D616E69666573742E6A736F6E005369676E4D616E"
+        ],
+        "PATH": [
+            "item=0 name=\"../teamcity_output_package/\" inode=1048578 dev=08:20 mode=040775 ouid=2001 ogid=2001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"teamcity\" OGID=\"teamcity\"",
+            "item=1 name=\"../teamcity_output_package/ptms.db.av.eset.1.0.0.35786.tar.gz\" inode=1054991 dev=08:20 mode=0100664 ouid=2001 ogid=2001 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"teamcity\" OGID=\"teamcity\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=85 success=yes exit=3 a0=7ffebb38916f a1=1b6 a2=fffffffffffffe01 a3=fffffffffffffb09 items=2 ppid=104894 pid=104895 auid=4294967295 uid=2001 gid=2001 euid=2001 suid=2001 fsuid=2001 egid=2001 sgid=2001 fsgid=2001 tty=(none) ses=4294967295 comm=\"tar\" exe=\"/usr/bin/tar\" subj=unconfined key=\"pt_siem_home_access\" ARCH=x86_64 SYSCALL=creat AUID=\"unset\" UID=\"teamcity\" GID=\"teamcity\" EUID=\"teamcity\" SUID=\"teamcity\" FSUID=\"teamcity\" EGID=\"teamcity\" SGID=\"teamcity\" FSGID=\"teamcity\""
+        ],
+        "CWD": [
+            "cwd=\"/home/teamcity/build_disk/data/work/6a805ca40df42036/teamcity_output\""
+        ]
+    }
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "mach_time": 23667637611827,
+  "event_type": 16,
+  "thread": {
+    "thread_id": 80709
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "get_task": {
+      "target": {
+        "signing_id": "com.apple.bluetoothd",
+        "parent_audit_token": {
+          "asid": 100000,
+          "pidversion": 1,
+          "ruid": 0,
+          "euid": 0,
+          "rgid": 0,
+          "auid": 4294967295,
+          "egid": 0,
+          "pid": 1
+        },
+        "codesigning_flags": 570522385,
+        "executable": {
+          "path": "/usr/sbin/bluetoothd",
+          "stat": {
+            "st_blocks": 16144,
+            "st_blksize": 4096,
+            "st_rdev": 0,
+            "st_dev": 16777220,
+            "st_uid": 0,
+            "st_gid": 0,
+            "st_ino": 1152921500312443214,
+            "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_flags": 524320,
+            "st_nlink": 1,
+            "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+            "st_size": 17986240,
+            "st_gen": 0,
+            "st_mode": 33261,
+            "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+          },
+          "path_truncated": false
+        },
+        "ppid": 1,
+        "tty": null,
+        "start_time": "2023-07-24T12:12:25.691426Z",
+        "is_platform_binary": true,
+        "group_id": 7988,
+        "audit_token": {
+          "asid": 100000,
+          "pidversion": 17679,
+          "ruid": 0,
+          "euid": 0,
+          "rgid": 0,
+          "auid": 4294967295,
+          "egid": 0,
+          "pid": 7988
+        },
+        "is_es_client": false,
+        "responsible_audit_token": {
+          "asid": 100000,
+          "pidversion": 17679,
+          "ruid": 0,
+          "euid": 0,
+          "rgid": 0,
+          "auid": 4294967295,
+          "egid": 0,
+          "pid": 7988
+        },
+        "session_id": 7988,
+        "original_ppid": 1,
+        "cdhash": "2EB0BA18CE42611086419421543A9461B3024143",
+        "team_id": null
+      },
+      "type": 2
+    }
+  },
+  "time": "2023-07-24T12:12:25.727248321Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.coreservicesd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/Support/coreservicesd",
+      "stat": {
+        "st_blocks": 24,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312134007,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 167312,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-20T14:04:18.928988Z",
+    "is_platform_binary": true,
+    "group_id": 186,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 350,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 186
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 350,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 186
+    },
+    "session_id": 186,
+    "original_ppid": 1,
+    "cdhash": "4C466EDB70B433A393971F43DAA2C41C4CB272C9",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 343
+}

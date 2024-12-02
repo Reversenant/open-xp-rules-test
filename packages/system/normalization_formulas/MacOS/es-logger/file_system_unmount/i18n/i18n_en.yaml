@@ -1,0 +1,4 @@
+Description: 'A process unmounted a mounted file system'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_filesystem_unmount'
+      EventDescription: 'Process {subject.process.name} unmounted mounted file system "{object.name}" on host {event_src.host}'

@@ -1,0 +1,14 @@
+{
+    "node": "EDDS-APP03T.dom.local",
+    "timestamp": "1606988449",
+    "timestampfractional": "404",
+    "eventid": "744431690",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=190 success=yes exit=0 a0=46a a1=7f184c4c0b40 a2=7f18243974d0 a3=c items=1 ppid=1 pid=19155 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"glfs_iotwr003\" exe=\"/usr/sbin/glusterfsd\" key=\"pt_siem_api_xattr\" ARCH=x86_64 SYSCALL=fsetxattr AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "PATH": [
+            "item=0 name=(null) inode=88782 dev=fd:02 mode=0100640 ouid=101 ogid=101 rdev=00:00 objtype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"unknown(101)\" OGID=\"unknown(101)\""
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+ObjectId: SEC-CR-277281147
+ContentAutoName: Detect_Fake_ComputerAccount
+ExpertContext:
+    Created: 04.06.2023
+    Updated: 08.06.2023
+    Usecases:
+        - Выявление создания "фейковой" учетной записи , имитирующим учетную запись компьютера (например, MSSQLDB01$)
+    References:
+        - https://blog.menasec.net/2019/02/threat-hunting-6-hiding-in-plain-sights.html
+    Improvements:
+        - Аутентификация NTLM (EID=4776) и «Учетная запись для входа» аналогичны «.*\$» и «Исходные рабочие станции» != «Учетная запись для входа»
+        - '[EventID=4624 и "Имя учетной записи", например ".*\$"] с последующим [EventID=4624 и "Имя учетной записи", например ".*\$"] и другое "Имя учетной записи" и тот же "Адрес исходной сети" внутри 2 мин'
+        - EventID=(4624|4625) и «Тип входа» — любой из {2, 7, 10} и «Имя учетной записи», например «.*\$»
+        - EventId = (4624|4625) и "Имя учетной записи", например ".*DC.*$" и "Тип входа" = 3 и ""Исходный сетевой адрес" != Domain_Controllers_Subnet
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4720
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1036
+            persistence:
+                - T1136
+EventDescriptions:
+    - Criteria: correlation_name = "Detect_Fake_ComputerAccount"
+      LocalizationId: corrname_Detect_Fake_ComputerAccount

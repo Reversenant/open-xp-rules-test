@@ -1,0 +1,11 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation" and action = "grant" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_grant
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation" and action = "revoke" and status = "success"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_revoke
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation" and action = "grant" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_grant_fail
+    - Criteria: id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation" and action = "revoke" and status = "failure"
+      LocalizationId: PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_revoke_fail
+ObjectId: PT-NF-5604
+ContentAutoName: PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation

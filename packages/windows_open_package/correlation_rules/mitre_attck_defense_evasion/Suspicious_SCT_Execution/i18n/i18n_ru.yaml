@@ -1,0 +1,4 @@
+Description: 'Запуск подозрительных sct скриптов'
+EventDescriptions:
+    - LocalizationId: 'corrname_Suspicious_SCT_Execution'
+      EventDescription: 'Пользователь {subject.account.name} выполнил подозрительную команду, которая может использоваться для скрытого запуска SCT скриптов, на узле {event_src.host}'

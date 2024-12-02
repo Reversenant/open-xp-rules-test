@@ -1,0 +1,109 @@
+# Aug  1 00:00:00 teamcity teamcity-activities.log: [2021-07-07 04:38:51,858]   INFO - s.buildServer.ACTIVITIES.AUDIT - delete_token_for_user: Deleted token "REST" for user "'admin' {id=1}" by "'admin' {id=1}"
+
+TEXT = "{'<'NUMBER'>'?}{':'?}{DATETIME} {event_src.ip=IPV4|event_src.ip=IPV6|event_src.hostname=HOSTNAME|} teamcity-{WORD}.log: [{$time=UNTIL(']')} INFO - {$class=STRING} - {$tag=WORD}: {$raw_message=REST}"
+COND = in_list(["create_token_for_user", "delete_token_for_user", "create_restricted_token_for_user", "delete_tokens_by_system"], $tag)
+
+subject = "account"
+object = "resource"
+
+subformula "parse_user"
+    TEXT = "'{$user_name=UNTIL('\\'')} {'('$user_fullname=UNTIL(')')?} {'{'}id={$user_id=NUMBER}{'}'}"
+endsubformula
+
+subformula "parse_user"
+    # since version 2023
+    TEXT = "user with id={$user_id=NUMBER}"
+endsubformula
+
+subformula "by_comment"
+    TEXT = "by \"{$subj=UNTIL('\" with comment \"')} {$comment=REST}"
+    
+    reason = strip($comment, '', '"')
+endsubformula
+
+subformula "by_comment"
+    TEXT = "by \"{$subj=UNTIL('\"')}"
+endsubformula
+
+subformula "by_comment"
+    TEXT = "with comment {$comment=REST}"
+    
+    reason = strip($comment, '"', '"')
+endsubformula
+
+subformula "by_comment"
+    TEXT = "{REST}"
+endsubformula
+
+subformula "create"
+    TEXT = "Created {'user'|'permissions'}-scoped token for user \"{$obj=UNTIL('\", token: \"')} Token {'{'}{$kv=UNTIL('}\"')} {$by_comment=REST}"
+    
+    action = "create"
+    
+    $kv = keyvalue($kv, " ", "=", "'")
+    
+    object.name = $kv["name"]
+    object.id = $kv["identifier"]
+    object.property = "expiration_time"
+    object.value = $kv["expirationTime"]
+endsubformula
+
+
+subformula "delete"
+    TEXT = "Deleted token {$token=STRING+} for user \"{$obj=UNTIL('\"')} {$by_comment=REST}"
+    
+    action = "remove"
+
+    object.name = strip($token, '"', '"')
+endsubformula
+
+subformula "delete"
+    TEXT = "Deleted tokens of user \"{$obj=UNTIL('\"')} ({WORD}) {$by_comment=REST}"
+    
+    action = "remove"
+endsubformula
+
+subformula "get_chain_id"
+    TEXT = "{$clear_time=DATETIME},{$ms=NUMBER}"
+    
+    numfield3 = datetime_to_epoch_ms($clear_time) + $ms  # Millisecond Timestamp (to understand the events order)
+endsubformula
+
+submessage("TEXT", "get_chain_id", $time)
+
+switch $tag
+    case "create_token_for_user" submessage("TEXT", "create", $raw_message)
+    case "create_restricted_token_for_user" submessage("TEXT", "create", $raw_message)
+    case "delete_token_for_user" submessage("TEXT", "delete", $raw_message)
+    case "delete_tokens_by_system" submessage("TEXT", "delete", $raw_message)
+endswitch
+
+status = "success"
+
+submessage("TEXT", "by_comment", $by_comment)
+submessage("TEXT", "parse_user", $subj)
+
+subject.account.fullname = $user_fullname
+subject.account.name = $user_name
+subject.account.id = $user_id
+
+$user_fullname = null
+$user_name = null
+$user_id = null
+
+submessage("TEXT", "parse_user", $obj)
+
+object.type = "user_token"
+object.account.fullname = $user_fullname
+object.account.name = $user_name
+object.account.id = $user_id
+
+time = replace($time, ".", ",")
+msgid = $tag
+importance = "medium"
+
+event_src.vendor = "jetbrains"
+event_src.title = "teamcity"
+event_src.category = "Other"
+
+id = "PT_JetBrains_TeamCity_syslog_Activities_User_Token_Management"

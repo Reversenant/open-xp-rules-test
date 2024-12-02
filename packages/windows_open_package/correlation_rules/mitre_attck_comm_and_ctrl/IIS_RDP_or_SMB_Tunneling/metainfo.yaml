@@ -1,0 +1,30 @@
+ObjectId: SEC-CR-887361710
+ContentAutoName: IIS_RDP_or_SMB_Tunneling
+ExpertContext:
+    Created: 12.06.2023
+    Updated: 12.06.2023
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 3
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 5156
+    KnowledgeHolders:
+        - Anton Kutepov
+    Usecases:
+        - Атакующие могут проксировать трафик через модуль IIS, например используя утилиты из проекта Tunna
+    References:
+        - https://github.com/SECFORCE/Tunna
+    Improvements:
+        - Расширить детект для других веб-серверов
+ContentRelations:
+    Implements:
+        ATTACK:
+            command-and-control:
+                - T1572
+EventDescriptions:
+    - Criteria: correlation_name = "IIS_RDP_or_SMB_Tunneling" and dst.port = 3389
+      LocalizationId: corrname_IIS_RDP_or_SMB_Tunneling
+    - Criteria: correlation_name = "IIS_RDP_or_SMB_Tunneling" and dst.port = 445
+      LocalizationId: corrname_IIS_RDP_or_SMB_Tunneling_2

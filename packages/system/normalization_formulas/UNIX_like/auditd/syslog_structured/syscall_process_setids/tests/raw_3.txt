@@ -1,0 +1,14 @@
+{
+    "eventid": "493244162",
+    "timestampfractional": "471",
+    "timestamp": "1653298302",
+    "node": "10.0.176.79",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2F7573722F7362696E2F73736864002D44002D52"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=113 success=yes exit=0 a0=ffffffff a1=0 a2=0 a3=7fb146971330 items=0 ppid=1685 pid=31646 auid=998 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=998 sgid=998 fsgid=998 tty=(none) ses=3399639 comm=\"sshd\" exe=\"/usr/sbin/sshd\" key=\"pt_siem_api_setuid\" ARCH=x86_64 SYSCALL=setreuid AUID=\"git\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"git\" SGID=\"git\" FSGID=\"git\""
+        ]
+    }
+}

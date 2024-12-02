@@ -1,0 +1,4 @@
+Description: 'Bypass UAC via hijack dll using a special *.local directory for the consent.exe process'
+EventDescriptions:
+    - LocalizationId: 'corrname_UAC_Bypass_Via_Consent'
+      EventDescription: 'Process {subject.process.name} loaded library {object.process.name} from the atypical directory {object.process.fullpath}, indicating an attempt to bypass the UAC mechanism'

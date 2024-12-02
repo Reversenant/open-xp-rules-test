@@ -1,0 +1,20 @@
+{
+    "node": "2001:db8:1ab0:130:250:56ff:feaf:7e1a",
+    "timestamp": "1657540049",
+    "timestampfractional": "329",
+    "eventid": "7912",
+    "items": {
+        "SOCKADDR": [
+            "saddr=100000000000000000000000 SADDR={ fam=netlink nlnk-fam=16 nlnk-pid=0 }"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=44 success=yes exit=1076 a0=3 a1=7ffd040faf40 a2=434 a3=0 items=0 ppid=2911023 pid=2911036 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"auditctl\" exe=\"/usr/sbin/auditctl\" key=(null) ARCH=x86_64 SYSCALL=sendto AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "CONFIG_CHANGE": [
+            "auid=4294967295 ses=4294967295 op=remove_rule key=\"pt_siem_api_accept\" list=4 res=1 AUID=\"unset\""
+        ],
+        "PROCTITLE": [
+            "proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573"
+        ]
+    }
+}

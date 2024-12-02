@@ -1,0 +1,4 @@
+Description: 'Обнаружено удаление артефактов'
+EventDescriptions:
+    - LocalizationId: 'corrname_Delete_RunMRU_registry_artifact'
+      EventDescription: 'Обнаружено удаление артефакта RunMRU на узле {event_src.host}'

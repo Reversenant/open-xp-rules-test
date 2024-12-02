@@ -1,0 +1,24 @@
+{
+    "eventid": "745843268",
+    "timestampfractional": "546",
+    "timestamp": "1652365493",
+    "node": "192.70.198.184",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=\"mc\""
+        ],
+        "EOE": [
+            ""
+        ],
+        "PATH": [
+            "item=0 name=\"/root/.local/share/mc/\" inode=270883 dev=fe:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"root\" OGID=\"root\"",
+            "item=1 name=\"/root/.local/share/mc/history\" inode=270884 dev=fe:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"root\" OGID=\"root\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=257 success=no exit=-17 a0=ffffff9c a1=55eef43b8870 a2=c0 a3=180 items=2 ppid=1473119 pid=1473122 auid=1013 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=52243 comm=\"mc\" exe=\"/usr/bin/mc\" subj==unconfined key=\"pt_siem_root_read\" ARCH=x86_64 SYSCALL=openat AUID=\"dkresko\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "CWD": [
+            "cwd=\"/root\""
+        ]
+    }
+}

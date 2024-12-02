@@ -1,0 +1,207 @@
+
+event Firefox_Login_Data_Files_Read:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "windows"
+        and msgid == "4663"
+        and regex(lower(object.fullpath), "appdata\\\\roaming\\\\mozilla\\\\firefox\\\\profiles\\\\[a-z.0-9]+\\\\(key(3|4).db|logins.json)", 0) != null
+        and datafield5 == "0x1" # AccessMask - ReadData
+        and regex(lower(subject.process.fullpath), "c:\\\\program files\\\\|c:\\\\program files (x86)\\\\|c:\\\\windows\\\\system32\\\\|c:\\\\windows\\\\syswow64", 0) == null # Added to avoid large amount of FP
+    }
+
+event Opera_Login_Data_Files_Read:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "windows"
+        and msgid == "4663"
+        and regex(lower(object.fullpath), "appdata\\\\roaming\\\\opera software\\\\opera stable\\\\login data", 0) != null
+        and datafield5 == "0x1" # AccessMask - ReadData
+        and regex(lower(subject.process.fullpath), "c:\\\\program files\\\\|c:\\\\program files (x86)\\\\|c:\\\\windows\\\\system32\\\\|c:\\\\windows\\\\syswow64", 0) == null # Added to avoid large amount of FP
+    }
+
+event Chrome_Login_Data_Read:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "windows"
+        and msgid == "4663"
+        and regex(lower(object.fullpath), "appdata\\\\local\\\\google\\\\chrome\\\\user data\\\\default\\\\login data", 0) != null
+        and datafield5 == "0x1" # AccessMask - ReadData
+        and regex(lower(subject.process.fullpath), "c:\\\\program files\\\\|c:\\\\program files (x86)\\\\|c:\\\\windows\\\\system32\\\\|c:\\\\windows\\\\syswow64", 0) == null # Added to avoid large amount of FP
+    }
+
+rule Chrome_firefox_opera_cred_read: Firefox_Login_Data_Files_Read or Opera_Login_Data_Files_Read or Chrome_Login_Data_Read
+
+    init {
+        $labels = "w_auto"
+    }
+
+    on Firefox_Login_Data_Files_Read {
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.type = object.type
+        $object.property = object.property
+        $object.value = object.value
+        $object.new_value = object.new_value
+        $object.query = object.query
+
+        $subject.account.name = subject.account.name
+        $subject.account.fullname = subject.account.fullname
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+        $subject.account.privileges = subject.account.privileges
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        $subject.process.hash = subject.process.hash
+        $subject.process.version = subject.process.version
+        $subject.process.cmdline = subject.process.cmdline
+        $subject.process.guid = subject.process.guid
+        $subject.process.meta = subject.process.meta
+        $subject.process.original_name = subject.process.original_name
+        $subject.process.cwd = subject.process.cwd
+        
+        $subject.process.parent.id = subject.process.parent.id
+        $subject.process.parent.name = subject.process.parent.name
+        $subject.process.parent.path = subject.process.parent.path
+        $subject.process.parent.fullpath = subject.process.parent.fullpath
+        $subject.process.parent.cmdline = subject.process.parent.cmdline
+
+        $alert.key = subject.process.fullpath
+        $alert.context = subject.account.domain + "\\" + subject.account.name + " read '" + object.fullpath + "' on " + event_src.hostname
+    }
+
+    on Opera_Login_Data_Files_Read {
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.type = object.type
+        $object.property = object.property
+        $object.value = object.value
+        $object.new_value = object.new_value
+        $object.query = object.query
+
+        $subject.account.name = subject.account.name
+        $subject.account.fullname = subject.account.fullname
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+        $subject.account.privileges = subject.account.privileges
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        $subject.process.hash = subject.process.hash
+        $subject.process.version = subject.process.version
+        $subject.process.cmdline = subject.process.cmdline
+        $subject.process.guid = subject.process.guid
+        $subject.process.meta = subject.process.meta
+        $subject.process.original_name = subject.process.original_name
+        $subject.process.cwd = subject.process.cwd
+        
+        $subject.process.parent.id = subject.process.parent.id
+        $subject.process.parent.name = subject.process.parent.name
+        $subject.process.parent.path = subject.process.parent.path
+        $subject.process.parent.fullpath = subject.process.parent.fullpath
+        $subject.process.parent.cmdline = subject.process.parent.cmdline
+
+        $alert.key = subject.process.fullpath
+        $alert.context = subject.account.domain + "\\" + subject.account.name + " read '" + object.fullpath + "' on " + event_src.hostname
+    }
+
+    on Chrome_Login_Data_Read {    
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.type = object.type
+        $object.property = object.property
+        $object.value = object.value
+        $object.new_value = object.new_value
+        $object.query = object.query
+
+        $subject.account.name = subject.account.name
+        $subject.account.fullname = subject.account.fullname
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+        $subject.account.privileges = subject.account.privileges
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        $subject.process.hash = subject.process.hash
+        $subject.process.version = subject.process.version
+        $subject.process.cmdline = subject.process.cmdline
+        $subject.process.guid = subject.process.guid
+        $subject.process.meta = subject.process.meta
+        $subject.process.original_name = subject.process.original_name
+        $subject.process.cwd = subject.process.cwd
+        
+        $subject.process.parent.id = subject.process.parent.id
+        $subject.process.parent.name = subject.process.parent.name
+        $subject.process.parent.path = subject.process.parent.path
+        $subject.process.parent.fullpath = subject.process.parent.fullpath
+        $subject.process.parent.cmdline = subject.process.parent.cmdline
+
+        $alert.key = subject.process.fullpath
+        $alert.context = subject.account.domain + "\\" + subject.account.name + " read '" + object.fullpath + "' on " + event_src.hostname
+    }
+
+emit {
+
+    $subject = "account"
+    $action = "read"
+    $object = "file"
+    $status = "success"
+
+    $correlation_type = "incident"
+    $importance = "medium"
+
+    $category.generic = "Attack"
+    $category.high = "Credential Access"
+    $category.low = "Credentials from Password Stores"
+}

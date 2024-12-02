@@ -1,0 +1,21 @@
+ObjectId: SEC-CR-179311440
+ContentAutoName: Credentials_MiniDumpWriteDump_Lsass
+ExpertContext:
+    Created: 07.06.2023
+    Updated: 12.06.2023
+    Usecases:
+        - Обнаружение сценарии PowerShell, для создания дампа памяти процесса с помощью MiniDumpWriteDump
+    References:
+        - https://www.elastic.co/guide/en/security/7.17/prebuilt-rule-0-14-3-powershell-minidump-script.html
+    DataSources:
+        - Provider: Microsoft-Windows-PowerShell
+          EventID:
+              - 4104
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003.001
+EventDescriptions:
+    - Criteria: correlation_name = "Credentials_MiniDumpWriteDump_Lsass"
+      LocalizationId: corrname_Credentials_MiniDumpWriteDump_Lsass_Ps

@@ -1,0 +1,4 @@
+Description: 'UAC bypass via autoElevated parent process start has been detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_CreateSuspiciousProcess_via_AutoElavated_Parent'
+      EventDescription: 'A UAC bypass was detected to create the {object.process.name} process by starting the parent process with the "autoElevate" option at host {event_src.host}'

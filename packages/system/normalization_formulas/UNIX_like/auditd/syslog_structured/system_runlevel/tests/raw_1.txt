@@ -1,0 +1,11 @@
+{
+    "eventid": "391",
+    "timestampfractional": "996",
+    "timestamp": "1681766310",
+    "node": "10.10.216.222",
+    "items": {
+        "SYSTEM_RUNLEVEL": [
+            "pid=780 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='old-level=N new-level=5 comm=\"systemd-update-utmp\" exe=\"/usr/lib/systemd/systemd-update-utmp\" hostname=? addr=? terminal=? res=success' UID=\"root\" AUID=\"unset\""
+        ]
+    }
+}

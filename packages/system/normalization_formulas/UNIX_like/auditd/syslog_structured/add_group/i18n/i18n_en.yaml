@@ -1,0 +1,15 @@
+Description: 'Attempt to create a user group'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_add_group_success_null'
+      EventDescription: 'The user with ID {subject.account.id} created user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_add_group_failure_null'
+      EventDescription: 'The user with ID {subject.account.id} failed to create user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_add_group_ongoing_null'
+      EventDescription: 'The user with ID {subject.account.id} is creating user group "{object.name}" on host {event_src.host}'
+
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_add_group_success_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} created user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_add_group_failure_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} failed to create user group "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_add_group_ongoing_notnull'
+      EventDescription: 'User "{subject.account.name}" with ID {subject.account.id} is creating user group "{object.name}" on host {event_src.host}'

@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_user_openssh_logout"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_user_openssh_logout
+ObjectId: PT-NF-9283

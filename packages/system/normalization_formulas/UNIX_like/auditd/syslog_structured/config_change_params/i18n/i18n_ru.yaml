@@ -1,0 +1,6 @@
+Description: 'Попытка задать значение для параметра подсистемы аудита'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_config_change_params_success'
+      EventDescription: 'Для параметра {object.property} подсистемы аудита задано значение {object.new_value} на узле {event_src.host}'
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_config_change_params_failure'
+      EventDescription: 'Не удалось задать значение для параметра {object.property} подсистемы аудита на узле {event_src.host}'

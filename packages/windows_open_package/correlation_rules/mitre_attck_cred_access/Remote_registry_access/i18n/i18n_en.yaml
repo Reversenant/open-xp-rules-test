@@ -1,0 +1,4 @@
+Description: 'An attempt to connect remotely to registry was detected'
+EventDescriptions:
+    - LocalizationId: 'corrname_Remote_registry_access'
+      EventDescription: 'User {subject.account.domain}\{subject.account.name} with {subject.privileges} remotely connected to registry at host {event_src.host}'

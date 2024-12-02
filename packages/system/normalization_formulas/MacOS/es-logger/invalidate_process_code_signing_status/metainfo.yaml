@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_EDR_es_invalidate_process_code_signing_status"
+      LocalizationId: PT_EDR_es_invalidate_process_code_signing_status
+ObjectId: PT-NF-9260

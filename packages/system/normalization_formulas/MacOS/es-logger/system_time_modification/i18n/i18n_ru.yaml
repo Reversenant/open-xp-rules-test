@@ -1,0 +1,4 @@
+Description: 'Изменено системное время'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_system_time_modification'
+      EventDescription: 'Системное время изменено на узле {event_src.host}'

@@ -1,0 +1,71 @@
+{
+    "Event": {
+        "System": {
+            "Provider": {
+                "Name": "Microsoft-Windows-Security-Auditing",
+                "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+            },
+            "EventID": "4798",
+            "Version": "0",
+            "Level": "0",
+            "Task": "13824",
+            "Opcode": "0",
+            "Keywords": "0x8020000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-04-08T11:04:31.653078500Z"
+            },
+            "EventRecordID": "6159499",
+            "Correlation": {
+                "ActivityID": "{0150af80-fbc7-0000-85b0-5001c7fbd501}"
+            },
+            "Execution": {
+                "ProcessID": "624",
+                "ThreadID": "23156"
+            },
+            "Channel": "Security",
+            "Computer": "Exchange.NewCo.ptlab",
+            "Security": ""
+        },
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "TargetUserName",
+                    "text": "Administrator"
+                },
+                {
+                    "Name": "TargetDomainName",
+                    "text": "EXCHANGE"
+                },
+                {
+                    "Name": "TargetSid",
+                    "text": "S-1-5-21-3413311772-895685622-1555196181-500"
+                },
+                {
+                    "Name": "SubjectUserSid",
+                    "text": "S-1-5-21-3413311772-895685622-1555196181-500"
+                },
+                {
+                    "Name": "SubjectUserName",
+                    "text": "Administrator"
+                },
+                {
+                    "Name": "SubjectDomainName",
+                    "text": "EXCHANGE"
+                },
+                {
+                    "Name": "SubjectLogonId",
+                    "text": "0x5e35385b"
+                },
+                {
+                    "Name": "CallerProcessId",
+                    "text": "0x4328"
+                },
+                {
+                    "Name": "CallerProcessName",
+                    "text": "C:\\Windows\\explorer.exe"
+                }
+            ]
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

@@ -1,0 +1,4 @@
+Description: 'Detect added user Guets OR NETWORK SERVICE to the local administrators group'
+EventDescriptions:
+    - LocalizationId: 'corrname_Network_Service_or_Guest_added_to_local_admins'
+      EventDescription: 'On the host {event_src.hostname} user {subject.account.domain}\\{subject.account.name} has added to the local administrators group user {object.account.name}'

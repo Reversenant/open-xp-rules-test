@@ -1,0 +1,81 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "Microsoft-Windows-Security-Auditing",
+                "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+            },
+            "EventID": "4674",
+            "Version": "0",
+            "Level": "0",
+            "Task": "13056",
+            "Opcode": "0",
+            "Keywords": "0x8020000000000000",
+            "TimeCreated": {
+                "SystemTime": "2022-06-24T08:49:30.029954900Z"
+            },
+            "EventRecordID": "5801132109",
+            "Correlation": null,
+            "Execution": {
+                "ProcessID": "4",
+                "ThreadID": "7932"
+            },
+            "Channel": "Security",
+            "Computer": "d1.py.ru",
+            "Security": null
+        },
+        "EventData": {
+            "Data": [
+                {
+                    "text": "S-1-5-21-1023191730-72700027-3985050192-500",
+                    "Name": "SubjectUserSid"
+                },
+                {
+                    "text": "Administrator",
+                    "Name": "SubjectUserName"
+                },
+                {
+                    "text": "PY",
+                    "Name": "SubjectDomainName"
+                },
+                {
+                    "text": "0x32004b0f",
+                    "Name": "SubjectLogonId"
+                },
+                {
+                    "text": "Security",
+                    "Name": "ObjectServer"
+                },
+                {
+                    "text": "Semaphore",
+                    "Name": "ObjectType"
+                },
+                {
+                    "text": "\\BaseNamedObjects\\SM0:7728:304:WilStaging_02_p0",
+                    "Name": "ObjectName"
+                },
+                {
+                    "text": "0x84c",
+                    "Name": "HandleId"
+                },
+                {
+                    "text": "%%1537\r\n\t\t\t\t%%1538\r\n\t\t\t\t%%1539\r\n\t\t\t\t%%1540\r\n\t\t\t\t%%1541\r\n\t\t\t\t%%4528\r\n\t\t\t\t%%4529\r\n\t\t\t\t",
+                    "Name": "AccessMask"
+                },
+                {
+                    "text": "SeTakeOwnershipPrivilege",
+                    "Name": "PrivilegeList"
+                },
+                {
+                    "text": "0x1e30",
+                    "Name": "ProcessId"
+                },
+                {
+                    "text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                    "Name": "ProcessName"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,4 @@
+Description: 'Detects svchost hosting RDP termsvcs communicating with the loopback address.'
+EventDescriptions:
+    - LocalizationId: 'corrname_RDP_Tunneling_via_SSH_5156'
+      EventDescription: 'A successful connection was made from address {src.ip} to address {dst.ip}:{dst.port} at host {event_src.host}. Application name {object.process.fullpath}'

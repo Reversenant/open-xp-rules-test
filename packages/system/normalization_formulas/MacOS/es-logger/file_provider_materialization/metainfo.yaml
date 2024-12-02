@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_provider_materialization"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_provider_materialization
+ObjectId: PT-NF-9265

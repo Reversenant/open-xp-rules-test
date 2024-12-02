@@ -1,0 +1,21 @@
+{
+  "node": "192.168.137.192",
+  "timestamp": "1581680237",
+  "timestampfractional": "925",
+  "eventid": "3924",
+  "items": {
+    "CWD": [
+      "cwd=\"/root\""
+    ],
+    "PATH": [
+      "item=0 name=\"./\" inode=393218 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\"",
+      "item=1 name=2E2F2D726620 inode=421991 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\""
+    ],
+    "PROCTITLE": [
+      "proctitle=726D002E2F2D726620"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=558f5f98a490 a2=0 a3=fffffffffffffbd8 items=2 ppid=1707 pid=1727 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=1 comm=\"rm\" exe=\"/usr/bin/rm\" subj==unconfined key=(null) ARCH=x86_64 SYSCALL=unlinkat AUID=\"root\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "eventid": "375466",
+  "items": {
+    "CWD": [
+      "cwd=\"/\""
+    ],
+    "PATH": [
+      "item=0 name=\"/usr/bin/\" inode=917506 dev=08:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\""
+    ],
+    "PROCTITLE": [
+      "proctitle=2F7573722F62696E2F64706B67002D2D7374617475732D6664003230002D2D6E6F2D7472696767657273002D2D756E7061636B002D2D6175746F2D6465636F6E666967757265002F7661722F63616368652F6170742F61726368697665732F76696D2D72756E74696D655F32253361382E312E303837352D355F616C6C2E6465"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=84 success=no exit=-2 a0=55faf4cfc2e0 a1=55faf1b81b57 a2=55faf1b81c10 a3=0 items=1 ppid=36397 pid=36418 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts5 ses=391 comm=\"dpkg\" exe=\"/usr/bin/dpkg\" subj==unconfined key=\"pt_siem_bin_modify\" ARCH=x86_64 SYSCALL=rmdir AUID=\"root\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  },
+  "node": "192.168.137.192",
+  "timestamp": "1576641821",
+  "timestampfractional": "809"
+}

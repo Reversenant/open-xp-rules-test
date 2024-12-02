@@ -1,0 +1,4 @@
+Description: 'A runlevel is set'
+EventDescriptions:
+    - LocalizationId: 'PT_UNIX_like_auditd_syslog_structured_system_runlevel'
+      EventDescription: 'Runlevel {object.new_value} is set for the system on host {event_src.host}'

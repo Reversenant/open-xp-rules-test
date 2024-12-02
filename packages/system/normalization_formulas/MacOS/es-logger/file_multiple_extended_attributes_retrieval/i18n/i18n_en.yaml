@@ -1,0 +1,4 @@
+Description: 'A process retrieved multiple extended attributes of a file'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_multiple_extended_attributes_retrieval'
+      EventDescription: 'Process {subject.process.name} retrieved multiple extended attributes of file "{object.name}" on host {event_src.host}'

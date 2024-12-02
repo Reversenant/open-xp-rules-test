@@ -1,0 +1,23 @@
+{
+  "node": "10.0.217.72",
+  "timestamp": "1585668910",
+  "timestampfractional": "213",
+  "eventid": "2062163",
+  "items": {
+    "CWD": [
+      "cwd=\"/root\""
+    ],
+    "PATH": [
+      "item=0 name=\"/root\" inode=524289 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\"",
+      "item=2 name=\"empty_file\" inode=526425 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\"",
+      "item=1 name=\"/home/user/\" inode=2890242 dev=08:01 mode=040755 ouid=1000 ogid=1000 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"user\" OGID=\"user\"",
+      "item=3 name=\"/home/user/moved_empty_file\" inode=526425 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\""
+    ],
+    "PROCTITLE": [
+      "proctitle=6D7600656D7074795F66696C65002F686F6D652F757365722F6D6F7665645F656D7074795F66696C65"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=316 success=yes exit=0 a0=ffffff9c a1=7ffca6c08df3 a2=ffffff9c a3=7ffca6c08dfe items=4 ppid=18575 pid=18597 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=16456 comm=\"mv\" exe=\"/usr/bin/mv\" subj==unconfined key=\"pt_siem_home_modify\" ARCH=x86_64 SYSCALL=renameat2 AUID=\"root\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+    ]
+  }
+}

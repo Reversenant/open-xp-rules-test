@@ -1,0 +1,24 @@
+{
+    "node": "10.10.192.250",
+    "timestamp": "1654270990",
+    "timestampfractional": "503",
+    "eventid": "17421842",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=87 success=yes exit=0 a0=7f15868f5408 a1=7f15c87bcb40 a2=7f15c87bcb40 a3=7fff33e60080 items=2 ppid=1 pid=515625 auid=4294967295 uid=1702640790 gid=1702600513 euid=1702640790 suid=1702640790 fsuid=1702640790 egid=1702600513 sgid=1702600513 fsgid=1702600513 tty=(none) ses=4294967295 comm=43616368653220492F4F exe=\"/usr/lib/firefox-esr/firefox-esr\" subj==unconfined key=\"pt_siem_home_access\" ARCH=x86_64 SYSCALL=unlink AUID=\"unset\" UID=\"user@domain.my\" GID=646F6D61696E20757365727340646F6D61696E2E6D79 EUID=\"user@domain.my\" SUID=\"user@domain.my\" FSUID=\"user@domain.my\" EGID=646F6D61696E20757365727340646F6D61696E2E6D79 SGID=646F6D61696E20757365727340646F6D61696E2E6D79 FSGID=646F6D61696E20757365727340646F6D61696E2E6D79"
+        ],
+        "CWD": [
+            "cwd=\"/home/user@domain.my\""
+        ],
+        "PATH": [
+            "item=0 name=\"/home/user@domain.my/.cache/mozilla/firefox/h4qichs3.default-esr/cache2/doomed/\" inode=8290307 dev=08:02 mode=040755 ouid=1702640790 ogid=1702600513 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"user@domain.my\" OGID=646F6D61696E20757365727340646F6D61696E2E6D79",
+            "item=1 name=\"/home/user@domain.my/.cache/mozilla/firefox/h4qichs3.default-esr/cache2/doomed/370630586\" inode=8268748 dev=08:02 mode=0100600 ouid=1702640790 ogid=1702600513 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0 OUID=\"user@domain.my\" OGID=646F6D61696E20757365727340646F6D61696E2E6D79"
+        ],
+        "PROCTITLE": [
+            "proctitle=\"/usr/bin/x-www-browser\""
+        ],
+        "EOE": [
+            ""
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+Description: 'Дамп памяти сохранен в файл'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_memory_to_file_mapping'
+      EventDescription: 'Дамп памяти сохранен в файл "{object.name}" на узле {event_src.host}'

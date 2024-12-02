@@ -1,0 +1,4 @@
+Description: 'A process is modifying its user ID'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_process_user_id'
+      EventDescription: 'Process {subject.process.name} is modifying its user ID on host {event_src.host}. The new value is "{object.value}".'

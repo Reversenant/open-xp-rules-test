@@ -1,0 +1,27 @@
+{
+    "Event": {
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event",
+        "System": {
+            "Provider": {
+                "Name": "MSSQLSERVER"
+            },
+            "EventID": {
+                "text": "33205",
+                "Qualifiers": "16384"
+            },
+            "Level": "0",
+            "Task": "5",
+            "Keywords": "0xa0000000000000",
+            "TimeCreated": {
+                "SystemTime": "2020-03-06T07:54:18.629036000Z"
+            },
+            "EventRecordID": "252466",
+            "Channel": "Application",
+            "Computer": "DESKTOP-GB13G7P",
+            "Security": null
+        },
+        "EventData": {
+            "Data": "audit_schema_version:1\nevent_time:2020-03-06 07:54:18.5519951\nsequence_number:1\naction_id:BA \nsucceeded:true\nis_column_permission:false\nsession_id:60\nserver_principal_id:259\ndatabase_principal_id:1\ntarget_server_principal_id:0\ntarget_database_principal_id:0\nobject_id:0\nuser_defined_event_id:0\ntransaction_id:333617\nclass_type:MK\npermission_bitmask:00000000000000000000000000000000\nsequence_group_id:EEF00977-8CBE-4804-AF1B-953970B0F4E1\nsession_server_principal_name:DESKTOP-GB13G7P\\Administrator\nserver_principal_name:DESKTOP-GB13G7P\\Administrator\nserver_principal_sid:0105000000000005150000001df2aabab1fc830d139cadf1ea030000\ndatabase_principal_name:dbo\ntarget_server_principal_name:\ntarget_server_principal_sid:\ntarget_database_principal_name:\nserver_instance_name:DESKTOP-GB13G7P\ndatabase_name:master\nschema_name:\nobject_name:##MS_DatabaseMasterKey##\nstatement:BACKUP MASTER KEY TO FILE = 'C:\\DbMasterKey1.key'\r\nENCRYPTION BY PASSWORD = '******'\nadditional_information:\nuser_defined_information:\n"
+        }
+    }
+}

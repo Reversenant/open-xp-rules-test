@@ -1,0 +1,28 @@
+Updated: 26.12.2022
+ObjectId: LOC-CR-395220326
+ContentAutoName: Vssadmin
+ExpertContext:
+    Created: 20.06.2023
+    Updated: 01.07.2023
+    KnowledgeHolders:
+        - Arsenii Sukhanov
+    Usecases:
+        - vssadmin.exe может использоваться для удаления всех теневых копий томов в системе (vssadmin.exe delete shadows /all /quiet)
+    References:
+        - https://attack.mitre.org/techniques/T1490/
+        - https://jpcertcc.github.io/ToolAnalysisResultSheet/details/vssadmin.htm
+        - https://learn.microsoft.com/ru-ru/windows-server/administration/windows-commands/vssadmin
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+    Improvements:
+        - More logs and use case
+EventDescriptions:
+    - Criteria: correlation_name = "Vssadmin"
+      LocalizationId: corrname_Vssadmin
+ContentRelations:
+    Implements:
+        ATTACK:
+            impact:
+                - T1490

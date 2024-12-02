@@ -1,0 +1,4 @@
+Description: 'Изменен пароль локального администратора'
+EventDescriptions:
+    - LocalizationId: 'corrname_Local_admin_password_changed'
+      EventDescription: 'На хосте {event_src.host} изменен пароль локального администратора'

@@ -1,0 +1,4 @@
+Description: 'Процесс изменил расширенные атрибуты файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_file_extended_attributes'
+      EventDescription: 'Процесс {subject.process.name} изменил расширенные атрибуты "{object.value}" файла "{object.name}" на узле {event_src.host}'

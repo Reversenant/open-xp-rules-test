@@ -1,0 +1,4 @@
+Description: 'A user unlocked a screen'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_graphical_session_unlock'
+      EventDescription: 'User {subject.account.name} unlocked the screen on host {event_src.host}'

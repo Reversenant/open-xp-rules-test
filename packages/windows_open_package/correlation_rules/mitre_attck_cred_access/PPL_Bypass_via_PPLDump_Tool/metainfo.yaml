@@ -1,0 +1,26 @@
+Updated: 26.12.2022
+ObjectId: SEC-CR-726341693
+ContentAutoName: PPL_Bypass_via_PPLDump_Tool
+ExpertContext:
+    Created: 14.06.2023
+    Updated: 25.06.2023
+    Usecases:
+        - Детектирование дампа процесса lsass через инструмент PPLdump
+        - Детектирование dll hijacked с помощью обхода механизма защиты PPL
+    References:
+        - https://itm4n.github.io/the-end-of-ppldump/
+        - https://blog.scrt.ch/2021/04/22/bypassing-lsa-protection-in-userland/
+        - https://blog.scrt.ch/2023/03/17/bypassing-ppl-in-userland-again/
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 1
+              - 10
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003.001
+EventDescriptions:
+    - Criteria: correlation_name = "PPL_Bypass_via_PPLDump_Tool"
+      LocalizationId: corrname_PPL_Bypass_via_PPLDump_Tool

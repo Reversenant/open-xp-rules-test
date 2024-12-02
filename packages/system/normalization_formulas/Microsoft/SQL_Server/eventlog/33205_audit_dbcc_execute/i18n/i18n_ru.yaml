@@ -1,0 +1,6 @@
+Description: 'Выполнена команда DBCC'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_dbcc_execute'
+      EventDescription: 'Пользователь {subject.account.name} выполнил команду DBCC в экземпляре "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_dbcc_execute_fail'
+      EventDescription: 'Пользователь {subject.account.name} не смог выполнить команду DBCC в экземпляре "{datafield2}"'

@@ -1,0 +1,20 @@
+Updated: 26.12.2022
+ObjectId: PT-CR-1779
+ContentAutoName: Suspicious_SCT_Execution
+ExpertContext:
+    Created: 27.06.2023
+    Updated: 29.06.2023
+    KnowledgeHolders:
+        - Georgy Khandozhko
+    References:
+        - https://bohops.com/2018/02/26/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence/
+        - https://gist.github.com/mgeeky/28db4b411a17ee29cf4705a01d84c08b
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1216
+                - T1218
+EventDescriptions:
+    - Criteria: correlation_name = "Suspicious_SCT_Execution"
+      LocalizationId: corrname_Suspicious_SCT_Execution

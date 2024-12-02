@@ -1,0 +1,3 @@
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4799_Process_enumerates_members_of_security_enabled
+      EventDescription: 'Процесс {datafield4}, запущенный пользователем {subject.name}, перечислил членов локальной группы безопасности {object.name} на узле {event_src.host}'

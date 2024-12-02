@@ -1,0 +1,225 @@
+event SysmonDrv_HandleRequired:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        event_src.title == "windows" and
+        msgid == "4656" and
+        lower(object.type) == "file" and
+        lower(object.name) == "sysmondrv" and
+        lower(status) == "success" and
+        regex(subject.account.privileges, "%%1539", 0) != null
+    }
+
+event SysmonDrv_ObjectAccess:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        event_src.title == "windows" and
+        msgid == "4663" and
+        lower(object.type) == "file" and 
+        lower(object.name) == "sysmondrv" and 
+        regex(subject.account.privileges, "%%1539", 0) != null
+    }  
+
+event SysmonDrv_DaclModified:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        event_src.title == "windows" and
+        msgid == "4670" and
+        lower(object.type) == "file" and 
+        lower(object.name) == "sysmondrv"
+    }
+
+ event SysmonDrv_InvalidHandle:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator() and
+        event_src.title == "sysmon" and
+        msgid == "255" and
+        lower(object.name) == "drivercommunication" and
+        regex(lower(reason), "access.*driver.*(неверный|invalid)|(дескриптор|handle)", 0) != null
+    }   
+
+rule SysmonDrv_device_dacl_manipulation: SysmonDrv_HandleRequired or SysmonDrv_ObjectAccess or SysmonDrv_DaclModified or SysmonDrv_InvalidHandle
+
+    on SysmonDrv_HandleRequired {
+        # subject
+        $subject = "process"
+
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+        $subject.account.privileges = subject.account.privileges
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        
+        # action
+        $action = "modify"
+        
+        # object
+        $object = "device"
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.property = "DACL"
+
+        # status
+        $status = "ongoing"
+
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = "Host security"
+
+        # other
+        $datafield1 = object.property
+        $datafield2 = object.value
+    }
+
+    on SysmonDrv_ObjectAccess {
+        # subject
+        $subject = "process"
+
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+        $subject.account.privileges = subject.account.privileges
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        
+        # action
+        $action = "modify"
+        
+        # object
+        $object = "device"
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.property = "DACL"
+
+        # status
+        $status = "ongoing"
+
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = "Host security"
+
+        # other
+        $datafield1 = object.property
+        $datafield2 = object.value
+    }
+
+    on SysmonDrv_DaclModified {
+        # subject
+        $subject = "process"
+
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.session_id = subject.account.session_id
+        $subject.account.id = subject.account.id
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        
+        # action
+        $action = "modify"
+        
+        # object
+        $object = "device"
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.property = "DACL"
+        $object.value = object.value
+        $object.new_value = object.new_value
+
+        # status
+        $status = "success"
+
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = "Host security"
+    }
+
+    on SysmonDrv_InvalidHandle {
+        # object
+        $object = object
+        $object.name = object.name
+
+        # action
+        $action = action
+
+        # status
+        $status = status
+        
+        $reason = reason
+
+        # event src
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = "Host security"
+
+    }
+
+emit {
+    $correlation_name = "SysmonDrv_device_dacl_manipulation"
+    $correlation_type = "incident"
+
+    $importance = "medium"
+
+    $category.generic = "Attack"
+    $category.high = "Defense Evasion"
+    $category.low = "Impair Defenses"
+
+    $incident.aggregation.key = join([$correlation_name, lower($event_src.host), lower($subject.process.name), lower($subject.account.id)], "|")
+    $incident.aggregation.timeout = 2h
+
+    $incident.severity = $importance
+
+    $incident.category = "ProtectionMalfunction"
+    $incident.type = "Malfunction"
+}

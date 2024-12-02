@@ -1,0 +1,5 @@
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed_object_name_not_null'
+      EventDescription: 'Пользователь {subject.name} изменил права на объект "{object.name}" на {event_src.host}'
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed_object_name_null'
+      EventDescription: 'Пользователь {subject.name} изменил права на объект на {event_src.host}'

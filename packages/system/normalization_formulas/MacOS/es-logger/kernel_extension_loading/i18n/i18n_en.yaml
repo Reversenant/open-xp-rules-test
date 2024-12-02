@@ -1,0 +1,4 @@
+Description: 'A kernel extension was loaded'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_kernel_extension_loading'
+      EventDescription: 'Kernel extension "{object.name}" was loaded on host {event_src.host}'

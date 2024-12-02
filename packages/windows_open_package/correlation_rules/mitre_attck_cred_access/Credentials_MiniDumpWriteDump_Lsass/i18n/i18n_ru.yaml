@@ -1,0 +1,4 @@
+Description: 'Обнаружена попытка запуска сценария Powershell для дампа памяти процесса lsass c помощью MiniDumpWriteDump. Злоумышленники могут использовать этот инструмент для получения доступа к учетным данным.'
+EventDescriptions:
+    - LocalizationId: 'corrname_Credentials_MiniDumpWriteDump_Lsass_Ps'
+      EventDescription: 'На узле {event_src.host} обнаружена попытка запуска сценария Powershell {object.name} для дампа памяти процесса lsass c помощью MiniDumpWriteDump. Злоумышленники могут использовать этот инструмент для получения доступа к учетным данным.'

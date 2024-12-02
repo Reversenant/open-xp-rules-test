@@ -1,0 +1,13 @@
+EventDescriptions:
+    - Criteria: id = "Microsoft_Windows_eventlog_Common_RPC_6_Server_RPC_call_started"
+      LocalizationId: LOC_Microsoft_Title_eventlog_event_name_1
+ExpertContext:
+    Created: 24.06.2024
+    Updated: 24.06.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases: []
+    Falsepositives: []
+    References: []
+    Improvements: []
+ObjectId: SEC-NF-236384320

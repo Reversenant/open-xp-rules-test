@@ -1,0 +1,4 @@
+Description: 'Пользователь отключился от сеанса демонстрации экрана'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_screensharing_detach'
+      EventDescription: 'Пользователь с IP-адресом {src.ip} отключился от сеанса демонстрации экрана на узле {event_src.host}'

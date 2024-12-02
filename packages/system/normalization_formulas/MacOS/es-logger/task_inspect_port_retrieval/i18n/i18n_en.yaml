@@ -1,0 +1,4 @@
+Description: 'A task inspection port for a process was retrieved'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_task_inspect_port_retrieval'
+      EventDescription: 'The task inspection port for process {object.name} was retrieved on host {event_src.host}'

@@ -1,0 +1,25 @@
+ObjectId: SEC-CR-949509640
+ContentAutoName: Local_Groups_Enumeration_Discovery
+ExpertContext:
+    Created: 03.06.2023
+    Updated: 04.06.2023
+    KnowledgeHolders:
+        - Kirill Polegaev (plgvkr)
+    Usecases:
+        - Attackers want gain knoweledge about local groups
+    Falsepositives:
+        - Administrative actions
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4799
+    Improvements:
+        - Identifying false positives and adding rules to bypass them
+EventDescriptions:
+    - Criteria: correlation_name = "Local_Groups_Enumeration_Discovery"
+      LocalizationId: corrname_Local_Groups_Enumeration_Discovery
+ContentRelations:
+    Implements:
+        ATTACK:
+            discovery:
+                - T1087.001

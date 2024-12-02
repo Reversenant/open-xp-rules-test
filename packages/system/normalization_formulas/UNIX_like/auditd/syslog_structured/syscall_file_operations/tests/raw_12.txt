@@ -1,0 +1,23 @@
+{
+  "eventid": "24417",
+  "items": {
+    "CWD": [
+      "cwd=\"/\""
+    ],
+    "EOE": [
+      ""
+    ],
+    "PATH": [
+      "item=0 name=\"/etc/audit/audit.rules.prev\" inode=525480 dev=08:01 mode=0100640 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL"
+    ],
+    "PROCTITLE": [
+      "proctitle=6370002F6574632F61756469742F61756469742E72756C6573002F6574632F61756469742F61756469742E72756C65732E70726576"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=2 success=yes exit=4 a0=7ffc83ec2f0a a1=201 a2=0 a3=5e1 items=1 ppid=1878 pid=1891 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm=\"cp\" exe=\"/bin/cp\" key=\"pt_siem_etc_modify\""
+    ]
+  },
+  "node": "debian-test",
+  "timestamp": "1556551292",
+  "timestampfractional": "576"
+}

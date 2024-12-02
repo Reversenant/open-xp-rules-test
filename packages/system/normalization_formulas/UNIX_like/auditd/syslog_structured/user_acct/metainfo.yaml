@@ -1,0 +1,80 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "login" and status = "ongoing"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_login_ongoing
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "login" and status = "failure"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_login_failure
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "elevate" and status = "ongoing" and subject.process.name = "su"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_ongoing_su
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "elevate" and status = "failure" and subject.process.name = "su"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_failure_su
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "elevate" and status = "ongoing" and subject.process.name = "sudo"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_ongoing_sudo
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "elevate" and status = "failure" and subject.process.name = "sudo"
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_escalate_failure_sudo
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and object = "account" and status = "success" and object.account.id != "all" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_one_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and object = "account" and status = "success" and object.account.id = "all" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_all_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "group_admins" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_group_admins_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "group_admins" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_group_admins_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "members" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_members_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "members" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_members_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "added_user" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_added_user_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "added_user" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_added_user_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "removed_user" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_removed_user_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "removed_user" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_removed_user_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and subject.process.name = "groupmod" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and subject.process.name = "groupmod" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "ongoing" and subject.process.name = "groupmod" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_ongoing_notnull
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and object = "account" and status = "success" and object.account.id != "all" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_one_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and object = "account" and status = "success" and object.account.id = "all" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_account_success_all_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "group_admins" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_group_admins_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "group_admins" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_group_admins_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "members" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_members_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "members" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_members_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "added_user" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_added_user_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "added_user" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_added_user_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and object.property = "removed_user" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_removed_user_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and object.property = "removed_user" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_removed_user_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "success" and subject.process.name = "groupmod" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "failure" and subject.process.name = "groupmod" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_failure_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_user_acct" and action = "modify" and status = "ongoing" and subject.process.name = "groupmod" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_user_acct_modify_ongoing_null
+ObjectId: PT-NF-6109

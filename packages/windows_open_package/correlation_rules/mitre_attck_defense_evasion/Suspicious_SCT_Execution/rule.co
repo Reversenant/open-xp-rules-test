@@ -1,0 +1,246 @@
+event Powershell_VBScript_SCT_Exec:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "windows"
+        and in_list(["4103", "4104"], msgid)
+        and action == "execute"
+        and regex(lower(object.process.cmdline), "\[\s*microsoft\.visualbasic\.interaction\s*\]::getobject\(.+\)\.exec", 0) != null
+    }
+
+event Powershell_Jscript_SCT_Exec:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "windows"
+        and in_list(["4103", "4104"], msgid)
+        and action == "execute"
+        and regex(lower(object.process.cmdline), "\[\s*microsoft\.jscript\.eval\s*\]::jscriptevaluate\(\s*'getobject\(.+\)\.exec", 0) != null
+    }
+
+event Regsvr32_SCT_exec:
+    key:
+        event_src.host
+    filter {
+        filter::ProcessStart_Windows_any()
+        and lower(object.process.name) == "regsvr32.exe"
+        and regex(lower(object.process.cmdline), "\/i:.+scrobj\.dll", 0) != null
+    }
+
+event Pubprn_SCT_exec:
+    key:
+        event_src.host
+    filter {
+        filter::ProcessStart_Windows_any()
+        and lower(object.process.name) == "wscript.exe"
+        and regex(lower(object.process.cmdline), "pubprn\.vbs.+script(?:let)?", 0) != null
+    }
+
+rule Suspicious_SCT_Execution: Powershell_VBScript_SCT_Exec or Powershell_Jscript_SCT_Exec or Regsvr32_SCT_exec or Pubprn_SCT_exec
+    on Powershell_VBScript_SCT_Exec {
+        $status = status
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        $subject.account.id = subject.account.id
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+
+        $object.account.id = object.account.id
+        $object.account.name = object.account.name
+        $object.account.domain = object.account.domain
+
+        $object.id = object.id
+        $object.value = object.value
+        $object.process.cmdline = object.process.cmdline
+        $object.process.id = object.process.id
+
+        $numfield1 = numfield1
+        $numfield2 = numfield2
+
+        $alert.context = regex(lower(object.process.cmdline), "(\[\s*microsoft\.visualbasic\.interaction\s*\]::getobject\(.+\))\.exec", 1)
+    }
+
+    on Powershell_Jscript_SCT_Exec {
+        $status = status
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        $subject.account.id = subject.account.id
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+
+        $object.account.id = object.account.id
+        $object.account.name = object.account.name
+        $object.account.domain = object.account.domain
+
+        $object.id = object.id
+        $object.value = object.value
+        $object.process.cmdline = object.process.cmdline
+        $object.process.id = object.process.id
+
+        $numfield1 = numfield1
+        $numfield2 = numfield2
+
+        $alert.context = regex(lower(object.process.cmdline), "(\[\s*microsoft\.jscript\.eval\s*\]::jscriptevaluate\(\s*'getobject\(.+\))\.exec", 1)
+    }
+
+    on Regsvr32_SCT_exec {
+        $status = status
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        $subject.account.id = subject.account.id
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.privileges = subject.account.privileges
+        $subject.account.session_id = subject.account.session_id
+
+        $subject.name = subject.name
+        $subject.domain = subject.domain
+        $subject.state = subject.state
+
+        $object.account.id = object.account.id
+        $object.account.name = object.account.name
+        $object.account.domain = object.account.domain
+        $object.account.privileges = object.account.privileges
+        $object.account.session_id = object.account.session_id
+
+        $object.hash = object.hash
+        $object.id = object.id
+        $object.path = object.path
+        $object.property = object.property
+        $object.value = object.value
+        $object.version = object.version
+        $object.type = object.type
+
+        $object.process.id = object.process.id
+        $object.process.name = object.process.name
+        $object.process.path = object.process.path
+        $object.process.fullpath = object.process.fullpath
+        $object.process.hash = object.process.hash
+        $object.process.hash.md5 = object.process.hash.md5
+        $object.process.hash.sha1 = object.process.hash.sha1
+        $object.process.hash.sha256 = object.process.hash.sha256
+        $object.process.version = object.process.version
+        $object.process.cmdline = object.process.cmdline
+        $object.process.guid = object.process.guid
+        $object.process.meta = object.process.meta
+        $object.process.original_name = object.process.original_name
+        $object.process.cwd = object.process.cwd
+        $object.process.chain = object.process.chain
+        
+        $object.process.parent.id = object.process.parent.id
+        $object.process.parent.name = object.process.parent.name
+        $object.process.parent.path = object.process.parent.path
+        $object.process.parent.fullpath = object.process.parent.fullpath
+        $object.process.parent.cmdline = object.process.parent.cmdline
+
+        $alert.context = object.process.cmdline
+    }
+
+    on Pubprn_SCT_exec {
+        $status = status
+
+        $event_src.ip = event_src.ip
+        $event_src.hostname = event_src.hostname
+        $event_src.host = event_src.host
+        $event_src.asset = event_src.asset
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.vendor = event_src.vendor
+        $event_src.category = event_src.category
+        $event_src.rule = event_src.rule
+
+        $subject.account.id = subject.account.id
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+        $subject.account.privileges = subject.account.privileges
+        $subject.account.session_id = subject.account.session_id
+
+        $subject.name = subject.name
+        $subject.domain = subject.domain
+        $subject.state = subject.state
+
+        $object.account.id = object.account.id
+        $object.account.name = object.account.name
+        $object.account.domain = object.account.domain
+        $object.account.privileges = object.account.privileges
+        $object.account.session_id = object.account.session_id
+
+        $object.hash = object.hash
+        $object.id = object.id
+        $object.path = object.path
+        $object.property = object.property
+        $object.value = object.value
+        $object.version = object.version
+        $object.type = object.type
+
+        $object.process.id = object.process.id
+        $object.process.name = object.process.name
+        $object.process.path = object.process.path
+        $object.process.fullpath = object.process.fullpath
+        $object.process.hash = object.process.hash
+        $object.process.hash.md5 = object.process.hash.md5
+        $object.process.hash.sha1 = object.process.hash.sha1
+        $object.process.hash.sha256 = object.process.hash.sha256
+        $object.process.version = object.process.version
+        $object.process.cmdline = object.process.cmdline
+        $object.process.guid = object.process.guid
+        $object.process.meta = object.process.meta
+        $object.process.original_name = object.process.original_name
+        $object.process.cwd = object.process.cwd
+        $object.process.chain = object.process.chain
+        
+        $object.process.parent.id = object.process.parent.id
+        $object.process.parent.name = object.process.parent.name
+        $object.process.parent.path = object.process.parent.path
+        $object.process.parent.fullpath = object.process.parent.fullpath
+        $object.process.parent.cmdline = object.process.parent.cmdline
+
+        $alert.context = "pubprn.vbs | " + regex(lower(object.process.cmdline), "pubprn\.vbs.+(script(?:let)?[^\s]+)", 1)
+    }
+
+emit {
+    $correlation_type = "incident"
+    $importance = "high"
+
+    $subject = "account"
+    $action = "execute"
+    $object = "command"
+
+    $category.generic = "Attacks & Recon"
+    $category.high = "Attack"
+    $category.low = "Potential Attack"
+
+    $incident.aggregation.key = join([$correlation_name, $object.process.cmdline], "|")
+    $incident.severity = $importance
+    $incident.category = "Undefined"
+    $incident.aggregation.timeout = 2h
+}

@@ -1,0 +1,4 @@
+Description: 'Процесс пытается создать поток в другом процессе'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_attempt_thread_creation'
+      EventDescription: 'Процесс {subject.process.name} пытается создать поток в процессе {object.name} на узле {event_src.host}'

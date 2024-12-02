@@ -1,0 +1,4 @@
+Description: 'A process has exited'
+EventDescriptions:
+    - LocalizationId: PT_Microsoft_Windows_eventlog_4689_A_process_has_exited
+      EventDescription: 'The user {subject.name} terminated the process "{object.name}" on host {event_src.host}'

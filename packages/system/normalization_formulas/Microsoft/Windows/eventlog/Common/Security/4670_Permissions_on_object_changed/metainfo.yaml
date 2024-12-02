@@ -1,0 +1,6 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed" and object.name != null
+      LocalizationId: PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed_object_name_not_null
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed" and object.name = null
+      LocalizationId: PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed_object_name_null
+ObjectId: PT-NF-1836

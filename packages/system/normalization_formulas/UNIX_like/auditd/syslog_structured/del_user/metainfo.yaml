@@ -1,0 +1,23 @@
+EventDescriptions:
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "remove" and object = "account" and status = "success" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_remove_account_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "remove" and object = "account" and status = "failure" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_remove_account_failure_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "remove" and object = "account" and status = "ongoing" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_remove_account_ongoing_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "modify" and object = "user_group" and status = "success" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_modify_group_success_null
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "modify" and object = "user_group" and status = "failure" and subject.account.name = null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_modify_group_failure_null
+
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "remove" and object = "account" and status = "success" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_remove_account_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "remove" and object = "account" and status = "failure" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_remove_account_failure_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "remove" and object = "account" and status = "ongoing" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_remove_account_ongoing_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "modify" and object = "user_group" and status = "success" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_modify_group_success_notnull
+    - Criteria: id = "PT_UNIX_like_auditd_syslog_structured_del_user" and action = "modify" and object = "user_group" and status = "failure" and subject.account.name != null
+      LocalizationId: PT_UNIX_like_auditd_syslog_structured_del_user_modify_group_failure_notnull
+ObjectId: PT-NF-5539

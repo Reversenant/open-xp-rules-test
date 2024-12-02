@@ -1,0 +1,176 @@
+EVENTLOG = 'EventID.text="33205"'
+
+COND = (
+        find_substr($Provider["Name"], "MSSQL$") != null
+        or $Provider["Name"] == "MSSQLSERVER"
+       )
+       and find_substr($Data[0], "action_id:EX ") != null
+       and (
+            find_substr($Data[0], "class_type:X") != null
+            or find_substr($Data[0], "class_type:P") != null
+           )
+
+$kv = replace($Data[0], " ", "\r\n")
+$kv = keyvalue($kv, "\n", ":")
+
+subformula "get_command_quoted_value"
+    TEXT = '{UNTIL("\'")} {datafield8=UNTIL("\'")} {", "?} {datafield9=NUMBER?} {REST}'
+endsubformula
+
+subformula "get_email_values"
+    TEXT = '{UNTIL("@recipients = \'")} {datafield6=UNTIL("\'")}
+    {UNTIL("@query = \'")} {datafield7=UNTIL("\'")} {REST}'
+endsubformula
+
+subformula "get_registry_path"
+    TEXT = '{UNTIL("N\'")} {$root=UNTIL("\'")} {UNTIL("N\'")} {$path=UNTIL("\'")}
+    {UNTIL("N\'")} {$end=UNTIL("\'")} {REST}'
+
+    object.path = $root + "\\" + $path + "\\" + $end
+endsubformula
+
+subject = "account"
+
+if $kv["class_type"] == "X" then
+    action = "execute"
+    object = "command"
+
+    if find_substr($kv["statement"], "xp_msver") != null then
+        object.type = "show database version"
+        importance = "low"
+
+    elif find_substr($kv["statement"], "xp_dirtree") != null then
+        object.type = "show file list"
+        submessage("TEXT", "get_command_quoted_value", $kv["statement"])
+        importance = "medium"
+
+    elif find_substr($kv["statement"], "xp_subdirs") != null then
+        object.type = "show directory list"
+        submessage("TEXT", "get_command_quoted_value", $kv["statement"])
+        importance = "medium"
+
+    elif find_substr($kv["statement"], "xp_cmdshell") != null then
+        object.type = "commandline payload"
+        submessage("TEXT", "get_command_quoted_value", $kv["statement"])
+        importance = "high"
+
+    elif find_substr($kv["statement"], "xp_instance_regwrite") != null then
+        object.type = "write registry value"
+        submessage("TEXT", "get_registry_path", $kv["statement"])
+        importance = "medium"
+
+    elif find_substr($kv["statement"], "xp_instance_regread") != null then
+        object.type = "read registry value"
+        submessage("TEXT", "get_registry_path", $kv["statement"])
+        importance = "low"
+
+    elif find_substr($kv["statement"], "xp_servicecontrol") != null then
+        object.type = "process control"
+        importance = "medium"
+
+    elif find_substr($kv["statement"], "sp_oamethod") != null then
+        object.type = "system command usage"
+        importance = "high"
+
+    elif (
+          find_substr($kv["statement"], "xp_availablemedia") != null
+          or find_substr($kv["statement"], "xp_fixeddrives") != null
+          ) then
+                object.type = "show available disks"
+                importance = "medium"
+
+    else
+        drop
+    endif
+
+elif $kv["class_type"] == "P" then
+     if find_substr($kv["statement"], "sp_configure") != null then
+        action = "modify"
+        object = "configuration"
+        submessage("TEXT", "get_command_quoted_value", $kv["statement"])
+        importance = "high"
+
+    elif find_substr($kv["statement"], "sp_send_dbmail") != null then
+        action = "execute"
+        object = "command"
+
+        object.type = "sent query text"
+        submessage("TEXT", "get_email_values", $kv["statement"])
+        importance = "medium"
+
+    elif find_substr($kv["statement"], "xp_logininfo") != null then
+        action = "execute"
+        object = "command"
+
+        object.type = "show Windows users"
+        importance = "low"
+
+    elif find_substr($kv["statement"], "sp_helpuser") != null then
+        action = "execute"
+        object = "command"
+
+        object.type = "show database users"
+        importance = "low"
+
+    else
+        drop
+    endif
+endif
+
+if $kv["succeeded"] == "true" then
+    status = "success"
+else
+    status = "failure"
+endif
+
+# разбираем домен и имя пользователя
+$csv = csv($kv["server_principal_name"], "\\", "'")
+if length($csv) == 2 then
+    subject.account.domain = lower($csv[0])
+    subject.account.name = lower($csv[1])
+else
+    subject.account.name = lower($csv[0])
+endif
+
+subject.account.id = $kv["server_principal_sid"]
+
+object.property = "command name"
+
+object.value = $kv["object_name"]
+object.query = $kv["statement"]  # текст выполняемого запроса без переносов строки
+
+datafield2 = $kv["server_instance_name"]  # имя экземпляра
+datafield3 = $kv["database_name"]  # имя используемой БД
+datafield4 = $kv["action_id"]  # идентификатор действия
+datafield5 = $kv["class_type"]  # Тип класса сущности, для которой был проведен аудит
+# datafield6 - список получателей
+# datafield7 - отправляемый запрос
+# datafield8 - имя параметра, к которому обращается команда
+# datafield9 - значение параметра, к которому обращается команда
+
+time = $kv["event_time"]
+msgid = $EventID["text"]
+
+event_src.vendor = "microsoft"
+event_src.title = "sql_server"
+
+$first_dot = find_substr($Computer, ".")
+if $first_dot != null then
+    event_src.fqdn = lower($Computer)
+    event_src.hostname = lower(substr($Computer, 0, $first_dot))
+else
+    event_src.hostname = lower($Computer)
+endif
+event_src.subsys = $Channel
+event_src.category = "Database server"
+
+id = "PT_Microsoft_SQL_Server_eventlog_33205_audit_exec_used"
+
+# -- DEPRECATED --
+# lines from here will be deleted in future releases
+
+subject.name = subject.account.name
+subject.domain = subject.account.domain
+subject.id = subject.account.id
+
+datafield1 = object.query  # текст выполняемого запроса без переносов строки

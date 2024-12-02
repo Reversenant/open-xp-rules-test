@@ -1,0 +1,4 @@
+Description: 'Процесс послал сигнал другому процессу'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_signal_sent_to_process'
+      EventDescription: 'Процесс послал сигнал процессу {object.process.name} на узле {event_src.host}'

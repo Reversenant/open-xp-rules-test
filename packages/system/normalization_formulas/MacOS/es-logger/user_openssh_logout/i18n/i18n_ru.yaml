@@ -1,0 +1,4 @@
+Description: 'Пользователь завершил сеанс OpenSSH'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_openssh_logout'
+      EventDescription: 'Пользователь {subject.account.name} с IP-адреса {src.ip} завершил сеанс OpenSSH на узле {event_src.host}'

@@ -1,0 +1,6 @@
+Description: 'File truncation status'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_truncation_true'
+      EventDescription: 'Process {subject.process.name} truncated file "{object.name}" on host {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_truncation_false'
+      EventDescription: 'Process {subject.process.name} did not truncate file "{object.name}" on host {event_src.host}'

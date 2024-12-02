@@ -1,0 +1,20 @@
+{
+    "eventid": "771989814",
+    "timestampfractional": "493",
+    "timestamp": "1652772487",
+    "node": "10.10.52.40",
+    "items": {
+        "SYSCALL": [
+            "arch=c000003e syscall=263 success=no exit=-2 a0=ffffffffffffff9c a1=c000fd7d40 a2=0 a3=7fde7b9ec248 items=1 ppid=13288 pid=13383 auid=1016 uid=1016 gid=1016 euid=1016 suid=1016 fsuid=1016 egid=1016 sgid=1016 fsgid=1016 tty=pts15 ses=9956 comm=\"vault\" exe=\"/usr/local/bin/vault\" subj==unconfined key=\"pt_siem_home_modify\" ARCH=x86_64 SYSCALL=unlinkat AUID=\"dperrote\" UID=\"dperrote\" GID=\"dperrote\" EUID=\"dperrote\" SUID=\"dperrote\" FSUID=\"dperrote\" EGID=\"dperrote\" SGID=\"dperrote\" FSGID=\"dperrote\""
+        ],
+        "PATH": [
+            "item=0 name=\"/home/dperrote/\" inode=83834 dev=fe:00 mode=040755 ouid=1016 ogid=1016 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"dperrote\" OGID=\"dperrote\""
+        ],
+        "CWD": [
+            "cwd=\"/home/dperrote\""
+        ],
+        "PROCTITLE": [
+            "proctitle=7661756C74006C6F67696E00726F6C653D75736572"
+        ]
+    }
+}

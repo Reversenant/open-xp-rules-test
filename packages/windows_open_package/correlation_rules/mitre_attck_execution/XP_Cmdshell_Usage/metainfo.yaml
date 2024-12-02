@@ -1,0 +1,23 @@
+ObjectId: SEC-CR-205452331
+ContentAutoName: XP_Cmdshell_Usage
+ExpertContext:
+    Created: 05.06.2023
+    Updated: 05.06.2023
+    KnowledgeHolders:
+        - Kirill Kiryanov
+    Usecases:
+        - Атакующие могут испольнять команды с помощью модуля "xp_cmdshell"
+    References:
+        - https://learn.microsoft.com/ru-ru/sql/relational-databases/system-stored-procedures/xp-cmdshell-transact-sql?view=sql-server-ver16
+    DataSources:
+        - Provider: Microsoft-Windows-MSSQL
+          EventID:
+              - 33205
+ContentRelations:
+    Implements:
+        ATTACK:
+            execution:
+                - T0807
+EventDescriptions:
+    - Criteria: correlation_name = "XP_Cmdshell_Usage"
+      LocalizationId: corrname_XP_Cmdshell_Usage

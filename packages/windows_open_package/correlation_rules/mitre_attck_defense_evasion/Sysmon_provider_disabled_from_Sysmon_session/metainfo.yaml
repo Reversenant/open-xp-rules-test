@@ -1,0 +1,25 @@
+ContentAutoName: Sysmon_provider_disabled_from_Sysmon_session
+ExpertContext:
+    Created: 03.06.2024
+    Updated: 05.06.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующий может отключать провайдеров от соответствующих ETW сессий чтобы ослепить Sysmon
+    Falsepositives: []
+    References:
+        - https://attack.mitre.org/techniques/T1562/
+        - https://xakep.ru/2024/03/28/sysmon-full-blinding/
+        - https://xakep.ru/2024/05/15/advanced-sysmon-attacks/
+    Improvements: []
+ObjectId: SEC-CR-131827851
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1562
+EventDescriptions:
+    - Criteria: correlation_name = "Sysmon_provider_disabled_from_Sysmon_session" and object = "reg_object"
+      LocalizationId: corrname_Sysmon_provider_disabled_from_Sysmon_session
+    - Criteria: correlation_name = "Sysmon_provider_disabled_from_Sysmon_session" and object = "logging"
+      LocalizationId: corrname_Sysmon_provider_disabled_from_Sysmon_session_2

@@ -1,0 +1,3 @@
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_4690_The_handle_to_an_object_was_duplicated'
+      EventDescription: 'Пользователь {subject.domain}\{subject.name} продублировал дескриптор объекта на узле {event_src.host}'

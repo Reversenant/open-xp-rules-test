@@ -1,0 +1,6 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_renamed" and action = "rename"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_renamed_rename
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_renamed" and action = "copy"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_renamed_copy
+ObjectId: PT-NF-9321

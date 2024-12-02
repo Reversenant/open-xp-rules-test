@@ -1,0 +1,14 @@
+{
+  "node": "192.168.220.166",
+  "timestamp": "1676439079",
+  "timestampfractional": "294",
+  "eventid": "36479",
+  "items": {
+    "PROCTITLE": [
+      "proctitle=7375646F006563686F"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=117 success=yes exit=0 a0=ffffffff a1=0 a2=ffffffff a3=7f2dede84ee0 items=0 ppid=2892378 pid=3030810 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=pts12 ses=1 comm=\"sudo\" exe=\"/usr/bin/sudo\" subj=unconfined key=\"pt_siem_api_setuid\" ARCH=x86_64 SYSCALL=setresuid AUID=\"user\" UID=\"user\" GID=\"user\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"user\" SGID=\"user\" FSGID=\"user\""
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "eventid": "124412",
+    "timestampfractional": "515",
+    "timestamp": "1652769895",
+    "node": "127.0.1.1",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=726D002D66002F6574632F7263302E642F4B32307361736C6175746864002F6574632F7263362E642F4B32307361736C6175746864"
+        ],
+        "PATH": [
+            "item=0 name=\"/etc/rc6.d/\" inode=131148 dev=fe:00 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=263 success=no exit=-2 a0=ffffff9c a1=5582e6a0f490 a2=0 a3=100 items=1 ppid=50270 pid=50284 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3545 comm=\"rm\" exe=\"/usr/bin/rm\" subj==unconfined key=\"pt_siem_etc_modify\" ARCH=x86_64 SYSCALL=unlinkat AUID=\"cm\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ],
+        "CWD": [
+            "cwd=\"/\""
+        ]
+    }
+}

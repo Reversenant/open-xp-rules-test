@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_kernel_extension_unloading"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_kernel_extension_unloading
+ObjectId: PT-NF-9320

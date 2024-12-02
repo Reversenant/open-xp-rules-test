@@ -1,0 +1,25 @@
+ContentAutoName: Silent_Process_Exit_Monitor_and_Image_Hijack
+ExpertContext:
+    Created: 07.07.2024
+    Updated: 08.07.2024
+    KnowledgeHolders:
+        - Kirill Shamko
+    Usecases:
+        - Атакующие могут закрепиться на системе модифицировав ключи реестра, связанные с мониторингом завершения процесса приложения (Image File Execution Options (IFEO)
+    Falsepositives: []
+    References:
+        - https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/registry-entries-for-silent-process-exit
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 13
+ObjectId: SEC-CR-122159548
+ContentRelations:
+    Implements:
+        ATTACK:
+            persistence:
+                - T1546.012
+EventDescriptions:
+    - Criteria: correlation_name = "Silent_Process_Exit_Monitor_and_Image_Hijack"
+      LocalizationId: corrname_Silent_Process_Exit_Monitor_and_Image_Hijack

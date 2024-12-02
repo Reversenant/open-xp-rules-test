@@ -1,0 +1,4 @@
+Description: 'A process is modifying its group ID'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_process_group_id'
+      EventDescription: 'Process {subject.process.name} is modifying its group ID on host {event_src.host}. The new value is "{object.group}".'

@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Positive_Technologies_XDR_es_logger_file_path_lookup"
+      LocalizationId: PT_Positive_Technologies_XDR_es_logger_file_path_lookup
+ObjectId: PT-NF-9291

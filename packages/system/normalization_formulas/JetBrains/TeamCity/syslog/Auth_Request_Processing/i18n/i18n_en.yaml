@@ -1,0 +1,4 @@
+Description: 'Request processing'
+EventDescriptions:
+    - LocalizationId: 'PT_JetBrains_TeamCity_syslog_Auth_Request_Processing'
+      EventDescription: 'Processing request {object.query} from host {src.host}:{src.port} on host {event_src.host}'

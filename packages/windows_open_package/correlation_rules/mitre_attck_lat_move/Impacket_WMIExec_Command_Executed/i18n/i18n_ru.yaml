@@ -1,0 +1,4 @@
+Description: 'Правило выявляет удаленное выполнение кода на узле с помощью wmiexec'
+EventDescriptions:
+    - LocalizationId: 'corrname_Impacket_WMIExec_Command_Executed'
+      EventDescription: 'Пользователь {subject.account.name} выполнил команду {datafield1} на узле {event_src.host}, используя модуль wmiexec из проекта Impacket'

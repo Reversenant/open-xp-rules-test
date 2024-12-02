@@ -1,0 +1,4 @@
+Description: 'Процесс меняет свой эффективный идентификатор группы'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_process_effective_group_id_setting'
+      EventDescription: 'Процесс {subject.process.name} меняет свой эффективный идентификатор группы на узле {event_src.host}. Новое значение: "{object.group}"'

@@ -1,0 +1,4 @@
+Description: 'Процесс получил атрибуты файла'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_file_attributes_retrieval'
+      EventDescription: 'Процесс {subject.process.name} получил атрибуты файла "{object.name}" на узле {event_src.host}'

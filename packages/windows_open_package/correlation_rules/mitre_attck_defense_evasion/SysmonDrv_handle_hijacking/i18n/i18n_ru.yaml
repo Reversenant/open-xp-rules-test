@@ -1,0 +1,4 @@
+Description: 'Обнаружена проблема в работе Sysmon'
+EventDescriptions:
+    - LocalizationId: 'corrname_SysmonDrv_handle_hijacking'
+      EventDescription: 'Обнаружена проблема во взаимодействии службы Sysmon64 и драйвера SysmonDrv на узле {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'ETW session was stopped'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_11'
+      EventDescription: 'ETW session "{object.name}" was stopped'

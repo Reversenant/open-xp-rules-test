@@ -1,0 +1,24 @@
+ObjectId: SEC-CR-193927723
+ContentAutoName: Detect_Pass_the_Hash_via_Mimikatz_local
+ExpertContext:
+    Created: 08.06.2023
+    Updated: 23.06.2023
+    Usecases:
+        - Атакующие могут осуществлять локальную атаку Pass-The-Hash для имперсонации пользователя.
+    References:
+        - https://security.stackexchange.com/questions/251690/how-does-local-pass-the-hash-mimikatzs-sekurlsapth-work
+        - https://cybersafe.co.il/wp-content/uploads/2021/11/LOGON-types-compressed_compressed.pdf
+        - https://github.com/gentilkiwi/mimikatz/blob/c78b1cf37c517ae9d0e872447bb103da9fa6034a/mimikatz/modules/sekurlsa/kuhl_m_sekurlsa.c#L980C15-L980C15
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4624
+              - 4672
+ContentRelations:
+    Implements:
+        ATTACK:
+            privilege-escalation:
+                - T1134
+EventDescriptions:
+    - Criteria: correlation_name = "Detect_Pass_the_Hash_via_Mimikatz_local"
+      LocalizationId: corrname_Detect_Pass_the_Hash_via_Mimikatz_local

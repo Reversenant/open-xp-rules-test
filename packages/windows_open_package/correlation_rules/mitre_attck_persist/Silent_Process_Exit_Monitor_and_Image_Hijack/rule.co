@@ -1,0 +1,102 @@
+event Windows_Registry_globalflag_Value_Set:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "sysmon"
+        and msgid == "13"
+        and status == "success"
+
+        and regex(lower(object.fullpath), "\\\\image\sfile\sexecution\soptions\\\\.*\\\\globalflag", 0) != null
+        and regex(lower(object.new_value), "\(0x00000200\)", 0) != null
+        # and filter::CheckWL_Registry_Actions("Silent_Process_Exit_Monitor_and_Image_Hijack", lower(join([object.fullpath, object.new_value], "|")))
+    }
+
+ event Windows_Registry_reportingmode_Value_Set:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "sysmon"
+        and msgid == "13"
+        and status == "success"
+
+        and regex(lower(object.fullpath), "\\\\silentprocessexit\\\\.*\\\\reportingmode", 0) != null
+        and regex(lower(object.new_value), "\(0x00000001\)", 0) != null
+        # and filter::CheckWL_Registry_Actions("Silent_Process_Exit_Monitor_and_Image_Hijack", lower(join([object.fullpath, object.new_value], "|")))
+    }
+
+ event Windows_Registry_monitorprocess_Value_Set:
+    key:
+        event_src.host
+    filter {
+        filter::NotFromCorrelator()
+        and event_src.title == "sysmon"
+        and msgid == "13"
+        and status == "success"
+
+        and regex(lower(object.fullpath), "\\\\silentprocessexit\\\\.*\\\\monitorprocess", 0) != null
+        # and filter::CheckWL_Registry_Actions("Silent_Process_Exit_Monitor_and_Image_Hijack", lower(join([object.fullpath, object.new_value], "|")))
+    }
+
+rule Silent_Process_Exit_Monitor_and_Image_Hijack: Windows_Registry_globalflag_Value_Set and Windows_Registry_reportingmode_Value_Set and Windows_Registry_monitorprocess_Value_Set
+
+    on Windows_Registry_monitorprocess_Value_Set {
+        $action = action
+        $status = status
+        $subject.account.id = subject.account.id
+        $subject.account.name = subject.account.name
+        $subject.account.domain = subject.account.domain
+
+        $subject.process.id = subject.process.id
+        $subject.process.name = subject.process.name
+        $subject.process.path = subject.process.path
+        $subject.process.fullpath = subject.process.fullpath
+        $subject.process.guid = subject.process.guid
+
+        $object.name = object.name
+        $object.path = object.path
+        $object.fullpath = object.fullpath
+        $object.new_value = object.new_value
+        $object.value = object.value
+
+        $event_src.host = event_src.host
+        $event_src.fqdn = event_src.fqdn
+        $event_src.hostname = event_src.hostname
+        $event_src.ip = event_src.ip
+        $event_src.asset = event_src.asset
+        $event_src.vendor = event_src.vendor
+        $event_src.title = event_src.title
+        $event_src.subsys = event_src.subsys
+        $event_src.category = event_src.category
+
+        $datafield1 = regex(lower(object.fullpath), "\\\\silentprocessexit\\\\(.*)\\\\monitorprocess", 1)
+
+        $alert.key = lower(join([object.fullpath, object.new_value], "|"))
+        $alert.context = regex(lower(object.fullpath), "\\\\silentprocessexit\\\\(.*)\\\\monitorprocess", 1)
+        # $alert.regex_match = 
+    }
+
+
+emit {
+    $correlation_type = "event"
+
+    $object = "reg_object"
+
+    if $subject.account.name != null then
+        $subject = "account"
+    else
+        $subject = "process"
+    endif
+    
+    $importance = "medium"
+       
+    $category.generic = "Attack"
+    $category.high = "Persistence"
+    $category.low = "Event Triggered Execution: Image File Execution Options Injection"
+
+    $incident.aggregation.key = join([$correlation_name, $event_src.host, $subject.process.name], "|")
+    $incident.severity = $importance
+    $incident.category = "Undefined"
+    $incident.aggregation.timeout = 2h
+}

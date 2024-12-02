@@ -1,0 +1,4 @@
+Description: 'Правило выявляет попытку запуска процесса в обход UAC с использованием уязвимости процесса dism.exe к DLL Hijacking с помощью инструмента UACME'
+EventDescriptions:
+    - LocalizationId: 'corrname_UACME_23_DismCore_Hijacking'
+      EventDescription: 'Пользователь {subject.account.name} запустил процесс {object.process.name} на узле {event_src.host} от родительского процесса {object.process.parent.name} в обход UAC с помощью инструмента UACME'

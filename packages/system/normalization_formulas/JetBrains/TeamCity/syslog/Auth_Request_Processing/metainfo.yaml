@@ -1,0 +1,21 @@
+EventDescriptions:
+    - Criteria: id = "PT_JetBrains_TeamCity_syslog_Auth_Request_Processing"
+      LocalizationId: PT_JetBrains_TeamCity_syslog_Auth_Request_Processing
+ObjectId: PT-NF-9242
+ContentAutoName: PT_JetBrains_TeamCity_syslog_Auth_Request_Processing
+
+
+########
+# raws: all
+# Context_Exception: No exceptions
+# Level1: System Management
+# Context: Исполнение, либо обработка внешнего запроса
+# Level2_Group: Сетевые сущности L5-L7
+# Level2: Request
+# Level3: Manipulation
+# Level3_Action: execute
+# Action_Status: success
+# Interaction_Schema: Implied Subject
+# Subject: no_subject
+# Network_Layout: src; dst == event_src
+########

@@ -1,0 +1,17 @@
+{
+    "eventid": "14051591",
+    "timestampfractional": "074",
+    "timestamp": "1653401444",
+    "node": "10.0.176.183",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=6370002D61002F746D702F6170742D6B65792D677067686F6D652E666C79753542385A59712F70756272696E672E677067002F746D702F6170742D6B65792D677067686F6D652E666C79753542385A59712F70756272696E672E6F7269672E677067"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=190 success=yes exit=0 a0=5 a1=7f7f7e4a40b3 a2=56464aef0320 a3=1c items=1 ppid=528015 pid=528048 auid=4294967295 uid=100 gid=65534 euid=100 suid=100 fsuid=100 egid=65534 sgid=65534 fsgid=65534 tty=(none) ses=4294967295 comm=\"cp\" exe=\"/bin/cp\" key=\"pt_siem_api_xattr\" ARCH=x86_64 SYSCALL=fsetxattr AUID=\"unset\" UID=\"systemd-timesync\" GID=\"nogroup\" EUID=\"systemd-timesync\" SUID=\"systemd-timesync\" FSUID=\"systemd-timesync\" EGID=\"nogroup\" SGID=\"nogroup\" FSGID=\"nogroup\""
+        ],
+        "PATH": [
+            "item=0 name=(null) inode=128675020 dev=00:32 mode=0100600 ouid=100 ogid=65534 rdev=00:00 nametype=NORMAL OUID=\"systemd-timesync\" OGID=\"nogroup\""
+        ]
+    }
+}

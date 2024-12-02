@@ -1,0 +1,4 @@
+Description: 'Attackers can change the Powershell execution policy to run loaded scripts'
+EventDescriptions:
+    - LocalizationId: 'corrname_Change_powershell_policy_registry'
+      EventDescription: 'Powershell execution policy changed to {object.new_value}'

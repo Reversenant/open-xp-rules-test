@@ -1,0 +1,4 @@
+Description: 'Процесс отключил подключенную файловую систему'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_filesystem_unmount'
+      EventDescription: 'Процесс {subject.process.name} отключил подключенную файловую систему "{object.name}" на узле {event_src.host}'

@@ -1,0 +1,4 @@
+Description: 'Provider was registered with ETW'
+EventDescriptions:
+    - LocalizationId: 'LOC_Microsoft_Title_eventlog_event_name_8'
+      EventDescription: 'Provider "{object.name}" was registered with Event Tracing for Windows'

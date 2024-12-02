@@ -1,0 +1,4 @@
+Description: 'Обнаружена атака Pass-the-Hash на локальной машине'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_Pass_the_Hash_via_Mimikatz_local'
+      EventDescription: 'На узле {event_src.host} пользователь {subject.account.name} выполнил локальную атаку Pass-the-Hash, чтобы повысить привилегии. Применен NTLM-хеш пользователя {object.account.name}.'

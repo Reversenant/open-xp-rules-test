@@ -1,0 +1,33 @@
+ContentAutoName: Create_fake_SysmonDrv_symlink
+ExpertContext:
+    Created: 27.05.2024
+    Updated: 05.06.2024
+    KnowledgeHolders:
+        - driverenok
+    Usecases:
+        - Атакующий может реализовать технику FakeDosDevice чтобы нарушить взаимодействие между службой Sysmon64 и драйвером SysmonDrv
+    Falsepositives: []
+    References:
+        - https://attack.mitre.org/techniques/T1562/
+        - https://xakep.ru/2024/02/09/sysmon-blinding/
+        - https://xakep.ru/2024/05/15/advanced-sysmon-attacks/
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4697
+              - 4670
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 255
+ObjectId: SEC-CR-381307303
+ContentRelations:
+    Implements:
+        ATTACK:
+            defense-evasion:
+                - T1562
+EventDescriptions:
+    - Criteria: correlation_name = "Create_fake_SysmonDrv_symlink" and subject = "process"
+      LocalizationId: corrname_Create_fake_SysmonDrv_symlink
+    - Criteria: correlation_name = "Create_fake_SysmonDrv_symlink" and action = "alert"
+      LocalizationId: corrname_Create_fake_SysmonDrv_symlink_2

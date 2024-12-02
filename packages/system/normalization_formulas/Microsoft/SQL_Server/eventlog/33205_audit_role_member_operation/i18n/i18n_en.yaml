@@ -1,0 +1,10 @@
+Description: 'Assignment of a role to a user'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_grant'
+      EventDescription: 'The user {subject.name} assigned the "{object.name}" role to the user {object.value} in the instance "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_revoke'
+      EventDescription: 'The user {subject.name} revoked the "{object.name}" role from the user {object.value} in the instance "{datafield2'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_grant_fail'
+      EventDescription: 'The user {subject.name} failed to assign the "{object.name}" role to the user {object.value} in the instance "{datafield2}"'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_audit_role_member_operation_revoke_fail'
+      EventDescription: 'The user {subject.name} failed to revoke the "{object.name}" role from the user {object.value} in the instance "{datafield2}"'

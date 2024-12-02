@@ -1,0 +1,6 @@
+Description: 'Local login attempt detected as chrome.exe process'
+EventDescriptions:
+    - LocalizationId: 'corrname_Chrome_PasswordStore_Access'
+      EventDescription: 'User {subject.account.domain}\{subject.account.name} has successfully attempted to access the password store of the Chrome browser on host {event_src.host}'
+    - LocalizationId: 'corrname_Chrome_PasswordStore_Access_2'
+      EventDescription: 'User {subject.account.domain}\{subject.account.name} made an unsuccessfull attempt to access the password store of the Chrome browser on host {event_src.host}'

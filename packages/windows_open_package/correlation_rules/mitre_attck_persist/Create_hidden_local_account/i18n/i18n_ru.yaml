@@ -1,0 +1,4 @@
+Description: 'Атакующие могут создавать учетные записи оканчивающиеся на "$" для скрытия их и обхода правил обнаружения, исключающих такие аккаунты'
+EventDescriptions:
+    - LocalizationId: 'corrname_Create_hidden_local_account'
+      EventDescription: 'На {event_src.host} создан аккаунт оканчивающийся на "$"  {object.path}'

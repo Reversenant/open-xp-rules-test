@@ -1,0 +1,4 @@
+Description: 'Пользователь вышел из системы'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_user_logout'
+      EventDescription: 'Пользователь {subject.account.name} вышел из системы на узле {event_src.host}'

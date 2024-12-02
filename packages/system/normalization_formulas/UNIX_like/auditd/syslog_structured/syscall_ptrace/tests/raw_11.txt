@@ -1,0 +1,14 @@
+{
+    "eventid": "13129159",
+    "timestampfractional": "023",
+    "timestamp": "1652953958",
+    "node": "10.0.177.123",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=2E2F63726564732D7574696C002D4F2F686F6D652F7372632F6275696C642F62696E2F73757269636174612F616E616C797A6572732F687474702F63726564732F63726564732E6462002F686F6D652F7372632F64697374722F687474702D63726564732F687474702D63726564732E79616D6C"
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=101 success=yes exit=0 a0=11 a1=229b a2=0 a3=0 items=0 ppid=15286 pid=15287 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=4294967295 comm=\"creds-util\" exe=\"/home/src/build/bin/suricata/analyzers/http/creds/creds-util\" key=\"pt_siem_api_ptrace\" ARCH=x86_64 SYSCALL=ptrace AUID=\"unset\" UID=\"root\" GID=\"root\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"root\" SGID=\"root\" FSGID=\"root\""
+        ]
+    }
+}

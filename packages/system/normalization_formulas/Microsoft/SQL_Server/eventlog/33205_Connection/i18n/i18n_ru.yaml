@@ -1,0 +1,6 @@
+Description: 'Пользователь подключился к СУБД на сервере'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_connection_success'
+      EventDescription: 'Пользователь {subject.name} подключился к СУБД на узле {event_src.host}'
+    - LocalizationId: 'PT_Microsoft_SQL_Server_eventlog_33205_connection_failure'
+      EventDescription: 'Пользователь {subject.name} не смог подключиться к СУБД на узле {event_src.host}'

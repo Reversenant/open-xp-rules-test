@@ -1,0 +1,50 @@
+{
+    "Event": {
+        "EventData": {
+            "Data": [
+                {
+                    "Name": "SessionGuid",
+                    "text": "{ddd7f2a4-084b-11ef-912e-52540074b02b}"
+                },
+                {
+                    "Name": "LoggerMode",
+                    "text": "41943296"
+                },
+                {
+                    "Name": "SessionName",
+                    "text": "SYSMON TRACE"
+                },
+                {
+                    "Name": "LogFileName"
+                }
+            ]
+        },
+        "System": {
+            "Channel": "Microsoft-Windows-Kernel-EventTracing/Analytic",
+            "Computer": "win10-work.stand2008.local",
+            "Correlation": "",
+            "EventID": "12",
+            "EventRecordID": "2946353",
+            "Execution": {
+                "ProcessID": "11800",
+                "ThreadID": "11804"
+            },
+            "Keywords": "0x4000000000000010",
+            "Level": "5",
+            "Opcode": "20",
+            "Provider": {
+                "Guid": "{b675ec37-bdb6-4648-bc92-f3fdc74d3ca2}",
+                "Name": "Microsoft-Windows-Kernel-EventTracing"
+            },
+            "Security": {
+                "UserID": "S-1-5-21-3800063338-4262557262-2801230003-500"
+            },
+            "Task": "2",
+            "TimeCreated": {
+                "SystemTime": "2024-05-02T13:24:55.3283347Z"
+            },
+            "Version": "0"
+        },
+        "xmlns": "http://schemas.microsoft.com/win/2004/08/events/event"
+    }
+}

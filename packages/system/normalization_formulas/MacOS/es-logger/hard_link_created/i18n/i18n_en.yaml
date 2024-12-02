@@ -1,0 +1,4 @@
+Description: 'A hard link for a file was created'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_hard_link_created'
+      EventDescription: 'Hard link "{object.value}" for file "{object.name}" was created on host {event_src.host}'

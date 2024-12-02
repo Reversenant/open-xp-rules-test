@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "mach_time": 21998697483045,
+  "event_type": 20,
+  "thread": {
+    "thread_id": 158638
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "mmap": {
+      "flags": 262146,
+      "file_pos": 0,
+      "source": {
+        "path": "/private/var/root/Library/Caches/com.apple.rtcreporting/storebags/nimbus.plist",
+        "stat": {
+          "st_blocks": 56,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 0,
+          "st_gid": 0,
+          "st_ino": 1912521,
+          "st_birthtimespec": "2023-07-24T06:30:39.808101371Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-07-24T06:30:39.808390539Z",
+          "st_ctimespec": "2023-07-24T06:30:39.808390539Z",
+          "st_size": 25287,
+          "st_gen": 0,
+          "st_mode": 33188,
+          "st_atimespec": "2023-07-24T11:44:36.775226048Z"
+        },
+        "path_truncated": false
+      },
+      "max_protection": 3,
+      "protection": 1
+    }
+  },
+  "time": "2023-07-24T11:44:36.775328079Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.rtcreportingd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/libexec/rtcreportingd",
+      "stat": {
+        "st_blocks": 1528,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312442958,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 1827584,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-20T14:04:23.166850Z",
+    "is_platform_binary": true,
+    "group_id": 283,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 610,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 283
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 610,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 283
+    },
+    "session_id": 283,
+    "original_ppid": 1,
+    "cdhash": "8C4E85CC169AEA235F3AA07AAC6C19F7A0CE3CFC",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

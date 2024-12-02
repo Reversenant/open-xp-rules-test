@@ -1,0 +1,23 @@
+{
+  "eventid": "26159",
+  "items": {
+    "CWD": [
+      "cwd=\"/root\""
+    ],
+    "EOE": [
+      ""
+    ],
+    "PATH": [
+      "item=0 name=\"/root/.bash_history\" inode=1315210 dev=08:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL"
+    ],
+    "PROCTITLE": [
+      "proctitle=\"-bash\""
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=92 success=yes exit=0 a0=b59f88 a1=0 a2=0 a3=612 items=1 ppid=2095 pid=2096 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=180 comm=\"bash\" exe=\"/bin/bash\" key=\"pt_siem_root_modify\""
+    ]
+  },
+  "node": "debian-test",
+  "timestamp": "1556553716",
+  "timestampfractional": "308"
+}

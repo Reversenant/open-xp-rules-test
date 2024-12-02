@@ -1,0 +1,4 @@
+Description: 'Обнаружено закреплепие через Application Shim'
+EventDescriptions:
+    - LocalizationId: 'corrname_Persistence_Shim_AppFix'
+      EventDescription: 'Обнаружено закреплепие через Application Shim на узле {event_src.host}'

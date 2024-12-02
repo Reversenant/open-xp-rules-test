@@ -1,0 +1,29 @@
+ContentAutoName: Memdump_comsvcs_minidump
+ExpertContext:
+    Created: 07.07.2024
+    Updated: 07.07.2024
+    KnowledgeHolders:
+        - d3f0x0 (Vadim Varganov)
+    Usecases:
+        - Get dump process LSASS
+    Falsepositives:
+        - Administrative action
+    References:
+        - https://gist.github.com/JohnLaTwC/3e7dd4cd8520467df179e93fb44a434e
+    Improvements: []
+    DataSources:
+        - Provider: Microsoft-Windows-Security-Auditing
+          EventID:
+              - 4663
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 10
+ObjectId: SEC-CR-115900694
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003.001
+EventDescriptions:
+    - Criteria: correlation_name = "Memdump_comsvcs_minidump"
+      LocalizationId: corrname_Memdump_comsvcs_minidump

@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "mach_time": 22115672108249,
+  "event_type": 28,
+  "thread": {
+    "thread_id": 159544
+  },
+  "version": 7,
+  "seq_num": 0,
+  "event": {
+    "setflags": {
+      "flags": 0,
+      "target": {
+        "path": "/Library/Keychains/System.keychain.sb-c2d4f01a-8XsiIn",
+        "stat": {
+          "st_blocks": 112,
+          "st_blksize": 4096,
+          "st_rdev": 0,
+          "st_dev": 16777220,
+          "st_uid": 0,
+          "st_gid": 0,
+          "st_ino": 1940661,
+          "st_birthtimespec": "2023-07-24T11:46:02.688185000Z",
+          "st_flags": 0,
+          "st_nlink": 1,
+          "st_mtimespec": "2023-07-24T11:46:02.688185000Z",
+          "st_ctimespec": "2023-07-24T11:46:33.750119739Z",
+          "st_size": 53932,
+          "st_gen": 0,
+          "st_mode": 33188,
+          "st_atimespec": "2023-07-24T11:46:02.688185000Z"
+        },
+        "path_truncated": false
+      }
+    }
+  },
+  "time": "2023-07-24T11:46:33.750190968Z",
+  "action": {
+    "result": {
+      "result": {
+        "auth": 0
+      },
+      "result_type": 0
+    }
+  },
+  "process": {
+    "signing_id": "com.apple.bluetoothd",
+    "parent_audit_token": {
+      "asid": 100000,
+      "pidversion": 1,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 1
+    },
+    "codesigning_flags": 570522385,
+    "executable": {
+      "path": "/usr/sbin/bluetoothd",
+      "stat": {
+        "st_blocks": 16144,
+        "st_blksize": 4096,
+        "st_rdev": 0,
+        "st_dev": 16777220,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_ino": 1152921500312443214,
+        "st_birthtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_flags": 524320,
+        "st_nlink": 1,
+        "st_mtimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_ctimespec": "2023-06-15T10:08:29.000000000Z",
+        "st_size": 17986240,
+        "st_gen": 0,
+        "st_mode": 33261,
+        "st_atimespec": "2023-06-15T10:08:29.000000000Z"
+      },
+      "path_truncated": false
+    },
+    "ppid": 1,
+    "tty": null,
+    "start_time": "2023-07-24T11:46:33.708764Z",
+    "is_platform_binary": true,
+    "group_id": 7531,
+    "audit_token": {
+      "asid": 100000,
+      "pidversion": 16827,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 7531
+    },
+    "is_es_client": false,
+    "responsible_audit_token": {
+      "asid": 100000,
+      "pidversion": 16827,
+      "ruid": 0,
+      "euid": 0,
+      "rgid": 0,
+      "auid": 4294967295,
+      "egid": 0,
+      "pid": 7531
+    },
+    "session_id": 7531,
+    "original_ppid": 1,
+    "cdhash": "2EB0BA18CE42611086419421543A9461B3024143",
+    "team_id": null
+  },
+  "action_type": 1,
+  "global_seq_num": 0
+}

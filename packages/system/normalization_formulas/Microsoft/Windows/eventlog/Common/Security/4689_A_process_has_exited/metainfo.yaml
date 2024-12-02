@@ -1,0 +1,4 @@
+EventDescriptions:
+    - Criteria: id = "PT_Microsoft_Windows_eventlog_4689_A_process_has_exited"
+      LocalizationId: PT_Microsoft_Windows_eventlog_4689_A_process_has_exited
+ObjectId: PT-NF-1842

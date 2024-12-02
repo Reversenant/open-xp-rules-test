@@ -1,0 +1,4 @@
+Description: 'A process is modifying its real and effective group IDs'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_setting_effective_and_real_process_group_id'
+      EventDescription: 'Process {subject.process.name} is modifying its real and effective group IDs on host {event_src.host}'

@@ -1,0 +1,66 @@
+JSON = ''
+
+COND = $event["proc_suspend_resume"] != null
+
+action = switch $event["proc_suspend_resume"]["type"]
+    case 0 "stop"
+    case 1 "start"
+    case 3 "terminate"
+endswitch
+
+object = "process"
+status = "success"
+
+object.account.id = $process["audit_token"]["ruid"]
+object.account.session_id = $process["session_id"]
+
+object.process.id = $process["audit_token"]["pid"]
+object.process.parent.id = $process["ppid"] 
+object.process.fullpath = $process["executable"]["path"]
+$temp_name = csv(object.process.fullpath, "/", "'")
+object.process.name = $temp_name[length($temp_name) - 1]
+object.process.path = strip(object.process.fullpath, "", object.process.name)
+object.hash = "UNKNOWN:" + $process["cdhash"]
+
+object.name = $event["proc_suspend_resume"]["target"]["signing_id"]
+
+datafield1 = $process["audit_token"]["euid"]  # effective user ID
+datafield2 = $process["audit_token"]["rgid"]  # real group ID
+datafield3 = $process["audit_token"]["auid"]  # audit user ID
+datafield4 = $process["audit_token"]["egid"]  # effective group ID
+datafield5 = $process["is_platform_binary"]          # является ли исполняемый файл предустановленным Apple в ОС
+datafield6 = $process["is_es_client"]                # имеет ли данный процесс разрешение на работу с EndpointSecurity API
+datafield7 = $process["signing_id"]                  # идентификатор подписи кода исполняемого файла
+datafield8 = $process["codesigning_flags"]           # флаги подписи кода исполняемого файла
+datafield9 = $process["tty"]                         # tty ассоциированный с процессом
+datafield10 = "UNKNOWN:" + $event["proc_suspend_resume"]["target"]["cdhash"]  # target hash
+datafield11 = $process["team_id"]                    # идентификатор разработчика исполняемого файла
+datafield12 = $event["proc_suspend_resume"]["target"]["codesigning_flags"]    # флаги подписи кода целевого файла
+datafield13 = $event["proc_suspend_resume"]["target"]["is_platform_binary"]   # является ли целевой файл предустановленным Apple в ОС
+datafield14 = $event["proc_suspend_resume"]["target"]["is_es_client"]         # имеет ли целевой процесс разрешение на работу с EndpointSecurity API
+datafield15 = $event["proc_suspend_resume"]["target"]["group_id"]             # target group id
+datafield16 = $event["proc_suspend_resume"]["target"]["session_id"]           # target session id
+datafield17 = $event["proc_suspend_resume"]["target"]["audit_token"]["asid"]  # target asid
+datafield18 = $event["proc_suspend_resume"]["target"]["audit_token"]["ruid"]  # target ruid
+datafield19 = $event["proc_suspend_resume"]["target"]["audit_token"]["euid"]  # target euid
+datafield20 = $event["proc_suspend_resume"]["target"]["audit_token"]["rgid"]  # target rgid
+
+numfield1 = $event["proc_suspend_resume"]["target"]["audit_token"]["auid"]    # target auid
+numfield2 = $event["proc_suspend_resume"]["target"]["audit_token"]["egid"]    # target egid
+numfield3 = $event["proc_suspend_resume"]["target"]["audit_token"]["pid"]     # target pid
+numfield4 = $event["proc_suspend_resume"]["target"]["original_ppid"]          # target original_ppid
+numfield5 = $event["proc_suspend_resume"]["target"]["ppid"]                   # target ppid
+
+category.high = "Availability Management"
+category.generic = "Process"
+category.low = "Application"
+
+msgid = $event_type
+time = $time
+importance = "info"
+
+event_src.category = "Host security"
+event_src.vendor = "positive_technologies"
+event_src.title = "edr"
+
+id = "PT_Positive_Technologies_XDR_es_logger_process_state_changed"

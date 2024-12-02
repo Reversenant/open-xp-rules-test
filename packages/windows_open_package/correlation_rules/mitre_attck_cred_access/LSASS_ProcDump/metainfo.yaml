@@ -1,0 +1,26 @@
+ObjectId: SEC-CR-194813648
+ContentAutoName: LSASS_ProcDump
+ExpertContext:
+    Created: 03.06.2023
+    Updated: 03.06.2023
+    KnowledgeHolders:
+        - "@artemcun"
+    Usecases:
+        - Позволяет отлавливать создание дампа памяти процесса lsass, который затем можно проанализировать локально и вытащить оттуда креды для доступов.
+    References:
+        - https://learn.microsoft.com/ru-ru/sysinternals/downloads/procdump
+    Improvements:
+        - "Что процесс, с помощью которого делают дамп, что название дампа можно спокойно переименовать. Есть два пути улучшения детекта: 1) Просто отслеживать доступ до процесса lsass.exe, с исключающими фильтрами для легитимных процессов. 2) Доступ до процесса lsass с последующим созданием .dmp-файла на одном хосте одним процессом."
+    DataSources:
+        - Provider: Microsoft-Windows-Sysmon
+          EventID:
+              - 10
+              - 11
+EventDescriptions:
+    - Criteria: correlation_name = "LSASS_ProcDump"
+      LocalizationId: corrname_LSASS_ProcDump
+ContentRelations:
+    Implements:
+        ATTACK:
+            credential-access:
+                - T1003.001

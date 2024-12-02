@@ -1,0 +1,71 @@
+EVENTLOG = 'EventID="4670"'
+COND = lower($Channel)=="security" and $Provider["Name"]=="Microsoft-Windows-Security-Auditing"
+
+subject = "account"
+action = "modify"
+if $Data["ObjectType"] == "File" then
+    object = "file_object"
+    category.generic = "File System Object"
+elif $Data["ObjectType"] == "Key" then
+    object = "reg_object"
+    category.generic = "Registry Object"
+else
+    object = "resource"
+    category.generic = "Unknown Entity"
+endif
+status = "success"
+
+subject.account.id = $Data["SubjectUserSid"]
+subject.account.name = lower($Data["SubjectUserName"])
+subject.account.domain = lower($Data["SubjectDomainName"])
+subject.account.session_id = maybe_number16($Data["SubjectLogonId"])
+
+subject.process.fullpath = $Data["ProcessName"]
+$csv_path = csv(subject.process.fullpath, '\\', '')
+subject.process.name = $csv_path[length($csv_path) - 1]
+subject.process.path = strip(subject.process.fullpath, '', subject.process.name)
+subject.process.id = maybe_number16($Data["ProcessId"])
+
+if $Data["ObjectName"] != "-" then
+    object.fullpath = lower($Data["ObjectName"])
+    $tmp_list = csv(object.fullpath,'\\','"')
+    object.name = $tmp_list[length($tmp_list) - 1]
+    object.path = strip(object.fullpath, "", object.name)
+endif
+object.type = lower($Data["ObjectType"])
+object.property = "security descriptor"
+object.value = lower($Data["OldSd"])
+object.new_value = lower($Data["NewSd"])
+
+time = $TimeCreated["SystemTime"]
+msgid = $EventID
+importance = "medium"
+
+category.high = "Users And Rights Management"
+category.low = "Manipulation"
+
+event_src.vendor = "microsoft"
+event_src.title = "windows"
+event_src.subsys = $Channel
+if find_substr($Computer, '.') != null then
+    event_src.fqdn = lower($Computer)
+    event_src.hostname = lower(substr($Computer, 0, find_substr($Computer, '.')))
+else
+    event_src.hostname = lower($Computer)
+endif
+event_src.category = "Operating system"
+event_src.id = $Provider["Name"]
+
+id = "PT_Microsoft_Windows_eventlog_4670_Permissions_on_object_changed"
+
+# -- DEPRECATED --
+# lines from here will be deleted in future releases
+
+subject.id = subject.account.id
+subject.name = subject.account.name
+subject.domain = subject.account.domain
+
+datafield1 = subject.account.session_id
+datafield2 = subject.process.id
+datafield3 = subject.process.fullpath
+datafield4 = object.value

@@ -1,0 +1,20 @@
+{
+    "eventid": "60507505",
+    "timestampfractional": "805",
+    "timestamp": "1629784849",
+    "node": "10.10.20.20",
+    "items": {
+        "PROCTITLE": [
+            "proctitle=737368643A20777777205B707269765D"
+        ],
+        "CAPSET": [
+            "pid=125946 cap_pi=0000003fffffffff cap_pp=0000003fffffffff cap_pe=0000003fffffffff"
+        ],
+        "EOE": [
+            ""
+        ],
+        "SYSCALL": [
+            "arch=c000003e syscall=126 success=yes exit=0 a0=559b5ee742d4 a1=559b5ee742dc a2=7f55a0e76b58 a3=0 items=0 ppid=125937 pid=125946 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=80529 comm=\"sshd\" exe=\"/usr/sbin/sshd\" key=\"pt_siem_api_caps\" ARCH=x86_64 SYSCALL=capset AUID=\"www\" UID=\"root\" GID=\"www\" EUID=\"root\" SUID=\"root\" FSUID=\"root\" EGID=\"www\" SGID=\"www\" FSGID=\"www\""
+        ]
+    }
+}

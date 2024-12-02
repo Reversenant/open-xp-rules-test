@@ -1,0 +1,4 @@
+Description: 'The handle to an object was made to duplicate'
+EventDescriptions:
+    - LocalizationId: 'PT_Microsoft_Windows_eventlog_4690_The_handle_to_an_object_was_duplicated'
+      EventDescription: 'The user {subject.domain}{subject.name} duplicated an object descriptor on host {event_src.host}'

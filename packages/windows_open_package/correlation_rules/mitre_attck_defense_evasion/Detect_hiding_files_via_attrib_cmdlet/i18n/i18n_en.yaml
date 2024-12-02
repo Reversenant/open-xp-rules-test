@@ -1,0 +1,4 @@
+Description: 'Attackers can hide files and directories to bypass detection mechanisms or hide traces of their activity from the user.'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_hiding_files_via_attrib_cmdlet'
+      EventDescription: 'An attempt to hide a folder or file from the user was detected at host {event_src.host}. Command executed: {object.process.cmdline}'

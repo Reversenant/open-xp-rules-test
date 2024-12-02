@@ -1,0 +1,4 @@
+Description: 'Обнаружено непрямое выполнение команд при помощи стандартной утилиты Windows pcalua.exe (Помощник по совместимости программ).'
+EventDescriptions:
+    - LocalizationId: 'corrname_Detect_lolbin_pcalua_exec'
+      EventDescription: 'На узле {event_src.host} обнаружено непрямое выполнение команд с использованием стандартной утилиты Windows pcalua.exe. Выполненная команда: {object.process.cmdline}'

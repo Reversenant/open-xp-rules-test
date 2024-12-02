@@ -1,0 +1,6 @@
+Description: 'Пользователь пытался подключиться к сеансу демонстрации экрана'
+EventDescriptions:
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_screensharing_attach_success'
+      EventDescription: 'Пользователь {subject.account.name} подключился к сеансу демонстрации экрана с IP-адреса {src.ip} на узле {event_src.host}'
+    - LocalizationId: 'PT_Positive_Technologies_XDR_es_logger_screensharing_attach_failure'
+      EventDescription: 'Пользователь {subject.account.name} не смог подключиться к сеансу демонстрации экрана с IP-адреса {src.ip} на узле {event_src.host}'

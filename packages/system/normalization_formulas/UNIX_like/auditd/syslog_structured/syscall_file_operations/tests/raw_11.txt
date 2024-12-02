@@ -1,0 +1,20 @@
+{
+  "node": "hostname.local",
+  "timestamp": "1591796585",
+  "timestampfractional": "717",
+  "eventid": "778582",
+  "items": {
+    "CWD": [
+      "cwd=\"/home/user/file\""
+    ],
+    "PATH": [
+      "item=0 name=\"/var/log/sa/sa10\" inode=50805147 dev=fd:00 mode=0100644 ouid=0 ogid=0 rdev=00:00 objtype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0 OUID=\"root\" OGID=\"root\""
+    ],
+    "PROCTITLE": [
+      "proctitle=736172002D42"
+    ],
+    "SYSCALL": [
+      "arch=c000003e syscall=2 success=yes exit=3 a0=7ffc51121f10 a1=0 a2=615280 a3=7ffc51121820 items=1 ppid=5961 pid=5970 auid=1000 uid=1001 gid=1001 euid=1001 suid=1001 fsuid=1001 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=130 comm=\"sar\" exe=\"/usr/bin/sar\" key=\"pt_siem_var_log_user_read\" ARCH=x86_64 SYSCALL=open AUID=\"codansible\" UID=\"oracle\" GID=\"oinstall\" EUID=\"oracle\" SUID=\"oracle\" FSUID=\"oracle\" EGID=\"oinstall\" SGID=\"oinstall\" FSGID=\"oinstall\""
+    ]
+  }
+}
