@@ -1,4 +1,4 @@
-name: Integration tests
+name: Tests
 
 on:
   workflow_dispatch:
@@ -33,4 +33,4 @@ jobs:
 
     - name: Run tests
       run: |
-        /home/runner/xp-kbt/extra-tools/siemj/siemj -c .github/workflows/siemj.conf main
+        /home/runner/xp-kbt/extra-tools/siemj/siemj -c .github/config/siemj.conf main
