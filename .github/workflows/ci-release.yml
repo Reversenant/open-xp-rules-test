@@ -35,7 +35,7 @@ jobs:
 
     - name: Package Full - Current Version
       run: |
-        mkdir -p /home/runner/temp/eXtractionAndProcessing/output/packages
+        mkdir -p ${{ env.TEMP_DIR }}
         dotnet /home/runner/xp-kbt/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o /home/runner/temp/eXtractionAndProcessing/output/packages/pack.full.current.kb
 
     - name: Upload Artifacts
