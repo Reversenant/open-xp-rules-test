@@ -5,7 +5,6 @@ on:
 
 env:
   KBT_VERSION: 27.0.78
-  KBT_URL: "https://github.com/vxcontrol/xp-kbt/releases/download/${KBT_VERSION}/kbt.${KBT_VERSION}-linux.tar.gz"
 
 jobs:
   integration_tests:
@@ -22,6 +21,7 @@ jobs:
 
     - name: Download xp-kbt archive
       run: |
+        KBT_URL="https://github.com/vxcontrol/xp-kbt/releases/download/${KBT_VERSION}/kbt.${KBT_VERSION}-linux.tar.gz"
         wget $KBT_URL -O /home/runner/xp-kbt.tar.gz
 
     - name: Extract xp-kbt archive
