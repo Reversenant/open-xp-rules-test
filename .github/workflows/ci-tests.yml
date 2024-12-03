@@ -5,6 +5,10 @@ on:
 
 env:
   KBT_VERSION: 27.0.78
+  RUNNER_HOME: /home/runner
+  KBT_ARCHIVE: /home/runner/xp-kbt.tar.gz
+  KBT_DIR: /home/runner/xp-kbt
+  TEMP_DIR: /home/runner/temp/eXtractionAndProcessing/output/packages
 
 jobs:
   integration_tests:
@@ -14,22 +18,22 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Update package list
+    - name: Install dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y wget tar
 
     - name: Download xp-kbt archive
       run: |
-        KBT_URL="https://github.com/vxcontrol/xp-kbt/releases/download/${KBT_VERSION}/kbt.${KBT_VERSION}-linux.tar.gz"
-        wget $KBT_URL -O /home/runner/xp-kbt.tar.gz
+        KBT_URL="https://github.com/vxcontrol/xp-kbt/releases/download/${{ env.KBT_VERSION }}/kbt.${{ env.KBT_VERSION }}-linux.tar.gz"
+        wget $KBT_URL -O ${{ env.KBT_ARCHIVE }}
 
     - name: Extract xp-kbt archive
       run: |
-        mkdir -p /home/runner/xp-kbt
-        tar -xzvf /home/runner/xp-kbt.tar.gz -C /home/runner/xp-kbt
+        mkdir -p ${{ env.KBT_DIR }}
+        tar -xzvf ${{ env.KBT_ARCHIVE }} -C ${{ env.KBT_DIR }}
 
     - name: Run tests
       run: |
-        mkdir -p /home/runner/temp/eXtractionAndProcessing/output/packages
-        /home/runner/xp-kbt/extra-tools/siemj/siemj -c .github/config/siemj.conf main
+        mkdir -p ${{ env.TEMP_DIR }}
+        ${{ env.KBT_DIR }}/extra-tools/siemj/siemj -c .github/config/siemj.conf main
