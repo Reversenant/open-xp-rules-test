@@ -1,19 +1,10 @@
 #!/bin/bash
 
-found_count=0
-deleted_count=0
+repo_dir="$1"
 
-find . -type f -name "metainfo.yaml" | while read -r file; do
-  if grep -q "ObjectId: PT" "$file"; then
-    found_count=$((found_count + 1))
-    
-    dir=$(dirname "$file")
-    echo "Удаление папки: $dir"
-    rm -rf "$dir"
-    
-    deleted_count=$((deleted_count + 1))
+find "$repo_dir" -type f -name "metainfo.yaml" | while read -r file; do
+  if grep -q 'ObjectId: PT' "$file"; then 
+    echo "Deleting folder: $(dirname "$file")"
+    rm -rf "$(dirname "$file")"
   fi
 done
-
-echo "Найдено папок с metainfo.yaml, содержащих 'ObjectId: PT': $found_count"
-echo "Удалено папок: $deleted_count"
