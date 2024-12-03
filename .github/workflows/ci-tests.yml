@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 env:
-  KBT_VERSION: '27.0.78'
-  KBT_URL: 'https://github.com/vxcontrol/xp-kbt/releases/download/${KBT_VERSION}/kbt.${KBT_VERSION}-linux.tar.gz'
+  KBT_VERSION: 27.0.78
+  KBT_URL: https://github.com/vxcontrol/xp-kbt/releases/download/${KBT_VERSION}/kbt.${KBT_VERSION}-linux.tar.gz
 
 jobs:
   integration_tests:
