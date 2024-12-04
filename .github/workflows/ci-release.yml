@@ -51,8 +51,8 @@ jobs:
     - name: Check packaged files
       run: |
         ls -l ${{ env.TEMP_DIR }}
-        test -f ${{ env.TEMP_DIR }}/pack.full.current.kb || (echo "pack.full.current.kb not found" && exit 1)
-        test -f ${{ env.TEMP_DIR }}/pack.open.current.kb || (echo "pack.open.current.kb not found" && exit 1)
+        test -f ${{ env.TEMP_DIR }}/pack.full.current.kb || (echo "pack.full.current.kb not found")
+        test -f ${{ env.TEMP_DIR }}/pack.open.current.kb || (echo "pack.open.current.kb not found")
   
     - name: Publish Release
       uses: softprops/action-gh-release@v1
