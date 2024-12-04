@@ -1,7 +1,10 @@
 name: Tests
 
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - 'common/**'
+      - 'packages/**'
 
 env:
   KBT_VERSION: 27.0.78
