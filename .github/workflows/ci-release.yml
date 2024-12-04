@@ -50,8 +50,8 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         files: |
-          /home/runner/temp/eXtractionAndProcessing/output/packages/pack.full.current.kb
-          /home/runner/temp/eXtractionAndProcessing/output/packages/pack.open.current.kb
+          ${{ env.TEMP_DIR }}/pack.full.current.kb
+          ${{ env.TEMP_DIR }}/pack.open.current.kb
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
