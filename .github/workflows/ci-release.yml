@@ -44,23 +44,14 @@ jobs:
       run: |
         chmod +x ./.github/scripts/filter_open_content.sh
         ./.github/scripts/filter_open_content.sh $GITHUB_WORKSPACE
-        rm -r ${{ env.TEMP_DIR }}
-        mkdir -p ${{ env.TEMP_DIR }}
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/pack.open.current.kb
-
-    - name: Check packaged files
-      run: |
-        ls -l ${{ env.TEMP_DIR }}
-        test -f ${{ env.TEMP_DIR }}/pack.full.current.kb || (echo "pack.full.current.kb not found")
-        test -f ${{ env.TEMP_DIR }}/pack.open.current.kb || (echo "pack.open.current.kb not found")
   
     - name: Publish Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: |
-          ${{ env.TEMP_DIR }}/pack.open.current.kb
-        draft: false
-        tag_name: ${{ github.ref_name }}
+          /home/runner/temp/eXtractionAndProcessing/output/packages/pack.full.current.kb
+          /home/runner/temp/eXtractionAndProcessing/output/packages/pack.open.current.kb
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
