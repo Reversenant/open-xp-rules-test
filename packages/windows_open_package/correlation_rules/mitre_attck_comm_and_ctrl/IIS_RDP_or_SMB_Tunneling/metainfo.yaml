@@ -28,3 +28,4 @@ EventDescriptions:
       LocalizationId: corrname_IIS_RDP_or_SMB_Tunneling
     - Criteria: correlation_name = "IIS_RDP_or_SMB_Tunneling" and dst.port = 445
       LocalizationId: corrname_IIS_RDP_or_SMB_Tunneling_2
+# Test
