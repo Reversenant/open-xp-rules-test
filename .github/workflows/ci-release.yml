@@ -1,7 +1,9 @@
 name: Release Current Version
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - v*
 
 env:
   KBT_VERSION: 27.0.78
@@ -52,5 +54,7 @@ jobs:
         files: |
           ${{ env.TEMP_DIR }}/pack.full.current.kb
           ${{ env.TEMP_DIR }}/pack.open.current.kb
+        draft: false
+        tag_name: ${{ github.ref }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
