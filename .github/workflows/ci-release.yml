@@ -56,6 +56,7 @@ jobs:
         sudo chmod -R 777 /home/runner/temp/eXtractionAndProcessing/output/packages
         sudo chmod -R 777 /home/runner/xp-kbt/knowledgebase/contracts/taxonomy/
         sudo cp -r ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy $GITHUB_WORKSPACE/
+        ls -al $GITHUB_WORKSPACE/
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/$FULL_PACKAGE_NAME
         echo "FULL_PACKAGE_NAME=$FULL_PACKAGE_NAME" >> $GITHUB_ENV
 
