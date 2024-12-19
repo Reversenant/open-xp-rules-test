@@ -52,7 +52,7 @@ jobs:
     - name: Package Full
       run: |
         mkdir -p ${{ env.TEMP_DIR }}
-        mkdir -p ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy && touch ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/taxonomy.json
+        mkdir -p $GITHUB_WORKSPACE/contracts/taxonomy && touch $GITHUB_WORKSPACE/contracts/taxonomy/taxonomy.json
         FULL_PACKAGE_NAME="pack.full.${{ env.KBT_VERSION }}-${{ env.PACKAGE_VERSION }}.kb"
         cp ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/taxonomy.json $GITHUB_WORKSPACE/
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/$FULL_PACKAGE_NAME
@@ -62,7 +62,7 @@ jobs:
       run: |
         chmod +x ./.github/scripts/filter_open_content.sh
         ./.github/scripts/filter_open_content.sh $GITHUB_WORKSPACE
-        mkdir -p ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy && touch ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/taxonomy.json
+        mkdir -p $GITHUB_WORKSPACE/contracts/taxonomy && touch $GITHUB_WORKSPACE/contracts/taxonomy/taxonomy.json
         OPEN_PACKAGE_NAME="pack.open.${{ env.KBT_VERSION }}-${{ env.PACKAGE_VERSION }}.kb"
         cp ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/taxonomy.json $GITHUB_WORKSPACE/
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/$OPEN_PACKAGE_NAME
