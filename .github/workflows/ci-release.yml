@@ -52,7 +52,7 @@ jobs:
     - name: Package Full
       run: |
         mkdir -p ${{ env.TEMP_DIR }}
-        cp -r ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/ $GITHUB_WORKSPACE/
+        chmod +x cp -r ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/ $GITHUB_WORKSPACE/
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/$FULL_PACKAGE_NAME
         echo "FULL_PACKAGE_NAME=$FULL_PACKAGE_NAME" >> $GITHUB_ENV
 
@@ -61,7 +61,7 @@ jobs:
         chmod +x ./.github/scripts/filter_open_content.sh
         ./.github/scripts/filter_open_content.sh $GITHUB_WORKSPACE
         OPEN_PACKAGE_NAME="pack.open.${{ env.KBT_VERSION }}-${{ env.PACKAGE_VERSION }}.kb"
-        cp -r ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/ $GITHUB_WORKSPACE/
+        chmod +x cp -r ${{ env.KBT_DIR }}/knowledgebase/contracts/taxonomy/ $GITHUB_WORKSPACE/
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/$OPEN_PACKAGE_NAME
         echo "OPEN_PACKAGE_NAME=$OPEN_PACKAGE_NAME" >> $GITHUB_ENV
   
