@@ -54,7 +54,6 @@ jobs:
         mkdir -p ${{ env.TEMP_DIR }}
         chmod +x ./.github/scripts/filter_open_content.sh
         ./.github/scripts/filter_open_content.sh $GITHUB_WORKSPACE
-        rm C:\Users\Alex\Documents\GitHub\open-xp-rules-test\packages\system\_meta\metainfo.yaml
         OPEN_PACKAGE_NAME="pack.open.${{ env.KBT_VERSION }}-${{ env.PACKAGE_VERSION }}.kb"
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/$OPEN_PACKAGE_NAME
         echo "OPEN_PACKAGE_NAME=$OPEN_PACKAGE_NAME" >> $GITHUB_ENV
