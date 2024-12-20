@@ -14,5 +14,20 @@
       }
     ],
     "Revision": 1
-  }
+  },
+  {
+    "Id":"95a1cca9-40b5-4dae-98a2-26aa36948c3c",
+    "SystemName":"PT",
+    "Nickname":"PT",
+    "DisplayName":[
+      {
+        "Locale":"ru",
+        "Value":"Positive Technologies"
+      },
+      {
+        "Locale":"en",
+        "Value":"Positive Technologies"
+      }
+    ],
+    "Revision":1}
 ]
