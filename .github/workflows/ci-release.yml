@@ -11,7 +11,7 @@ env:
   KBT_ARCHIVE: /home/runner/xp-kbt.tar.gz
   KBT_DIR: /home/runner/xp-kbt
   TEMP_DIR: /home/runner/temp/eXtractionAndProcessing/output/packages
-  TAX_DIR: /home/runner/xp-kbt/knowledgebase/contracts/taxonomy
+  TAX_PATH: /home/runner/xp-kbt/knowledgebase/contracts/taxonomy/taxonomy.json
 
 jobs:
   release_pipeline:
@@ -53,7 +53,8 @@ jobs:
     - name: Package Full
       run: |
         mkdir -p ${{ env.TEMP_DIR }}
-        mkdir -p ${{ env.TAX_DIR }}
+        mkdir -p /home/runner/xp-kbt/knowledgebase/contracts/taxonomy
+        touch ${{ env.TAX_PATH }}
         FULL_PACKAGE_NAME="pack.full.${{ env.KBT_VERSION }}-${{ env.PACKAGE_VERSION }}.kb"
         ls -al $GITHUB_WORKSPACE/
         dotnet ${{ env.KBT_DIR }}/extra-tools/kbpack/kbpack.dll pack -s $GITHUB_WORKSPACE -o ${{ env.TEMP_DIR }}/$FULL_PACKAGE_NAME
