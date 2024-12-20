@@ -1,0 +1,6085 @@
+{
+    "_build_info": {
+        "version": "27.0.223-release-27.0"
+    },
+    "action": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "access": {},
+            "alert": {},
+            "allow": {},
+            "apply": {},
+            "assign": {},
+            "backup": {},
+            "bind": {},
+            "call": {},
+            "check": {},
+            "clean": {},
+            "close": {},
+            "configure": {},
+            "connect": {},
+            "copy": {},
+            "create": {},
+            "decrypt": {},
+            "deelevate": {},
+            "deescalate": {},
+            "deliver": {},
+            "deny": {},
+            "detect": {},
+            "disable": {},
+            "disconnect": {},
+            "down": {},
+            "download": {},
+            "elevate": {},
+            "enable": {},
+            "encrypt": {},
+            "escalate": {},
+            "exclude": {},
+            "execute": {},
+            "export": {},
+            "extract": {},
+            "grant": {},
+            "import": {},
+            "include": {},
+            "info": {},
+            "initiate": {},
+            "inject": {},
+            "install": {},
+            "leak": {},
+            "lock": {},
+            "login": {},
+            "logout": {},
+            "modify": {},
+            "move": {},
+            "open": {},
+            "print": {},
+            "protect": {},
+            "quarantine": {},
+            "read": {},
+            "receive": {},
+            "reject": {},
+            "remove": {},
+            "rename": {},
+            "request": {},
+            "reset": {},
+            "restart": {},
+            "restore": {},
+            "revoke": {},
+            "rollback": {},
+            "scan": {},
+            "search": {},
+            "send": {},
+            "start": {},
+            "state": {},
+            "stop": {},
+            "sync": {},
+            "terminate": {},
+            "truncate": {},
+            "unassign": {},
+            "unbind": {},
+            "uninstall": {},
+            "unlock": {},
+            "up": {},
+            "update": {},
+            "upgrade": {},
+            "upload": {},
+            "validate": {},
+            "view": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "agent_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "aggregation_name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "alert.context": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "alert.ioc_description": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "alert.ioc_importance": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "high": {},
+            "low": {},
+            "medium": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "alert.ioc_provider": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "alert.ioc_type": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "binary": {},
+            "cmdline": {},
+            "domain": {},
+            "email": {},
+            "hash": {},
+            "host": {},
+            "ip_address": {},
+            "mac_address": {},
+            "meta": {},
+            "other": {},
+            "path": {},
+            "registry": {},
+            "url": {},
+            "username": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "alert.ioc_value": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "alert.key": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "alert.regex_match": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "asset_ids": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUIDList"
+    },
+    "assets": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "assigned_dst_host": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "assigned_dst_ip": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "assigned_dst_port": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "assigned_src_host": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "assigned_src_ip": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "assigned_src_port": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "attacking_assets": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "bad.risk_score": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "bad.triggered_models": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "body": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "full_text"
+        },
+        "type": "String"
+    },
+    "category.generic": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "category.high": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "category.low": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "chain_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "correlation_name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "correlation_type": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "draft": {},
+            "event": {},
+            "incident": {},
+            "subrule": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "count": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "count.bytes": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "count.bytes_in": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "count.bytes_out": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "count.packets": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "count.packets_in": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "count.packets_out": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "count.subevents": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "datafield1": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield10": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield11": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield12": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield13": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield14": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield15": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield16": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield17": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield18": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield19": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield2": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield20": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield3": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield4": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield5": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield6": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield7": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield8": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "datafield9": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "detect": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "direction": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.asset": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "dst.fqdn": {
+        "asset_resolution": {
+            "key": "fqdn",
+            "role": "object"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.geo.asn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "dst.geo.city": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.geo.country": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.geo.org": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.host": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.hostname": {
+        "asset_resolution": {
+            "key": "hostname",
+            "role": "object"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.ip": {
+        "asset_resolution": {
+            "key": "ipv4",
+            "role": "object"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "dst.mac": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "MACAddress"
+    },
+    "dst.mac.vendor": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "dst.port": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "duration": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "event_src.asset": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "event_src.category": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "AAA": {},
+            "Anti-virus": {},
+            "Application security": {},
+            "Application server": {},
+            "Backup server": {},
+            "CI/CA": {},
+            "Certification authority": {},
+            "DHCP server": {},
+            "DLP": {},
+            "DNS server": {},
+            "DPI": {},
+            "Database server": {},
+            "Directory service": {},
+            "File service": {},
+            "Firewall": {},
+            "Honeypot": {},
+            "Host security": {},
+            "IDS/IPS": {},
+            "Load balancer": {},
+            "Mail server": {},
+            "Mobile": {},
+            "Network device": {},
+            "Network monitoring system": {},
+            "Network security": {},
+            "Network traffic analysis": {},
+            "Operating system": {},
+            "Other": {},
+            "PAM": {},
+            "PKI": {},
+            "Physical security": {},
+            "Proxy server": {},
+            "SCADA": {},
+            "SIEM": {},
+            "Server management": {},
+            "Software supply chain": {},
+            "Storage device": {},
+            "Telecom": {},
+            "Terminal services": {},
+            "VPN": {},
+            "Virtualization": {},
+            "Voice over IP": {},
+            "Vulnerability scanner": {},
+            "Web application": {},
+            "Web security": {},
+            "Web server": {},
+            "Wireless": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "event_src.fqdn": {
+        "asset_resolution": {
+            "key": "fqdn",
+            "role": "eventsource"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_src.host": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_src.hostname": {
+        "asset_resolution": {
+            "key": "hostname",
+            "role": "eventsource"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_src.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "event_src.ip": {
+        "asset_resolution": {
+            "key": "ipv4",
+            "role": "eventsource"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "event_src.mac": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "MACAddress"
+    },
+    "event_src.mac.vendor": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_src.rule": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_src.subsys": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_src.title": {
+        "asset_resolution": {
+            "key": "entity",
+            "role": "eventsource"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_src.vendor": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "event_type": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_dst.fqdn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_dst.geo.asn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "external_dst.geo.city": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_dst.geo.country": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_dst.geo.org": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_dst.host": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_dst.hostname": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_dst.ip": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "external_dst.mac": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "MACAddress"
+    },
+    "external_dst.mac.vendor": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_link": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "external_src.fqdn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_src.geo.asn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "external_src.geo.city": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_src.geo.country": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_src.geo.org": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_src.host": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_src.hostname": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "external_src.ip": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "external_src.mac": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "MACAddress"
+    },
+    "external_src.mac.vendor": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "generator": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "generator.type": {
+        "auto": true,
+        "class": "tag",
+        "enum": {
+            "bad": {},
+            "correlationengine": {},
+            "iocengine": {},
+            "logcollector": {},
+            "nadsensor": {},
+            "srcmonitoring": {},
+            "systemlogging": {},
+            "xdr": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "generator.version": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "historical": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": true,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Bool"
+    },
+    "id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "importance": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "high": {},
+            "info": {},
+            "low": {},
+            "medium": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "incident.aggregation.closed_behavior": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "append": {},
+            "new": {},
+            "skip": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "incident.aggregation.key": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "incident.aggregation.time_window": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "infinite": {},
+            "max_aggregation_time": {},
+            "no_alerts_time": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "incident.aggregation.timeout": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "incident.assigned_to_user_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "incident.attacking_addresses": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "incident.attacking_assets": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "incident.category": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "BackupMalfunction": {},
+            "BotNetCC": {},
+            "BotNetNode": {},
+            "BruteForce": {},
+            "CriticalVulnerabilityDetection": {},
+            "DOSAttack": {},
+            "DataLeakage": {},
+            "DoSDDoS": {},
+            "ForbiddenServiceUsage": {},
+            "HackToolsDetection": {},
+            "HostOrSoftCompromising": {},
+            "MaliciousResources": {},
+            "NetworkScan": {},
+            "PatchPolicyViolation": {},
+            "PermissionViolation": {},
+            "Phishing": {},
+            "ProtectionBypassing": {},
+            "ProtectionMalfunction": {},
+            "SecurityBackdoorDetection": {},
+            "SecurityPerimeterBreach": {},
+            "ServiceMalfunction": {},
+            "SoftwareInstallationPolicyViolation": {},
+            "SoftwareMalfunction": {},
+            "SoftwareSuspiciousActivity": {},
+            "Spam": {},
+            "TrojanHorseDetection": {},
+            "UnauthorizedAccess": {},
+            "UnauthorizedDataChange": {},
+            "UnauthorizedDataDeletion": {},
+            "Undefined": {},
+            "UserCompromising": {},
+            "VirusDetection": {},
+            "VulnerabilityExploitation": {},
+            "WormDetection": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "incident.compromised_assets": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "incident.description": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "incident.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "incident.related_addresses": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "incident.related_assets": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "incident.severity": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "high": {},
+            "low": {},
+            "medium": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "incident.severity_behavior": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "first": {},
+            "highest": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "incorrect_time": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": true,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Bool"
+    },
+    "input_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "interface": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "job_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "labels": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "logon_auth_method": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "local": {},
+            "remote": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "logon_service": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "logon_type": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "mime": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "msgid": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "nas_fqdn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "nas_ip": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "normalized": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Bool"
+    },
+    "numfield1": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "numfield2": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "numfield3": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "numfield4": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "numfield5": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "object": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "_pt_test": {},
+            "account": {},
+            "alert": {},
+            "application": {},
+            "arp_table": {},
+            "attack": {},
+            "certificate": {},
+            "check": {},
+            "client": {},
+            "cmdlet": {},
+            "command": {},
+            "compliance": {},
+            "computer": {},
+            "configuration": {},
+            "connection": {},
+            "conntrack": {},
+            "database": {},
+            "db_object": {},
+            "device": {},
+            "ds_object": {},
+            "file": {},
+            "file_object": {},
+            "flow": {},
+            "handle": {},
+            "host": {},
+            "infected_object": {},
+            "interface": {},
+            "ip_address": {},
+            "key": {},
+            "link": {},
+            "log": {},
+            "logging": {},
+            "mailbox": {},
+            "malware": {},
+            "message": {},
+            "mode": {},
+            "module": {},
+            "network": {},
+            "node": {},
+            "package": {},
+            "packet": {},
+            "policy": {},
+            "port": {},
+            "process": {},
+            "profile": {},
+            "reg_object": {},
+            "report": {},
+            "request": {},
+            "resource": {},
+            "rule": {},
+            "scan": {},
+            "service": {},
+            "session": {},
+            "socket": {},
+            "system": {},
+            "table": {},
+            "task": {},
+            "thread": {},
+            "transaction": {},
+            "translation": {},
+            "trust": {},
+            "tunnel": {},
+            "update": {},
+            "user_group": {},
+            "virtual_key": {},
+            "virtual_machine": {},
+            "volume": {},
+            "vulnerability": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "object.account.company": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.account.contact": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.account.department": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.account.dn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.account.domain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.account.fullname": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.account.group": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.account.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.account.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.account.privileges": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.account.provider": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "domain": {},
+            "local": {},
+            "unknown": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "object.account.session_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.account.title": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.application.account.domain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.application.account.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.application.account.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.application.account.privileges": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.application.account.session_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.application.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.domain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.fullpath": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.group": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.hash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.hash.imphash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.hash.md5": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.hash.sha1": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.hash.sha256": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.new_value": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.num_value": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "object.path": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.chain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.chain_info": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.cmdline": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.cwd": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.decoded_data": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.fullpath": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.guid": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.hash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.hash.imphash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.hash.md5": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.hash.sha1": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.hash.sha256": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.meta": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.original_name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.cmdline": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.decoded_data": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.fullpath": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.guid": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.hash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.hash.imphash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.hash.md5": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.hash.sha1": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.hash.sha256": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.parent.path": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.path": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.process.version": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.property": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.query": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.state": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.storage.fullpath": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.storage.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.storage.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.storage.path": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.type": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.value": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "object.vendor": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "object.version": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "origin_app_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": true,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "original_time": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": true,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Datetime"
+    },
+    "primary_siem_app_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": true,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "protocol": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "protocol.layer7": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "reason": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "recv_asset": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "recv_host": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "recv_ipv4": {
+        "asset_resolution": {
+            "key": "ipv4",
+            "role": "eventforwarder"
+        },
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "recv_ipv6": {
+        "asset_resolution": {
+            "key": "ipv6",
+            "role": "eventforwarder"
+        },
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "recv_time": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": true,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Datetime"
+    },
+    "remote": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": true,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Bool"
+    },
+    "scope_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": true,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "siem_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": true,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "site_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": true,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "src.asset": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "src.fqdn": {
+        "asset_resolution": {
+            "key": "fqdn",
+            "role": "subject"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "src.geo.asn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "src.geo.city": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "src.geo.country": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "src.geo.org": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "src.host": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "src.hostname": {
+        "asset_resolution": {
+            "key": "hostname",
+            "role": "subject"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "src.ip": {
+        "asset_resolution": {
+            "key": "ipv4",
+            "role": "subject"
+        },
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "IPAddress"
+    },
+    "src.mac": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "MACAddress"
+    },
+    "src.mac.vendor": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "src.port": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Number"
+    },
+    "start_time": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": true,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Datetime"
+    },
+    "status": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "failure": {},
+            "ongoing": {},
+            "success": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "subevents": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUIDList"
+    },
+    "subevents.missed": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUIDList"
+    },
+    "subevents.time": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": false,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "StringList"
+    },
+    "subject": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "account": {},
+            "application": {},
+            "host": {},
+            "process": {},
+            "rule": {},
+            "service": {},
+            "system": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "subject.account.company": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.account.contact": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.account.department": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.account.dn": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.account.domain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.account.fullname": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.account.group": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.account.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.account.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.account.privileges": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.account.provider": {
+        "auto": false,
+        "class": "tag",
+        "enum": {
+            "domain": {},
+            "local": {},
+            "unknown": {}
+        },
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        }
+    },
+    "subject.account.session_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.account.title": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.application.account.domain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.application.account.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.application.account.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.application.account.privileges": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.application.account.session_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.application.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.domain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.group": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.privileges": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.process.chain": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.chain_info": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.cmdline": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.cwd": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.decoded_data": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.fullpath": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.guid": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.hash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.hash.imphash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.hash.md5": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.hash.sha1": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.hash.sha256": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.meta": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.original_name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.cmdline": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.decoded_data": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.fullpath": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.guid": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.hash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.hash.imphash": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.hash.md5": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.hash.sha1": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.hash.sha256": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.name": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.parent.path": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.path": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "String"
+    },
+    "subject.process.version": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.state": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.type": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "subject.version": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "tag": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "task_id": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "taxonomy_version": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "tcp_flag": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "tenant_id": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": true,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    },
+    "time": {
+        "auto": false,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": true,
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "Datetime"
+    },
+    "type": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": true,
+            "distributable": false,
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "selectable": true,
+            "sortable": true
+        },
+        "storage_related": {
+            "index_type": "case_insensitive"
+        },
+        "type": "String"
+    },
+    "uuid": {
+        "auto": true,
+        "class": "scalar",
+        "force_aggregation_key": false,
+        "pdql_related": {
+            "aggregatable": false,
+            "distributable": false,
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "selectable": true,
+            "sortable": false
+        },
+        "storage_related": {
+            "index_type": "default"
+        },
+        "type": "UUID"
+    }
+}

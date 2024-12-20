@@ -1,0 +1,416 @@
+Attacks & Recon:
+    Attack:
+        - Potential Attack
+        - Network Attack
+        - Vulnerability Exploitation
+        - Post Compromise
+        - IDS/IPS Alert
+        - HIPS Alert
+        - Bruteforce
+        - Complex Attack
+        - DoS
+        - DDoS
+        - Privilege Escalation
+        - Identity Theft
+        - Spam Attack
+        - Miscellaneous
+    Recon:
+        - Fingerprinting
+        - Network Scan
+        - Port Discovery
+        - Service Discovery
+        - OS Discovery
+        - Crawling/Dictionary Bruteforce
+        - Enumeration
+
+Hacktool:
+    Scanner:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Bruteforcer:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    MITM:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Fingerprint:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Enumeration:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    DoS:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Encryption:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Tunnel:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Remote:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Sniffer:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Spoofing:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Web:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Shellcode:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+    Miscellaneous:
+        - Detection
+        - Exploitation
+        - Installation
+        - Deletion
+
+Malware:
+    Virus:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+    Worm:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+    Botnet:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+    Rootkit:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+    Bootkit:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+    Trojan:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+    Backdoor:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+    Miscellaneous:
+        - Detection
+        - Curing
+        - Mitigation
+        - Epidemic
+
+Compliance:
+    Policy Violation:
+        - Mail Policy Violation
+        - IP Access Policy Violation
+        - Database Policy Violation
+        - Application Policy Violation
+        - P2P Policy Violation
+        - Remote Access Policy Violation
+        - AV Policy Violation
+        - IM Policy Violation
+        - Web Policy Violation
+        - System Update Policy Violation
+        - Confidentiality Policy Violation
+
+Anomaly:
+    Network Anomaly:
+        - Detection
+    System Anomaly:
+        - Detection
+    User Behavior Anomaly:
+        - Detection
+
+Monitoring:
+    System Monitoring:
+        - Performance
+        - System State
+        - Processes
+        - Notification
+    Errors:
+        - System
+        - Network
+        - Hardware
+        - Application
+    Network Monitoring:
+        - Interface State
+        - Performance
+
+Business Continuity:
+    Replication:
+        - Settings
+        - Data
+        - Heartbeat
+    Backup/Restore:
+        - Backup Jobs
+        - Restore Jobs
+        - Backup Schedule
+    Cluster Nodes:
+        - Creation
+        - Connection
+        - Replication
+        - Deletion
+
+Access:
+    Authentication:
+        - Local
+        - Remote
+        - Unknown Type
+        - Service
+        - Host
+        - Default Credentials
+    Authorization:
+        - Network
+        - User
+        - Object
+        - Host
+
+Configuration Management:
+    User Management:
+        - Detection
+        - Creation
+        - Modification
+        - Locking
+        - Unlocking
+        - Deletion
+        - External User Connection
+    Rights Management:
+        - Role Creation
+        - Role Modification
+        - Role Assignment
+        - Role Revocation
+        - Role Deletion
+        - Group Creation
+        - Group Modification
+        - Group Deletion
+        - Group Assignment
+        - User Membership Modification
+        - Rights Assignment
+        - Rights Revocation
+        - Object Rights Modification
+        - Critical Privileges
+    Network Configuration:
+        - Port Detection
+        - Port State Change
+        - Access Rule Modification
+        - Interface Modification
+        - Routing Changes
+        - Link Modification
+    System Configuration Management:
+        - Network Service Detection
+        - Network Service Stoppage
+        - Network Service Resumption
+        - Network Service Modification
+        - OS Service Detection
+        - OS Service Stoppage
+        - OS Service Resumption
+        - OS Service Modification
+        - OS Settings Modification
+        - Application Settings Modification
+        - Security Settings Modification
+        - Application Object Modification
+
+Accounting:
+    Network Accounting:
+        - Connections & Sessions
+        - Traffic
+        - Firewall Rules Usage
+        - Address Translation
+    User Accounting:
+        - Administrative Privilege Use
+        - System Application Launching
+        - Application & Component Launching
+        - System Accounts Use
+        - Command Execution
+        - Data Usage
+
+Incident Management:
+    Incident:
+        - Detection
+        - Creation
+        - Modification
+        - Deletion
+        - Remediation
+
+Vulnerability Mangement:
+    Vulnerability:
+        - Knowledge Base Updates
+        - Vulnerability Detection
+        - Potential Exploit Detection
+        - Vulnerability Exception
+        - Vulnerability Remediation
+
+Network Interaction:
+    Network Interaction:
+        - VPN
+        - Remote Management
+        - Database
+        - Web
+        - Application
+        - Mail transfer
+        - File transfer
+        - Unknown
+        - Suspicious
+
+Hardware Management:
+    Hardware inventory:
+        - Hardware Detection
+        - Hardware Installation
+        - Hardware Removal
+        - Hardware Configuration Errors
+    External Storage Management:
+        - External Disk Detection
+        - External Disk Mounting
+        - External Disk Unmounting
+        - SAN/NAS Detection
+        - SAN/NAS Mounting
+        - SAN/NAS Unmounting
+    External Device Management:
+        - Printer
+        - Scanner
+        - Mobile device
+        - USB Device
+        - Bluetooth pairing
+    Memory Management:
+        - Memory Resizing
+    CPU Management:
+        - CPU Resources Change
+        - CPU Detection
+    Storage Management:
+        - Local Storage
+        - Network Storage
+
+Asset & Asset Group Management:
+    Asset Management:
+        - Network Creation
+        - Network Activation
+        - Network Deactivation
+        - Network Deletion
+        - Network Data Collection
+        - Domain Creation
+        - Domain Activation
+        - Domain Deactivation
+        - Domain Deletion
+        - Domain Data Collection
+        - Host Creation
+        - Host Activation
+        - Host Deactivation
+        - Host Deletion
+        - Host Data Collection
+        - Hypervisor Creation
+        - Hypervisor Activation
+        - Hypervisor Deactivation
+        - Hypervisor Deletion
+        - Hypervisor Data Collection
+        - Virtual Host Creation
+        - Virtual Host Activation
+        - Virtual Host Deactivation
+        - Virtual Host Deletion
+        - Virtual Host Data Collection
+        - Link Creation
+        - Link Activation
+        - Link Deactivation
+        - Link Deletion
+        - Link Data Collection
+    Asset Group Management:
+        - Creation
+        - Activation
+        - Deactivation
+        - Modification
+        - Deletion
+
+Software Management:
+    Software Inventory:
+        - Detection
+        - Installation
+        - Deletion
+        - Update
+    Operating System:
+        - Management Detection
+        - Installation
+        - Deletion
+        - Update
+    Patch Management:
+        - Installation
+        - Deletion
+    Security Software Management:
+        - Installation
+        - Detection
+        - Update
+        - Deletion
+
+Infrastructure Services:
+    DHCP:
+        - Assignment
+        - Release
+        - Static
+    DNS:
+        - Record Creation
+        - Record Modification
+        - Record Deletion
+        - Requests & Responses
+    LDAP:
+        - Query
+
+Information Management:
+    Information Leak:
+        - Confidential Information
+        - Critical Information
+    Information Access Control:
+        - Assignment
+        - Settings
+        - Object Access
+    Information Labeling:
+        - Label Assignment
+        - Label Management
+    Information Discovery: []
+    Leakage Channel:
+        - External Drive
+        - Mobile Device
+        - Mail
+        - Web
+        - Printer
+    Data Loss:
+        - Accidential
+        - Deliberate
+    Data Modification:
+        - By System
+        - By User
