@@ -8,3 +8,4 @@ find "$repo_dir" -type f -name "metainfo.yaml" | while read -r file; do
     rm -rf "$(dirname "$file")"
   fi
 done
+
